@@ -7,7 +7,7 @@ PacletObject[
     "Creator" -> "Daniele Gregori",
     "License" -> "MIT",
     "PublisherID" -> "DanieleGregori",
-    "Version" -> "1.0.2",
+    "Version" -> "1.1.0",
     "WolframVersion" -> "14+",
     "PrimaryContext" -> "DanieleGregori`ArXivExplore`",
     "DocumentationURL" -> "https://resources.wolframcloud.com/PacletRepository/resources",
@@ -18,22 +18,27 @@ PacletObject[
         "Context" -> {"DanieleGregori`ArXivExplore`"},
         "Symbols" -> {
           "DanieleGregori`ArXivExplore`ArXivAbstracts",
-          "DanieleGregori`ArXivExplore`ArXivAbstractsVocabulary",
           "DanieleGregori`ArXivExplore`ArXivArticles",
-          "DanieleGregori`ArXivExplore`ArXivArticlesAuthor",
-          "DanieleGregori`ArXivExplore`ArXivArticlesTrend",
+          "DanieleGregori`ArXivExplore`ArXivAuthorArticles",
+          "DanieleGregori`ArXivExplore`ArXivAuthorGraph",
+          "DanieleGregori`ArXivExplore`ArXivAuthorRegister",
           "DanieleGregori`ArXivExplore`ArXivAuthors",
           "DanieleGregori`ArXivExplore`ArXivCategories",
           "DanieleGregori`ArXivExplore`ArXivCategoriesLegend",
           "DanieleGregori`ArXivExplore`ArXivCategoriesPrimary",
           "DanieleGregori`ArXivExplore`ArXivCitations",
+          "DanieleGregori`ArXivExplore`ArXivCitationsAbstracts",
           "DanieleGregori`ArXivExplore`ArXivCitationsAuthor",
+          "DanieleGregori`ArXivExplore`ArXivCitationsGraph",
           "DanieleGregori`ArXivExplore`ArXivCitationsTitles",
           "DanieleGregori`ArXivExplore`ArXivCitationsTotal",
-          "DanieleGregori`ArXivExplore`ArXivClassifyAuthorNet",
-          "DanieleGregori`ArXivExplore`ArXivClassifyAuthorTrainTest",
-          "DanieleGregori`ArXivExplore`ArXivClassifyCategoryNet",
-          "DanieleGregori`ArXivExplore`ArXivClassifyCategoryTrainTest",
+          "DanieleGregori`ArXivExplore`ArXivClassifyAuthorsNet",
+          "DanieleGregori`ArXivExplore`ArXivClassifyAuthorsTrainTest",
+          "DanieleGregori`ArXivExplore`ArXivClassifyCategoriesNet",
+          "DanieleGregori`ArXivExplore`ArXivClassifyCategoriesTrainTest",
+          "DanieleGregori`ArXivExplore`ArXivClusterAuthorsGraph",
+          "DanieleGregori`ArXivExplore`ArXivClusterCategoriesGraph",
+          "DanieleGregori`ArXivExplore`ArXivClusterLegend",
           "DanieleGregori`ArXivExplore`ArXivDataset",
           "DanieleGregori`ArXivExplore`ArXivDatasetAggregate",
           "DanieleGregori`ArXivExplore`ArXivDatasetLookup",
@@ -41,8 +46,12 @@ PacletObject[
           "DanieleGregori`ArXivExplore`ArXivDates",
           "DanieleGregori`ArXivExplore`ArXivExplainAuthor",
           "DanieleGregori`ArXivExplore`ArXivExplainConcept",
-          "DanieleGregori`ArXivExplore`ArXivGraph",
-          "DanieleGregori`ArXivExplore`ArXivGraphAuthor",
+          "DanieleGregori`ArXivExplore`ArXivFeaturesAuthorsNearest",
+          "DanieleGregori`ArXivExplore`ArXivFeaturesAuthorsNet",
+          "DanieleGregori`ArXivExplore`ArXivFeaturesAuthorsSet",
+          "DanieleGregori`ArXivExplore`ArXivFeaturesCategoriesNearest",
+          "DanieleGregori`ArXivExplore`ArXivFeaturesCategoriesNet",
+          "DanieleGregori`ArXivExplore`ArXivFeaturesCategoriesSet",
           "DanieleGregori`ArXivExplore`ArXivIDs",
           "DanieleGregori`ArXivExplore`ArXivLogosAbstracts",
           "DanieleGregori`ArXivExplore`ArXivLogosTitles",
@@ -52,20 +61,36 @@ PacletObject[
           "DanieleGregori`ArXivExplore`ArXivTeXDocument",
           "DanieleGregori`ArXivExplore`ArXivTeXFormulae",
           "DanieleGregori`ArXivExplore`ArXivTeXIntroduction",
+          "DanieleGregori`ArXivExplore`ArXivTeXPreamble",
           "DanieleGregori`ArXivExplore`ArXivTeXSections",
           "DanieleGregori`ArXivExplore`ArXivTitles",
-          "DanieleGregori`ArXivExplore`ArXivTitlesVocabulary",
           "DanieleGregori`ArXivExplore`ArXivTopAbstracts",
           "DanieleGregori`ArXivExplore`ArXivTopAuthors",
           "DanieleGregori`ArXivExplore`ArXivTopCategories",
           "DanieleGregori`ArXivExplore`ArXivTopTitles",
-          "DanieleGregori`ArXivExplore`ArXivVersions"
+          "DanieleGregori`ArXivExplore`ArXivTrendArticles",
+          "DanieleGregori`ArXivExplore`ArXivTrendTitles",
+          "DanieleGregori`ArXivExplore`ArXivTrendAbstracts",
+          "DanieleGregori`ArXivExplore`ArXivVersions",
+          "DanieleGregori`ArXivExplore`ArXivVocabularyAbstracts",
+          "DanieleGregori`ArXivExplore`ArXivVocabularyIntroductions",
+          "DanieleGregori`ArXivExplore`ArXivVocabularyTitles"
         }
       },
       {
         "Documentation",
         "Root" -> "Documentation",
         "Language" -> "English"
+      },
+      {
+        "Asset",
+        "Root" -> "Assets",
+        "Assets" -> {
+          {
+            "database",
+            "arxiv-database.json"
+          }
+        }
       }
     }
   |>
