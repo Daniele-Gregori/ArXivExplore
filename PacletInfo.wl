@@ -7,7 +7,7 @@ PacletObject[
     "Creator" -> "Daniele Gregori",
     "License" -> "MIT",
     "PublisherID" -> "DanieleGregori",
-    "Version" -> "1.1.0",
+    "Version" -> "1.1.0.1",
     "WolframVersion" -> "14+",
     "PrimaryContext" -> "DanieleGregori`ArXivExplore`",
     "DocumentationURL" -> "https://resources.wolframcloud.com/PacletRepository/resources",
@@ -87,8 +87,28 @@ PacletObject[
         "Root" -> "Assets",
         "Assets" -> {
           {
-            "database",
-            "arxiv-database.json"
+            "database-part-1",
+            "arxiv-database-2025-02-1.json"
+          },
+          {
+            "database-part-2",
+            "arxiv-database-2025-02-2.json"
+          },
+          {
+            "database-part-3",
+            "arxiv-database-2025-02-3.json"
+          },
+          {
+            "database-part-4",
+            "arxiv-database-2025-02-4.json"
+          },
+          {
+            "database-part-5",
+            "arxiv-database-2025-02-5.json"
+          },
+          {
+            "database-part-6",
+            "arxiv-database-2025-02-6.json"
           }
         }
       }
