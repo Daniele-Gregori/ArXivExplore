@@ -226,16 +226,8 @@ Let us visualize all authors with more than 7 papers, in primary category "cs.NA
 In[]:= ArXivTopAuthors["cs.NA", 7] // Column
 ```
 
-|  |  |  |  |  |  |  |  |
-| - | - | - | - | - | - | - | - |
-| 25 |  |  |  |  |  |  |  |
-|  | 21 |  |  |  |  |  |  |
-|  |  | 21 |  |  |  |  |  |
-|  |  |  | 13 |  |  |  |  |
-|  |  |  |  | 9 |  |  |  |
-|  |  |  |  |  | 9 |  |  |
-|  |  |  |  |  |  | 8 |  |
-|  |  |  |  |  |  |  | 8 |
+<img width="214" height="144" alt="Screenshot 2025-08-15 alle 16 20 46" src="https://github.com/user-attachments/assets/67fca5ce-f729-4c1d-a207-9b5a80ba3a80" />
+
 
 Let us pick a random author among them and use LLM functionality to explain his overall work:
 
