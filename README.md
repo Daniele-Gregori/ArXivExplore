@@ -191,7 +191,7 @@ In[]:= ArXivTeXIntroduction[Echo@RandomChoice@ArXivIDs[All]] // Short[#, 10] &
 ```
 
 ```wl
-Out[]= "2211.13033"
+>> "2211.13033"
 ```
 
 <img width="681" height="405" alt="0jitsl5yh3n0o" src="https://github.com/user-attachments/assets/467be781-b418-45a1-a30e-f524bce80ebe" />
