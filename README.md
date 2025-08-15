@@ -5,9 +5,14 @@
 <img width="459" height="269" alt="0trfzzrk4horg" src="https://github.com/user-attachments/assets/0b211bf2-a79b-4852-b3bd-e0082869a463" />
 
 
-#### Basic Description<img width="8" height="17" alt="0h48vuc1v6z1z" src="https://github.com/user-attachments/assets/2e27ce24-9fed-4424-a8d2-07498dc2b2e6" />
+### Basic Description<img width="8" height="17" alt="0h48vuc1v6z1z" src="https://github.com/user-attachments/assets/2e27ce24-9fed-4424-a8d2-07498dc2b2e6" />
 
 ArXivExplore helps the deep data analysis of all 2.6 million physics, math, cs, etc. articles on ArXiv, providing functionality for e.g. title/abstract word statistics; TeX source/formulae and citations dissection; neural networks for classification, clustering or recommendation; LLM automated concept definitions and author reports.
+
+### WTC Presentation
+
+For a comprehensive explanation, see the [presentation](https://www.wolframcloud.com/obj/dangregori/Published/WTC-2024-presentation-Gregori-Daniele.nb) of this paclet I gave at [Wolfram Technology Conference 2024](https://www.wolfram.com/events/technology-conference/2024/presentations/).
+
 
 ### Examples<img width="8" height="17" alt="0g5tuqi8k86uo" src="https://github.com/user-attachments/assets/46290353-31b0-4cb0-9663-171d66015bfe" />
 
@@ -252,7 +257,3 @@ In[]:= ArXivExplainAuthor["Kevin Carlberg", "cs.NA", LLMEvaluator -> <|"Prompts"
 ### Full Documentation
 
 See the full documentation of all ArXivExplore paclet functions at the [Wolfram Paclet Repository](https://resources.wolframcloud.com/PacletRepository/resources/DanieleGregori/ArXivExplore/).
-
-### WTC Presentation
-
-For a comprehensive explanation, see the [presentation](https://www.wolframcloud.com/obj/dangregori/Published/WTC-2024-presentation-Gregori-Daniele.nb) of this paclet I gave at [Wolfram Technology Conference 2024](https://www.wolfram.com/events/technology-conference/2024/presentations/).
