@@ -17,7 +17,7 @@ ArXivExplore helps the deep data analysis of all 2.6 million physics, math, cs, 
 The first article ever on ArXiv:
 
 ```wl
-ArXivIDs[All] // First
+In[]:= ArXivIDs[All] // First
 ```
 
 ```wl
