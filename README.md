@@ -85,3 +85,163 @@ We can then also easily create an author citations graph, with the tooltip indic
 
 <img width="360" height="404" alt="19tvuxiq9lcch" src="https://github.com/user-attachments/assets/3da063c7-9493-45a9-9b40-8331d69efd7a" />
 
+
+#### Scope
+
+The dimensions of the whole ArXiv main dataset (at the end of June 2025):
+
+```wl
+In[]:= ArXivDataset[All] // Dimensions
+```
+
+```wl
+Out[]= {2775152, 14}
+```
+
+Let us create a super-database with all computer science "cs" type (primary or cross-list) categories:
+
+```wl
+In[]:= ArXivDataset[{"cs", All}] = ArXivDatasetAggregate[{"cs", All}] // EchoFunction[Dimensions];
+```
+
+```wl
+Out[]= {696632, 14}
+```
+
+and then let us visualize the most and less frequent title words:
+
+```wl
+In[]:= Block[{cat = {"cs", All}, tabs, colrules, tabskey, compl, cut = 160, res = 10}, 
+   colrules = {"learning" -> Style["learning", Purple, Bold], "using" -> Style["using", Purple, Bold], "theory" -> Style["theory", Red, Bold], "understanding" -> Style["understanding", Red, Bold]}; 
+   tabs = MapAt[Apply[Sequence, #] &, 
+      MapIndexed[Partition[Riffle[Map[Style[#, Bold] &, Range[res*(First[#2] - 1) + 1, res*First[#2]]], #], 2] &, Partition[Normal@ArXivTopTitles[cat, cut], UpTo@res]], {All, All,2}] /. colrules; 
+   tabskey = Cases[tabs, _List?(MemberQ[#[[All, 2]], Alternatives["theory", "understanding"] /. colrules] &)]; 
+   compl = Text[Style["... " <> ToString[Round[First@tabskey[[1, 1, 1]] - 1, 10]] <> "+words morepopular than\"understanding\"or \"theory\"in CS !", Bold, 9, TextAlignment -> Center]]; 
+   GraphicsRow[Join[{TextGrid@tabs[[1]], compl}, TextGrid /@ tabskey], ImageSize -> Large]]
+```
+
+<img width="576" height="209" alt="00k3mufuabzoz" src="https://github.com/user-attachments/assets/6a6a7a99-06bb-4a46-b110-2b9d6369efe5" />
+
+
+Let us calculate the 10 most frequent categories, with their meaning and number of articles each:
+
+```wl
+In[]:= KeyValueMap[{#1, ArXivCategoriesLegend[#1], #2} &, ArXivTopCategories[10]] // Normal // TableForm
+```
+
+|  |  |  |
+| - | - | - |
+| hep-ph | High Energy Physics - Phenomenology | 134315 |
+| quant-ph | Quantum Physics | 113002 |
+| cs.CV | Computer Vision and Pattern Recognition | 107036 |
+| hep-th | High Energy Physics - Theory | 106818 |
+| cs.LG | Machine Learning | 94387 |
+| astro-ph | Astrophysics | 94246 |
+| gr-qc | General Relativity and Quantum Cosmology | 64940 |
+| cond-mat.mes-hall | Mesoscale and Nanoscale Physics | 64255 |
+| cond-mat.mtrl-sci | Materials Science | 62135 |
+| cs.CL | Computation and Language | 56074 |
+
+We can create train and test sets using only 5000={4500,500} titles and abstracts for each category:
+
+```wl
+In[]:= {train10, test10} = ArXivClassifyCategoriesTrainTest[10, 5000];
+```
+
+we can train a NN to classify these categories, with layers' dimension 80 and dropout level 0.5:
+
+```wl
+In[]:= net10 = ArXivClassifyCategoriesNet[10, 80, 0.5]
+```
+
+<img width="303" height="68" alt="14511mlgn9487" src="https://github.com/user-attachments/assets/68072409-1a61-4efa-bf4d-6cd768c4a6fe" />
+
+
+```wl
+In[]:= netTrained10 = NetTrain[net10, train10, All, ValidationSet -> Scaled[0.07], MaxTrainingRounds -> 5]
+```
+
+<img width="541" height="456" alt="00mzq6bu6eua8" src="https://github.com/user-attachments/assets/f086cb91-9163-4780-99a3-6ddda47915cf" />
+
+
+Even with a basic 30 minutes training on laptop CPU, we obtain 89% accuracy:
+
+```wl
+In[]:= NetMeasurements[netTrained10["TrainedNet"], test10, "Accuracy"]~PercentForm~2
+```
+
+<img width="24" height="17" alt="02wsi35nxqu1g" src="https://github.com/user-attachments/assets/65cccc18-4ffe-438f-b53c-2039808fdd04" />
+
+
+and a rather clean confusion matrix:
+
+```wl
+In[]:= NetMeasurements[netTrained10["TrainedNet"], test10, "ConfusionMatrixPlot"]
+```
+
+<img width="311" height="311" alt="1dbrfbhx0gznl" src="https://github.com/user-attachments/assets/c6233c0a-4147-4810-bbef-9803a8cf105a" />
+
+
+We could even classify authors within the same category, with ArXivClassifyAuthorNet.
+
+Extracting $TEX$ introduction:
+
+```wl
+In[]:= ArXivTeXIntroduction[Echo@RandomChoice@ArXivIDs[All]] // Short[#, 10] &
+```
+
+```wl
+Out[]= "2211.13033"
+```
+
+<img width="681" height="405" alt="0jitsl5yh3n0o" src="https://github.com/user-attachments/assets/467be781-b418-45a1-a30e-f524bce80ebe" />
+
+
+also $TEX$ formulae:
+
+```wl
+In[]:= Table[i -> Take[Lookup[#, i], UpTo[50]], {i, Keys[#]}] &@ArXivTeXFormulae[Echo@RandomChoice[ArXivIDs["hep-th"]]] // TabView
+```
+
+```wl
+Out[]= "2305.12610"
+```
+
+<img width="784" height="374" alt="1bugb9ay5b4g9" src="https://github.com/user-attachments/assets/a69cd6ef-e45d-46e1-9cee-553f9531b8e6" />
+
+
+Explain a technical concept using an article introduction and <img width="81" height="17" alt="0mnjfe6thkyvg" src="https://github.com/user-attachments/assets/e080e967-8021-4a88-9ec4-958502c0398c" />:
+
+```wl
+In[]:= ArXivExplainConcept["Viterbi algorithm", "2401.02314", LLMEvaluator -> 
+     <|"Prompts" -> "Keep the output contained and emphasize the relation to this paper"|>] // Text
+```
+
+<img width="763" height="452" alt="1060eaxqqlb8d" src="https://github.com/user-attachments/assets/1c7edb8e-aa83-41aa-b0cf-f9c6422a6965" />
+
+
+Let us visualize all authors with more than 7 papers, in primary category "cs.NA":
+
+```wl
+In[]:= ArXivTopAuthors["cs.NA", 7] // Column
+```
+
+|  |  |  |  |  |  |  |  |
+| - | - | - | - | - | - | - | - |
+| 25 |  |  |  |  |  |  |  |
+|  | 21 |  |  |  |  |  |  |
+|  |  | 21 |  |  |  |  |  |
+|  |  |  | 13 |  |  |  |  |
+|  |  |  |  | 9 |  |  |  |
+|  |  |  |  |  | 9 |  |  |
+|  |  |  |  |  |  | 8 |  |
+|  |  |  |  |  |  |  | 8 |
+
+Let us pick a random author among them and use LLM functionality to explain his overall work:
+
+```wl
+In[]:= ArXivExplainAuthor["Kevin Carlberg", "cs.NA", LLMEvaluator -> <|"Prompts" -> "Keep the output contained"|>] // Text
+```
+
+<img width="760" height="1505" alt="03fbo247tbe8m" src="https://github.com/user-attachments/assets/633cb4d7-c2be-460a-93ad-cffb44db9b74" />
+
