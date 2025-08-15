@@ -248,3 +248,7 @@ In[]:= ArXivExplainAuthor["Kevin Carlberg", "cs.NA", LLMEvaluator -> <|"Prompts"
 
 <img width="760" height="1505" alt="03fbo247tbe8m" src="https://github.com/user-attachments/assets/633cb4d7-c2be-460a-93ad-cffb44db9b74" />
 
+
+### Full Documentation
+
+See the full documentation of all paclet functions on the [Wolfram Paclet Repository](https://resources.wolframcloud.com/PacletRepository/resources/DanieleGregori/ArXivExplore/).
