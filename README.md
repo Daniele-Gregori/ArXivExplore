@@ -80,7 +80,6 @@ In[]:= ArXivAuthorRegister["Vescovi", {"E. Vescovi", "Edoardo Vescovi"}]
 
 We can then also easily create an author citations graph, with the tooltip indicating the articles ids:
 
-<img width="360" height="404" alt="19tvuxiq9lcch" src="https://github.com/user-attachments/assets/3da063c7-9493-45a9-9b40-8331d69efd7a" />
 
 
 <img width="579" height="24" alt="0tue5enz2f136" src="https://github.com/user-attachments/assets/ec7f673c-fbe9-406d-844f-9d1fd5b7a5a6" />
