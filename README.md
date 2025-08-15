@@ -252,3 +252,7 @@ In[]:= ArXivExplainAuthor["Kevin Carlberg", "cs.NA", LLMEvaluator -> <|"Prompts"
 ### Full Documentation
 
 See the full documentation of all ArXivExplore paclet functions at the [Wolfram Paclet Repository](https://resources.wolframcloud.com/PacletRepository/resources/DanieleGregori/ArXivExplore/).
+
+### WTC Presentation
+
+For a comprehensive explanation, see the [presentation](https://www.wolframcloud.com/obj/dangregori/Published/WTC-2024-presentation-Gregori-Daniele.nb) of this paclet I gave at [Wolfram Technology Conference 2024](https://www.wolfram.com/events/technology-conference/2024/presentations/).
