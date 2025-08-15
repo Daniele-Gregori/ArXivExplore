@@ -251,4 +251,4 @@ In[]:= ArXivExplainAuthor["Kevin Carlberg", "cs.NA", LLMEvaluator -> <|"Prompts"
 
 ### Full Documentation
 
-See the full documentation of all paclet functions on the [Wolfram Paclet Repository](https://resources.wolframcloud.com/PacletRepository/resources/DanieleGregori/ArXivExplore/).
+See the full documentation of all ArXivExplore paclet functions at the [Wolfram Paclet Repository](https://resources.wolframcloud.com/PacletRepository/resources/DanieleGregori/ArXivExplore/).
