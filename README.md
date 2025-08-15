@@ -82,9 +82,11 @@ We can then also easily create an author citations graph, with the tooltip indic
 
 
 
-<img width="579" height="24" alt="0tue5enz2f136" src="https://github.com/user-attachments/assets/ec7f673c-fbe9-406d-844f-9d1fd5b7a5a6" />
+<!--<img width="579" height="24" alt="0tue5enz2f136" src="https://github.com/user-attachments/assets/ec7f673c-fbe9-406d-844f-9d1fd5b7a5a6" />-->
 
-
+```wl
+In[]:= ArXivAuthorGraph[Entity["ArXivAuthor", "Vescovi"], VertexLabels -> Placed[Automatic, Tooltip]]
+```
 
 
 
