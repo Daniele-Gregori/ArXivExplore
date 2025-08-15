@@ -20,7 +20,10 @@ The first article ever on ArXiv:
 ArXivIDs[All] // First
 ```
 
-"physics/9403001"
+```wl
+Out[]= "physics/9403001"
+```
+
 
 ```wl
 In[]:= ArXivVersions["physics/9403001"]
@@ -46,14 +49,16 @@ In[]:= ArXivAuthors["physics/9403001"]
 Out[]= {"Paul Ginsparg", "Sheldon Glashow"}
 ```
 
-A ![1lsbzz7lyarl4](img/1lsbzz7lyarl4.png) showing the trends in the most popular title words in theoretical physics category ("hep-th", primary or cross-list):
+A <img width="67" height="17" alt="1lsbzz7lyarl4" src="https://github.com/user-attachments/assets/d9294929-01ca-43dc-8d81-cc0f34d09879" />
+ showing the trends in the most popular title words in theoretical physics category ("hep-th", primary or cross-list):
 
 ```wl
 In[]:= Block[{words = {"black", "gauge", "gravity", "string"}}, 
    ArXivPlot[words, {"hep-th", All}, PlotRange -> Full, PlotLegends -> words]]
 ```
 
-![05dv5s7h5t6mm](img/05dv5s7h5t6mm.png)
+<img width="440" height="226" alt="05dv5s7h5t6mm" src="https://github.com/user-attachments/assets/831c99a2-34ae-4cbc-96fa-1b6ebf709a07" />
+
 
 All the 50 most common 2-neighbour title words on the whole ArXiv, ever:
 
@@ -61,7 +66,8 @@ All the 50 most common 2-neighbour title words on the whole ArXiv, ever:
 In[]:= ArXivTopTitles[All, 50, 2] // Normal // Multicolumn[#, 3] &
 ```
 
-![1aoujzxujkbl8](img/1aoujzxujkbl8.png)
+<img width="642" height="291" alt="1aoujzxujkbl8" src="https://github.com/user-attachments/assets/2c7e8276-9bc9-424d-a14a-0aa0bf9c952d" />
+
 
 Authors with more than one possible name (and categories) are conveniently registered as "ArXivAuthor" entities. For example:
 
@@ -69,10 +75,13 @@ Authors with more than one possible name (and categories) are conveniently regis
 In[]:= ArXivAuthorRegister["Vescovi", {"E. Vescovi", "Edoardo Vescovi"}]
 ```
 
-![1xle9ymtgibyc](img/1xle9ymtgibyc.png)
+<img width="54" height="23" alt="1xle9ymtgibyc" src="https://github.com/user-attachments/assets/144d4120-66b9-4267-8f6e-dff7ac1c8338" />
+
 
 We can then also easily create an author citations graph, with the tooltip indicating the articles ids:
 
-![0tue5enz2f136](img/0tue5enz2f136.png)
+<img width="579" height="24" alt="0tue5enz2f136" src="https://github.com/user-attachments/assets/ec7f673c-fbe9-406d-844f-9d1fd5b7a5a6" />
 
-![19tvuxiq9lcch](img/19tvuxiq9lcch.png)
+
+<img width="360" height="404" alt="19tvuxiq9lcch" src="https://github.com/user-attachments/assets/3da063c7-9493-45a9-9b40-8331d69efd7a" />
+
