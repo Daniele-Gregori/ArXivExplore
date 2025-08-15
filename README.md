@@ -87,6 +87,14 @@ We can then also easily create an author citations graph, with the tooltip indic
 
 
 
+
+
+<img width="360" height="404" alt="19tvuxiq9lcch" src="https://github.com/user-attachments/assets/3da063c7-9493-45a9-9b40-8331d69efd7a" />
+
+
+
+
+
 #### Scope
 
 The dimensions of the whole ArXiv main dataset (at the end of June 2025):
