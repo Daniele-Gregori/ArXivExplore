@@ -204,7 +204,7 @@ In[]:= Table[i -> Take[Lookup[#, i], UpTo[50]], {i, Keys[#]}] &@ArXivTeXFormulae
 ```
 
 ```wl
-Out[]= "2305.12610"
+>> "2305.12610"
 ```
 
 <img width="784" height="374" alt="1bugb9ay5b4g9" src="https://github.com/user-attachments/assets/a69cd6ef-e45d-46e1-9cee-553f9531b8e6" />
