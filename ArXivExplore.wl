@@ -11,17 +11,14 @@
 BeginPackage["DanieleGregori`ArXivExplore`"];
 
 
-(*BeginPackage["My`ArXivExplore`"];*)
-
-
 (* ::Subsection:: *)
 (*Version*)
 
 
-versionPaclet="1.1.0.1";
+versionPaclet="1.1.1";
 
 
-dateDataset="2025-02";
+dateDataset="2025-06";
 
 
 (* ::Subsection::Closed:: *)
@@ -616,9 +613,6 @@ ArXivExplainAuthor[authorL_List,catL_List] the two lists 'doubleL' - the first m
 Begin["DanieleGregori`Private`"];
 
 
-(*Begin["My`Private`"];*)
-
-
 (* ::Section:: *)
 (*1. ArXiv main database*)
 
@@ -641,7 +635,7 @@ Begin["DanieleGregori`Private`"];
 (*datasetFull=Block[{rawDbText,rawDb},
 					rawDbText=Import[FileNameJoin[{dirDownload,"arxiv-metadata-oai-snapshot.json"}],"Text"]//EchoTiming;
 					rawDb=StringJoin["{\"id\":",#]&/@StringSplit[rawDbText,"{\"id\":"]//EchoTiming;
-					ParallelMap[Interpreter["JSON"],rawDb]//EchoTiming];	*)
+					ParallelMap[Interpreter["JSON"],rawDb]//EchoTiming];*)	
 
 
 (* ::Subsubsection::Closed:: *)
@@ -699,24 +693,24 @@ Begin["DanieleGregori`Private`"];
 						   1]*)
 
 
-(*ArXivDataset[All]=datasetDateOrderedCut[12];*)
+(*Lookup[Last@datasetDateOrderedCut[9],"versions"];*)
+
+
+(*ArXivDataset[All]=datasetDateOrderedCut[9];*)
 
 
 (* ::Subsubsection::Closed:: *)
 (*Export*)
 
 
-(*Export[FileNameJoin[{dirDownload,"arxiv-database"<>"-"<>dateDataset<>".json"}],ArXivDataset[All]]//EchoTiming;*)
-
-
-(*partitionDataset=Partition[ArXivDataset[All],UpTo[Ceiling[Length[ArXivDataset[All]]/6]]];*)
+(*partitionDataset=Partition[ArXivDataset[All],UpTo[Ceiling[Length[ArXivDataset[All]]/10]]];*)
 
 
 (*dirDatabase=FileNameJoin[{StringDelete[NotebookDirectory[],"Kernel"~~_~~EndOfString],"Assets"}];*)
 
 
 (*MapIndexed[
-	Export[FileNameJoin[{dirDatabase,"arxiv-database"<>"-"<>dateDataset<>"-"<>ToString[#2[[1]]]<>".json"}],#]&//EchoTiming,partitionDataset];*)
+	Export[FileNameJoin[{dirDatabase,"arxiv-database"<>"-"<>dateDataset<>"-"<>ToString[#2[[1]]]<>".json"}],#]&,partitionDataset];*)
 
 
 (* ::Subsection:: *)
@@ -735,7 +729,7 @@ dirDatabase=FileNameJoin[{$UserBasePacletsDirectory,"Repository","DanieleGregori
 
 datasetLocal=
 	Join@@Map[
-		Import[FileNameJoin[{dirDatabase,"arxiv-database"<>"-"<>dateDataset<>"-"<>ToString[#]<>".json"}],"JSON"]&,Range[6]]//EchoTiming;
+		Import[FileNameJoin[{dirDatabase,"arxiv-database"<>"-"<>dateDataset<>"-"<>ToString[#]<>".json"}],"JSON"]&,Range[Length[FileNames["*",dirDatabase]]]];
 
 
 (*with format json it takes just a bit more than 1 minute*)
@@ -939,7 +933,7 @@ casesIntro,casesIntroAlter(*obsolete*),
 ifSplitF,
 tryCases,trySecond},
 
-texSource=If[!FailureQ[arXivTeX[id]],arXivTeX[id],Echo[arXivTeX[id]];importTeX[id]];
+texSource=If[!FailureQ[arXivTeX[id]],arXivTeX[id],arXivTeX[id];importTeX[id]];
 
 texDoc=Enclose@ConfirmQuiet[importTeXDoc[id],Part::partw];
 
