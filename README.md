@@ -14,7 +14,7 @@ ArXivExplore helps the deep data analysis of all 2.6 million physics, math, cs, 
 For a general explanation, see the [presentation](https://www.wolframcloud.com/obj/dangregori/Published/WTC-2024-presentation-Gregori-Daniele.nb) I gave at the [Wolfram Technology Conference 2024](https://www.wolfram.com/events/technology-conference/2024/presentations/). You can also watch the [recording](https://m.youtube.com/watch?v=vv62ip1t1bc&pp=0gcJCf8Ao7VqN5tD) on Youtube.
 
 
-### Examples<img width="8" height="17" alt="0g5tuqi8k86uo" src="https://github.com/user-attachments/assets/46290353-31b0-4cb0-9663-171d66015bfe" />
+### Examples<!--<img width="8" height="17" alt="0g5tuqi8k86uo" src="https://github.com/user-attachments/assets/46290353-31b0-4cb0-9663-171d66015bfe" />-->
 
 
 #### Basic Examples
