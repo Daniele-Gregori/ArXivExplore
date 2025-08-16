@@ -1,6 +1,6 @@
 # ArXivExplore
 
-#### Headline Image<img width="8" height="17" alt="0h7z4dhzeevua" src="https://github.com/user-attachments/assets/a3ea8e66-4f05-4d0d-a6a2-a75d330c63eb" />
+#### Headline Image<!--<img width="8" height="17" alt="0h7z4dhzeevua" src="https://github.com/user-attachments/assets/a3ea8e66-4f05-4d0d-a6a2-a75d330c63eb" />-->
 
 <img width="459" height="269" alt="0trfzzrk4horg" src="https://github.com/user-attachments/assets/0b211bf2-a79b-4852-b3bd-e0082869a463" />
 
