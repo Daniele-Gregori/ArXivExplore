@@ -7,7 +7,7 @@
 
 ### Basic Description<!--<<img width="8" height="17" alt="0h48vuc1v6z1z" src="https://github.com/user-attachments/assets/2e27ce24-9fed-4424-a8d2-07498dc2b2e6" />-->
 
-ArXivExplore helps the deep data analysis of all 2.6 million physics, math, cs, etc. articles on ArXiv, providing functionality for e.g. title/abstract word statistics; TeX source/formulae and citations dissection; neural networks for classification, clustering or recommendation; LLM automated concept definitions and author reports.
+ArXivExplore helps the deep data analysis of all 2.6 million physics, math, cs, etc. articles on ArXiv, providing functionality for e.g. title/abstract word statistics; TeX source/formulae and citations dissection; neural networks for classification, clustering or recommendation; LLM automated concept definitions and author reports. 
 
 ### WTC Presentation
 
