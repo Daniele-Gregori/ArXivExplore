@@ -1,0 +1,2715 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    173314,       2707]
+NotebookOptionsPosition[    166830,       2567]
+NotebookOutlinePosition[    167623,       2593]
+CellTagsIndexPosition[    167542,       2588]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["ArXivTeXSections", "ObjectName",
+ CellID->1133709796,ExpressionUUID->"a5be542e-9801-4d1f-b95a-d9abe8fa210f"],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo",ExpressionUUID->"280953cd-c2af-4d3a-85ff-527e92315d5f"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["ArXivTeXSections",
+    BaseStyle->"Link",
+    ButtonData->"paclet:DanieleGregoriArXivExplore/ref/ArXivTeXSections"], 
+   "[", 
+   StyleBox["id", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+  "6e4b9aa0-223c-4e23-bb57-7b1b274e53f4"],
+ "\[LineSeparator]scrapes from the ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{"T", 
+     AdjustmentBox["E",
+      BoxBaselineShift->0.5,
+      BoxMargins->{{-0.3, 0}, {0, 0}}], "X"}],
+    SingleLetterItalics->False], TraditionalForm]],ExpressionUUID->
+  "95162c6a-cb22-4db1-916b-9dd7b4cca407"],
+ " source the sections of a given article id."
+}], "Usage",
+ CellChangeTimes->{
+  3.931148382770129*^9, {3.931148837582111*^9, 3.931148845305529*^9}, {
+   3.931148922148383*^9, 3.931148923125742*^9}},
+ CellID->1785625188,ExpressionUUID->"2cd37853-8f3e-43a4-9b6c-a602dd718af4"],
+
+Cell["\<\
+Notice: to improve in later paclet versions, because it does not always work.\
+\
+\>", "Notes",
+ CellChangeTimes->{{3.9311485708861427`*^9, 3.931148598571807*^9}},
+ CellID->2066051538,ExpressionUUID->"43e23520-0d95-470d-9ceb-0c9daa70c762"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "See Also",
+ Cell[BoxData[
+  TemplateBox[{"SeeAlso", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related reference (function) pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "31fc4d4f-a3e6-4978-9366-3c2346debcc6"]
+}], "SeeAlsoSection",
+ CellID->1465110823,ExpressionUUID->"364cff40-436f-4dcd-b8f4-c57165c343d6"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TagBox[
+   FrameBox["\<\"XXXX\"\>"],
+   "FunctionPlaceholder"]], "InlineSeeAlsoFunction",
+  TaggingRules->{"PageType" -> "Function"},ExpressionUUID->
+  "a075441b-9221-48ad-b8c4-92e230aa2c44"],
+ Cell[BoxData[
+  RowBox[{
+  Cell[TextData[StyleBox[
+   " \[FilledVerySmallSquare] ", "InlineSeparator"]],ExpressionUUID->
+    "63489a3d-dd21-43f3-b4a3-561d7cf9f4d3"], 
+   DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
+    "822ce435-c70a-46e3-b6a4-2c08813c64f2", 
+     "c7a34af7-9c6e-4186-a673-b8d002fe6042"], $CellContext`cellobj$$ = 
+    CellObject[
+    "17c86643-9c6d-4413-acf2-4b34a2b3346a", 
+     "d1ebf24f-4394-4c12-b619-406c6dbb3e53"]}, 
+    TemplateBox[{
+      GraphicsBox[{{
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         CircleBox[{0, 0}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{0, 0.62}, {0, -0.62}}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{-0.62, 0}, {0.62, 0}}]}}, 
+       ImagePadding -> {{1., 1.}, {2.4, 1.}}, ImageSize -> 16, 
+       PlotRange -> {{-1.06, 1.06}, {-1.06, 1.06}}, 
+       BaselinePosition -> (Center -> 
+        Center)], $CellContext`nbobj$$, $CellContext`cellobj$$},
+     "InlineListingAddButton"],
+    Initialization:>($CellContext`nbobj$$ = 
+      EvaluationNotebook[]; $CellContext`cellobj$$ = EvaluationCell[])]}]], 
+  "InlineListingAddButton",ExpressionUUID->
+  "17c86643-9c6d-4413-acf2-4b34a2b3346a"]
+}], "SeeAlso",
+ CellID->1070105659,ExpressionUUID->"5057eaa2-71a6-4ff7-bf0b-c06485dbb5e8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Tech Notes",
+ Cell[BoxData[
+  TemplateBox[{"TechNotes", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Insert links to related tech notes.", "MoreInfoText"], BaseStyle -> 
+       "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "b0e4429f-0337-4f38-8289-5628e273749c"]
+}], "TechNotesSection",
+ CellID->90267188,ExpressionUUID->"cf8f97d6-8435-472d-9ba2-0ede7f06987c"],
+
+Cell["XXXX", "Tutorials",
+ CellID->997173934,ExpressionUUID->"353b3a31-5274-465e-9196-d93f50c70d3d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "MoreAboutSection",
+ CellID->539927550,ExpressionUUID->"30d2ba0e-1ace-49ca-8aa3-b003caa8b5b1"],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1443924275,ExpressionUUID->"0a1806b2-0570-4b75-aea8-38b5f80fbc25"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Related Links",
+ Cell[BoxData[
+  TemplateBox[{"RelatedLinks", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related page, including web pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "551ec6f7-80b0-4831-8f06-2e3c188c4be4"]
+}], "RelatedLinksSection",
+ CellID->1470078825,ExpressionUUID->"86ec46df-82ad-4af7-b638-2ea3d6bf639c"],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->815453040,ExpressionUUID->"ba283bff-2737-4f67-ae58-d3a369377f6b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Examples Initialization",
+ Cell[BoxData[
+  TemplateBox[{"ExamplesInitialization", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Input that is to be evaluated before any examples are run, e.g. \
+Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]], 
+     "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "30077f1c-0322-4333-b7ce-3375625380aa"]
+}], "ExamplesInitializationSection",
+ CellID->78608126,ExpressionUUID->"835ed685-f837-4189-b8e2-4ba21092505d"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<DanieleGregori`ArXivExplore`\>\"", 
+  "]"}]], "ExampleInitialization",
+ CellID->464330777,ExpressionUUID->"1571d95b-2ea5-41cc-aa8d-e4d9312430c9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox[
+      RowBox[{"Basic", " ", "Examples"}], "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->51795841,ExpressionUUID->"b3b9ebd4-bfca-4fab-bde4-5742cec86fd9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ArXivTeXSections", "[", 
+   RowBox[{"Echo", "@", 
+    RowBox[{"RandomChoice", "[", 
+     RowBox[{"ArXivIDs", "[", "All", "]"}], "]"}]}], "]"}], "//", 
+  "TabView"}]], "Input",
+ CellChangeTimes->{{3.930416079819147*^9, 3.930416103816791*^9}, {
+  3.931148475956662*^9, 3.9311484764589157`*^9}},
+ CellLabel->"In[11]:=",
+ CellID->2057254462,ExpressionUUID->"58df7bb6-7b10-4f2e-9ba0-f303662d0a9d"],
+
+Cell[BoxData["\<\"2107.06696\"\>"], "Echo",
+ CellChangeTimes->{3.9311485123622093`*^9},
+ CellID->17259409,ExpressionUUID->"501b861c-00b8-47e4-8fc1-b41721315628"],
+
+Cell[BoxData[
+ TabViewBox[{{1,
+  "1"->"\<\"\\\\begin{document}\\n\\\\maketitle\\n\\n\\\\begin{abstract} The \
+spontaneous formation and subsequent growth, dissolution, merger and \
+competition of social groups bears similarities to physical phase transitions \
+in metastable finite systems.\\n  We examine three different scenarios, \
+percolation, spinodal decomposition and nucleation, to describe the formation \
+of social groups of varying size and density. \\n  In our agent-based model, \
+we use a feedback between the opinions of agents and their ability to \
+establish links.\\n  Groups can restrict further link formation, but agents \
+can also leave if costs exceed the group benefits.\\n  We identify the \
+critical parameters for costs/benefits and social influence to obtain either \
+one large group or the stable coexistence of several groups with different \
+opinions.\\n  Analytic investigations allow to derive different critical \
+densities \\n  that control the formation and coexistence of groups.\\nOur \
+novel approach sheds new light on the early stage of network growth and the \
+emergence of large connected components.     \\n\\n\\n\\\\end{abstract}\\n\\n\
+\\n\\n\\n\\n\"\>"}, {2,
+  "2"->"\<\"{Introduction}\\n\\\\label{sec:introduction}\\n\\nModels of \
+social systems frequently utilize the network approach where\\nnodes \
+represent individuals, or agents in general, while links represent social \
+interactions between individuals.\\nThis approach is widely used not only in \
+social physics \
+\\\\citep{weidlich-book-00,castellano2009,Schweitzer2018,BATTISTON20201}, but \
+also in the social sciences which have established their own tradition to \
+study social networks already back in the 1940s \
+\\\\citep{scott1988social,prell2012social}.\\nIt advocates a \
+\\\\emph{structural} perspective where nodes can be characterized based on \
+the topological properties of the network.\\nThe different centrality \
+measures to quantify the importance of nodes are good examples to demonstrate \
+the success of this approach \
+\\\\citep{friedkin1991theoretical,everett2005extending,bonacich}.\\nAt the \
+same time, they also illustrate the limitations of the structural \
+perspective.\\nThe temporal sequence of interactions is neglected \
+\\\\citep{Scholtes2016,falzon2018embedding}, despite the fact that the bursty \
+nature of the social dynamics is important \
+\\\\citep{Karsai-Bursty}.\\nFurther, the internal dynamics of nodes play no \
+role \\\\citep{macy2002factors,Schweitzer2020}.\\nIf agents represent social \
+individuals, internal degrees of freedom cannot be ignored \
+\\\\citep{bonabeau2002agent,M_s_2013,macy2002factors}.\\nIndividuals make \
+decisions, for example to whom to establish a relation or when to leave a \
+group, they consider costs and benefits before joining, e.g., an online \
+social network.\\nHence, links between individuals are not primarily \
+established by chance, but by choice.\\nThe \\\\emph{Why} matters as much as \
+the \\\\emph{How}.\\n\\nThese issues become of importance when the \
+\\\\emph{formation} of networks shall be explained.\\nEstablished model \
+classes from the social sciences, for instance exponential random graph \
+models (ERGM) \\\\citep{lusher2013exponential,cranmer2011inferential}, aim at \
+including social mechanisms such as homophily, reciprocity  or triadic \
+closure \\\\citep{currarini2016simple,gorski2020homophily,block2019forms,\
+Schweitzer2019} to explain the formation of social links.\\nThe problems of \
+these models to cope with repeated interactions, the temporal order of \
+interactions, or simply with a large number of agents, cannot be discussed \
+here \\\\citep{leifeld2018temporal,krivitsky2011adjusting}.\\n\\nBut models \
+proposed in the context of statistical physics or random graph theory do not \
+fare better.\\nThey mostly feature even simpler mechanisms of random link \
+formation,\\nlike the random graph models from the 1950s \
+\\\\citep{erdos_1960,gilbert_1959} or the small world network model \
+\\\\citep{watts1998collective}. \\nThe probability of link formation can be \
+also biased to take into account, e.g. the preferential attachment to nodes \
+with a high degree or a high (static) ``fitness'' \
+\\\\citep{golosovsky2018mechanisms,musmeci2013bootstrapping}, or to nodes \
+with similar degree (assortativity) \
+\\\\citep{noldus2015assortativity,catanzaro2004social}.\\nSuch models have \
+the problem, in addition to the \\\\emph{ad hoc} motivation of the attachment \
+rules, that they necessarily lead to a largely \\\\emph{connected} network \
+characterized by a certain degree distribution.\\nThat is understandable \
+because their focus is on the \\\\emph{result}\\nrather than the \
+\\\\emph{process} of network formation.\\n\\nOur aim is to change this focus \
+toward the early stages of network growth.\\nTo adequately capture this \
+dynamics, we develop a new perspective that combines processes of social \
+group formation with physical models of phase transitions.\\nOur approach \
+considers that large connected social systems can emerge from  different \
+mechanisms \
+\\\\citep{Fronczak2007,rivera2010dynamics,PODOBNIK2019613,Capocci2006,\
+arenas2008motif,Singh2016}.\\nOnline social networks are the most studied \
+ones \\\\citep{musial2013creation,bielenberg2012growth,mislove2008growth,\
+garcia2013b,Capocci2006}.\\nThey grow when new users join and link to \
+established users .\\nThe costs involved are low, therefore we \\nobserve a \
+high entry rate, and users create many links.\\nThis often results in a large \
+connected component and a core-periphery structure of the social network \
+\\\\citep{BATTISTON20201,Garc_a_Mu_iz_2006,Gamble_2015}.\\nDisconnected \
+components also exist, but they are comparably small and only contain a \
+negligible fraction of users.\\n\\nIn the offline social world it is more \
+costly to establish links.\\nIt is already costly to find the right partners, \
+relations need to be maintained with more effort and will be discarded if not \
+beneficial \\\\citep{Schweitzer2019c,Collins2018}.\\nHence, instead of one \
+large connected network, we find a number of different groups coexisting \
+\\\\citep{Onnela2011,Brodka2013}.\\nIndividuals are densely connected within, \
+but not necessarily across groups \
+\\\\citep{granovetter_1973,BATTISTON20201,bianconi2014triadic}.\\nIndividuals \
+can leave a group to join another one, groups can also merge if they find \
+that they have enough in common.\\nFurther, groups can polarize \
+\\\\citep{macy2003polarization,flache2017,schweighofer_2020_2,schweighofer_\
+2020} because they represent different cultures or opinions, they can compete \
+for members that have to be convinced to join \
+\\\\citep{Boyd2009,M_s_2013,groeber_2009_2}.\\n\\nIn order to model these \
+processes of group formation from a unifying perspective, we need to consider \
+a number of social ``ingredients'', which are explained in more detail in \
+Section~\\\\ref{sec:basics}.\\nAgents in our model have to overcome an entry \
+barrier if they want to form a new group or join an existing one.\\nThey \
+should consider costs and benefits of belonging to a group \
+\\\\citep{Wilkins2010,Schweitzer2019c}. \\nGroups can influence their members \
+and can build up a group identity. \\nBased on this, groups should have the \
+ability to restrict the admission of agents.\\nIn addition to the formation \
+of one large group, we should also allow for the stable coexistence of \
+different groups, even for competition between groups.\\n\\nTo achieve such a \
+unifying perspective, we build on one central feedback.\\nIn our model, \
+agents are characterized by an internal continuous variable, generally \
+speaking an ``opinion'', which can change over time.\\nTheir opinion \
+determines the possibility to establish links to other agents, this way \
+forming a group.\\nThe group, on the other hand, influences the ability of \
+its members to create further links.\\nHence, there is a feedback between \
+\\\\emph{opinion dynamics} and \\\\emph{group formation}.\\nWith additional \
+assumptions about socially motivated costs and benefits and about the \
+boundary conditions for network formation we are able to develop a large \
+variety of group structures as demonstrated in \
+Section~\\\\ref{sec:clust-form-netw}. \\n\\nThe physical models of phase \
+transitions come into play when we try to distinguish \\\\emph{three \
+different scenarios} of group formation and their ability to establish one \
+large group.\\nFor this classification, we develop analogies between group \
+formation \\nof individuals and phase transitions in metastable and unstable \
+thermodynamic systems.\\nThe spontaneous formation of a new phase under \
+supercritical conditions is known from spinodal decomposition \
+\\\\citep{cahn1965phase,langer1971theory} and from  percolation in porous \
+media \\\\citep{Stauffer_1979}.\\nNucleation processes, on the other hand, \
+first lead to a larger number of clusters of subcritical size and only a few \
+may spontaneously grow, to form the new thermodynamic phase \
+\\\\citep{abraham1974homogeneous, Book-Ulbricht1988,oxtoby1992homogeneous, \
+schmelzer2005nucleation}.  \\n\\nFrom these three scenarios, so far only \
+percolation has been discussed in the context of network formation \
+\\\\citep{Shao2009, Allard2018,Eguiluz2003,solomon-et-00, Callaway2000, \
+schweitzer_2021}.\\nWhen gradually adding links and nodes to a network, \
+\\npercolation describes in the emergence of a giant connected component, \
+which resembles a second-order phase transition.\\nRecently, models for \
+explosive percolation have been proposed that allow for new universality \
+classes in the characterization of such phase transitions.\\nThese models \
+introduce new mechanisms, such as the product rule \
+\\\\citep{achlioptas_2009}, to influence the type of phase transitions.\\nBut \
+nucleation or spinodal decomposition as established mechanisms of \
+thermodynamic phase transitions have not been considered to describe the \
+formation of networks.\\n\\nWe will close this gap in our paper, which is \
+organized as follows:\\nIn Section~\\\\ref{sec:basics}, we recap some basics \
+of thermodynamic phase transitions, to provide the concepts later used in the \
+paper.\\nThe main part of this section is devoted to introduce, and to \
+formalize, the social components of our model.\\nWe will also demonstrate how \
+the restrictions for agents to form links impact the percolation threshold as \
+one measure of a phase transition.\\n\\nIn \
+Section~\\\\ref{sec:clust-form-netw}, we introduce a stochastic approach to \
+group formation by motivating transition rates for different processes of \
+growth and dissolution of groups.\\nWe then present a large number of \
+agent-based computer simulations to illustrate the three different scenarios.\
+\\nEventually, we provide a systematic study of the parameter space, to \
+distinguish the three scenarios.\\n\\nSection~\\\\ref{sec:analyt-invest} \
+presents analytical investigations of our model and corresponding computer \
+simulations, to fully understand the growth, dissolution, competition and \
+coexistence of groups.\\nBy analyzing two limit cases, incremental growth and \
+densification, we are able to derive formal expressions for critical \
+densities that capture the essential differences in the dynamics of \
+groups.\\n\\nIn Section~\\\\ref{sec:discussion-1}, we spend effort to \
+assemble the various analytical and simulation results into a comprehensive \
+and coherent view of group formation as a phase transition.\\nWe then link \
+the discussion back to our starting point, by examining the relevance of our \
+results for modeling social systems.\\nEventually, we provide insights of how \
+our modeling approach shall be applied and extended toward multidimensional \
+opinion dynamics and multi-layer networks.\\nIt manifests that our modeling \
+approach sheds new lights on social processes of group formation, and has the \
+potential to open new routes \\nto study the dynamics of social \
+networks.\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\\
+n\\n\"\>"}, {3,
+  "3"->"\<\"{From physical to social models}\\n\\\\label{sec:basics}\\n\\n\\n\
+\\\\subsection{Kinetics of phase \
+transitions}\\n\\\\label{sec:mech-phase-trans}\\n\\n\\\\paragraph{Control \
+parameter. \\\\ }\\n\\nAs a reference point for our discussions, we shortly \
+summarize kinetic aspects of phase transitions in thermodynamic systems \
+\\\\citep{Book-Ulbricht1988,oxtoby1992homogeneous,schmelzer2005nucleation}.\\\
+nConsider a finite system in a gaseous state with the boundary conditions \
+$N,V,T$ = const.\\n$N$ is the number of molecules in a vapor, for example, \
+$V$ is the system volume and $T$ is the temperature.\\nThe corresponding \
+thermodynamic potential is the free energy $F(N,V,T)$.\\nFor fixed $N$, $V$ \
+the temperature determines the stability of the gaseous \
+system.\\nSpecifically, we can define a density $\\\\rho=N/V$ and an \
+equilibrium density $\\\\rho^{\\\\mathrm{eq}}(T)$.\\nThen the control \
+parameter $y=\\\\rho/\\\\rho^{\\\\mathrm{eq}}(T)$, known as \
+\\\\emph{supersaturation}, describes whether the system is in an equilibrium, \
+$y=1$ or an unstable state, i.e. $y\\\\gg 1$.\\nIn the  supersaturated case, \
+we can observe a phase transition, for instance the formation of small water \
+droplets in a water vapor.\\nWhether a macroscopic liquid phase is formed, \
+crucially depends on the size of the system and the value of the \
+supersaturation \\\\citep{09-fs-lsg-87}.\\nSystem size matters because of the \
+conservation of molecules.\\nIf droplets are formed, we have a thermodynamic \
+system with two phases, the gaseous phase $(\\\\beta)$ and the liquid phase \
+$(\\\\alpha)$.\\nHence\\n\\\\begin{align}\\n  \\\\label{eq:30}\\n  \
+N=&N_{0}(t)+\\\\sum_{k=1}^{K}n_{k}(t) N_{k}(t)\\n\\\\end{align}\\n\\nwhere \
+$N_{0}$ is the number of molecules in the gaseous phase, while the sum \
+contains the number of molecules in the liquid phase. \\n$n_{k}$ is the size \
+of a droplet, given by the number of molecules, and $N_{k}$ is the number of \
+droplets with size $n_{k}$.\\nThus, once droplets are formed, the initial \
+supersaturation $y$ decreases, and we have instead the \\\\emph{actual} \
+supersaturation \
+$y_{0}(t)=N_{0}(t)/[V\\\\rho^{\\\\mathrm{eq}}(T)]$.\\n\\nAdditionally, there \
+are energetic considerations.\\nAssume spherical droplets with a radius \
+$r_{k}=[3n_{k}/(4\\\\pi\\\\rho_{\\\\alpha})]^{1/3}$, where \
+$\\\\rho_{\\\\alpha}$ is the density of the liquid phase.\\nThese droplets \
+are characterized by a surface tension $\\\\sigma$.\\nThe formation of this \
+surface requires the Gibbs surface energy $W=(4\\\\pi\\\\sigma/3)r_{k}^{2}$, \
+while the formation of the bulk phase releases energy \
+\\\\citep{schmelzer2006classical}.\\nThis results in a critical droplet \
+radius\\n\\\\begin{align}\\n  \\\\label{eq:31}\\n  \
+r^{\\\\mathrm{cr}}=\\\\frac{2\\\\sigma}{C}\\\\frac{1}{\\\\ln \
+y}\\n\\\\end{align}\\nwhere $C$ is a dimensionality constant that contains \
+the density $\\\\rho_{\\\\alpha}$ and the temperature. \\nDroplets that have \
+reached the critical size will grow further until the free energy has reached \
+its minimum. \\nBut to obtain the critical size requires to overcome the \
+energy barrier characterized by a maximum of the free energy and needs to \
+consider fluctuations \
+\\\\citep{abraham1974homogeneous,17-fs-88}.\\n\\\\paragraph{Three scenarios \
+of phase transitions. \\\\ }\\n\\n\\nEqn.~\\\\eqref{eq:31} already points to \
+the conditions under which phase transitions occur.\\nWe can use these \
+conditions to distinguish between three different scenarios. \\nFirstly, we \
+can have a very large initial supersaturation $y$, which characterizes an \
+unstable system.\\nThen the energy barrier is negligible and the macroscopic \
+liquid phase forms immediately, surrounded by the saturated gaseous phase. \
+\\nThis is known as \\\\emph{spinodal decomposition} \
+\\\\citep{cahn1965phase,langer1971theory}.\\n\\nSecondly, we can have a \
+medium initial supersaturation, but a negligible\\nvalue of the surface \
+tension $\\\\sigma$.\\nThen, again, the energy barrier is negligible, and a \
+macroscopic liquid phase forms until the system saturates.\\nThis dynamics \
+has analogies to \\\\emph{percolation}, where links are formed between \
+occupied lattice sites \\\\citep{Stauffer_1979}.\\nIt is known that for a 2d \
+regular lattice of size $N$ the critical density is \
+$\\\\rho^{\\\\mathrm{cr}}=n_{c}/N=0.593$, i.e. if $n_{c}$ lattice sites are \
+occupied, we can expect to find a percolating cluster in the limit of large \
+$N$, which is the equivalent of a macroscopic phase. \\nThere is no surface \
+tension involved in the formation of clusters.\\n\\nThe third scenario, \
+\\\\emph{nucleation}, is the most interesting one.\\nIt is characterized by a \
+medium initial supersaturation and a non-negligible surface tension.\\nThis \
+implies a rather large energy barrier and thus a large critical \
+radius.\\nHence, the system is initially in a \\\\emph{metastable} \
+state.\\nThis results in the formation of a larger number of small  droplets \
+of subcritical size.\\nDependent on the supersaturation, a fraction of these \
+droplets can reach a supercritical size and grow further.\\nThis reduces the \
+actual supersaturation drastically and no new droplets can form.\\nBut the \
+supercritical droplets still have to form a macroscopic phase.\\nThis dynamic \
+process is known as Ostwald ripening \
+\\\\citep{voorhees1985theory,marqusee1983kinetics,12-schmelzer-fs-87-b,Book-\
+Ulbricht1988}.\\nEstablished droplets can grow further only \
+if:\\n\\\\begin{align}\\n  \\\\label{eq:32}\\n  \\\\frac{dr_{k}(t)}{dt}& \
+=\\\\frac{2\\\\sigma}{C} \
+\\\\left[\\\\frac{1}{r_{0}^{\\\\mathrm{cr}}(t)}-\\\\frac{1}{r_{k}(t)}\\\\\
+right]\\n\\\\end{align}\\nHere, $r_{0}^{\\\\mathrm{cr}}(t)={2\\\\sigma}/{[C\\\
+\\ln y_{0}(t)]}$ is the actual critical radius that depends on the actual \
+supersaturation $y_{0}(t)$.\\nDroplets with a subcritical radius shrink via \
+re-evaporation, which allows droplets with a supercritical radius to further \
+grow. \\nAdditionally, processes of \\\\emph{coagulation} can be considered \
+which  happen if droplets of different size collide.\\nAlso processes of \
+\\\\emph{fragmentation} can occur, but for droplets they are \
+negligible.\\n\\n\\n\\\\subsection{Group \
+formation}\\n\\\\label{sec:mech-group-form}\\n\\nHow can we link the three \
+different scenarios for phase transitions summarized above to the formation \
+of social groups?\\nJust renaming droplets as groups will not lead to any new \
+insights,\\nbut would be also wrong.\\nWe shortly discuss the main \
+differences in the following.\\n\\n\\\\paragraph{Groups with varying density. \
+\\\\ }\\n\\nFirstly, social groups are not spherical clusters with radius \
+$r_{k}$, equal bulk density $\\\\rho_{\\\\alpha}$ and equal surface tension $\
+\\\\sigma$.\\nThey are rather like small \\\\emph{networks} (see \
+Figure~\\\\ref{fig:symbolic representation}), characterized by the number of \
+group members  which we call \\\\emph{agents} in the following, and the \
+number of links that connect them.\\nConnected agents form a \\\\emph{group} \
+$g_{k}[n_{k},m_{k}]$, where $k$ is the group \\\\emph{index}, $n_{k}$ is the \
+number of agents and $m_{k}$ is the number of links in group $k$.\\n$K$ then \
+denotes the \\\\emph{total number} of groups, which can change over time. \\n\
+\\nWe further define a group density $\\\\rho_{k}=2m_{k}/n_{k}$.\\nIt  is not \
+a constant either, but can change by agents joining or leaving or by adding \
+or removing social links.\\nThe factor of 2 reflects that each link connects \
+two agents, so we normalize the number of links to $n_{k}/2$. \\nNote that \
+$\\\\rho_{k}$ is normalized to the \\\\emph{size} of the group rather than to \
+the number of possible links, $n_{k}(n_{k}-1)$,  as used in network science. \
+\\nIndeed, our definition is akin to the average degree of an agent in the \
+group.\\n\\nThe minimum number of links in a group is \
+$m_{k}^{\\\\mathrm{min}}=(n_{k}-1)\\\\simeq n_{k}$, i.e. each agent is \
+connected via only one link, for example in a star-like topology.\\nHence $\\\
+\\rho_{k}=2n_{k}/(n_{k}-1)\\\\simeq 2$  if only \\\\textit{incremental \
+growth} is considered, i.e. groups grow by incorporating one new agent at a \
+time through the formation of a single link.\\nNote that $\\\\rho_{k}=2$ is \
+the limiting density for large groups in the case of incremental \
+growth.\\nSmall groups always start from two agents with one link, i.e. \
+$\\\\rho_{k}=1$.\\n\\nOn the other hand, the maximum number of (undirected) \
+links in a group is $m_{k}^{\\\\mathrm{max}}=n_{k}(n_{k}-1)/2\\\\simeq \
+n_{k}^{2}/2$, i.e. agents form a fully connected network.\\nThen \
+$\\\\rho_{k}^{\\\\mathrm{max}}=(n_{k}-1)\\\\simeq n_{k}$ is the maximum \
+density\\nif groups are allowed to densify, i.e. agents create links within a \
+group. \\nWith these considerations it holds that  $\\\\rho_{k}\\\\in \
+[1,\\\\{2, n_{k}\\\\}]$.\\n\\n\\\\paragraph{Group utility. \\\\ }\\n\\nTo \
+further distinguish social groups from droplets, we characterize groups of \
+different $n_{k}$, $m_{k}$ by means of a \
+\\\\emph{utility}:\\n\\\\begin{align}\\n  \\\\label{eq:88}\\n  \
+u_{k}[n_{k},m_{k}] = b m_{k} - c n_{k}\\n\\\\end{align}\\nIt reflects the \
+social insight that being part of a group has benefits and costs.\\nThe \
+benefits $bm_{k}$ arise from the existence of links within a group.\\nMore \
+links allow more interactions, a better exchange of information, etc., as \
+argued in management science \\\\citep{Uzzi-network-effect}.\\nThis differs \
+from definitions of utilities in, e.g., economics that assign maintenance \
+\\\\emph{costs} to links \\\\citep{Battiston2012}.\\nOn the other hand, \
+maintaining a group is costly, therefore \\n$cn_{k}$ denotes a cost \
+proportional to the number of agents that need to be integrated into the \
+group.\\nThe linear form for the utility function is chosen because of its \
+minimal assumptions.\\nWe have no evidence for suitable nonlinear \
+forms.\\nFurther, we do not make the utility dependent on local substructures \
+of the group that differ across agents, but on the group as a whole. \
+\\n\\nOnce groups are established, agents will consider costs and benefits \
+from being part of a group and will leave if not satisfied, as explained \
+later in Sect.~\\\\ref{sec:transition-rates}.\\n\\nThe \\\\emph{maximum} \
+utility is $u_{k}^{\\\\mathrm{max}}=(b/2)\\\\, n_{k}^{2} - c n_{k}$.\\nThe \\\
+\\emph{minimum} utility, on the other hand, is \
+$u_{k}^{\\\\mathrm{min}}=(b-c)n_{k}$.\\nThus, if $(b-c)<0$, \
+$u(n_{k},m_{k})=0$ defines the minimum size of a group to have a positive \
+utility, namely $\\\\hat{n}_{k}=(b/c)m_{k}$.\\nUsing the group density \
+$\\\\rho_{k}=2m_{k}/n_{k}$, \\nthe respective density is then: \
+$\\\\hat{\\\\rho}=2c/b$.\\nThis allows us to rewrite the utility \
+as\\n\\\\begin{align}\\n  \\\\label{eq:24}\\n  u_{k}(n_{k},\\\\rho_{k}) = c\\\
+\\, n_{k}\\\\left[\\\\frac{\\\\rho_{k}}{\\\\hat{\\\\rho}}-1 \
+\\\\right]\\n\\\\end{align}\\nAs we will show below, \\ngroups with \
+$\\\\rho_{k}> \\\\hat{\\\\rho}$ likely remain or even grow, while groups with \
+$\\\\rho_{k}< \\\\hat{\\\\rho}$ likely \
+dissolve.\\n\\n\\\\paragraph{Homophily. \\\\ }\\n\\nIn addition to the \
+varying densities $\\\\rho_{k}$ and utilities $u_{k}$, there are dynamic \
+peculiarities that distinguish social groups from droplets.\\nThe social \
+principle of \\\\emph{homophily} \
+\\\\citep{mcpherson2001birds,mcmillan2022worth,gorski2020homophily,\
+currarini2016simple} states that agents tend to interact more often with \
+those others that are similar in some respect.\\nTo formalize this, we \
+characterize agents by a \\\\emph{scalar variable} $x_{i}$, drawn from a \
+uniform distribution $U(0,1)$.\\n$x_{i}(t)$ could represent, in a very \
+general sense, the \\\\emph{opinion} of agent $i$ with respect to some issue, \
+which can change over time as will be discussed below.\\nThe uniform \
+distribution of initial opinions is chosen because it requires the least \
+constraints and because it  allows to consider more extreme opinions, which \
+are likely to be underrepresented by a normal distribution.\\n\\nTwo randomly \
+chosen agents $i$ and $j$ will successfully interact only if the difference \
+in their $x$ values is below a certain \\\\emph{threshold} $\\\\epsilon$, \
+which is also interpreted as a \\\\emph{tolerance} for deviating \
+opinions.\\nTo formalize this, we introduce a variable:\\n\\\\begin{align}\\n \
+ \\\\label{eq:19}\\n  z_{ij}(t)= \\\\epsilon - \
+\\\\abs{x_{j}(t)-x_{i}(t)}\\n\\\\end{align}\\nAgents successfully interact \
+only if $z\\\\geq 0$.\\nTheir interaction triggers another feedback, \
+\\\\emph{convergence}: Because of \\\\emph{social influence} \
+\\\\citep{mavrodiev2013quantifying,flache2017,groeber_2014,flache2011local} \
+agents' opinions tend to become more similar if they interact more \
+\\\\citep{Helbing2011crowd, mavrodiev_2021}.\\nTo include a dynamics for \
+$x_{i}(t)$, we adopt for simplicity the bounded confidence model \
+\\\\citep{deffuant_2000,hegselmann_2002,lorenz_2007,groeber_2009_2}.\\nA more \
+complex opinion dynamics for multidimensional opinions can be considered as \
+well \\\\citep{schweighofer_2020,schweighofer_2020_2}.\\nTwo randomly chosen \
+agents $i$ and $j$ update their opinions $x_{i}$, $x_{i}$ \\\\emph{if} they \
+interact as follows:\\n\\\\begin{equation}\\n  \\\\label{eq:mean}\\n  \
+\\\\frac{\\\\Delta x_{i}(t)}{\\\\Delta t}= \\\\gamma \\\\left[x_{j}(t) - \
+x_{i}(t)\\\\right] \\\\Theta[z_{ij}(t)]\\n\\\\end{equation}\\nHere \
+$\\\\mathrm{\\\\Theta}[z]$ is the Heaviside function, which returns 0 if \
+$z<0$ and 1 if $z\\\\geq 0$. \\nIf we choose the maximum value \
+$\\\\gamma=0.5$, there is convergence to the mean $(x_{i}+x_{j})/2$ in one \
+time step.\\nSmaller values of $\\\\gamma$ require more interactions to \
+obtain more similar opinions. \\nWe note that the dynamics of \
+Eqn.~\\\\eqref{eq:mean} together with a random sequential update of agents' \
+opinions is \\\\emph{path dependent}, i.e. the sequence of interactions \
+matters for determining the final opinion of an agent. \
+\\n\\n\\\\paragraph{Group formation and group influence. \\\\ }\\n\\nOur main \
+assumption is that group formation builds on successful interactions.\\nThat \
+means, if  two randomly chosen agents $i$ and $j$ are able to interact \
+because their opinions are similar enough, $z_{ij}>0$, they will also form a \
+link, $a_{ij}=1$: \\n\\\\begin{align}\\n  \
+\\\\label{eq:19a}\\na_{ij}(t)=\\\\mathrm{\\\\Theta}[z_{ij}]\\n\\\\end{align}\\\
+nThis is the central mechanism for the formation of groups:\\nwhile \
+interactions can happen randomly, \\nthe formation of links depends on \
+similarity, i.e. the partner is not randomly chosen.\\nThis considers that  \
+social interactions are costly.\\nWe emphasize that the existence of a link \
+indicates a \\\\emph{special relation} between agents, which is to be \
+distinguished from a mere interaction. \\nTherefore, once agents formed a \
+group with other agents of similar opinions, they tend to keep these \
+relations.   \\nThis implies that groups continue to have an influence on the \
+opinion of their members \\\\citep{holyst2001social}, which is captured  in \
+an \\\\emph{effective opinion} \
+\\\\citep{groeber_2009_2}:\\n\\\\begin{align}\\nx_i^{\\\\textrm{eff}}(t) =& \
+\\\\left[1-\\\\alpha\\\\right]x_i(t) + \\\\alpha \\\\mean{x_i^k(t)}\\n        \
+           \\\\label{eq:13}\\n\\\\end{align}\\n$ \
+\\\\mean{x_i^k(t)}=\\\\sum_{j\\\\in \\\\abs{n_{k}}} x_{j}(t)/n_{k}$\\nis the \
+average opinion of group $k$, and $\\\\alpha$ weights its influence on agent \
+$i$.\\nConsidering the group influence, we can modify $z_{ij}$ in \
+Eqn.~\\\\eqref{eq:19} as follows: \\n\\\\begin{align}\\n  \\\\label{eq:33}\\n \
+ z_{ij}(t)= \\\\epsilon - \
+\\\\abs{x^{\\\\mathrm{eff}}_{j}(t)-x^{\\\\mathrm{eff}}_{i}(t)}\\n\\\\end{\
+align}\\nThat means, instead of the individual opinion of an agent, its \
+weighted opinion determines whether a link is formed or deleted.\\nIn the \
+limit $\\\\alpha=1$ the effective opinion for everyone in the group is the \
+same.\\n\\nWe emphasize that group influence reflects another social \
+mechanism, \\\\emph{triadic closure} \
+\\\\citep{klimek2013triadic,bianconi2014triadic,Schweitzer2019}.\\nOpen \
+triads refer to three agents $i$, $j$ and $k$ which are connected by only two \
+links $(i,j)$ and $(j,k)$.\\nThen the probability that either $i$ or $k$ form \
+the third link $(i,k)$  to close the triad is much larger than the \
+probability that either $i$ or $k$ form a link to an agent $r$ outside the \
+group.\\nWithout group influence, these probabilities would only depend on \
+$x_{i}$, $x_{k}$ and $x_{r}$.\\nWith group influence, \
+$x_{i}^{\\\\mathrm{eff}}$ and $x_{k}^{\\\\mathrm{eff}}$ become more similar, \
+so the likelihood that the link is formed inside the group increases.\\nThis \
+process will lead to the \\\\emph{densification} of the group to improve \
+triadic closure. \\n\\n\\n\\n\\\\subsection{Network \
+formation}\\n\\\\label{sec:basic-mechanisms}\\n\\n\\\\paragraph{Percolation \
+threshold. \\\\ }\\n\\nWe now change the perspective from the group level to \
+the system level, which can be described as a large social network.\\nThe \
+$a_{ij}$ defined in Eqn.~\\\\eqref{eq:19} are the entries of a symmetric \
+adjacency matrix $\\\\mathcal{A}$ of size $N\\\\times N$, which captures the \
+topology of the network.\\n\\nA group is a \\\\emph{disconnected component} \
+of this network.\\nInitially, social groups may form spontaneously in a \
+random  manner.\\nTherefore in an early stage of the network evolution we may \
+expect a larger number of disconnected components. \\nThe number of these \
+disconnected components, their sizes and their  densities can grow and shrink \
+over time. \\nA phase transition is characterized by the emergence of a \
+\\\\emph{giant connected component}, i.e. one group of macroscopic size that \
+includes most of the agents.\\n\\nTo better understand the conditions under \
+which we can expect the formation of a giant connected component in the \
+network, let us turn to one of the simplest network models, known as the \
+$G(N,M)$ model.\\nIt requires to fix the number of agents, $N$, and the total \
+number of links, $M$.\\nInitially there is no network.\\nIt is formed \
+successively by randomly choosing, out of $N$ agents, two agents $i$ and $j$ \
+and connect them by a link. \\nEach established link diminishes the number of \
+available links by one.\\nThe process is repeated until all $M$ links are \
+spent.\\nThe result is a \\\\emph{random network} with characteristic \
+properties that can be described analytically \
+\\\\citep{Bollob_s_2001}.\\n\\nThe $G(N,p)$ model looses the assumption of a \
+fixed $M$ \\\\citep{gilbert_1959}.\\nInstead, two randomly chosen agents are \
+connected with a certain probability $p$, which is determined such that it \
+matches the \\\\emph{expected degree} $\\\\mean{d}$, i.e. the expected number \
+of links.\\nIf $N^{2}/2$ is the maximum number of links between $N$ agents \
+and $M$ the total number of links, we then find for \
+$p$:\\n\\\\begin{align}\\n  \\\\label{eq:18}\\n  \
+p=\\\\frac{2\\\\mean{M}}{N^{2}}\\\\;; \\\\quad \
+\\\\mean{d}=\\\\frac{2\\\\mean{M}}{N}=pN\\n\\\\end{align}\\n\\nThe question \
+whether we will observe a giant connected component from this simple \
+procedure depends on the total number of links, $M$, which has to have a \
+critical value, known as the percolation threshold.\\nBecause we do not \
+assume any underlying geometry, such as lattices, the percolation threshold \
+results from the condition $Np=1$ \
+\\\\citep{molloy_1995,schweitzer_2021}.\\nUsing the relations from \
+Eqn.~\\\\eqref{eq:18}, it follows directly that a percolating group can be \
+expected if $M^{\\\\mathrm{cr}}=N/2$.\\n\\nThis allows us to define an \
+initial supersaturation for \\\\emph{links} \
+$\\\\mu=M/M^{\\\\mathrm{cr}}$.\\nTo expect a phase transition via \
+percolation, we have to assume that\\n \
+$\\\\mu=\\\\mu^{\\\\mathrm{cr}}=1$.\\nThis result holds for infinite systems.\
+\\nFor finite systems, this value has to be larger as we will show in \
+Sect.~\\\\ref{sec:percolation}.\\nNevertheless, $\\\\mu^{\\\\mathrm{cr}}=1$ \
+is a good reference value to distinguish whether a system has the ability of \
+a phase transition.\\nWe could compare it to the supersaturation introduced \
+in Sect.~\\\\ref{sec:mech-phase-trans}, \
+$y=\\\\rho/\\\\rho^{\\\\mathrm{eq}}(T)$, which has the same interpretation, \
+just in a thermodynamic context. \\n\\n\\n\\\\paragraph{Restricted link \
+formation. \\\\ }\\n\\nThe above discussion holds as long as agents are not \
+restricted in their link formation.\\nIn our model, however, we have \
+introduced a threshold $\\\\epsilon$, Eqn.~\\\\eqref{eq:19}, which determines \
+whether two agents $i$ and $j$ can interact, i.e. can potentially form a \
+link. \\nSo far $\\\\epsilon$ was large enough to allow link formation \
+between \\\\emph{all} agents. \\nNow we consider that not all agents can \
+create links to all other agents, i.e. $\\\\epsilon\\\\ll 1$.\\n\\nTo still \
+ensure a phase transition, we have to calculate the critical  value of \
+$\\\\epsilon$ needed to allow for a sufficient number of links.\\nFor this we \
+follow an earlier approach \\\\citep{schweitzer_2021} that links percolation \
+in random networks with so-called \\\\emph{threshold networks}, i.e. networks \
+where the link formation is restricted by the tolerance threshold \
+$\\\\epsilon$.\\n\\nWe remind that the $x_{i}$ are uniformly distributed in \
+the interval $[0,1]$ and that for the formation of links $\\\\Delta x_{ij}=\\\
+\\abs{x_{j}-x_{i}}$ matters.\\nThe distribution function $P(\\\\Delta {x})$ \
+of the absolute difference between two uniform variables is given by the \
+\\\\emph{triangular distribution}.\\nThe cumulative probability $F(\\\\Delta \
+{x} \\\\leq \\\\epsilon)$ to find a value $\\\\Delta {x} \\\\leq \\\\epsilon$ \
+follows likewise:\\n\\\\begin{align}\\n  \\\\label{eq:5}\\n  P(\\\\Delta {x}) \
+=&\\\\ 2 -2 \\\\left(\\\\Delta {x} \\\\right) \\\\;; \\\\quad 0\\\\leq \
+\\\\Delta {x} < 1 \\\\nonumber \\\\\\\\\\nF(\\\\Delta {x} \\\\leq \
+\\\\epsilon) = &\\\\ 2 \\\\epsilon - \\\\epsilon^{2}\\n\\\\end{align}\\n$F(\\\
+\\epsilon)$ is the probability that for a randomly chosen pair of agents a \
+link is \\\\emph{possible}.\\nThis has to be multiplied by the independent \
+probability that this pair of agents is also chosen to form a link, which is \
+given by $p$.\\nHence, the condition for percolation $Np=1$ has to be \
+corrected by the factor $F(\\\\epsilon)$ that a link formation could not be \
+possible if opinions deviate.\\nWith this consideration and \
+Eqn.~\\\\eqref{eq:18} we find:\\n\\\\begin{align}\\n  \\\\label{eq:34}\\nNp\\\
+\\,F(\\\\epsilon)=\\\\frac{2\\\\mean{M}}{N}\\\\left[2\\\\epsilon \
+-\\\\epsilon^{2}\\\\right]  \\n\\\\end{align}\\nFrom this quadratic equation \
+for $\\\\epsilon$ \\nonly the lower value makes sense in our model because  $\
+\\\\epsilon$ has to have values between 0 and 1.\\nWith $\\\\mu=2M/N$, it \
+solves into:\\n\\\\begin{equation}\\n  \\\\label{eq:3}\\n  \
+\\\\epsilon^{\\\\mathrm{cr}} = 1 - \\\\sqrt{1 - \
+\\\\frac{1}{\\\\mu}}\\n\\\\end{equation}\\n$\\\\epsilon^{\\\\mathrm{cr}}$ \
+allows us to choose the tolerance for deviating opinions such that still a \
+giant connected component can emerge, dependent on the link supersaturation $\
+\\\\mu$.  \\nIf $\\\\mu=\\\\mu^{\\\\mathrm{cr}}=1$, i.e. we just have the \
+conditions for the onset of percolation in an infinite system, \
+$\\\\epsilon=1$, i.e. we cannot allow for restrictions in the \
+interactions.\\nThe higher the link supersaturation, the lower $\\\\epsilon$ \
+can be to still observe a giant connected component.\\n\\nFor $\\\\epsilon< \
+\\\\epsilon^{\\\\mathrm{cr}}$, we can only expect the formation of \
+disconnected components.\\nThis is similar to the bounded confidence model, \
+where  the value of $\\\\epsilon$ determines the final number of groups that \
+can each reach consensus.\\nFor this number, a rough estimate \
+$1/(2\\\\epsilon)$ was found. \\nThat means one group, i.e. a giant connected \
+component, can be only obtained for $\\\\epsilon\\\\geq \
+0.5$.\\n$\\\\epsilon\\\\leq 0.25$ would already result in two groups, i.e. \
+two disconnected components \\\\citep{deffuant_2000,lorenz_2007}.\\n\\nIn our \
+case, for $\\\\mu=3$, for instance, we find a giant connected component for $\
+\\\\epsilon\\\\geq 0.2$.\\nThis comparably low value becomes clear, because \
+the giant connected component is a ``spanning cluster'', i.e. it can be a \
+very sparse network, as long as it spans the whole system.\\nIn \
+Sect.~\\\\ref{sec:clust-form-netw}, \\nwe will illustrate how such giant \
+connected components look like.\\n\\nWe note that Eqn.~\\\\eqref{eq:3} is \
+derived under the assumption of uniformly distributed $x_{i}$.\\nIt does not \
+consider a change of this distribution at the same time scale as the \
+formation of the giant connected component.\\nHence, in order to apply \
+Eqn.~\\\\eqref{eq:3} we have to assume that $\\\\gamma$ in \
+Eqn.~\\\\eqref{eq:mean} is considerably small.\\nIn fact, in \
+Figure~\\\\ref{fig:perc} we later use $\\\\gamma$=0.1, and we further show in \
+Figure~\\\\ref{fig:time} that in the percolation scenario the formation of \
+the largest group occurs very fast.\\n\\n\\n\\n\\n\\n\\n\\n\"\>"}, {4,
+  "4"->"\<\"{Simulating group formation in \
+networks}\\n\\\\label{sec:clust-form-netw}\\n\\n\\\\subsection{Transition \
+rates}\\n\\\\label{sec:transition-rates}\\n\\nIn the following we lay out a \
+stochastic dynamics for the formation of groups.\\nAs the discussion in \
+Sect.~\\\\ref{sec:mech-phase-trans} made clear, we need to consider \
+fluctuations in order to describe the spontaneous formation of groups and \
+their growth up to a critical size.\\nThe dynamics of groups with a \
+supercritical size, on the other hand, can be described by a deterministic \
+dynamics, which will be developed in \
+Section~\\\\ref{sec:analyt-invest}.\\n\\nThe fundamental dynamics of \
+stochastic processes is described by a master equation.\\nThis can be defined \
+at different levels.\\nThe most explicit perspective starts from the \
+adjacency matrix that contains all information about links between \
+agents.\\nOur focus is \\\\emph{not} on the description of the full network, \
+but on the dynamics of individual groups.\\nThis leaves us still with the \
+choice between the group level or the full group distribution, \
+$\\\\pmb{N}=[N_{1,0},N_{2,1},N_{3,2},N_{3,3},...,N_{N,M}]$.\\nThe elements \
+$N_{n,m}$ count the number of groups of size $n$ with $m$ links.\\nThis \
+approach is summarized in appendix B.\\nIn the following, we focus on the \
+group level because we do not depend on the full description of the dynamics \
+of the state space.\\nIn fact, all our equations can be derived from the \
+simpler perspective.\\nHence, \\nin our case we start from \
+$p[g_{k}(n_{k},m_{k},t)]$, the probability to find group $k$ with $n_{k}$ \
+agents and $m_{k}$ links at time $t$.\\n\\n\\n\\nThe specification of the \
+dynamics requires to define the respective \\\\emph{transition rates} for the \
+change of these probabilities.\\nThis can be done in different ways.\\nLet us \
+first discuss the perspective of \\\\emph{agents}.\\nTo determine the \
+formation of a link $(i,j)$ between two randomly chosen agents $i$ and $j$, \
+we have to consider the probabilities (i) that agents $i$ and $j$ are chosen, \
+which is $1/N$ for each in a random sampling, and (ii) that they are able to \
+establish  a link which depends on the value of $z_{ij}$, \
+Eqn.~\\\\eqref{eq:33}, and (iii) that links are still available. \\n\\n$M$ is \
+the initial number of links which is limited because we distinguish between \
+interactions and links.\\nThe latter are only formed under certain conditions \
+which are socially motivated by the opinion dynamics already \
+discussed.\\nSocial networks are sparse, therefore, $M$ has to be smaller to \
+avoid fully connected networks.\\nSimilar to the $G(N,M)$ model, the fixed \
+$M$ also determines the probability of link formation.\\n\\n\\nIf links were \
+unrestricted, the system could evolve to maximal density always.\\nIn real \
+social systems, interactions can be abundant, but social relations, i.e. \
+links, are usually limited, e.g. by mental capacities.  We remind on the \
+Dunbar number.\\nThe restriction is further given by the limited size of the \
+groups.\\nWe are considering finite systems with $N$ agents, hence the \
+maximum number of relations would be $M=N(N-1)/2$.\\nIf we would go with this \
+number, the model would end up with fully connected \
+networks.\\n\\n\\n\\n\\n\\nBut at time $t$ some groups have already been \
+formed.\\nTherefore we have\\n\\\\begin{align}\\n  \\\\label{eq:1}\\n  \
+M=m_{0}(t) +\\\\sum_{k=1}^{K}m_{k}(t)\\\\;;\\\\quad\\n   N=n_{0}(t) \
++\\\\sum_{k=1}^{K}n_{k}(t)\\n\\\\end{align}\\n\\n$m_{0}(t)$ denotes the \
+number of free links and $n_{0}(t)$ the number of free agents that do not \
+belong to any group at time $t$.\\nWith these assumptions the transition rate \
+for link formation reads:\\n\\\\begin{align}\\n  \\\\label{eq:20}\\n  \
+w\\\\left[(i,j)|i,j\\\\right]\\\\propto \\\\frac{2 \
+m_{0}}{N^{2}}\\\\Theta[z_{ij}(t)] \\n\\\\end{align}\\nIn the limit of \
+$\\\\epsilon\\\\to 1$, $\\\\Theta[z]=1$.\\nWe note that this rate holds no \
+matter whether agents are already part of a group or not. \\n\\nWe can \
+describe the same process from the \\\\emph{group} perspective.\\nEach group \
+is characterized by two values $n_{k}$, $m_{k}$.\\nWhen we randomly choose \
+two agents, the probability that one of the agents is in group $k$ and the \
+other one in group $l$ is proportional to $n_{k}$ and $n_{l}$.\\nWith these \
+consideration  the transition rate for a growing group reads in \
+general:\\n\\n\\\\begin{align}\\n  \\\\label{eq:21}\\n  \
+w\\\\left[(n_{k}+n_{l},m_{k}+m_{l}+1)|(n_{k},m_{k}), (n_{l},m_{l})\\\\right] \
+= w^{+}\\\\left[g_{k},g_{l}\\\\right] \\\\propto \\\\frac{2 m_{0}}{N^{2}}\\n  \
+\\\\sum_{i\\\\in g_{k}}\\\\sum_{j\\\\in g_{l}}\\\\Theta[z_{ij}(t)] \
+\\n\\\\end{align}\\n\\n\\n\\n\\n\\n\\n\\nIn the limit of $\\\\epsilon\\\\to \
+1$, $\\\\Theta[z]=1$ the summation term becomes $n_{k}n_{l}$.\\nThis rate \
+describes the process of \\\\emph{coagulation}.\\nAdding one link between two \
+groups $g_{k}$, $g_{l}$ leads them to merge, i.e. to form one connected group \
+of size $(n_{k}+n_{l},m_{k}+m_{l}+1)$.\\nThis can be seen as a jump in the \
+$(n,m)$ space, as illustrated in Figure~\\\\ref{fig:symbolic \
+representation}(a).\\n\\nIf an agent $i$ has not joined a group yet, it \
+defines its own group, i.e. then $n_{i}$ = 1 and $m_{i}$ = 0 and \
+$g_{i}(n_{i},m_{i})=g_{1}(1,0)$.\\nIn this case, Eqn.~\\\\eqref{eq:21} \
+captures the   process of  \\\\emph{incremental growth} and reads \
+specifically:\\n\\n\\\\begin{align}\\n  \\\\label{eq:21-inc}\\n  \
+w\\\\left[(n_{k}+1,m_{k}+1)|(n_{k},m_{k}), (1,0)\\\\right] = \
+w^{+}\\\\left[g_{k},g_{1}\\\\right] \\\\propto \\\\frac{2 m_{0}}{N^{2}}\\n  \
+\\\\sum_{i\\\\in g_{k}}\\\\sum_{j\\\\in g_{1}}\\\\Theta[z_{ij}(t)] \
+\\n\\\\end{align}\\n\\nAdding one link between a group $g_{k}(n_{k},m_{k})$ \
+and an isolated agent, $g_{1}(1,0)$ grows both $n_{k}$ and $m_{k}$ by 1, \
+incrementally, as shown in Figure~\\\\ref{fig:symbolic representation}(b).\\n\
+\\n\\n\\\\begin{figure}[htbp] \
+\\\\includegraphics[width=0.99\\\\linewidth]{figures/figure1-standalone.pdf}\\\
+n \\\\caption{Illustration of the three growth mechanisms for groups: (a) \
+coagulation, Eqn.~\\\\eqref{eq:21}, (b) incremental growth, \
+Eqn.~\\\\eqref{eq:21-inc}, (c) densification, Eqn.~\\\\eqref{eq:14}.}\\n  \
+\\\\label{fig:symbolic representation}\\n      \
+\\\\end{figure}\\n\\nAdditionally, there can be also a  \
+\\\\emph{densification} of the group, illustrated in \
+Figure~\\\\ref{fig:symbolic representation}(c). \\nIf the two agents already \
+belong to the same group, adding one link does not change the number of \
+agents, but only the number of links and this way the density.\\nThe new \
+group is then given by $g_{k}(n_{k},m_{k}+1)$.\\nIn general, the transition \
+rate for densification reads:\\n\\n\\\\begin{equation}\\n  \
+\\\\label{eq:100}\\n  w\\\\left[(n_{k},m_{k}+1)|(n_{k},m_{k})\\\\right]\\n  \
+\\\\propto  \\\\frac{2 m_{0}}{N^{2}}\\\\sum_{\\\\substack{i,j \\\\in n_{k} \\\
+\\\\\\ \\\\{i,j\\\\}\\\\not\\\\in m_{k}}}\\\\delta_{ij} \
+\\\\Theta[z_{ij}]\\n\\\\end{equation}\\n\\n\\nThe sum over the Kronecker \
+$\\\\delta_{ij}$ counts only \\nagents $i$ and $j$ that both belong to the \
+group of $n$ agents, but do not have a common link  yet.\\nIf we assume \
+$\\\\epsilon=1$, i.e. $\\\\Theta[z_{ij}]=1$, \\nthe probability $p_{ij}$ that \
+such a link already exists can be calculated from the configuration model as:\
+\\n\\n\\\\begin{equation}\\n  \\\\label{eq:11}\\n  p_{ij} = \
+\\\\frac{d_{i}d_{j}}{2{m_{k}}}\\n\\\\end{equation}\\n\\n\\n$d_{i}$ and \
+$d_{j}$ are the degrees of agents $i$ and $j$, hence the product considers \
+all possibilities to connect them.\\nThis has to be normalized by $m_{k}$, \
+the existing number of links in the group $k$.\\n\\nWe further know that in a \
+group of density $\\\\rho_{k}$ each agent has on average \
+$\\\\mean{d}_{k}=2m_{k}/n_{k}=\\\\rho_{k}$ links.\\nWe use this to replace \
+$d_{i}$ and $d_{j}$ in Eqn.~\\\\eqref{eq:11}.\\nHence, the sum in \
+Eqn.~\\\\eqref{eq:100} is expressed by the probability that agents $i$ and \
+$j$ are chosen to form a link, which is proportional to $n_{k}^{2}$, \
+multiplied by the independent  probability that they do not already have one:\
+\\n\\\\begin{equation}\\n  \\\\label{eq:120}\\n  p_{ij} \\\\equiv p_{k} = \
+\\\\frac{\\\\rho_{k}^{2}}{2m_{k}} = \\\\frac{2m_{k}}{n_{k}^{2}} \
+\\\\;;\\\\quad\\n  \\\\sum_{\\\\substack{i,j \\\\in n_{k} \\\\\\\\ \\\\{i,j\\\
+\\}\\\\not\\\\in m_{k}}}\\\\delta_{i,j} =\\n  \
+n_{k}^{2}\\\\left[1-\\\\frac{2m_{k}}{n_{k}^{2}} \
+\\\\right]\\n\\\\end{equation}\\nThis  allows to rewrite, for \
+$\\\\epsilon=1$, the transition rate for \\\\emph{densification}, \
+Eqn.~\\\\eqref{eq:100} as:\\n\\n\\\\begin{align}\\n  \\\\label{eq:14}\\n  w\\\
+\\left[(n_{k},m_{k}+1)|(n_{k},m_{k})\\\\right] =\\n  w^{+}\\\\left[ \
+g_{k},m_{0}\\\\right] &\\\\propto  \\\\frac{2 m_{0}}{N^{2}}n_{k}\\n  \
+\\\\left[n_{k}-\\\\rho_{k} \\\\right]\\n\\\\end{align}\\n\\n\\nThe difference \
+$\\\\omega_{k}=n_{k}-\\\\rho_{k}$ tells how many links could be potentially \
+added to group $k$.\\nHence, this transition rate decreases with higher \
+density.\\nFurthermore, when the group is fully connected, we have $m_{k} = \
+{n_{k}(n_{k}-1)}/{2}$. This means that in the limit of large systems \
+($n_{k}(n_{k}-1)\\\\rightarrow n_{k}^{2}$) no new link can be formed, which \
+is reasonable.\\nFor finite systems this holds only approximately.\\n\\nWith \
+this, we have considered three different processes for network \
+\\\\emph{growth} via the formation of groups. \\nBut we also need to specify \
+how groups can dissolve \\\\citep{Carro2014}.\\nFor this, we have already \
+proposed in Sect.~\\\\ref{sec:mech-group-form} that agents leave a group if \
+they experience an negative utility, i.e. if costs exceed \
+benefits.\\nAccording to Eqn.~\\\\eqref{eq:24}, this implies that for a group \
+$g_{k}$, it holds that $\\\\rho_{k}<\\\\hat{\\\\rho}$.\\nWe propose that \
+agents leave a group \\\\emph{spontaneously} at the following \
+rate:\\n\\n\\\\begin{align}\\n  \\\\label{eq:400}\\nw\\\\left[(n_{k}-1,m_{k}-\
+\\\\delta m_{k}) | (n_{k},m_{k})\\\\right] = \
+w^{-}\\\\left[g_{k},\\\\rho_{k}\\\\right] \\\\propto \\\\frac{n_{k}}{N}  \
+\\\\exp{\\\\left\\\\{\\\\beta\\\\frac{\\\\hat{\\\\rho}}{\\\\rho_{k}}\\\\right\
+\\\\}}\\n\\\\end{align}\\n\\n$n_{k}/N$ is again the probability that an agent \
+from group $g_{k}$ is randomly chosen to leave.\\nThe exponential term \
+${\\\\hat{\\\\rho}/\\\\rho_{k}} = (c n_{k})/(b m_{k})$\\ncan be seen as some \
+sort of inverse fitness of a group.\\nIf it is larger than one, which means \
+costs are larger than benefits, the probability that the group dissolves \
+spontaneously increase exponentially.\\n$\\\\beta$ is the inverse \
+temperature, $1/T$, and defines the level of randomness. \\nSmaller \
+$\\\\beta$ make differences between benefits and costs more important, larger \
+$\\\\beta$ smooth out this influence.\\n\\nIf an agent leaves a group, all \
+its links in the group are removed and become available as free \
+links.\\nThus, the group size $n_{k}$ is deminished by 1.\\nBut how many \
+links will be removed?\\nWe know that in a group of density $\\\\rho_{k}$ \
+each agent has on average $\\\\mean{d}_{k}=\\\\rho_{k}$ links.\\nThat means, \
+the expected change is $\\\\delta m_{k}=\\\\rho_{k}$ in \
+Eqn.~\\\\eqref{eq:400}.\\nWe note that this transition rate in principle also \
+describes the \\\\emph{fragmentation} of a group of size $n_{k}$ into pieces.\
+\\nIn this case just the arguments of $w^{-}$ have to be changed, the \
+probability for a spontaneous leave remains the same.\\n\\nWe summarize, that \
+the fastest way for a network to \\\\emph{grow} is by coagulation. \\nOnce \
+some groups have formed, they can merge into much larger groups.\\nThis helps \
+to speed up a possible phase transition.\\nIf coagulation is excluded, i.e. \
+$n_{l}\\\\equiv 1$, the phase transition would occur much slower because \
+incremental growth is a rather slow process.\\nSo we could see it as the  \
+\\\\emph{worst case} scenario.\\nDensification, on the other hand, does not \
+lead to growth,\\nbut \\\\emph{stabilizes} existing groups because it \
+increases the group utility.\\nBut even if the density is increased, as long \
+as $\\\\rho_{k}<\\\\hat{\\\\rho}$, staying in such a group would not be \
+beneficial.\\nHence, groups with a smaller density are likely to shrink and \
+to disappear, no matter what their size $n_{k}$ \
+is.\\n\\n\\n\\\\subsection{Results of agent-based computer \
+simulations}\\n\\\\label{sec:results-agent-based}\\n\\nUsing the above \
+defined transition rates, we can write down $k$ master equations \
+\\\\citep{Roepke_2013} for the growth and dissolution of groups.\\nFor the \
+probability $p[g_{k}(n_{k},m_{k},t)]$ the stochastic dynamics reads  in \
+general:\\n\\n\\\\begin{align}\\n  \\\\label{eq:8}\\n  \\\\frac{\\\\Delta \
+p[g_{k}(n_{k},m_{k},t)]}{\\\\Delta t}=& \\\\sum\\\\nolimits_{g_{l}} \
+w^{+}\\\\left[g_{k},g_{l}\\\\right]\\\\;  p[g_{k}(n_{k}-n_{l},m_{k}-m_{l},t) \
+\\\\cap g_{l}(n_{l},m_{l},t)]  \\\\nonumber \\\\\\\\\\n   & - \
+w^{+}\\\\left[g_{k},g_{l}\\\\right]\\\\;  p[g_{k}(n_{k},m_{k},t) \\\\cap \
+g_{l}(n_{l},m_{l},t)]  \\\\nonumber \\\\\\\\\\n                               \
+         &  + w^{+}\\\\left[g_{k},m_{0}\\\\right] \\\\; \
+p[g_{k}(n_{k},m_{k}-1,t)]  - w^{+}\\\\left[g_{k},m_{0}\\\\right]\\\\;  \
+p[g_{k}(n_{k},m_{k},t)] \\\\nonumber \\\\\\\\\\n                              \
+                    &    + w^{-}\\\\left[ g_{k},\\\\rho_{k}\\\\right] \\\\; \
+p[g_{k}(n_{k} + n_{l},m_{k} + m_{l},t) \\\\cap g_{l}(n_{l},m_{l}, t+\\\\Delta \
+t)] \\\\nonumber \\\\\\\\\\n                                                 \
+&   -  w^{-}\\\\left[ g_{k},\\\\rho_{k}\\\\right] \\\\; \
+p[g_{k}(n_{k},m_{k},t)]\\n\\\\end{align}\\n\\n\\n\\n\\nNote that the master \
+equations for the $k$ different groups are coupled via the transition rates \
+that have to satisfy the boundary condition, Eqn.~\\\\eqref{eq:1}.\\nTo \
+simulate the dynamics we use the Gillespie algorithm.\\nThat means, for each \
+time step we calculate all possible transition rates.\\nTheir relative weight \
+is used to randomly select one of the possible transitions.\\nIn the \
+following we present simulation results for the three different scenarios for \
+phase transitions described in Sect.~\\\\ref{sec:mech-phase-trans}.\\nWe \
+decided to keep these physical labels for the scenarios even for the dynamics \
+of social groups, simply to allow for comparison. \
+\\n\\n\\\\paragraph{Percolation. \\\\ }\\n\\\\label{sec:percolation}\\n\\nThe \
+simplest scenario of group formation assumes that agents connect randomly, \
+this way forming a \\\\textrm{random network}.\\nWe do \\\\emph{not} consider \
+any costs or benefits for groups, further \\\\emph{no} spontaneous \
+dissolution is allowed.\\nAlso, we ignore for the moment any dynamics or \
+influence of the $x_{i}$ values in the formation of groups ($\\\\gamma$ = 0) \
+and link formation between all agents is allowed ($\\\\epsilon$ = 1).  \
+\\nHence, the whole dynamics is described by the transition rate for growth, \
+$w^{+}\\\\left[g_{k},g_{l}\\\\right]$, Eqn.~\\\\eqref{eq:21}. \\nIn an early \
+stage we find a larger number of disconnected components, as shown in Figure~\
+\\\\ref{fig:perc}(a),\\nThese disconnected components can only \\\\emph{grow} \
+over time as long as there are free links available. \\nEventually, they \
+merge to form a giant connected component, shown in \
+Figure~\\\\ref{fig:perc}(c). \\n\\n\\\\begin{figure}[htbp] \
+\\\\includegraphics[width=0.28\\\\textwidth]{figures/Percolation/\
+NonRestricted/network_20.png}\\n  (a) \\\\hfill\\n   \
+\\\\includegraphics[width=0.28\\\\textwidth]{figures/Percolation/\
+NonRestricted/network_50.png}\\n  (b) \\\\hfill\\n   \
+\\\\includegraphics[width=0.28\\\\textwidth]{figures/Percolation/\
+NonRestricted/network_100.png}\\n  (c)\\n  \\\\caption{Phase transition via \
+percolation. Different time steps: (a) $t$ =  0.14, (b) $t$ = 0.55, (c) $t$ = \
+1.42. Parameters: $\\\\mu/2$ = 1.6, $c$ = 0, $\\\\epsilon$ = 1, $\\\\gamma$ = \
+0. The color scheme indicates the $x_{i}$ values of the agents, which do not \
+change.}\\n  \
+\\\\label{fig:perc}\\n\\\\end{figure}\\n\\n\\n\\\\begin{figure}[htbp]  \
+\\\\centering\\n  \\\\includegraphics[width=0.45\\\\textwidth, trim={0 0 0 \
+2.5cm},clip]{figures/percol_Dens_lcc2.pdf}(a)\\n    \
+\\\\includegraphics[width=0.45\\\\textwidth, trim={0 0 0 \
+2.5cm},clip]{figures/restrictedPercolEps01.pdf}(b)\\n    \\\\caption{Fraction \
+of the largest connected group $\\\\nu=n^{\\\\mathrm{LCC}}/N$ for different $\
+\\\\mu=M/M^{\\\\mathrm{cr}}$.\\n      (a)       Unconstrained interactions ($\
+\\\\epsilon$ = 1), (b) \\n      constrained interactions $\\\\epsilon$ = 0.1.\
+\\n      The dashed lines show the theoretical predictions for the\\n      \
+percolation threshold: (a) $\\\\mu/2$ = 0.5, (b) $\\\\mu/2$ = 2.63, \
+Eqn.~\\\\eqref{eq:3}.\\n    }\\n  \
+\\\\label{fig:thresh-pc}\\n\\\\end{figure}\\n\\nFigure~\\\\ref{fig:thresh-pc} \
+shows the fraction of the largest connected component, \
+$\\\\nu=n^{\\\\mathrm{LCC}}/N$, in the final network dependent on the initial \
+condition $\\\\mu=M/M^{\\\\mathrm{cr}}$, i.e. the total number of available \
+links relative to the critical number of links that are needed for \
+percolation.\\nAccording to the discussion in \
+Sect.~\\\\ref{sec:basic-mechanisms}, we expect the percolation threshold to \
+be $\\\\mu^{\\\\mathrm{cr}}$ = 1, which only holds for very large systems and \
+without any restrictions on the link formation, i.e. $\\\\epsilon\\\\to 1$. \
+\\nAs Figure~\\\\ref{fig:thresh-pc}(a) shows, for finite systems, $N=100$, \
+$\\\\mu^{\\\\mathrm{cr}}$ only indicates the \\\\emph{onset} of forming a \
+percolating group.\\nTo observe percolation with a fraction of the LCC close \
+to one, we   need a five times larger value, as \
+Figure~\\\\ref{fig:thresh-pc}(a) shows. \\n\\nWhen restricted interactions \
+between agents are considered, i.e. $\\\\epsilon<1$, Eqn.~\\\\eqref{eq:3} \
+defines the conditions for observing a giant connected component.\\nFor \
+$\\\\epsilon$ = 0.1, we find $\\\\mu$ = 2.63.\\nThe computer simulations \
+shown in Figure~\\\\ref{fig:thresh-pc}(b) give a better match with the \
+prediction, also because in Eqn.~\\\\eqref{eq:3} the finite number of links \
+is explicitly considered.\\n\\nWe conclude that the percolation scenario is \
+observed for  $\\\\mu \\\\simeq 5$, $c=0$.\\nStill, because the link \
+supersaturation $\\\\mu$ is not large, we will only obtain a \\\\emph{a \
+sparse percolating group}.\\nThe initial density of free links is not large \
+enough for a compact phase, as we show below. \\n\\n\\n\\\\paragraph{Spinodal \
+decomposition. \\\\ }\\n\\\\label{sec:spin-decomp}\\nAs explained in Sect.~\\\
+\\ref{sec:mech-phase-trans} this scenario is observed if the initial system \
+is already in an unstable state.\\nFurther, the surface tension does not give \
+an important effect.\\nIn our model of group formation, this is realized by  \
+a very large link supersaturation $\\\\mu\\\\gg 1$ and by a negligible cost \
+$c\\\\ll 1$.\\nThen the initial  instability is sufficient for the \
+spontaneous emergence of a new phase, which is rather compact. \\nThis is \
+illustrated in Figure~\\\\ref{fig:spin-sim}. \\n\\\\begin{figure}[htbp] \
+\\\\includegraphics[width=0.28\\\\textwidth]{figures/Spinodal_decomposition/\
+network_100.png}\\n  (a) \\\\hfill\\n   \
+\\\\includegraphics[width=0.28\\\\textwidth]{figures/Spinodal_decomposition/\
+network_200.png}\\n  (b) \\\\hfill\\n   \
+\\\\includegraphics[width=0.28\\\\textwidth]{figures/Spinodal_decomposition/\
+network_800.png}\\n  (c)\\n  \\\\caption{Phase transition via spinodal \
+decomposition. Different time steps: (a) $t$ = 0.08, (b) $t$ = 0.13, (c) $t$ \
+= 0.56. Parameters: $\\\\mu/2$ = 19, $c$ = 0.5, $N$ = 100, $\\\\epsilon$ = 1, \
+$\\\\gamma$ = 0.1. The color scheme indicates the $x_{i}$ values of the \
+agents.}\\n  \
+\\\\label{fig:spin-sim}\\n\\\\end{figure}\\n\\n\\n\\n\\n\\n\\\\paragraph{\
+Nucleation. \\\\ }\\n\\\\label{sec:nucleation}\\n\\nTo observe \
+\\\\emph{nucleation}, the initial system has to be in a clear metastable \
+state.\\nIn our model of group formation this is realized by a  moderate link \
+supersaturation $\\\\mu \\\\gg 1$ and a non negligible cost $c>0$.\\nThen, \
+the new phase can only emerge if initial fluctuations generate groups larger \
+than a critical size, discussed in detail in \
+Sect.~\\\\ref{sec:crit-clust-size}. \\nThe phase transition occurs via the \
+formation of a number of groups  in an early stage, shown in \
+Figure~\\\\ref{fig:nucleation}(a).\\nThese group later either coalesce or \
+they form a macroscopic phase via the redistribution of links from groups \
+with subcritical to groups with supercritical sizes.\\nThis process is known \
+as Ostwald ripening and  will be further discussed in \
+Section~\\\\ref{sec:ostwald-ripening}.\\n\\n\\\\begin{figure}[htbp] \
+\\\\includegraphics[width=0.28\\\\textwidth]{figures/lowIngroup_highEpsilon/\
+network_2000.png}\\n  (a) \\\\hfill\\n   \
+\\\\includegraphics[width=0.28\\\\textwidth]{figures/lowIngroup_highEpsilon/\
+network_5200.png}\\n  (b) \\\\hfill\\n   \
+\\\\includegraphics[width=0.28\\\\textwidth]{figures/lowIngroup_highEpsilon/\
+network_6000.png}\\n  (c)\\n \\\\caption{Phase transition via nucleation. \
+Different time steps: (a) $t$ = 0.7, (b) $t$ = 2.07, (c) $t$ = 2.67. \
+Parameters: $\\\\mu/2$ = 16, $\\\\hat \\\\rho$ = 15.6, $N$ = 100, \
+$\\\\epsilon$ = 1, $\\\\gamma$ = 0.5, $\\\\beta$ = 0.4. The color scheme \
+indicates the $x_{i}$ values of the agents.}\\n  \\\\label{fig:nucleation}\\n\
+\\\\end{figure}\\n\\nA dynamics, where initially small groups are formed and \
+later merge or dissolve to give way for a giant connected component, is found \
+in the evolution of collaboration networks.\\nIn \\\\citep{Tomasello2017}, \
+\\ngroups represent R\\\\&D alliances in one or multiple industrial sectors \
+over 20 years, as reconstructed from the SDC Platinum database. \\nA \
+group-size distribution akin to our intermediate regime ($t$ = $1.2$) in \
+Figure~\\\\ref{fig:group-dist}(a) can be found in these R\\\\&D networks \
+\\\\citep{tomasello_2014}.\\n\\nA similar dynamics is also observed in the \
+evolution of scientific collaboration networks reconstructed from the Social \
+Work Research Database \\\\citep{eckl_2018}.\\nFrom initially disconnected \
+groups, this system generates over time one prominent component encompassing \
+up to 20\\\\% of the nodes in later stages.\\nMany other disconnected \
+component remain in the system to coexist with the giant \
+component.\\n\\n\\n\\n\\\\paragraph{Restricted interactions. \\\\  \
+}\\n\\\\label{sec:restr-inter}\\n\\\\label{sec:constant-x_i}\\n\\nAs the two \
+examples of Figures~\\\\ref{fig:spin-sim},~\\\\ref{fig:nucleation} show, the \
+emerging giant connected components become rather homogeneous with respect to \
+the opinions $x_{i}$.\\nThis is due to the fact that all agents are allowed \
+to form links ($\\\\epsilon$ = 1) and the opinion dynamics, \
+Eqn.~\\\\eqref{eq:mean}, ensures convergence of opinions ($\\\\gamma$ = 0.1).\
+\\nIf we restrict the interaction between agents by choosing \
+$\\\\epsilon<\\\\epsilon^{\\\\mathrm{cr}}$, Eqn.~\\\\eqref{eq:3}, we observe \
+the formation of \\\\emph{isolated} groups instead of a giant connected \
+component.\\nThese groups differ considerably with respect to their average $\
+\\\\mean{x^{k}}$, but show rather homogeneous values of $x_{i}$ inside each \
+group, as Figure~\\\\ref{fig:thres-t} shows.\\n\\n\\n\\\\begin{figure}[htbp] \
+\\\\includegraphics[width=0.28\\\\textwidth]{figures/Percolation/Restricted/\
+network_200.png}\\n  (a) \\\\hfill\\n   \
+\\\\includegraphics[width=0.28\\\\textwidth]{figures/Percolation/Restricted/\
+network_500.png}\\n  (b) \\\\hfill\\n   \
+\\\\includegraphics[width=0.28\\\\textwidth]{figures/Percolation/Restricted/\
+network_1000.png}\\n  (c)\\n  \\\\caption{Phase transition with restricted \
+interactions. Different time steps:  (a) $t$ = 0.25, (b) $t$ = 0.68, (c) $t$ \
+= 2.15. Parameters: $\\\\mu/2$ = 4, $c$ = 0, $N$ = 100, $\\\\epsilon$ = \
+0.125, $\\\\gamma$ = 0.1. The color scheme indicates the $x_{i}$ values of \
+the agents. }\\n  \\\\label{fig:thres-t}\\n\\\\end{figure}\\n\\nAgain, \
+collaboration networks show a dynamics where multiple disconnected components \
+with non-negligible sizes survive. \\nWe reach sparse disconnected components \
+ when the saturation $\\\\mu$ is low.  \\nEvidence for the coexistence of \
+sparse disconnected groups is found  for instance in the collaboration \
+network of Italian sociologists \
+\\\\citep{akbaritabar_2020}.\\n\\n\\n\\n\\\\subsection{Parameter space} \
+\\\\label{sec:Phase Diagrams}\\n\\nWe can systematize the outcome of our \
+agent-based computer simulations with respect to the free parameters of our \
+group formation model.\\nThese can be distinguished in three groups (see \
+appendix A for table \
+representation):\\n\\\\begin{enumerate}[itemsep=0em]\\n\\\\item \
+\\\\emph{network formation}: number of agents $N$, link density \
+$\\\\mu=2M/N$, level of randomness $\\\\beta$,\\n\\\\item \\\\emph{group \
+formation}: cost $c$, benefit $b$, or $\\\\hat{\\\\rho}=c/b$,\\n\\\\item \
+\\\\emph{opinion formation}: approach rate $\\\\gamma$, tolerance threshold $\
+\\\\epsilon$, group influence $\\\\alpha$. \\n\\\\end{enumerate}\\nComparing \
+these parameters with their thermodynamic counterparts from \
+Sect.~\\\\ref{sec:mech-phase-trans}, we see that both $N$ and $\\\\mu$ relate \
+to the initial supersaturation while the cost $c$, or $\\\\hat \\\\rho$, \
+relates to the surface tension, because it determines the critical group \
+size.\\nThe parameters of the opinion dynamics do not play a role in the \
+thermodynamic model, because for molecules no constrains exist to form \
+droplets.\\n\\n\\\\begin{figure}[htbp]  \\n  \\\\includegraphics[width=0.99\\\
+\\linewidth]{figures/figure7-standalone.pdf}\\n\\\\caption{\\n  $(\\\\mu/2,\\\
+\\hat{\\\\rho})$ parameter space for the size of the largest connected \
+component $n^{\\\\mathrm{LCC}}$. $N$ = 100, different parameters for opinion \
+dynamics: (left) $\\\\epsilon$ = 0.16, $\\\\alpha$ =\\n0.9, $\\\\gamma$ = \
+0.1, $\\\\beta$ = 0.4, (right) $\\\\epsilon$ = 1, $\\\\alpha$ = 0.1, \
+$\\\\gamma$ = 0.5, $\\\\beta$ = 0.4.\\n  }\\n  \\\\label{fig: \
+phaseDiagHighTension}\\n\\\\end{figure}\\n\\nIn Figure~\\\\ref{fig: \
+phaseDiagHighTension} we present two phase diagrams of the $(\\\\mu/2,\\\\hat\
+\\\\rho)$ parameter space,  with different parameters for opinion formation \
+(left) and (right).\\nThese diagrams have no sharp phase boundaries, which \
+could be only expected in the thermodynamic limit but not in finite \
+systems.\\nNevertheless, the phase diagrams succinctly illustrate the \
+influence of the parameters on the group structure.\\n\\nOur measure for the \
+existence of a phase transition is $n^{\\\\mathrm{LCC}}$, the size of the \
+largest connected component (LCC), measured after 50.000 time steps, i.e. in \
+a quasi stationary equilibrium.\\nWith $N$ = 100, $n^{\\\\mathrm{LCC}}$ can \
+reach up to 100.\\nComparing the left and the right diagram, we notice that \
+an $n^{\\\\mathrm{LCC}}$  comprising more than 90\\npercent of all agents is \
+almost always obtained if the link formation between agents is not restricted \
+by the tolerance parameter $\\\\epsilon$ (Figure~\\\\ref{fig: \
+phaseDiagHighTension} right). \\nYet, if the link supersaturation $\\\\mu$ is \
+low, i.e. if we are close to the percolation threshold, the network of the \
+LCC is very sparse.\\nIt becomes more compact with increasing link saturation \
+$\\\\mu$.\\n\\nIn Figure~\\\\ref{fig: phaseDiagHighTension} (right) for large \
+$\\\\mu$\\nthe final state obtained for low and high $\\\\hat \\\\rho$ looks \
+almost the same, however the process to reach it is very different.\\nFor low \
+$\\\\hat\\\\rho$, we are in the regime of spinodal decomposition, where one \
+connected component is formed from the very beginning, also shown in \
+Figure~\\\\ref{fig:perc}.\\nFor high $\\\\hat \\\\rho$ we first observe the \
+formation of smaller groups.\\nThe large compact group is formed by the \
+\\\\emph{dissolution} of the smaller ones at a much longer time scale.\\nThis \
+is clearly visible in Figure~\\\\ref{fig:time}, where we plot the growth of \
+the LCC over time for the three different scenarios percolation, spinodal \
+decomposition and nucleation.\\nBoth percolation and spinodal decomposition \
+occur very fast, but for different reasons.\\nPercolation only considers the \
+growth of the network, without an energy barrier or dissolution.\\nSpinodal \
+decomposition, on the other hand, is driven by the very high link \
+supersaturation, i.e. the energy barrier is negligible and dissolution does \
+not play a role because groups formed immediately reach a supercritical size. \
+ \\nNucleation is rather slow because groups of critical size are only formed \
+by fluctuations. \\n\\n\\\\begin{figure}[htbp]  \
+\\\\centering\\n\\\\includegraphics[width=0.45\\\\textwidth]{figures/\
+Comparing_perc_ost_spinod/comparingSize.pdf}\\n\\\\caption{Fraction of the \
+largest connected group, $\\\\nu=n^{\\\\mathrm{LCC}}/N$, over time for the \
+three scenarios: percolation: $n^{LCC}_{P}$ ($\\\\mu_P/2$ = 3, $c_{P}$ = 0),  \
+spinodal decomposition: $n^{LCC}_{S}$ ($\\\\mu_S/2$ = 19, $c_{S}$ = 0) and \
+nucleation: $n^{LCC}_{O}$ ($\\\\mu_O/2$ = 19, $\\\\hat \\\\rho$ = 17.2). \
+Parameters: $\\\\epsilon$ = 1, $\\\\gamma$ = 0.1, $\\\\beta$ = 0.4.\\n      }\
+\\n  \\\\label{fig:time}\\n\\\\end{figure}\\n\\nTurning to the case of \
+restricted link formation shown in Figure~\\\\ref{fig: \
+phaseDiagHighTension}(left), we observe that a giant connected component is \
+almost never observed because agents from different groups cannot create \
+links if the tolerance value $\\\\epsilon$\\nis low, with only one exception \
+that we explain now.\\n\\nFor the parameter constellation with  $(\\\\mu/2,\\\
+\\hat \\\\rho$)= (20,4.8) we observe \\\\emph{coagulation}.\\nFor the same \
+$\\\\mu$ this was not possible for smaller values of $\\\\hat \\\\rho$, \
+because there large groups form quickly and the large group influence \
+$\\\\alpha$ makes them quite homogeneous with respect to agents' \
+opinions.\\nAs a consequence, these groups quickly reach average opinions too \
+different for them to merge. \\nWith increasing $\\\\hat \\\\rho$, nucleation \
+dominates.\\nMore smaller groups with more different average opinions form, \
+which increases the chance for coagulation.\\nTherefore, we observe the \
+formation of a giant connected component.\\n\\nFor the same $\\\\mu$, but \
+even larger values of $\\\\hat \\\\rho$ the nucleation barrier rises and \
+fewer groups are formed.\\nIf groups establish, they reach a homogeneous \
+opinion very fast, because of the high group influences.\\nThis then does not \
+allow free agents with different opinions to still join and hence the LCC \
+becomes smaller, as we see. \\n\\n\\nFigure~\\\\ref{fig: \
+phaseDiagHighTension}(left) also demonstrates that the final states of  \
+spinodal decomposition and nucleation can be very different. \\nThe \
+nucleation scenario allows groups to dissolve such that agents can join \
+larger groups.\\nSpinodal decomposition, on the other hand, generates only a \
+small incentive for agents to leave groups, because of the small value for \
+$\\\\hat \\\\rho$.\\nTherefore, the groups formed coexist in a stable \
+state.\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\\
+n\\n\\n\\n\\n\\n\\n\\n\"\>"}, {5,
+  "5"->"\<\"{Analytical \
+investigations}\\n\\\\label{sec:analyt-invest}\\n\\n\\n\\\\subsection{\
+Incremental growth}\\n\\\\label{sec:crit-clust-size}\\n\\nEventually, we want \
+to underpin our agent based simulations with some analytic results.\\nThese \
+can be hardly obtained if we consider the full master \
+Eqn.~\\\\eqref{eq:8}.\\nTherefore, we now discuss two limit cases, (i) \
+incremental growth and (ii) densification.\\nThese can be seen as the two \
+sides of the same coin, as they both occur during a phase transition, albeit \
+dominate at different times. \\nConsidering them separately allows us to \
+better understand the driving forces of group formation and competition. \
+\\n\\nFirst, we omit processes of coagulation and densification and consider \
+only incremental growth, Eqn.~\\\\eqref{eq:21-inc}, and dissolution, \
+Eqn.~\\\\eqref{eq:400}.\\nLet us further consider $\\\\epsilon$ = 1, i.e. all \
+agents are allowed to form links.\\nThe respective growth process is \
+illustrated in Figure~\\\\ref{fig:symbolic representation}(b).\\nPrecisely, a \
+group can only grow if a new agent joins by connecting to the group with one \
+link.\\nThis leads to a very sparse cluster where $m_{k}=n_{k}-1$, i.e. \
+$\\\\rho_{k} = 2$ for large groups.\\nClearly, in this limit we do not need \
+to discuss the dynamics of $\\\\rho_{k}$, we only focus on the size of the \
+group, $n_{k}$. \\n\\nTo find out under which conditions it is more likely to \
+observe the growth or the dissolution of a group, we calculate the logit or \
+\\\\emph{odds ratio}, $G$, which is  defined as \\n\\\\begin{equation}\\n  \\\
+\\label{eq:7}\\n  G = \\\\ln \
+\\\\frac{w^{+}\\\\left[g_{k},g_{1}\\\\right]}{w^{-}\\\\left[ \
+g_{k},\\\\rho_{k}\\\\right]}=\\n  \\\\ln \
+\\\\left[\\\\frac{2m_{0}n_{0}n_{k}}{N^{2}} \
+\\\\frac{N}{n_{k}\\\\exp\\\\{\\\\beta \
+\\\\hat{\\\\rho}/\\\\rho_{k}\\\\}}\\\\right]\\n\\\\end{equation}\\nFrom $G=0$ \
+we find  the critical conditions to expect incremental group \
+growth:\\n\\\\begin{align}\\n  \\\\label{eq:101}\\n  \
+\\\\rho_{n}^{\\\\mathrm{cr}}(t)=\\\\frac{\\\\beta\\\\hat{\\\\rho}}{\\\\ln\\\\\
+left[2m_{0}(t)\\\\, n_{0}(t)/N \\\\right]}\\n\\\\end{align}\\nWe remind that \
+$m_{0}(t)$ gives the number of links \\\\emph{available} at time $t$ and \
+$n_{0}(t)$ the number of free agents, as defined in Eqn.~\\\\eqref{eq:1}. \
+\\nIf we use $\\\\hat{\\\\rho}=2c/b$ and define a \
+supersaturation\\n\\\\begin{align}\\n  \
+y_{0}(t)=\\\\frac{2m_{0}(t)n_{0}(t)}{N}=n_{0}(t)\\\\mu_{0}(t) \\\\quad \
+\\\\mathrm{with} \\\\quad\\n  \
+\\\\mu_{0}(t)=\\\\frac{2m_{0}(t)}{M^{\\\\mathrm{cr}}}\\\\;;\\\\quad\\n    \
+y_{0}(0)=N\\\\frac{M}{M^{\\\\mathrm{cr}}}\\\\equiv y\\n  \
+\\\\label{eq:35}\\n\\\\end{align}\\nwe can rewrite the expression for the \
+critical density very similar to the critical radius for nucleation, \
+Eqn.~\\\\eqref{eq:31}:\\n\\\\begin{align}\\n  \\\\label{eq:10}\\n  \
+\\\\rho_{n}^{\\\\mathrm{cr}}(t)\\n=\\\\frac{\\\\beta\\\\hat{\\\\rho}}{\\\\ln \
+\\\\mu_{0}(t) + \\\\ln n_{0}(t) } =\\n  \\\\frac{2c}{b/\\\\beta} \\\\frac{1}{\
+\\\\ln y_{0}(t)}\\n\\\\end{align}\\nwhere the cost $c$ takes the place of the \
+surface tension. \\nWe emphasize that $\\\\rho_{n}^{\\\\mathrm{cr}}$ does not \
+make any statement about the \\\\emph{size} of a group.\\nIn fact it \
+characterizes the system because it depends on the supersaturation $y_{0}(t)$ \
+which is a system variable.\\n\\nOnly groups with \
+$\\\\rho_{k}>\\\\rho_{n}^{\\\\mathrm{cr}}$ are expected to grow incrementally \
+in \\\\emph{size}, while groups with \
+$\\\\rho_{k}<\\\\rho_{n}^{\\\\mathrm{cr}}$ will dissolve. \\nOn the other \
+hand, $\\\\rho_{k}=2$ for sparse groups. \\nHence, if we expect a stable \
+group, the critical density $\\\\rho_{n}^{\\\\mathrm{cr}}(t)$ should reach \
+approximately 2 for large groups. \\nThis is indeed shown in \
+Figure~\\\\ref{fig:inc-LCC-rho}, where we plot the density of the largest \
+connected component.\\nInitially, $\\\\rho_{k}$ is smaller than 2 because of \
+finite size effects.\\nFor instance, for $n_{k}=3$ we would have  \
+$\\\\rho_{k}=2(n_{k}-1)/n_{k}=4/3<2$. \\nBut after the initial formation of a \
+large group $\\\\rho^{\\\\mathrm{LCC}}$ approaches the value of 2, while \
+$\\\\rho_{n}^{\\\\mathrm{cr}}$ fluctuates around this value.\\nThe \
+fluctuations result from the fact that the largest group continues to have \
+spontaneous additions and dropouts of agents.\\nWe remind that \
+$\\\\hat{\\\\rho}\\\\gg 2$ is compararably large, i.e. for agents the \
+transition rate to leave the group is not negligible.\\nBecause both $n_{0}$ \
+and $\\\\mu_{0}$ are small, changes in these numbers impact the critical \
+density, $\\\\rho^{\\\\mathrm{cr}}_{n}$.\\nThe density of the group, \
+$\\\\rho_{k}$, on the other hand, is not much impacted if a single agent \
+joins or leaves because of the large group size. \
+\\n\\n\\\\begin{figure}[htbp] \
+\\\\centering\\n\\\\includegraphics[width=0.45\\\\textwidth]{figures/\
+IncrementalGrowth/rho_crit.png}\\n   \\\\caption{Evolution of the density of \
+the LCC and the critical density in the system over time. $\\\\mu/2$ = 20, \
+$\\\\hat \\\\rho = 21.4$, $\\\\epsilon = 1$, $\\\\gamma = 0.1$, $\\\\beta$ = \
+0.25, $N = 100$}\\n  \\\\label{fig:inc-LCC-rho}\\n\\\\end{figure}\\n\\nBy \
+comparing Figures~\\\\ref{fig:time}, \\\\ref{fig:inc-LCC-rho}, we can \
+estimate the time scales for the dynamics of $n_{k}(t)$ and    \
+$\\\\rho_{k}(t)$.\\nObviously, the stable density $\\\\rho_{k}=2$ is reached  \
+much faster, at about $t\\\\approx 0.1$. \\nBut this still allows the largest \
+group to grow, i.e. $n_{k}(t)$ continues to change until $t\\\\approx \
+10$.\\nTherefore, in the following we will analytically describe its \
+dynamics.\\nIf we only consider incremental growth and dissolution processes \
+for groups, Eqs.~\\\\eqref{eq:21-inc}, \\\\eqref{eq:400}, we can write down a \
+dynamics for the expectation value of the group size $\\\\mean{n_{k}}=\\\\sum\
+\\\\nolimits_{k^{\\\\prime}}n_{k^{\\\\prime}}P(n_{k^{\\\\prime}},t)$, by \
+starting from:\\n\\\\begin{align}\\n  \\\\label{eq:15}\\n  \
+\\\\frac{d\\\\mean{n_{k}(t)}}{dt} &= \
+\\\\mean{w^{+}\\\\left[g_{k},g_{1}\\\\right] - \
+w^{-}\\\\left[g_{k},\\\\rho_{k}\\\\right]} \\\\nonumber \\\\\\\\\\n           \
+                   &= \\\\frac{\\\\mean{n_{k}(t)}}{N}\\\\left[ \
+\\\\mean{y_{0}(t)} - e^{\\n                                \
+\\\\beta\\\\frac{\\\\hat\\\\rho}{\\\\mean{\\\\rho_{k}(t)}}\\n                 \
+               }\\\\right]\\n\\\\end{align}\\nIf we insert the derived \
+expression for the critical density $\\\\rho_{n}^{\\\\mathrm{cr}}(t)$, \
+Eqn.~\\\\eqref{eq:10}, we can express the dynamcis as:\\n\\\\begin{align}\\n  \
+\\\\label{eq:28}\\n  \\\\frac{d \\\\ln \\\\mean{n_{k}(t)}}{dt} &=  \
+\\\\frac{\\\\beta\\\\hat\\\\rho}{N} \\\\left[ \
+\\\\frac{1}{\\\\mean{\\\\rho_{n}^{\\\\mathrm{cr}}(t)}} - \
+\\\\frac{1}{\\\\mean{\\\\rho_{k}(t)}}  \\\\right]                             \
+   \\n\\\\end{align}\\nHere we have used a linear expansion of $\\\\exp(x)$ \
+and $\\\\ln(x)$.\\nEqn.~\\\\eqref{eq:28} defines a \\\\emph{selection \
+equation} \\\\citep{ebeling2011physics} that couples the growth of all groups \
+via $\\\\rho_{n}^{\\\\mathrm{cr}}$. \\nThe \\\\emph{size} of group $k$ grows \
+as long as its density is larger than the critical density \
+$\\\\rho_{n}^{\\\\mathrm{cr}}$.\\nWe remind that a similar selection equation \
+appears in nucleation theory, Eqn.~\\\\eqref{eq:32}, where the coupling was \
+given by the critical radius \
+$r_{0}^{\\\\mathrm{cr}}(t)$.\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\\
+n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\\\subsection{Group \
+densification}\\n\\\\label{sec:group-densification}\\n\\nWe now turn to the \
+second limit case where instead of incremental growth only densification is \
+considered, as shown in Figure~\\\\ref{fig:symbolic representation}(c) and \
+described by Eqn.~\\\\eqref{eq:14}.\\nWe can then calculate the odds ratio \
+as:\\n\\\\begin{equation}\\n  \\\\label{eq:700}\\n  G = \\\\ln \\\\frac{w^{+}\
+\\\\left[g_{k},m_{0}\\\\right]}{w^{-}\\\\left[ \
+g_{k},\\\\rho_{k}\\\\right]}=\\n  \\\\ln \\\\left[\\\\frac{2m_{0}n_{k}[n_{k}-\
+\\\\rho_{k}]}{N^{2}} \\\\frac{N}{n_{k}\\\\exp\\\\{\\\\beta \
+\\\\hat{\\\\rho}/\\\\rho_{k}\\\\}}\\\\right]\\n\\\\end{equation}\\nFrom $G=0$ \
+we find the critical density for densification: \\n\\\\begin{align}\\n  \
+\\\\label{eq:101ng}\\n  \
+\\\\rho^{\\\\mathrm{cr}}_{d}(t)=\\\\frac{\\\\beta\\\\hat{\\\\rho}}{\\\\ln \
+\\\\mu_{0}(t) + \\\\ln \\\\omega_{k}(t)}\\n  \\\\;;\\\\quad \\\\omega_{k}(t)=\
+\\\\left[n_{k}(t)-\\\\rho_{k}(t)\\\\right]\\n\\\\end{align}\\nWe note that \
+the structure of $\\\\rho_{d}^{\\\\mathrm{cr}}$ is similar to \
+$\\\\rho_{n}^{\\\\mathrm{cr}}$, Eqn.~\\\\eqref{eq:10}. \\n$\\\\omega_{k}(t)$ \
+gives the number of ``free'' links \\\\emph{inside}  group $k$, while \
+$n_{0}(t)$ which gives the number of free agents \\\\emph{outside} the group. \
+\\nThat means, $\\\\omega_{k}(t)$ differs for groups in different \
+configurations ($n_k, m_k$).\\n\\nHow does the additional critical density \
+$\\\\rho_{d}^{\\\\mathrm{cr}}$ influence the growth of groups?\\nWe recall \
+that in the limit of incremental growth only $n_{k}$ changes according to \
+Eqn.~\\\\eqref{eq:28}, while $\\\\rho_{k}$ remains constant. \\nIn the limit \
+of densification, on the other hand, only the number of links $m_{k}$ inside \
+a group changes, while $n_{k}$ remains constant.\\nTherefore, we need to \
+develop a dynamics for $m_{k}$ now.\\n\\nThe dynamics for the expectation \
+value of the number of links \
+$\\\\mean{m_{k}}=\\\\sum\\\\nolimits_{k^{\\\\prime}}n_{k^{\\\\prime}}P(m_{k^{\
+\\\\prime}},t)$, follows from:\\n\\\\begin{align}\\n  \\\\label{eq:15m}\\n  \
+\\\\frac{d\\\\mean{m_{k}(t)}}{dt} &= \
+\\\\mean{w^{+}\\\\left[g_{k},m_{0}\\\\right] - \
+w^{-}\\\\left[g_{k},\\\\rho_{k}\\\\right]} \\\\nonumber \\\\\\\\\\n           \
+                   &= \\\\frac{\\\\mean{n_{k}(t)}}{N}\\\\left[ \
+\\\\mean{\\\\mu_{0}(t)\\\\omega_{k}(t)} - e^{\\n                              \
+  \\\\beta\\\\frac{\\\\hat\\\\rho}{\\\\mean{\\\\rho_{k}(t)}}\\n               \
+                 }\\\\right]\\n\\\\end{align}\\nIf we insert the derived \
+expression for the critical density $\\\\rho_{d}^{\\\\mathrm{cr}}(t)$, \
+Eqn.~\\\\eqref{eq:101ng}, we can express the dynamcis \
+as:\\n\\\\begin{align}\\n  \\\\label{eq:28mk0}\\n  \\\\frac{d \
+\\\\mean{m_{k}(t)}}{dt} &=  \
+\\\\frac{\\\\beta\\\\hat\\\\rho}{N}\\\\mean{n_{k}(t)} \\\\left[ \
+\\\\frac{1}{\\\\mean{\\\\rho_{d}^{\\\\mathrm{cr}}(t)}} - \
+\\\\frac{1}{\\\\mean{\\\\rho_{k}(t)}}  \\\\right]                             \
+   \\n\\\\end{align}\\nwhich, in first order approximation \
+$\\\\mean{\\\\rho_{k}}=2\\\\mean{m_{k}}/\\\\mean{n_{k}}$, eventually gives a \
+selection equation for $\\\\mean{\\\\rho_{k}}$:\\n\\\\begin{align}\\n  \
+\\\\label{eq:28mk}\\n  \\\\frac{d \\\\mean{\\\\rho_{k}(t)}}{dt} &=  \\\\frac{\
+\\\\beta\\\\hat\\\\rho}{N} \\\\left[ \
+\\\\frac{1}{\\\\mean{\\\\rho_{d}^{\\\\mathrm{cr}}(t)}} - \
+\\\\frac{1}{\\\\mean{\\\\rho_{k}(t)}}  \\\\right]                             \
+   \\n\\\\end{align}\\nWe note that the two critical densities for \
+incremental growth and for densification are not independent of another, they \
+are related via $\\\\mu_{0}(t)$.\\nBy solving Eqs. \
+\\\\eqref{eq:10}\\\\eqref{eq:101ng} for $\\\\mu_{0}(t)$ we \
+find:\\n\\\\begin{align}\\n  \\\\label{eq:37}\\n  \
+\\\\frac{\\\\beta\\\\hat\\\\rho}{\\\\mean{\\\\rho_{n}^{\\\\mathrm{cr}}(t)}}=\\\
+n  \\\\frac{\\\\beta\\\\hat\\\\rho}{\\\\mean{\\\\rho_{d}^{\\\\mathrm{cr}}(t)}}\
+ -\\\\ln{\\\\frac{\\\\omega_{k}}{n_{0}}}\\n\\\\end{align}\\nAfter the initial \
+formation of a larger number of groups,\\nagents will leave groups with \
+subcritical density, to join  larger groups with supercritical \
+density.\\nThis increases the size of supercritical groups at the expense of \
+subcritical groups which dissolve eventually.\\nThis reduces the number of \
+groups and will be described analytically  in the \
+following.\\n\\n\\\\subsection{Competition between \
+groups}\\n\\\\label{sec:ostwald-ripening}\\n\\nFigure~\\\\ref{fig:group-dist}(\
+a) shows the evolution of the group distribution for $N=500$, by plotting the \
+quantity $n_{k}N_{n_{k}}$ over time.\\n$n_{k}$ is the size of group $k$ and \
+$N_{n_{k}}$ is the number of groups with size $n_{k}$.\\nIn an early stage, \
+we find a large number of smaller groups of subcritical size, \
+$n_{k}<6$.\\nBecause $N$ is comparably small, only \\nfew of these groups \
+reach a supercritical size.\\nOnly one continues to grow incrementally and \
+via coagulation, while the subcritical groups either dissolve gradually or \
+fragment. \\nFor larger systems, we find more supercritical groups, but this \
+does not affect our principal \
+discussion.\\n\\n\\nFigure~\\\\ref{fig:group-dist}(b) shows the total number \
+of groups $K$ over time. \\nStarting from zero, in a very short time, $ \
+t\\\\leq 2$, up to 30 groups of small size are formed\\nIn a second phase, $2 \
+\\\\leq t \\\\leq 4$, this number decreases. \\nIn the end, we find one large \
+group surrounded by a small number of free agents, as illustrated in \
+Figure~\\\\ref{fig:nucleation}(c). \\n\\n\\\\begin{figure}[htbp]   \
+\\\\centering\\n   \
+\\\\includegraphics[width=0.45\\\\textwidth]{figures/eps1_500Agents/\
+groupSizeDist500.pdf}(a)\\n   \
+\\\\includegraphics[width=0.45\\\\textwidth]{figures/eps1_500Agents/K_\
+fullModel_small.pdf}(b)\\n   \\\\caption{(a) Distribution of agents in \
+$N_{n}$ groups of size $n$ (in $\\\\log$ scale) at various time steps.\\n     \
+(b) Total number of groups, $K$, over time.\\n     Parameters: $N$ = 500, $\\\
+\\mu/2$ = 5, $\\\\hat \\\\rho$ = 17.2, $\\\\epsilon$ = 1, $\\\\gamma$ = 0.1, \
+$\\\\alpha$ = 0.9, $\\\\beta$ = 0.4.\\n   }\\n  \
+\\\\label{fig:group-dist}\\n\\\\end{figure}\\n\\n\\n\\n\\nTo describe this \
+evolution, we need to consider the dynamics for $n_{k}(t)$, \
+Eqn.~\\\\eqref{eq:28}.\\nDensification does not change the size or the number \
+of groups, but it can stabilize established groups. \\nThe smallest group \
+size is $n_{k}=2$, otherwise agents are considered as free agents and counted \
+in $n_{0}$.\\nHence if $n_{k}\\\\to 1$, the group has dissolved and $K(t)$ is \
+diminished by 1.\\nAccording to Eqn.~\\\\eqref{eq:28}, $n_{k}$ decreases if $\
+\\\\rho_{k}<\\\\rho_{n}^{\\\\mathrm{cr}}$.\\nThis does not exclude processes \
+to increase $\\\\rho_{k}$ via densification, therefore we base our further \
+discussion on the selection Eqn.~\\\\eqref{eq:28} for $n_{k}(t)$. \\n\\nWe \
+start from the conservation of agents, Eqn.~\\\\eqref{eq:1}, which takes the \
+sum over all existing groups:\\n$\\\\sum\\\\nolimits_{k}n_{k}=[N-n_{0}]$. \
+\\nThis yields ${d n_{0}(t)}/{dt}= - \\\\sum\\\\nolimits_{k} {dn_{k}}/{dt}$. \
+\\nLet us define the average group size $\\\\bar{n}$ and the average group \
+density $\\\\bar{\\\\rho}$ as:\\n\\\\begin{align}\\n  \\\\label{eq:36}\\n  \\\
+\\bar{n}(t)= \\\\frac{1}{K(t)}{\\\\sum\\\\nolimits_{k} \
+n_{k}(t)}=\\\\frac{1}{K(t)}[N-n_{0}]\\\\;;\\\\quad\\n  \\\\bar{\\\\rho}(t)= \
+\\\\frac{1}{K(t)}{\\\\sum\\\\nolimits_{k} \
+\\\\rho_{k}(t)}\\n\\\\end{align}\\nwhere $K(t)$ is the total number of groups \
+at a given time.\\nFurther, we assume that in a first order approximation $\\\
+\\sum\\\\nolimits_{k}{n_{k}}/{\\\\rho_{k}}=K \\\\bar{n}/\\\\bar{\\\\rho}$. \
+\\nThen we obtain from Eqn.~\\\\eqref{eq:28}: \\n\\\\begin{align}\\n  \
+\\\\label{eq:12}\\n- \\\\frac{dn_{0}(t)}{dt}= & \\\\sum\\\\nolimits_{k} \
+\\\\frac{\\\\beta \
+\\\\hat\\\\rho}{N}n_{k}(t)\\\\left[\\\\frac{1}{\\\\rho_{n}^{\\\\mathrm{cr}}(t)\
+}-\\\\frac{1}{\\\\rho_{k}(t)}\\\\right] =   \\\\frac{\\\\beta \
+\\\\hat\\\\rho}{N} K(t) \\\\bar{n}(t)  \
+\\\\frac{1}{\\\\rho_{n}^{\\\\mathrm{cr}}(t)}\\n      - \\\\frac{\\\\beta \
+\\\\hat\\\\rho}{N} K(t) \
+\\\\frac{\\\\bar{n}(t)}{\\\\bar{\\\\rho}(t)}\\n\\\\end{align}\\nwhich can be \
+solved for $\\\\rho_{n}^{\\\\mathrm{cr}}(t)$:\\n\\\\begin{align}\\n  \
+\\\\label{eq:29}\\n  \\\\frac{1}{\\\\rho_{n}^{\\\\mathrm{cr}}(t)}=\\n  \
+\\\\frac{1}{\\\\bar\\\\rho(t)}\\n  - \\\\frac{N}{\\\\beta\\\\hat \
+\\\\rho}\\\\frac{1}{K(t)\\\\bar{n}(t)}\\\\frac{d \
+n_{0}(t)}{dt}\\n\\\\end{align}\\nThis allows us to replace $1/\\\\rho_{n}^{\\\
+\\mathrm{cr}}$ in Eqn. \\\\eqref{eq:28} such that we finally arrive \
+at:\\n\\\\begin{align}\\n  \\\\label{eq:25}\\n  \\\\frac{d \\\\ln \
+n_{k}(t)}{dt}= \
+\\\\frac{\\\\beta\\\\hat\\\\rho}{N}\\\\left[\\\\frac{1}{\\\\bar \
+\\\\rho(t)}-\\\\frac{1}{\\\\rho_{k}(t)}\\\\right] \
+-\\\\frac{1}{K(t)\\\\bar{n}(t)}\\\\frac{d n_{0}}{dt}\\n\\\\end{align}\\nEqn.~\
+\\\\eqref{eq:25} has several advantages:\\n(i) Instead of the well defined, \
+but unknown, variable $\\\\rho_{n}^{\\\\mathrm{cr}}$, which characterizes the \
+system via $y_{0}(t)$, we can use the average group density \
+$\\\\bar{\\\\rho}$, which characterizes the groups.\\nNote that \
+$\\\\bar{\\\\rho}$ represents all groups with subcritical and supercritical \
+densities and  also reflects any densification of groups, i.e. it is the \
+appropriate aggregated variable.\\n\\n(ii)  For the dynamics of \
+Eqn.~\\\\eqref{eq:25} we can distinguish two stages of the phase \
+transition.\\nIn the first stage of \\\\emph{group formation}, groups are \
+small and of comparable density.\\nHence $\\\\rho_{k}\\\\approx \
+\\\\bar{\\\\rho}$ and the first term vanishes. \\nTherefore the dynamics is \
+dominated by the last term:   \\n $(1/K\\\\bar{n})({d n_{0}}/{dt})$ decreases \
+rapidly because the number of free agents, $n_{0}$, decreases fast \
+\\\\emph{and} the number of groups, $K$, as well as the average group size, $\
+\\\\bar{n}$, grows.\\n In the second phase of \\\\emph{group competition} we \
+can already assume that ${d n_{0}}/{dt}\\\\approx 0$.\\n Hence the dynamics \
+is dominated by the first term in square brackets, which describe a \
+\\\\emph{slow} selection process.  \\n\\n(iii) The meaning of competition and \
+selection is made explicit in the dynamics:\\nThe growth of groups is coupled \
+by the mean density $\\\\bar{\\\\rho}$. \\nBecause of ${d \
+n_{0}}/{dt}\\\\approx 0$,  the growth of groups with a larger density can \
+only occur because of the dissolution of groups with a smaller \
+density.\\nThis process continues as long as $\\\\bar{\\\\rho}$ can still \
+grow.\\nThe dynamics reaches a (theoretical) stationary state if only one \
+group is left which defines the average density, \
+$\\\\bar\\\\rho=\\\\rho_{k}$.\\nThis assumes that all agents can form links, \
+which implies $\\\\epsilon=1$.\\nIf the tolerance threshold $\\\\epsilon$ is \
+low, smaller groups will still dissolve.\\nBut the free agents cannot join \
+the larger group because of the differences in opinions.\\nTherefore they \
+remain as isolated agents, as shown in Figure~\\\\ref{fig:nucleation}(c). \\n\
+\\n\\n\"\>"}, {6,
+  "6"->"\<\"{Discussion}\\n\\\\label{sec:discussion-1}\\n\\n\\\\subsection{A \
+coherent view on the dynamics of group \
+formation}\\n\\\\label{sec:coher-view-dynam}\\n\\nWe have now all pieces \
+together to present a coherent view of the group formation and competition, \
+with particular emphasis on the nucleation scenario.\\nWe structure the \
+discussion with respect to the various critical densities that are introduced \
+in this paper. \\nThe first one is $\\\\hat\\\\rho=2c/b$, which is constant \
+and defines the minimum density for a group to have a \\\\emph{non-negative \
+utility}.\\nSocial agents evaluate costs $c$ and benefits of being part of a \
+group $b$ and will leave if they do not gain a utility from this, \
+Eqn.~\\\\eqref{eq:400}.\\n\\n\\\\paragraph{$\\\\hat\\\\rho<\\\\rho_{k}$.}\\\
+nGroups need to have a density $\\\\rho_{k}>\\\\hat\\\\rho$ to remain or even \
+grow, otherwise they will dissolve.\\nFor the percolation scenario $\\\\hat\\\
+\\rho=0$, i.e. groups will never dissolve.\\nBut it needs a critical \
+supersaturation $y>1$, Eqn.~\\\\eqref{eq:35}, to obtain a large group that \
+connects almost all agents.\\nYet, because $y$ is comparably small, the \
+largest connected group is still very sparse, as Figure~\\\\ref{fig:perc}(c) \
+shows.\\nFor the scenario of spinodal decomposition, the condition  \
+$\\\\rho_{k}>\\\\hat\\\\rho$ is also fulfilled, because $\\\\hat \\\\rho$ is \
+very small.\\nBut, different from percolation, the initial saturation $y$ is \
+very large.\\nThus, we see the fast formation of one large compact \
+group.\\n\\nThe differences can be also observed in Figure~\\\\ref{fig:qt} \
+where we plot the density of the largest group over time.\\nPercolation \
+occurs rather fast, but the largest group reaches only a small final density \
+because it is a sparse network.\\nSpinodal decomposition occurs very fast \
+because of the large initial instability.\\nBecause the initial \
+supersaturation is high, i.e. a large number of links is potentially \
+available, the final density of the largest group is also high. \
+\\n\\n\\\\begin{figure}[htbp] \\\\centering\\n \\\\includegraphics[width=0.45\
+\\\\textwidth]{figures/Comparing_perc_ost_spinod/comparingDensity.pdf}\\n \
+\\\\caption{Density of the largest connected group over time for percolation, \
+$\\\\rho^{LCC}_{P}$ ($\\\\mu_P$/2 = 3, $c_{P}$ = 0), spinodal decomposition, \
+$\\\\rho^{LCC}_{S}$ ($\\\\mu_S$/2 = 19, $c_{S}$ = 0) and nucleation, \
+$\\\\rho^{LCC}_{O}$ ($\\\\mu_O/$2 = 19, $\\\\hat \\\\rho$ = 17.2). \
+Parameters: $\\\\epsilon$ = 1, $\\\\gamma$ = 0.1, $\\\\beta$ = 0.4.\\n }\\n  \
+\\\\label{fig:qt}\\n\\\\end{figure}\\n\\n\\n\\\\paragraph{$\\\\rho_{k}<\\\\\
+hat\\\\rho$.}\\nFor the nucleation scenario, the condition  \
+$\\\\rho_{k}>\\\\hat\\\\rho$ is \\\\emph{never} fulfilled.\\nThat means, \
+different from the other two scenarios, we will \\\\emph{always} observe that \
+agents leave a group.\\nTherefore, even the largest group experiences \
+fluctuations in size.\\nAs another consequence, groups can form initially \
+only by means of fluctuations and have to overcome an energy barrier, \
+quantified  by the critical density $\\\\rho_{n}^{\\\\mathrm{cr}}$, \
+Eqn.~\\\\eqref{eq:10} which \\n is plotted in \
+Figure~\\\\ref{fig:500Agents-new}.\\n\\nHence, in this scenario it takes much \
+longer before a large connected group can establish, which is also shown in \
+Figure~\\\\ref{fig:qt}.\\nThe final density of the group is largely \
+determined by the initial supersaturation, i.e. the number of potentially \
+available links per agent.\\nThe large group is not as sparse as in the case \
+of percolation, but not as dense as in the case of spinodal decomposition. \
+\\n\\n\\\\begin{figure}[htbp] \\\\centering\\n   \
+\\\\includegraphics[width=0.45\\\\textwidth]{figures/eps1_500Agents/rho_nu_\
+dens_500_4x3.pdf}(a)\\n   \
+\\\\includegraphics[width=0.45\\\\textwidth]{figures/eps1_500Agents/rho_nu_\
+dens_500_FULL4x3.pdf}(b)\\n   \\\\caption{Evolution of the density, \
+$\\\\rho^{\\\\mathrm{LCC}}$, and the fraction, $\\\\nu$, of the largest \
+connected group, the mean density, $\\\\bar\\\\rho$, the critical densities, \
+$\\\\rho_{n}^{\\\\mathrm{cr}}$, $\\\\rho_{d}^{\\\\mathrm{cr}}$. (a) Early \
+time period, (b) long term dynamics. \\n     Parameters: $N$ = 500, \
+$\\\\mu/2$ = 5, $\\\\hat \\\\rho$ = 17.2, $\\\\epsilon$ = 1, $\\\\gamma$ = \
+0.1, $\\\\alpha$ = 0.9, $\\\\beta$ = 0.4.\\n   }\\n  \
+\\\\label{fig:500Agents-new}\\n\\\\end{figure}\\n\\n\\\\paragraph{$\\\\rho_{n}\
+^{\\\\mathrm{cr}}(t) <\\\\rho_{k}< \\\\rho_{d}^{\\\\mathrm{cr}}(t)$.}\\n\\nIf \
+ $\\\\rho_{k}<\\\\hat\\\\rho$, the two critical densities for growth, \
+$\\\\rho_{n}^{\\\\mathrm{cr}}$, Eqn.~\\\\eqref{eq:10}, and for densification, \
+$\\\\rho_{d}^{\\\\mathrm{cr}}$, Eqn.~\\\\eqref{eq:101ng}, come into \
+play.\\nThese are plotted in Figure~\\\\ref{fig:500Agents-new}. \\n\\nAs we \
+show in Figure \\\\ref{fig:500Agents-new}(a), during the initial stage of \
+group formation, $t\\\\leq 2$, $\\\\rho_{d}^{\\\\mathrm{cr}}(t)$ is very \
+large.\\nThis implies that initially densification \\\\emph{cannot} take \
+place because $\\\\rho_{k}(t)$ is too small.\\nAs a consequence, the \
+dominating process in the initial stage is the incremental growth of \
+$n_{k}(t)$.\\nWe see this in Figure \\\\ref{fig:500Agents-new}(a), where \
+relative size of the largest group, $\\\\nu=n^{\\\\mathrm{LCC}}/N$ \
+continuously increases, while its \\\\emph{density} has the constant value, $\
+\\\\rho^{\\\\mathrm{LCC}}=2$, for incremental growth.  \\nAlso the critical \
+density $\\\\rho_{n}^{\\\\mathrm{cr}}$ is rather small, below 2, which allows \
+the largest group to grow incrementally, according to the selection \
+Eqn.~\\\\eqref{eq:28}. \
+\\n\\n\\n\\\\paragraph{$\\\\rho_{d}^{\\\\mathrm{cr}}(t) < \
+\\\\rho_{n}^{\\\\mathrm{cr}}(t)<\\\\rho_{k}$.}\\nThe dynamics changes from \
+incremental growth to densification once $\\\\rho_{d}^{\\\\mathrm{cr}}(t)$ \
+becomes small enough because the link supersaturation $\\\\mu_{0}(t)$ has \
+decreased in the course of group formation.\\nPrecisely, once \
+$\\\\rho_{d}^{\\\\mathrm{cr}}\\\\leq 2$, the process of densification starts \
+to dominate .\\nThis does not mean that no group grows further.\\nIn fact, \
+the largest group now grows \\\\emph{both} in size and in density, as shown \
+in Figure \\\\ref{fig:500Agents-new}(a) because it fulfills the condition $\\\
+\\rho_{d}^{\\\\mathrm{cr}}(t) < \\\\rho_{d}^{\\\\mathrm{cr}}(t)<\\\\rho_{k}$. \
+\\n\\n\\n\\\\paragraph{$\\\\rho_{d}^{\\\\mathrm{cr}}(t) <\\\\rho_{k}< \
+\\\\rho_{n}^{\\\\mathrm{cr}}(t)$.}\\n\\nThe growth and densification of the \
+largest group decreases the supersaturation $y_{0}=\\\\mu_{0}n_{0}$, hence \
+$\\\\rho^{\\\\mathrm{cr}}_{n}$ increases considerably.\\nThis then stops the \
+further \\\\emph{growth} of groups with $\\\\rho_{k}< \
+\\\\rho_{n}^{\\\\mathrm{cr}}(t)$.\\nThis does not exclude that these groups \
+can densify, because $\\\\rho_{d}^{\\\\mathrm{cr}}(t) <\\\\rho_{k}$ \
+holds.\\nBut the group \\\\emph{size} still diminishes because \
+$\\\\rho_{k}<\\\\rho_{n}^{\\\\mathrm{cr}}$,\\n\\n\\\\paragraph{$\\\\bar{\\\\\
+rho}(t)\\\\approx\\\\rho_{k}$. }\\n\\nThe third relevant density is the \
+average density $\\\\bar{\\\\rho}(t)$, Eqn.~\\\\eqref{eq:36}.\\nAs an average \
+over groups, $\\\\bar{\\\\rho}(t)$  describes the distribution of groups at a \
+given time.\\nIn Figure~\\\\ref{fig:500Agents-new}(a) we observe that, for $t\
+\\\\leq 2$,  $\\\\bar{\\\\rho}$ is almost constant, has a small value and \
+fluctuates very little.\\nThis means that groups are small and of similar \
+size and have not yet reached the density for sparse, but large clusters, $\\\
+\\rho_{k}=2$. \\nThis observation further justifies why we have dropped, for \
+the first stage, the first term of the competition Eqn.~\\\\eqref{eq:25}, \
+because $\\\\rho_{k}\\\\approx \
+\\\\bar{\\\\rho}$.\\n\\n\\\\paragraph{$\\\\bar{\\\\rho}(t)<\\\\rho^{\\\\\
+mathrm{LCC}}$. }\\nFor the second stage, $2<t<4$, we observe instead a \
+continuous growth of $\\\\bar\\\\rho(t)$ over time. \\nThis is mainly \
+dominated by the density of the largest group, but fluctuates because small \
+groups disappear.\\nWe further observe that for the largest group always \
+$\\\\bar{\\\\rho}(t)<\\\\rho^{\\\\mathrm{LCC}}$ holds.\\nThat means, this \
+group can grow further.\\nGroups with $\\\\rho_{k}<\\\\bar{\\\\rho}(t)$, on \
+the other hand, cannot grow but will dissolve.\\nThis is reflected in the \
+first term of the competition Eqn.~\\\\eqref{eq:25}, which now plays the \
+mayor role in the \
+dynamics.\\n\\n\\n\\\\paragraph{$\\\\rho^{\\\\mathrm{cr}}_{n}(t)$ vs. \
+$\\\\rho^{\\\\mathrm{cr}}_{d}(t)$. }\\nFor the formation of new groups the \
+relevant control parameter is $\\\\rho^{\\\\mathrm{cr}}_{n}(t)$.\\nIt \
+determines the critical density that new groups need to reach if they want to \
+establish. \\nWhereas $\\\\rho^{\\\\mathrm{cr}}_{d}(t)$ describes the \
+evolution of the \\\\emph{group}, \\n$\\\\rho^{\\\\mathrm{cr}}_{n}(t)$ \
+describes the evolution of the \\\\emph{system} because it depends on the \
+supersaturation $y_{0}(t)$.\\nThis way, $\\\\rho_{n}^{\\\\mathrm{cr}}(t)$ \
+couples the growth of all groups via Eqn.~\\\\eqref{eq:28}.  \\nBecause \
+$y_{0}(t)$ continuously decreases during the phase transition,  \
+$\\\\rho_{n}^{\\\\mathrm{cr}}(t)$ increases over time and sets a limit to the \
+spontaneous group formation at a later time \
+$t$.\\n\\n$\\\\rho_{d}^{\\\\mathrm{cr}}$, on the other hand, is relevant only \
+for the internal stability of the group during the second stage. \\nDuring \
+the first stage densification does not play a role because \\n$\\\\rho_{k}<\\\
+\\rho_{d}^{\\\\mathrm{cr}}$.\\nDuring the second period densification becomes \
+important, but only to some degree, because  \\nthe group \\\\emph{size} \
+still diminishes as long as \
+$\\\\rho_{d}^{\\\\mathrm{cr}}<\\\\rho_{k}<\\\\rho_{n}^{\\\\mathrm{cr}}$.  \\n\
+\\n\\n\\nFigure~\\\\ref{fig:500Agents-new}(b) shows the long-term dynamics of \
+the process described.\\nIt allows to clearly separate the two stages: a \
+\\\\emph{short initial period}, $t\\\\leq 2$ in which the formation of sparse \
+groups dominates.\\nThis is followed by a \\\\emph{second stage} of about the \
+same duration $2\\\\leq t\\\\leq 4$, which leads to the establishment of a \
+large group.\\nThe precise values for the duration of course depends on the \
+system size, for which we have chosen $N=500$ instead of $N=100$ from before. \
+\\nDuring this second stage the number of groups reduces and the distribution \
+of groups changes as plotted in Figure~\\\\ref{fig:group-dist}. \
+\\n\\n\\n\\n\\n\\\\subsection{The structure of social \
+groups}\\n\\\\label{sec:different}\\n\\nThe three different \
+scenarios,\\npercolation, spinodal decomposition and nucleation, determine \
+the network structure of groups, as detailed in the parameter plot of Figure~\
+\\\\ref{fig: phaseDiagHighTension}(right).\\nThe above discussion has assumed \
+that all agents can interact and form links unconditionally. \\nBut groups \
+are also structured by the underlying social process of link formation, which \
+we described by means of opinions, $x_{i}(t)$.\\nThese are internal variables \
+of agents that determine whether two agents can interact, which in turn is \
+the precondition of link formation and  group membership.\\nThese opinions \
+are not only changed in bilateral interactions, they are further influenced \
+by the group.\\nThat lead to the concept of an effective opinion that weights \
+individual opinions against the average opinion of a group, using an \
+additional parameter $\\\\alpha$ for group influence.\\n\\nAs we have \
+demonstrated in Figure~\\\\ref{fig: phaseDiagHighTension}(left), restrictions \
+in the interactions of agents, expressed by the tolerance threshold \
+$\\\\epsilon$, can lead to very different macroscopic patterns.\\nInstead of \
+one large connected group, we very often find that several  groups with \
+\\ndifferent opinions finally coexist if $\\\\epsilon$ is small.\\nIn this \
+case, the selection Eqs. \\\\eqref{eq:28}, \\\\eqref{eq:25} no longer \
+hold.\\nAt least for the percolation case we are able to derive a relation, \
+Eqn.~\\\\eqref{eq:3}, to determine whether a given initial link density \
+$\\\\mu$ and a given tolerance threshold $\\\\epsilon$ would still allow for \
+the formation of a large connected group. \\n\\nIf we take the social \
+perspective then, different from physics, the final equilibrium state is less \
+interesting than the dynamics that potentially lead to it.\\nSocial systems \
+are non-equilibrium systems that adapt and evolve before an equilibrium is \
+reached.\\nOur paper therefore investigates the \\\\emph{principal} ability \
+of agents to form one large group, or to coexist in several separated groups.\
+\\nA state where all agents are in the same group is rather unrealistic from \
+a social perspective.\\nIn this respect, the nucleation scenario is the most \
+promising one, as it leads to a distribution of groups that form \
+spontaneously and compete for agents to grow.\\n\\nThe nucleation scenario \
+also has the advantage to consider agents \\\\emph{leaving} the group if they \
+experience a negative group utility.\\nSuch model features can bridge between \
+our rather abstract approach and social processes of group \
+formation.\\nAgents are allowed to constantly reevaluate their belonging to \
+the social group.\\nWe could further consider that agents reevaluate their \
+relations to those agents they are linked to.\\nThey could then delete a link \
+if the difference between their current opinion and the opinions of their \
+group members has reached a critical threshold \
+\\\\citep{groeber_2014}.\\nAlso more complex decision rules to establish or \
+to delete a link can be considered \\\\citep{Battiston2009,Centola2007}. \
+\\n\\nAnother model feature with relevance to social systems is the explicit \
+consideration of a \\\\emph{finite} number of agents and \
+links.\\nThermodynamic models of phase transitions usually assume the limit \
+of infinite systems.\\nWe instead address that social processes build on \
+\\\\emph{limited} resources, be it available individuals or the ability to \
+maintain social relations.\\nTherefore, we decided on purpose to present \
+simulations with 100 or 500 agents. \\nThe depletion of these resources \
+couples the dynamics of different groups on the systemic level, albeit in an \
+indirect manner.\\nIt also decreases the chances for new groups to form at \
+later stages.\\nHence, our model reflects the \\\\emph{first mover \
+advantage}: groups that form early have a larger chance to reach a \
+supercritical size or density.\\n\\nOur model of social group formation also \
+considers that groups can \\\\emph{merge} or \\\\emph{split} into \
+fractions.\\nThe merger process, which is called coagulation in a physical \
+context, is an effective mechanism to overcome the critical group size \
+because it increases the group size not incrementally, but in larger \
+steps.\\nIn our model the possibility for mergers is principally restricted \
+by the opinion dynamics.\\nIf we consider a strong group influence, all \
+opinions inside a group quickly converge to their group average.\\nIf the \
+tolerance threshold is low, groups with very different opinions can no longer \
+merge, so they remain in coexistence, as nicely shown in \
+Figure~\\\\ref{fig:thres-t}(c).\\nThis has indeed analogies to social or \
+economic systems where \\\\emph{local cultures} \\\\citep{groeber_2009_2} \
+inside groups or firms impact the success of mergers and acquisitions. \
+\\n\\nFragmentation is not a separate process but follows from the \
+dissolution of groups, Eqn.~\\\\eqref{eq:400}.\\nIf a link is removed, with a \
+small probability the group breaks into pieces.\\nThis is more likely if \
+groups have a small density.\\nSparse groups appear if two conditions are \
+fulfilled: a rather low link supersaturation $\\\\mu$ close to the \
+percolation threshold and a rather large $\\\\epsilon$, i.e. all links are \
+accepted.\\nFor small $\\\\epsilon$, we obtain more compact groups because \
+links within the group are more likely than between groups. \\n\\nEventually, \
+we emphasize that one of the key variables of our model, the group \
+\\\\emph{density} $\\\\rho_{k}$, is particularly relevant in a social \
+context.\\nIn physical systems droplets are described as compact, \
+homogeneous, spherical clusters with a radius $r_{k}$ and a fixed density $\\\
+\\rho_{\\\\alpha}$, which is the same for all droplets.\\nSocial groups, on \
+the other hand, are neither compact, nor spherical, nor homogeneous.\\nThey \
+are like small social networks, more precisely disconnected components of a \
+large social network.\\nTherefore they need to be characterized by two \
+variables, the number of agents, $n_{k}$, and the number of links, $m_{k}$, \
+which together define a time dependent group density.\\n$\\\\rho_{k}(t)$ in \
+fact determines the \\\\emph{quality}, or the fitness, of a social group, \
+which depends on the \\\\emph{relations} between group members rather than on \
+the sheer number of members.\\nGiven a fixed group size, the number of \
+realized relations makes all the difference for exchanging information, \
+collaborating and sharing resources.\\nThis has been accounted for in our \
+model by defining a group utility based on the group density.\\n\\nWhile \
+being relevant in a social context, our model allows for analytic \
+investigations to relate  the group density $\\\\rho_{k}$ to different \
+critical densities, $\\\\hat{\\\\rho}$, $\\\\rho_{n}^{\\\\mathrm{cr}}(t)$, \
+$\\\\rho_{n}^{\\\\mathrm{cr}}(t)$ and $\\\\bar\\\\rho(t)$ which compress \
+important information about the dynamics of social groups.\\nThis way, we \
+could compactly describe the collective dynamics of all groups in a selection \
+Eqn.~\\\\eqref{eq:25} that allows to separate early and late influences.\\nIn \
+particular, it formally describes the \\\\emph{winner takes all} dynamics \
+that is known from many social and economic systems \
+\\\\citep{ebeling2011physics,Schweitzer2020}.\\n\\n\\n\\\\subsection{Outlook}\
+\\n\\\\label{sec:outlook}\\n\\nAs a main conceptual contribution, in our \
+paper we formally introduce  the \\\\emph{feedback} between the formation of \
+social groups and the opinion dynamics of individuals.\\nAccording to the \
+principle of homophily agents interact more if they are more similar with \
+respect to some features.\\nWe capture these features in a rather abstract \
+notion of ``opinion''.\\nAgents will establish social relations, i.e. links, \
+if their similarity in opinions allows them to interact.\\nGroups are formed \
+based on these social relations.\\nOnce they are established, they continue \
+to influence the opinion of agents, this way impacting the possibility of \
+agents to form new links.\\nTherefore, in our model we observe the \
+\\\\emph{coevolution} between social group structures and \
+opinions.\\nDifferent from simple models of network formation, the \
+probability that two agents form a link is no longer a global and constant \
+parameter, but (i) depends on the agents, and (ii) evolves over time.\\n\\nIn \
+this paper, we have used only a simplified characterization of agents by \
+means of a continuous scalar variable, $x_{i}(t)$.\\nIn a next step, we will \
+extend our model by considering \\\\emph{multidimensional} opinions \
+\\\\citep{schweighofer_2020}.\\nThis is not just an upscaling of the current \
+model, but will in fact  allow for more diverse group configurations and for \
+new system states.\\nThe multidimensional representation reflects the opinion \
+of a single agent with respect to different issues.\\nTwo agents can have \
+similar opinions about one particular issue, but vastly deviating ones about \
+another issue.\\nThis then leads to the interesting question how agents \
+settle their relations in such cases.\\nHere psychological concepts like \
+dissonance minimization \\\\citep{festinger_1957,groeber_2014} or \
+\\nstructural balance theory \\\\citep{heider1946attitudes, \
+flache2017,schweighofer_2020_2,gorski2020homophily,Agbanusi2018,antal3, \
+Kulakowski2019} come into play.\\nWith respect to social group formation, \
+such conflicting situations would allow  agents to form a social group with a \
+focus only on the one issue they agree on, for example a movement for \
+environmental protection.\\nBut regarding another issue, agents would join a \
+different group.\\n\\nTo model these more complex situations, we will explore \
+a multilayer network representation \
+\\\\citep{hu2011percolation,murase2014multilayer,Kivela2014,Scholtes2016,\\n  \
+Atkisson2019,\\n  Gorski2017}.\\nThe nodes in each layer, i.e. the agents, \
+are identical, but their relations in each layer can be different because \
+\\neach layer contains information about one particular issue \
+only.\\nDecoupled layers would display a dynamics of group formation similar \
+to the one discussed in this paper.\\nHowever, in addition to the \
+\\\\emph{intralayer} dynamics, we have to consider the \\\\emph{interlayer} \
+dynamics of coupled layers.\\nThat is, how do the social dynamics of groups \
+and opinions on one layer impact the dynamics on other layers?\\nCombining \
+multilayer network models with models of group formation and opinion  \
+dynamics will allow us to address long standing questions about \
+\\\\emph{issue alignment} \\\\citep{schweighofer_2020}, i.e. how opinions on \
+different issues influence another, on the emergence of social movements, or \
+on conflict resolution and polarization of opinions in a novel \
+manner.\\n\\n\\\\subsection*{Acknowledgements}\\n\\\\label{sec:\
+acknowledgements}\\n\\nF.S. gratefully acknowledges early discussions on the \
+dynamics of phase transitions in finite systems with four colleagues, who \
+celebrate their milestone birthday in 2021: Heinz Ulbricht (90), Werner \
+Ebeling (85), Gerd R\[CapitalATilde]\[Paragraph]pke (80), J\[CapitalATilde]\
+\.bcrn Schmelzer (70). Their scientific advice has inspired the current \
+manuscript. \\n\\n\\\\begin{appendix}\\n  \\n\"\>"}, {7,
+  "7"->"\<\"*{Appendix A}\\n\\nTable \\\\ref{tab: summary parameters} below \
+summarizes the correspondence between the mechanisms incorporated in our \
+model, their rationale and their social relevance:\\n\\n \
+\\\\renewcommand{\\\\arraystretch}{2}\\n\\\\begin{table}[httb]\\n\\\\begin{\
+center}\\\\footnotesize\\n  \\\\begin{tabular}{@{} p{2.4cm}  p{3cm}  p{3cm}  \
+p{3cm}  p{3cm} @{}} \\\\toprule\\n & Opinion formation & Group influence & \
+Group formation & Network formation  \\\\\\\\[5pt]\\n  \\\\midrule\\nSocial \
+relevance & \\\\makecell[l]{- social influence ($\\\\gamma$) \\\\\\\\ - \
+tolerance ($\\\\epsilon$) \\\\\\\\\\n    }&\\n      \\\\makecell[l]{- local \
+cultures ($\\\\alpha$) \\\\\\\\ - social norms ($\\\\alpha$)\\n        }&\\n  \
+     \\\\makecell[l]{- communication ($b$) \\\\\\\\\\n    - maintain group \
+($c$)} &  \\\\makecell[l]{- randomness ($\\\\beta$) \\\\\\\\\\n    - Dunbar's \
+\\\\# ($M$)\\n    }\\\\\\\\[5pt]\\nRationale & \\\\makecell[l]{- restrict \
+interaction\\n      \\\\\\\\\\n    - consensus } &\\n        \
+\\\\makecell[l]{- group coherence \\\\\\\\ - group relevance}& \
+\\\\makecell[l]{- cost/benefit \\\\\\\\ - group utility}&\\n     \
+\\\\makecell[l]{- unpredictability\\\\\\\\\\n    - finite size}   \
+\\\\\\\\[5pt]\\n\\n    Parameters & $\\\\gamma$  ,  $\\\\epsilon$ & \
+$\\\\alpha$ & $(c,b)$ or $\\\\hat\\\\rho$ & $\\\\beta$  ,  \
+$(N,M)$\\\\\\\\[5pt]\\n    \\\\bottomrule\\n  \
+\\\\end{tabular}\\n\\\\end{center}\\n\\\\caption{Summary of model components}\
+\\n\\\\label{tab: summary parameters}\\n\\\\end{table}\\n\"\>"}, {8,
+  "8"->"\<\"*{Appendix B}\\n\\n\\n\\nIn the following we summarize the master \
+equation formalism for considering the group distribution.\\nThe discussion \
+is restricted to \\nthe case of $\\\\epsilon = 1$ and incremental growth and \
+dissolution as the only possible transitions.\\n\\nThis perspective is based \
+on $P[\\\\pmb{N},t]$, the probability to find the system at time $t$ with a \
+group configuration $\\\\pmb{N}$.\\nHere, \
+$\\\\pmb{N}=[N_{1,0},N_{2,1},N_{3,2},N_{3,3},...,N_{N,M}]$ is a vector with \
+elements $N_{n,m}$ counting the number of groups of size $n$ with $m$ \
+links.\\nWith this, the total number of links and agents,  \
+Eqn.~\\\\eqref{eq:1}, can be rewritten as: \\n\\\\begin{align}\\n  \
+\\\\label{eq:A1}\\n  M=m_{0}(t) +\\\\sum_{n,m}N_{n,m}(t)m\\\\;;\\\\quad\\n   \
+N=n_{0}(t) +\\\\sum_{n,m}N_{n,m}(t)n\\n\\\\end{align}\\nwhere \
+$n_{0}(t)=N_{1,0}(t)$ is the number of free agents as defined in the main \
+text.\\nThe transition rates for growth can then be written \
+as:\\n\\\\begin{align}\\n  \\\\label{A3}\\nw^{+}_{n,m}[N_{1,0} N_{n,m}] \
+\\\\propto \\\\frac{2 m_{0}}{N^{2}} (nN_{n,m})n_{0}\\n\\\\end{align}\\nand \
+the transition rates for spontaneous leaving  read: \\n\\\\begin{align}\\n  \
+\\\\label{eq:A4}\\nw^{-}_{n,m}[N_{n,m}] \\\\propto \\\\frac{nN_{n,m}}{N}  \
+\\\\exp{\\\\left\\\\{\\\\beta\\\\frac{\\\\hat{\\\\rho}}{\\\\rho}\\\\right\\\\}\
+}\\n\\\\end{align}\\nUsing the above defined transition rates, we can write \
+down the master equation for changes in the group \
+distribution:\\n\\\\begin{align}\\n  \\\\label{eq:8}\\n  \\\\frac{\\\\partial \
+P(\\\\pmb{N},t)}{\\\\partial t}=& \\\\sum\\\\limits_{\\\\pmb{N^{\\\\prime}}\\\
+\\neq \\\\pmb{N}} \
+w[\\\\pmb{N}|\\\\pmb{N^{\\\\prime}}]P(\\\\pmb{N^{\\\\prime}},t) -\\n          \
+                                  w[\\\\pmb{N^{\\\\prime}}|\\\\pmb{N}]P(\\\\\
+pmb{N},t)\\n\\\\end{align}\\nwhich in explicit form can be written as \
+follows:\\n\\\\begin{multline}\\n  \\\\label{eq:8}\\n  \\\\frac{\\\\partial \
+P(N_{1,0},N_{2,1},N_{3,2},N_{3,3}...,t)}{\\\\partial t}=  \
+w^{-}_{2,1}[N_{2,1}+1]P(N_{1,0}-2,N_{2,1}+1...,t) - \\\\nonumber \\\\\\\\\\n  \
+-  w^{+}_{1,0}[N_{1,0}]P(N_{1,0},N_{2,1}...,t) \\\\nonumber \\\\\\\\\\n  +  \
+w^{-}_{3,2}[N_{3,2}+1]P(N_{1,0}-1,N_{2,1}-1,N_{3,2}+1...,t) \\\\nonumber \\\\\
+\\\\\\n  +  w^{+}_{1,0}[N_{1,0}+2]P(N_{1,0}+2, N_{2,1} -1, N_{3,2}...,t) \
+\\\\nonumber \\\\\\\\\\n  - (w^{+}_{2,1}[N_{1,0},N_{2,1}] + \
+w^{-}_{2,1}[N_{2,1}])P(N_{1,0},N_{2,1}...,t) \\\\nonumber \\\\\\\\\\n  +  \
+\\\\sum_{n=3}^{N}\\\\{w^{-}_{n+1,n}[N_{n+1,n}+1]P(N_{1,0} -1,...,N_{n,n-1}+1, \
+N_{n+1,n}+1...,t)\\\\} \\\\nonumber \\\\\\\\\\n  +  \
+w^{+}_{n-1,n-2}[N_{1,0}+1,N_{n-1,n-2}+1]P(N_{1,0}+1,...,N_{n-1,n-2}+1,N_{n,n-\
+1}-1...,t) \\\\nonumber \\\\\\\\\\n  -  (w^{+}_{n,n-1}[N_{1,0},N_{n,n-1}] + \
+w^{-}_{n,n-1}[N_{n,n-1}])P(N_{1,0},...,t)\\n\\\\end{multline}\\nThe mean \
+number of groups of size $(n,n-1)$ in case of incremental growth follows \
+from: \\n\\\\begin{align}\\n  \\\\mean{N_{n,n-1}(t)} = \
+\\\\sum_{\\\\pmb{N}_{i}} \
+N_{n,n-1}P(\\\\pmb{N}_{i},t)\\n\\\\end{align}\\nwhere $\\\\pmb{N}_{i}$ refers \
+to group distributions which have a total number of $N$ agents.\\nUsing the \
+master equation and the transition probabilities, we can write for the \
+time-dependent change:\\n\\\\begin{align}\\n  \\\\label{eq:2}\\n  \
+\\\\frac{d\\\\mean{N_{n,n-1}}}{dt} = \\\\mean{-w^{-}_{n,n-1}(N_{n,n-1}) - \
+w^{+}_{n,n-1}(n_{0}N_{n}) + w^{-}_{n+1,n}(N_{n+1,n}) + \
+w^{+}_{n-1,n-2}(n_{0}N_{n-1,n})}\\n\\\\end{align}\\nThis equation holds only \
+for $n\\\\geq 2$.\\nFor $n=1$ we have to take into account both the \
+probability for any group to shrink and grow, as well as the probability for \
+two agents to form a group or break apart. We refrain from writing out this \
+longer equation here. Also, we will drop the arguments of the transition \
+rates to lighten the notation.\\n\\nBy taking a Taylor expansion for the \
+transition rates, the following Fokker-Plank equation (only dependent on \
+$N_{n,n-1}$ and $n_{0}$ now) can be found \\\\citep{Book-Ulbricht1988}: \\n\\\
+\\begin{equation}\\n  \\\\frac{d\\\\mean{N_{n,n-1}}}{dt} = - \
+\\\\mean{\\\\frac{\\\\partial }{\\\\partial n}\\\\left\\\\{ w^{+}_{n,n-1} - \
+w^{-}_{n} \\\\right\\\\} } + \\\\frac{1}{2}\\\\mean{\\\\frac{\\\\partial^{2} \
+}{\\\\partial n^{2}}\\\\left\\\\{ w^{+}_{n,n-1} + w^{-}_{n} \\\\right\\\\} \
+}\\n\\\\end{equation}\\nWe only consider the first part of this equation, \
+neglecting  fluctuations in the system.\\nUsing our transition rates and \
+assuming $\\\\mean{N_{n,n-1}n_{0}} = \\\\mean{N_{n,n-1}}\\\\mean{n_{0}}$, the \
+first part can be written as follows:\\n\\\\begin{align}\\n  \
+\\\\label{eq:6}\\n  \\\\frac{d \\\\mean{N_{n,n-1}}}{dt} = - \
+\\\\frac{\\\\partial }{\\\\partial n}  \\\\left\\\\{\\\\frac{2m_{0}}{N^{2}}\\\
+\\mean{n}\\\\mean{N_{n,n-1}}\\\\mean{n_{0}} - \
+\\\\frac{\\\\mean{n}\\\\mean{N_{n,n-1}}}{N}\\\\exp{\\\\beta \\\\frac{\\\\hat{\
+\\\\rho}}{\\\\rho}}\\\\right\\\\}\\n\\\\end{align}\\nThis can be transformed \
+into a continuity equation, which  describes the in- and outflow of agents \
+into the different groups:\\n\\\\begin{align}\\\\label{eq:4}\\n  \\\\frac{d \
+\\\\mean{N_{n,n-1}}}{dt} + \\\\nabla \\\\cdot [\\\\mean{N_{n,n-1}(t)}\\\\cdot \
+\\\\dot{n}] = 0\\n\\\\end{align}\\nThis finally leads to the change in \
+average group size $n$ which is discussed in the main part of the article \
+already:\\n\\\\begin{align}\\n  \\\\label{eq:9}\\n  \\\\frac{d \
+\\\\mean{n}}{dt} &= \\\\frac{2m_{0}}{N^{2}}\\\\mean{n}\\\\mean{n_{0}} - \
+\\\\frac{\\\\mean{n}}{N}\\\\exp{\\\\beta \\\\frac{\\\\hat{\\\\rho}}{\\\\rho}}\
+\\\\nonumber \\\\\\\\\\n                        &= \
+\\\\frac{\\\\mean{y_{0}(t)}\\\\mean{n}}{N} - \\\\frac{\\\\mean{n}}{N}\\\\exp{\
+\\\\beta \\\\frac{\\\\hat{\\\\rho}}{\\\\rho}}\\\\nonumber \\\\\\\\\\n  &=  \\\
+\\frac{\\\\beta \\\\hat\\\\rho \\\\mean{n}}{N}\\\\left[ \\\\frac{1}{\\\\mean{\
+\\\\rho^{cr}_{n}(t)}} - \
+\\\\frac{1}{\\\\mean{\\\\rho(t)}}\\\\right]\\n\\\\end{align}\\n\\n\\n\\n\\n\\\
+n\\n\\n\\n\\\\end{appendix}\\n\\n\\\\small \
+\\\\setlength{\\\\bibsep}{1pt}\\n\\n\\n\\\\begin{thebibliography}{111}\\n\\\\\
+expandafter\\\\ifx\\\\csname \
+natexlab\\\\endcsname\\\\relax\\\\def\\\\natexlab#1{#1}\\\\fi\\n\\\\\
+expandafter\\\\ifx\\\\csname url\\\\endcsname\\\\relax\\n  \
+\\\\def\\\\url#1{\\\\texttt{#1}}\\\\fi\\n\\\\expandafter\\\\ifx\\\\csname \
+urlprefix\\\\endcsname\\\\relax\\\\def\\\\urlprefix{URL \
+}\\\\fi\\n\\\\expandafter\\\\ifx\\\\csname \
+selectlanguage\\\\endcsname\\\\relax\\n  \
+\\\\def\\\\selectlanguage#1{\\\\relax}\\\\fi\\n\\n\\\\bibitem[{Abraham(1974)}]\
+{abraham1974homogeneous}\\nAbraham, F.~F. (1974).\\n\\\\newblock \
+\\\\emph{Homogeneous nucleation theory}.\\n\\\\newblock Amsterdam: \
+Elsevier.\\n\\n\\\\bibitem[{Achlioptas \\\\emph{et~al.}(2009)Achlioptas, \
+D'Souza and\\n  Spencer}]{achlioptas_2009}\\nAchlioptas, D.; D'Souza, R.~M.; \
+Spencer, J. (2009).\\n\\\\newblock Explosive Percolation in Random \
+Networks.\\n\\\\newblock \\\\emph{Science} \\\\textbf{323}, 1453--1455.\\n\\n\
+\\\\bibitem[{Agbanusi and Bronski(2018)}]{Agbanusi2018}\\nAgbanusi, I.; \
+Bronski, J.~C. (2018).\\n\\\\newblock {Emergence of Balance from a model of \
+Social Dynamics}.\\n\\\\newblock \\\\emph{SIAM Journal on Applied \
+Mathematics} \\\\textbf{78}, 1--26.\\n\\n\\\\bibitem[{Akbaritabar \
+\\\\emph{et~al.}(2020)Akbaritabar, Traag, Caimo and\\n  \
+Squazzoni}]{akbaritabar_2020}\\nAkbaritabar, A.; Traag, V.~A.; Caimo, A.; \
+Squazzoni, F. (2020).\\n\\\\newblock Italian sociologists: a community of \
+disconnected groups.\\n\\\\newblock \\\\emph{Scientometrics} \\\\textbf{124}, \
+2361\[AHat]\.80\.932382.\\n\\n\\\\bibitem[{Allard and \
+H{\\\\'{e}}bert-Dufresne(2018)}]{Allard2018}\\nAllard, A.; \
+H{\\\\'{e}}bert-Dufresne, L. (2018).\\n\\\\newblock {Percolation and the \
+effective structure of complex networks}.\\n\\\\newblock \\\\emph{Physical \
+Review X} \\\\textbf{9}, 011023.\\n\\n\\\\bibitem[{Antal \
+\\\\emph{et~al.}(2005)Antal, Krapivsky and Redner}]{antal3}\\nAntal, T.; \
+Krapivsky, P.~L.; Redner, S. (2005).\\n\\\\newblock {Dynamics of social \
+balance on networks}.\\n\\\\newblock \\\\emph{Physical Review E} \
+\\\\textbf{72}, 36121.\\n\\n\\\\bibitem[{Arenas \\\\emph{et~al.}(2008)Arenas, \
+Fernandez, Fortunato and\\n  Gomez}]{arenas2008motif}\\nArenas, A.; \
+Fernandez, A.; Fortunato, S.; Gomez, S. (2008).\\n\\\\newblock Motif-based \
+communities in complex networks.\\n\\\\newblock \\\\emph{Journal of Physics \
+A} \\\\textbf{41}, 224001.\\n\\n\\\\bibitem[{Atkisson \
+\\\\emph{et~al.}(2020)Atkisson, G\[CapitalATilde]\.b3rski, Jackson, Ho\
+\[CapitalARing]\.82yst and\\n  D'Souza}]{Atkisson2019}\\nAtkisson, C.; G\
+\[CapitalATilde]\.b3rski, P.~J.; Jackson, M.~O.; Ho\[CapitalARing]\.82yst, \
+J.~A.; D'Souza, R.~M.\\n  (2020).\\n\\\\newblock Why understanding multiplex \
+social network structuring processes will\\n  help us better understand the \
+evolution of human behavior.\\n\\\\newblock \\\\emph{Evolutionary \
+Antropology} \\\\textbf{29}, 102--107.\\n\\n\\\\bibitem[{Battiston \
+\\\\emph{et~al.}(2020)Battiston, Cencetti, Iacopini, Latora,\\n  Lucas, \
+Patania, Young and Petri}]{BATTISTON20201}\\nBattiston, F.; Cencetti, G.; \
+Iacopini, I.; Latora, V.; Lucas, M.; Patania, A.;\\n  Young, J.-G.; Petri, G. \
+(2020).\\n\\\\newblock Networks beyond pairwise interactions: Structure and \
+dynamics.\\n\\\\newblock \\\\emph{Physics Reports} \\\\textbf{874}, 1--92.\\n\
+\\n\\\\bibitem[{Bianconi \\\\emph{et~al.}(2014)Bianconi, Darst, Iacovacci and\
+\\n  Fortunato}]{bianconi2014triadic}\\nBianconi, G.; Darst, R.~K.; \
+Iacovacci, J.; Fortunato, S. (2014).\\n\\\\newblock Triadic closure as a \
+basic generating mechanism of communities in\\n  complex \
+networks.\\n\\\\newblock \\\\emph{Physical Review E} \\\\textbf{90}, \
+042806.\\n\\n\\\\bibitem[{Bielenberg \\\\emph{et~al.}(2012)Bielenberg, Helm, \
+Gentilucci,\\n  Stefanescu and Zhang}]{bielenberg2012growth}\\nBielenberg, \
+A.; Helm, L.; Gentilucci, A.; Stefanescu, D.; Zhang, H. \
+(2012).\\n\\\\newblock The growth of diaspora-a decentralized online social \
+network in the\\n  wild.\\n\\\\newblock In: \\\\emph{2012 proceedings IEEE \
+INFOCOM workshops}. IEEE, pp. 13--18.\\n\\n\\\\bibitem[{Block \
+\\\\emph{et~al.}(2019)Block, Stadtfeld and\\n  \
+Snijders}]{block2019forms}\\nBlock, P.; Stadtfeld, C.; Snijders, T.~A. \
+(2019).\\n\\\\newblock Forms of dependence: Comparing SAOMs and ERGMs from \
+basic principles.\\n\\\\newblock \\\\emph{Sociological Methods \\\\& \
+Research} \\\\textbf{48}, \
+202--239.\\n\\n\\\\bibitem[{Bollobas(2001)}]{Bollob_s_2001}\\nBollobas, B. \
+(2001).\\n\\\\newblock \\\\emph{Random Graphs}.\\n\\\\newblock Cambridge \
+University \
+Press.\\n\\n\\\\bibitem[{Bonabeau(2002)}]{bonabeau2002agent}\\nBonabeau, E. \
+(2002).\\n\\\\newblock Agent-based modeling: Methods and techniques for \
+simulating human\\n  systems.\\n\\\\newblock \\\\emph{Proceedings of the \
+National Academy of Sciences (PNAS)}\\n  \\\\textbf{99}, \
+7280--7287.\\n\\n\\\\bibitem[{Bonacich and Lu(2012)}]{bonacich}\\nBonacich, \
+P.; Lu, P. (2012).\\n\\\\newblock \\\\emph{Introduction to Mathematical \
+Sociology}.\\n\\\\newblock Princeton University Press.\\n\\n\\\\bibitem[{Boyd \
+and Richerson(2009)}]{Boyd2009}\\nBoyd, R.; Richerson, P.~J. \
+(2009).\\n\\\\newblock {Culture and the evolution of human cooperation.}\\n\\\
+\\newblock \\\\emph{Philosophical Transactions of the Royal Society of London \
+B}\\n  \\\\textbf{364}, 3281--3288.\\n\\n\\\\bibitem[{Brandenberger \
+\\\\emph{et~al.}(2019)Brandenberger, Casiraghi, Nanumyan\\n  and \
+Schweitzer}]{Schweitzer2019}\\nBrandenberger, L.; Casiraghi, G.; Nanumyan, \
+V.; Schweitzer, F. (2019).\\n\\\\newblock Quantifying Triadic Closure in \
+Multi-Edge Social Networks.\\n\\\\newblock In: \\\\emph{ASONAM '19: \
+Proceedings of the 2019 IEEE/ACM International\\n  Conference on Advances in \
+Social Networks Analysis and Mining}. ACM, p.\\n  \
+307\[AHat]\.80\.93310.\\n\\n\\\\bibitem[{Br{\\\\'{o}}dka \
+\\\\emph{et~al.}(2013)Br{\\\\'{o}}dka, Saganowski and\\n  \
+Kazienko}]{Brodka2013}\\nBr{\\\\'{o}}dka, P.; Saganowski, S.; Kazienko, P. \
+(2013).\\n\\\\newblock {GED: the method for group evolution discovery in \
+social networks}.\\n\\\\newblock \\\\emph{Social Network Analysis and Mining} \
+\\\\textbf{3}, 1--14.\\n\\n\\\\bibitem[{Cahn(1965)}]{cahn1965phase}\\nCahn, \
+J.~W. (1965).\\n\\\\newblock Phase separation by spinodal decomposition in \
+isotropic systems.\\n\\\\newblock \\\\emph{Journal of Chemical Physics} \
+\\\\textbf{42}, 93--99.\\n\\n\\\\bibitem[{Callaway \
+\\\\emph{et~al.}(2000)Callaway, Newman, Strogatz and\\n  \
+Watts}]{Callaway2000}\\nCallaway, D.~S.; Newman, M. E.~J.; Strogatz, S.~H.; \
+Watts, D.~J. (2000).\\n\\\\newblock {Network robustness and fragility: \
+percolation on random graphs.}\\n\\\\newblock \\\\emph{Physical Review \
+Letters} \\\\textbf{85}, 5468--71.\\n\\n\\\\bibitem[{Capocci \
+\\\\emph{et~al.}(2006)Capocci, Servedio, Colaiori, Buriol,\\n  Donato, \
+Leonardi and Caldarelli}]{Capocci2006}\\nCapocci, A.; Servedio, V. D.~P.; \
+Colaiori, F.; Buriol, L.; Donato, D.;\\n  Leonardi, S.; Caldarelli, G. \
+(2006).\\n\\\\newblock {Preferential attachment in the growth of social \
+networks: The\\n  internet encyclopedia Wikipedia}.\\n\\\\newblock \
+\\\\emph{Physical Review E} \\\\textbf{74}, 036116.\\n\\n\\\\bibitem[{Carro \
+\\\\emph{et~al.}(2014)Carro, Vazquez, Toral and {San\\n  Miguel}}]{Carro2014}\
+\\nCarro, A.; Vazquez, F.; Toral, R.; {San Miguel}, M. (2014).\\n\\\\newblock \
+{Fragmentation transition in a coevolving network with link-state\\n  \
+dynamics}.\\n\\\\newblock \\\\emph{Physical Review E} \\\\textbf{89}, 062802.\
+\\n\\n\\\\bibitem[{Castellano \\\\emph{et~al.}(2009)Castellano, Fortunato and\
+\\n  Loreto}]{castellano2009}\\nCastellano, C.; Fortunato, S.; Loreto, V. \
+(2009).\\n\\\\newblock {Statistical physics of social \
+dynamics}.\\n\\\\newblock \\\\emph{Reviews of Modern Physics} \\\\textbf{81}, \
+591--646.\\n\\n\\\\bibitem[{Catanzaro \\\\emph{et~al.}(2004)Catanzaro, \
+Caldarelli and\\n  Pietronero}]{catanzaro2004social}\\nCatanzaro, M.; \
+Caldarelli, G.; Pietronero, L. (2004).\\n\\\\newblock Social network growth \
+with assortative mixing.\\n\\\\newblock \\\\emph{Physica A} \\\\textbf{338}, \
+119--124.\\n\\n\\\\bibitem[{Centola and Macy(2007)}]{Centola2007}\\nCentola, \
+D.; Macy, M. (2007).\\n\\\\newblock Complex contagions and the weakness of \
+long ties.\\n\\\\newblock \\\\emph{American Journal of Sociology} \
+\\\\textbf{113}, 702--734.\\n\\n\\\\bibitem[{Collins and \
+Frydenlund(2018)}]{Collins2018}\\nCollins, A.~J.; Frydenlund, E. (2018).\\n\\\
+\\newblock {Strategic group formation in agent-based \
+simulation}.\\n\\\\newblock \\\\emph{Simulation} \\\\textbf{94}, 179--193.\\n\
+\\n\\\\bibitem[{Cranmer and \
+Desmarais(2011)}]{cranmer2011inferential}\\nCranmer, S.~J.; Desmarais, B.~A. \
+(2011).\\n\\\\newblock Inferential network analysis with exponential random \
+graph models.\\n\\\\newblock \\\\emph{Political Analysis} \\\\textbf{19}, \
+66--86.\\n\\n\\\\bibitem[{Currarini \\\\emph{et~al.}(2016)Currarini, Matheson \
+and\\n  Vega-Redondo}]{currarini2016simple}\\nCurrarini, S.; Matheson, J.; \
+Vega-Redondo, F. (2016).\\n\\\\newblock A simple model of homophily in social \
+networks.\\n\\\\newblock \\\\emph{European Economic Review} \\\\textbf{90}, \
+18--39.\\n\\n\\\\bibitem[{Deffuant \\\\emph{et~al.}(2000)Deffuant, Neau, \
+Amblard and\\n  Weisbuch}]{deffuant_2000}\\nDeffuant, G.; Neau, D.; Amblard, \
+F.; Weisbuch, G. (2000).\\n\\\\newblock Mixing beliefs among interacting \
+agents.\\n\\\\newblock \\\\emph{Advances in Complex Systems} \\\\textbf{03}, \
+87\[AHat]\.80\.9398.\\n\\n\\\\bibitem[{Eckl \\\\emph{et~al.}(2018)Eckl, \
+Ghanem and L\[CapitalATilde]\[Paragraph]wenstein}]{eckl_2018}\\nEckl, M.; \
+Ghanem, C.; L\[CapitalATilde]\[Paragraph]wenstein, H. (2018).\\n\\\\newblock \
+The Evolution of Social Work from Disconnected Groups to a Scientific\\n  \
+Community: A Social Network Analysis.\\n\\\\newblock \\\\emph{The British \
+Journal of Social Work} \\\\textbf{49}, \
+428\[AHat]\.80\.93447.\\n\\n\\\\bibitem[{Eguiluz \
+\\\\emph{et~al.}(2003)Eguiluz, Hernandez-Garcia, Piro and\\n  \
+Klemm}]{Eguiluz2003}\\nEguiluz, V.~M.; Hernandez-Garcia, E.; Piro, O.; Klemm, \
+K. (2003).\\n\\\\newblock {Effective dimensions and percolation in \
+hierarchically structured\\n  scale-free networks}.\\n\\\\newblock \
+\\\\emph{Physical Review E} \\\\textbf{68}, 1--4.\\n\\n\\\\bibitem[{Erd\
+\[CapitalARing]\.91s and Renyi(1960)}]{erdos_1960}\\nErd\[CapitalARing]\.91s, \
+P.; Renyi, A. (1960).\\n\\\\newblock On the evolution of random \
+graphs.\\n\\\\newblock \\\\emph{Publ. Math. Inst. Hungary. Acad. Sci.} \
+\\\\textbf{5}, 17--61.\\n\\n\\\\bibitem[{Everett and \
+Borgatti(2005)}]{everett2005extending}\\nEverett, M.~G.; Borgatti, S.~P. \
+(2005).\\n\\\\newblock Extending centrality.\\n\\\\newblock \\\\emph{Models \
+and methods in social network analysis} \\\\textbf{35},\\n  \
+57--76.\\n\\n\\\\bibitem[{Falzon \\\\emph{et~al.}(2018)Falzon, Quintane, Dunn \
+and\\n  Robins}]{falzon2018embedding}\\nFalzon, L.; Quintane, E.; Dunn, J.; \
+Robins, G. (2018).\\n\\\\newblock Embedding time in positions: Temporal \
+measures of centrality for\\n  social network analysis.\\n\\\\newblock \
+\\\\emph{Social Networks} \\\\textbf{54}, 168--178.\\n\\n\\\\bibitem[{Feistel \
+and Ebeling(2011)}]{ebeling2011physics}\\nFeistel, R.; Ebeling, W. (2011).\\n\
+\\\\newblock \\\\emph{Physics of Self-organization and \
+Evolution}.\\n\\\\newblock John Wiley \\\\& \
+Sons.\\n\\n\\\\bibitem[{Festinger(1957)}]{festinger_1957}\\nFestinger, L. \
+(1957).\\n\\\\newblock \\\\emph{A Theory of Cognitive \
+Dissonance}.\\n\\\\newblock Stanford University \
+Press.\\n\\n\\\\bibitem[{Flache and Macy(2011)}]{flache2011local}\\nFlache, \
+A.; Macy, M.~W. (2011).\\n\\\\newblock Local convergence and global \
+diversity: From interpersonal to social\\n  influence.\\n\\\\newblock \
+\\\\emph{Journal of Conflict Resolution} \\\\textbf{55}, \
+970--995.\\n\\n\\\\bibitem[{Flache \\\\emph{et~al.}(2017)Flache, \
+M\\\\\\\"{a}s, Feliciani, Chattoe-Brown,\\n  Deffuant, Huet and \
+Lorenz}]{flache2017}\\nFlache, A.; M\\\\\\\"{a}s, M.; Feliciani, T.; \
+Chattoe-Brown, E.; Deffuant, G.; Huet,\\n  S.; Lorenz, J. \
+(2017).\\n\\\\newblock Models of Social Influence: Towards the Next \
+Frontiers.\\n\\\\newblock \\\\emph{Journal of Artificial Societies and Social \
+Simulation}\\n  \\\\textbf{20}, \
+2.\\n\\n\\\\bibitem[{Friedkin(1991)}]{friedkin1991theoretical}\\nFriedkin, \
+N.~E. (1991).\\n\\\\newblock Theoretical foundations for centrality measures.\
+\\n\\\\newblock \\\\emph{American Journal of Sociology} \\\\textbf{96}, \
+1478--1504.\\n\\n\\\\bibitem[{Fronczak \\\\emph{et~al.}(2007)Fronczak, \
+Fronczak and\\n  Ho\[CapitalARing]\.82yst}]{Fronczak2007}\\nFronczak, P.; \
+Fronczak, A.; Ho\[CapitalARing]\.82yst, J. (2007).\\n\\\\newblock Phase \
+transitions in social networks.\\n\\\\newblock \\\\emph{European Physical \
+Journal B} \\\\textbf{59}, 133--139.\\n\\n\\\\bibitem[{Gamble \
+\\\\emph{et~al.}(2015)Gamble, Chintakunta and Krim}]{Gamble_2015}\\nGamble, \
+J.; Chintakunta, H.; Krim, H. (2015).\\n\\\\newblock Emergence of \
+core-periphery structure from local node dominance in\\n  social networks.\\n\
+\\\\newblock In: \\\\emph{23rd European Signal Processing Conference \
+(EUSIPCO)}. pp.\\n  1910--1914.\\n\\n\\\\bibitem[{Garcia \
+\\\\emph{et~al.}(2013)Garcia, Mavrodiev and\\n  \
+Schweitzer}]{garcia2013b}\\nGarcia, D.; Mavrodiev, P.; Schweitzer, F. (2013).\
+\\n\\\\newblock Social resilience in online communities: The autopsy of \
+Friendster.\\n\\\\newblock In: \\\\emph{1st ACM Conference in Online Social \
+Networks (COSN'13)}.\\n  pp. 39--50.\\n\\n\\\\bibitem[{Garc\[CapitalATilde]\
+\[DiscretionaryHyphen]a~Mu\[CapitalATilde]\[PlusMinus]iz and \
+Ramos~Carvajal(2006)}]{Garc_a_Mu_iz_2006}\\nGarc\[CapitalATilde]\
+\[DiscretionaryHyphen]a~Mu\[CapitalATilde]\[PlusMinus]iz, A.~S.; \
+Ramos~Carvajal, C. (2006).\\n\\\\newblock Core/periphery structure models: An \
+alternative methodological\\n  proposal.\\n\\\\newblock \\\\emph{Social \
+Networks} \\\\textbf{28}, \
+442\[AHat]\.80\.93448.\\n\\n\\\\bibitem[{Gilbert(1959)}]{gilbert_1959}\\\
+nGilbert, E.~N. (1959).\\n\\\\newblock Random Graphs.\\n\\\\newblock \
+\\\\emph{Annals of Mathematical Statistics} \\\\textbf{30}, 1141--1144.\\n\\n\
+\\\\bibitem[{Golosovsky(2018)}]{golosovsky2018mechanisms}\\nGolosovsky, M. \
+(2018).\\n\\\\newblock Mechanisms of complex network growth: Synthesis of the \
+preferential\\n  attachment and fitness models.\\n\\\\newblock \
+\\\\emph{Physical Review E} \\\\textbf{97}, \
+062310.\\n\\n\\\\bibitem[{G{\\\\'o}rski \\\\emph{et~al.}(2020)G{\\\\'o}rski, \
+Bochenina, Ho{\\\\l}yst and\\n  \
+D\[AHat]\.80\.99Souza}]{gorski2020homophily}\\nG{\\\\'o}rski, P.~J.; \
+Bochenina, K.; Ho{\\\\l}yst, J.~A.; D\[AHat]\.80\.99Souza, R.~M. (2020).\\n\\\
+\\newblock Homophily based on few attributes can impede structural \
+balance.\\n\\\\newblock \\\\emph{Physical Review Letters} \\\\textbf{125}, \
+078302.\\n\\n\\\\bibitem[{Granovetter(1973)}]{granovetter_1973}\\nGranovetter,\
+ M.~S. (1973).\\n\\\\newblock The Strength of Weak Ties.\\n\\\\newblock \
+\\\\emph{American Journal of Sociology} \\\\textbf{78}, \
+1360--1380.\\n\\n\\\\bibitem[{Groeber \\\\emph{et~al.}(2014)Groeber, Lorenz \
+and\\n  Schweitzer}]{groeber_2014}\\nGroeber, P.; Lorenz, J.; Schweitzer, F. \
+(2014).\\n\\\\newblock Dissonance Minimization As a Microfoundation of Social \
+Influence in\\n  Models of Opinion Formation.\\n\\\\newblock \\\\emph{Journal \
+of Mathematical Sociology} \\\\textbf{38}, \
+147--174.\\n\\n\\\\bibitem[{Groeber \\\\emph{et~al.}(2009)Groeber, Schweitzer \
+and\\n  Press}]{groeber_2009_2}\\nGroeber, P.; Schweitzer, F.; Press, K. \
+(2009).\\n\\\\newblock How Groups Can Foster Consensus: The Case of Local \
+Cultures.\\n\\\\newblock \\\\emph{Journal of Artificial Societies and Social \
+Simulation}\\n  \\\\textbf{12}, \
+4.\\n\\n\\\\bibitem[{G\[CapitalATilde]\.b3rski \\\\emph{et~al.}(2017)G\
+\[CapitalATilde]\.b3rski, Ku\[CapitalARing]\.82akowski, Gawro\[CapitalARing]\
+\.84ski and\\n  \
+Ho\[CapitalARing]\.82yst}]{Gorski2017}\\nG\[CapitalATilde]\.b3rski, P.~J.; Ku\
+\[CapitalARing]\.82akowski, K.; Gawro\[CapitalARing]\.84ski, P.; Ho\
+\[CapitalARing]\.82yst, J.~A. (2017).\\n\\\\newblock Destructive influence of \
+interlayer coupling on Heider balance in\\n  bilayer networks.\\n\\\\newblock \
+\\\\emph{Scientific Reports} \\\\textbf{7}, \
+16047.\\n\\n\\\\bibitem[{Hegselmann and \
+Krause(2002)}]{hegselmann_2002}\\nHegselmann, R.; Krause, U. \
+(2002).\\n\\\\newblock Opinion Dynamics and Bounded Confidence Models, \
+Analysis and\\n  Simulation.\\n\\\\newblock \\\\emph{Journal of Artificial \
+Societies and Social Simulation}\\n  \\\\textbf{5}, \
+3.\\n\\n\\\\bibitem[{Heider(1946)}]{heider1946attitudes}\\nHeider, F. (1946).\
+\\n\\\\newblock Attitudes and cognitive organization.\\n\\\\newblock \
+\\\\emph{The Journal of Psychology} \\\\textbf{21}, \
+107--112.\\n\\n\\\\bibitem[{Ho{\\\\l}yst \\\\emph{et~al.}(2001)Ho{\\\\l}yst, \
+Kacperski and\\n  Schweitzer}]{holyst2001social}\\nHo{\\\\l}yst, J.~A.; \
+Kacperski, K.; Schweitzer, F. (2001).\\n\\\\newblock Social impact models of \
+opinion dynamics.\\n\\\\newblock In: \\\\emph{Annual Reviews Of Computational \
+Physics}, World Scientific,\\n  vol.~IX. pp. 253--273.\\n\\n\\\\bibitem[{Hu \
+\\\\emph{et~al.}(2011)Hu, Ksherim, Cohen and\\n  \
+Havlin}]{hu2011percolation}\\nHu, Y.; Ksherim, B.; Cohen, R.; Havlin, S. \
+(2011).\\n\\\\newblock Percolation in interdependent and interconnected \
+networks: Abrupt\\n  change from second-to first-order \
+transitions.\\n\\\\newblock \\\\emph{Physical Review E} \\\\textbf{84}, \
+066116.\\n\\n\\\\bibitem[{Karsai \\\\emph{et~al.}(2018)Karsai, Jo and \
+Kaski}]{Karsai-Bursty}\\nKarsai, M.; Jo, H.-H.; Kaski, K. \
+(2018).\\n\\\\newblock Bursty Human Dynamics.\\n\\\\newblock \
+\\\\emph{SpringerBriefs in Complexity} .\\n\\n\\\\bibitem[{Kivela \
+\\\\emph{et~al.}(2014)Kivela, Arenas, Barthelemy, Gleeson, Moreno\\n  and \
+Porter}]{Kivela2014}\\nKivela, M.; Arenas, A.; Barthelemy, M.; Gleeson, \
+J.~P.; Moreno, Y.; Porter,\\n  M.~A. (2014).\\n\\\\newblock {Multilayer \
+networks}.\\n\\\\newblock \\\\emph{Journal of Complex Networks} \
+\\\\textbf{2}, 203--271.\\n\\n\\\\bibitem[{Klimek and \
+Thurner(2013)}]{klimek2013triadic}\\nKlimek, P.; Thurner, S. \
+(2013).\\n\\\\newblock Triadic closure dynamics drives scaling laws in social \
+multiplex\\n  networks.\\n\\\\newblock \\\\emph{New Journal of Physics} \
+\\\\textbf{15}, 063008.\\n\\n\\\\bibitem[{Koenig \
+\\\\emph{et~al.}(2012)Koenig, Battiston, Napoletano and\\n  \
+Schweitzer}]{Battiston2012}\\nKoenig, M.~D.; Battiston, S.; Napoletano, M.; \
+Schweitzer, F. (2012).\\n\\\\newblock The efficiency and stability of R\\\\&D \
+networks.\\n\\\\newblock \\\\emph{Games and Economic Behavior} \
+\\\\textbf{75}, 694--713.\\n\\n\\\\bibitem[{Koenig \
+\\\\emph{et~al.}(2009)Koenig, Battiston and\\n  \
+Schweitzer}]{Battiston2009}\\nKoenig, M.~D.; Battiston, S.; Schweitzer, F. \
+(2009).\\n\\\\newblock Modeling evolving innovation networks.\\n\\\\newblock \
+In: \\\\emph{Innovation Networks . New Approaches in Modelling and\\n  \
+Analyzing}, Berlin, Heidelberg: Springer. pp. 187-- \
+267.\\n\\n\\\\bibitem[{Krivitsky \\\\emph{et~al.}(2011)Krivitsky, Handcock \
+and\\n  Morris}]{krivitsky2011adjusting}\\nKrivitsky, P.~N.; Handcock, M.~S.; \
+Morris, M. (2011).\\n\\\\newblock Adjusting for network size and composition \
+effects in\\n  exponential-family random graph models.\\n\\\\newblock \
+\\\\emph{Statistical Methodology} \\\\textbf{8}, \
+319--339.\\n\\n\\\\bibitem[{Ku{\\\\l}akowski \
+\\\\emph{et~al.}(2020)Ku{\\\\l}akowski, Stojkow and\\n  \
+{\\\\.{Z}}uchowska-Skiba}]{Kulakowski2019}\\nKu{\\\\l}akowski, K.; Stojkow, \
+M.; {\\\\.{Z}}uchowska-Skiba, D. (2020).\\n\\\\newblock {Heider balance, \
+prejudices and size effect}.\\n\\\\newblock \\\\emph{Journal of Mathematical \
+Sociology} \\\\textbf{44}, \
+129--137.\\n\\n\\\\bibitem[{Langer(1971)}]{langer1971theory}\\nLanger, J.~S. \
+(1971).\\n\\\\newblock Theory of spinodal decomposition in \
+alloys.\\n\\\\newblock \\\\emph{Annals of Physics} \\\\textbf{65}, 53--86.\\n\
+\\n\\\\bibitem[{Leifeld \\\\emph{et~al.}(2018)Leifeld, Cranmer and\\n  \
+Desmarais}]{leifeld2018temporal}\\nLeifeld, P.; Cranmer, S.~J.; Desmarais, \
+B.~A. (2018).\\n\\\\newblock Temporal Exponential Random Graph Models with \
+btergm: Estimation and\\n  Bootstrap Confidence Intervals.\\n\\\\newblock \
+\\\\emph{Journal of Statistical Software} \\\\textbf{83}, \
+1--36.\\n\\n\\\\bibitem[{Lorenz(2007)}]{lorenz_2007}\\nLorenz, J. \
+(2007).\\n\\\\newblock Continuous opinion dynamics under bounded confidence: \
+A survey.\\n\\\\newblock \\\\emph{International Journal of Modern Physics C} \
+\\\\textbf{18},\\n  1819\[AHat]\.80\.931838.\\n\\n\\\\bibitem[{Lorenz \
+\\\\emph{et~al.}(2011)Lorenz, Rauhut, Schweitzer and\\n  \
+Helbing}]{Helbing2011crowd}\\nLorenz, J.; Rauhut, H.; Schweitzer, F.; \
+Helbing, D. (2011).\\n\\\\newblock How social influence can undermine the \
+wisdom of crowd effect.\\n\\\\newblock \\\\emph{Proceedings of the National \
+Academy of Sciences (PNAS)}\\n  \\\\textbf{108}, 9020-- \
+9025.\\n\\n\\\\bibitem[{Lusher \\\\emph{et~al.}(2013)Lusher, Koskinen and\\n  \
+Robins}]{lusher2013exponential}\\nLusher, D.; Koskinen, J.; Robins, G. \
+(2013).\\n\\\\newblock \\\\emph{Exponential Random Graph Models for Social \
+Networks. Theory,\\n  Methods, and Applications}.\\n\\\\newblock Cambridge \
+University Press.\\n\\n\\\\bibitem[{Macy \\\\emph{et~al.}(2003)Macy, Kitts, \
+Flache and\\n  Benard}]{macy2003polarization}\\nMacy, M.~W.; Kitts, J.~A.; \
+Flache, A.; Benard, S. (2003).\\n\\\\newblock Polarization in dynamic \
+networks: A Hopfield model of emergent\\n  structure.\\n\\\\newblock In: \
+R.~Breiger; K.~Carley; P.~Pattison (eds.), \\\\emph{Dynamic Social\\n  \
+Network Modeling and Analysis}. Washington DC: National Academy Press, pp.\\n \
+ 162--173.\\n\\n\\\\bibitem[{Macy and Willer(2002)}]{macy2002factors}\\nMacy, \
+M.~W.; Willer, R. (2002).\\n\\\\newblock From factors to actors: \
+Computational sociology and agent-based\\n  modeling.\\n\\\\newblock \
+\\\\emph{Annual Review of Sociology} \\\\textbf{28}, \
+143--166.\\n\\n\\\\bibitem[{Marqusee and \
+Ross(1983)}]{marqusee1983kinetics}\\nMarqusee, J.; Ross, J. \
+(1983).\\n\\\\newblock Kinetics of phase transitions: Theory of Ostwald \
+ripening.\\n\\\\newblock \\\\emph{Journal of Chemical Physics} \
+\\\\textbf{79}, 373--378.\\n\\n\\\\bibitem[{Mavrodiev and \
+Schweitzer(2021)}]{mavrodiev_2021}\\nMavrodiev, P.; Schweitzer, F. (2021).\\n\
+\\\\newblock The ambigous role of social influence on the wisdom of crowds: \
+An\\n  analytic approach.\\n\\\\newblock \\\\emph{Physica A} \\\\textbf{567}, \
+125624.\\n\\n\\\\bibitem[{Mavrodiev \\\\emph{et~al.}(2013)Mavrodiev, Tessone \
+and\\n  Schweitzer}]{mavrodiev2013quantifying}\\nMavrodiev, P.; Tessone, \
+C.~J.; Schweitzer, F. (2013).\\n\\\\newblock Quantifying the effects of \
+social influence.\\n\\\\newblock \\\\emph{Scientific Reports} \\\\textbf{3}, \
+1360.\\n\\n\\\\bibitem[{McMillan(2022)}]{mcmillan2022worth}\\nMcMillan, C. \
+(2022).\\n\\\\newblock Worth the weight: Conceptualizing and measuring strong \
+versus weak\\n  tie homophily.\\n\\\\newblock \\\\emph{Social Networks} \
+\\\\textbf{68}, 139--147.\\n\\n\\\\bibitem[{McPherson \
+\\\\emph{et~al.}(2001)McPherson, Smith-Lovin and\\n  \
+Cook}]{mcpherson2001birds}\\nMcPherson, M.; Smith-Lovin, L.; Cook, J.~M. \
+(2001).\\n\\\\newblock Birds of a feather: Homophily in social networks.\\n\\\
+\\newblock \\\\emph{Annual Review of Sociology} \\\\textbf{27}, \
+415--444.\\n\\n\\\\bibitem[{Mislove \\\\emph{et~al.}(2008)Mislove, Koppula, \
+Gummadi, Druschel and\\n  Bhattacharjee}]{mislove2008growth}\\nMislove, A.; \
+Koppula, H.~S.; Gummadi, K.~P.; Druschel, P.; Bhattacharjee, B.\\n  \
+(2008).\\n\\\\newblock Growth of the flickr social network.\\n\\\\newblock \
+In: \\\\emph{Proceedings of the first workshop on Online social\\n  \
+networks}. pp. 25--30.\\n\\n\\\\bibitem[{Molloy and Reed(1995)}]{molloy_1995}\
+\\nMolloy, M.; Reed, B. (1995).\\n\\\\newblock {A critical point for random \
+graphs with a given degree sequence}.\\n\\\\newblock \\\\emph{Random Struct. \
+Alg.} \\\\textbf{6}, 161--180.\\n\\n\\\\bibitem[{Murase \
+\\\\emph{et~al.}(2014)Murase, T{\\\\\\\"o}r{\\\\\\\"o}k, Jo, Kaski and\\n  \
+Kert{\\\\'e}sz}]{murase2014multilayer}\\nMurase, Y.; \
+T{\\\\\\\"o}r{\\\\\\\"o}k, J.; Jo, H.-H.; Kaski, K.; Kert{\\\\'e}sz, J. \
+(2014).\\n\\\\newblock Multilayer weighted social network \
+model.\\n\\\\newblock \\\\emph{Physical Review E} \\\\textbf{90}, \
+052810.\\n\\n\\\\bibitem[{Musial \\\\emph{et~al.}(2013)Musial, Budka and\\n  \
+Juszczyszyn}]{musial2013creation}\\nMusial, K.; Budka, M.; Juszczyszyn, K. \
+(2013).\\n\\\\newblock Creation and growth of online social \
+network.\\n\\\\newblock \\\\emph{World Wide Web} \\\\textbf{16}, 421--447.\\n\
+\\n\\\\bibitem[{Musmeci \\\\emph{et~al.}(2013)Musmeci, Battiston, Caldarelli, \
+Puliga and\\n  Gabrielli}]{musmeci2013bootstrapping}\\nMusmeci, N.; \
+Battiston, S.; Caldarelli, G.; Puliga, M.; Gabrielli, A. \
+(2013).\\n\\\\newblock Bootstrapping topological properties and systemic risk \
+of complex\\n  networks using the fitness model.\\n\\\\newblock \
+\\\\emph{Journal of Statistical Physics} \\\\textbf{151}, \
+720--734.\\n\\n\\\\bibitem[{M\[CapitalATilde]\[Currency]s \
+\\\\emph{et~al.}(2013)M\[CapitalATilde]\[Currency]s, Flache and \
+Kitts}]{M_s_2013}\\nM\[CapitalATilde]\[Currency]s, M.; Flache, A.; Kitts, \
+J.~A. (2013).\\n\\\\newblock Cultural Integration and Differentiation in \
+Groups and Organizations.\\n\\\\newblock In: V.~Dignum; F.~Dignum (eds.), \
+\\\\emph{Perspectives on Culture and\\n  Agent-based Simulations}, Springer. \
+p. 71\[AHat]\.80\.9390.\\n\\n\\\\bibitem[{Noldus and \
+Van~Mieghem(2015)}]{noldus2015assortativity}\\nNoldus, R.; Van~Mieghem, P. \
+(2015).\\n\\\\newblock Assortativity in complex networks.\\n\\\\newblock \
+\\\\emph{Journal of Complex Networks} \\\\textbf{3}, \
+507--542.\\n\\n\\\\bibitem[{Onnela \\\\emph{et~al.}(2011)Onnela, Arbesman, \
+Gonzalez, Barabasi and\\n  Christakis}]{Onnela2011}\\nOnnela, J.-P.; \
+Arbesman, S.; Gonzalez, M.~C.; Barabasi, A.-L.; Christakis, N.\\n  (2011).\\n\
+\\\\newblock {Geographic Constraints on Social Network \
+Groups}.\\n\\\\newblock \\\\emph{PLoS ONE} \\\\textbf{6}, e16939 (7 \
+pp).\\n\\n\\\\bibitem[{Oxtoby(1992)}]{oxtoby1992homogeneous}\\nOxtoby, D.~W. \
+(1992).\\n\\\\newblock Homogeneous nucleation: Theory and \
+experiment.\\n\\\\newblock \\\\emph{Journal of Physics: Condensed Matter} \
+\\\\textbf{4}, 7627.\\n\\n\\\\bibitem[{Podobnik \
+\\\\emph{et~al.}(2019)Podobnik, Gabor and\\n  \
+Kirbis}]{PODOBNIK2019613}\\nPodobnik, B.; Gabor, A.~M.; Kirbis, I.~S. (2019).\
+\\n\\\\newblock Scale-free growth of human society based on cooperation \
+and\\n  altruistic punishment.\\n\\\\newblock \\\\emph{Physica A} \
+\\\\textbf{513}, \
+613--619.\\n\\n\\\\bibitem[{Prell(2012)}]{prell2012social}\\nPrell, C. \
+(2012).\\n\\\\newblock \\\\emph{Social network analysis: History, theory and \
+methodology}.\\n\\\\newblock Sage.\\n\\n\\\\bibitem[{Rivera \
+\\\\emph{et~al.}(2010)Rivera, Soderstrom and\\n  \
+Uzzi}]{rivera2010dynamics}\\nRivera, M.~T.; Soderstrom, S.~B.; Uzzi, B. \
+(2010).\\n\\\\newblock Dynamics of dyads in social networks: Assortative, \
+relational, and\\n  proximity mechanisms.\\n\\\\newblock \\\\emph{Annual \
+Review of Sociology} \\\\textbf{36}, 91--115.\\n\\n\\\\bibitem[{R\
+\[CapitalATilde]\[Paragraph]pke(2013)}]{Roepke_2013}\\nR\[CapitalATilde]\
+\[Paragraph]pke, G. (2013).\\n\\\\newblock \\\\emph{Nonequilibrium \
+Statistical Physics}.\\n\\\\newblock Weinheim: \
+Wiley-VCH.\\n\\n\\\\bibitem[{Schmelzer \\\\emph{et~al.}(2005)Schmelzer, \
+R{\\\\\\\"o}pke and\\n  Priezzhev}]{schmelzer2005nucleation}\\nSchmelzer, J.; \
+R{\\\\\\\"o}pke, G.; Priezzhev, V.~B. (2005).\\n\\\\newblock \
+\\\\emph{Nucleation theory and applications}.\\n\\\\newblock Weinheim: \
+Wiley-VCH.\\n\\n\\\\bibitem[{Schmelzer and \
+Schweitzer(1987)}]{12-schmelzer-fs-87-b}\\nSchmelzer, J.; Schweitzer, F. \
+(1987).\\n\\\\newblock {Ostwald Ripening of Bubbles in Liquid-Gas Solutions}.\
+\\n\\\\newblock \\\\emph{Journal of Non-Equilibrium Thermodynamics} \
+\\\\textbf{12},\\n  255--270.\\n\\n\\\\bibitem[{Schmelzer \
+\\\\emph{et~al.}(2006)Schmelzer, Boltachev and\\n  \
+Baidakov}]{schmelzer2006classical}\\nSchmelzer, J.~W.; Boltachev, G.~S.; \
+Baidakov, V.~G. (2006).\\n\\\\newblock Classical and generalized Gibbs\[AHat]\
+\.80\.99 approaches and the work of\\n  critical cluster formation in \
+nucleation theory.\\n\\\\newblock \\\\emph{Journal of Chemical Physics} \
+\\\\textbf{124}, 194503.\\n\\n\\\\bibitem[{Schweighofer \
+\\\\emph{et~al.}(2020{\\\\natexlab{a}})Schweighofer, Garcia\\n  and \
+Schweitzer}]{schweighofer_2020}\\nSchweighofer, S.; Garcia, D.; Schweitzer, \
+F. (2020{\\\\natexlab{a}}).\\n\\\\newblock An Agent-Based Model of \
+Multi-Dimensional Opinion Dynamics and\\n  Opinion Alignment.\\n\\\\newblock \
+\\\\emph{Chaos} \\\\textbf{30}, 093139.\\n\\n\\\\bibitem[{Schweighofer \
+\\\\emph{et~al.}(2020{\\\\natexlab{b}})Schweighofer,\\n  Schweitzer and \
+Garcia}]{schweighofer_2020_2}\\nSchweighofer, S.; Schweitzer, F.; Garcia, D. \
+(2020{\\\\natexlab{b}}).\\n\\\\newblock A Weighted Balance Model of Opinion \
+Hyperpolarization.\\n\\\\newblock \\\\emph{Journal of Artificial Societies \
+and Social Simulation}\\n  \\\\textbf{23}, \
+5.\\n\\n\\\\bibitem[{Schweitzer(2018)}]{Schweitzer2018}\\nSchweitzer, F. \
+(2018).\\n\\\\newblock Sociophysics.\\n\\\\newblock \\\\emph{Physics Today} \
+\\\\textbf{71}, \
+40--46.\\n\\n\\\\bibitem[{Schweitzer(2020)}]{Schweitzer2020}\\nSchweitzer, F. \
+(2020).\\n\\\\newblock The law of proportionate growth and its siblings: \
+Applications in\\n  agent-based modeling of socio-economic \
+systems.\\n\\\\newblock In: H.~Aoyama; Y.~Aruka; H.~Yoshikawa (eds.), \
+\\\\emph{Complexity,\\n  Heterogeneity, and the Methods of Statistical \
+Physics in Economics}, Tokyo:\\n  Springer. pp. \
+145--176.\\n\\n\\\\bibitem[{Schweitzer(2021)}]{schweitzer_2021}\\nSchweitzer, \
+F. (2021).\\n\\\\newblock Social percolation revisited: From 2d lattices to \
+adaptive networks.\\n\\\\newblock \\\\emph{Physica A} \\\\textbf{570}, \
+125687.\\n\\n\\\\bibitem[{Schweitzer \\\\emph{et~al.}(2020)Schweitzer, \
+Mavrodiev, Seufert and\\n  Garcia}]{Schweitzer2019c}\\nSchweitzer, F.; \
+Mavrodiev, P.; Seufert, A. M.~A.; Garcia, D. (2020).\\n\\\\newblock {Modeling \
+user reputation in online social networks: The role of\\n  costs, benefits, \
+and reciprocity}.\\n\\\\newblock \\\\emph{Entropy} \\\\textbf{22}, \
+1073.\\n\\n\\\\bibitem[{Schweitzer and Schimansky-Geier(1987)}]{09-fs-lsg-87}\
+\\nSchweitzer, F.; Schimansky-Geier, L. (1987).\\n\\\\newblock {Critical \
+parameters for nucleation in finite systems}.\\n\\\\newblock \\\\emph{Journal \
+of Colloid and Interface Science} \\\\textbf{119}, \
+67--73.\\n\\n\\\\bibitem[{Schweitzer \\\\emph{et~al.}(1988)Schweitzer, \
+Schimansky-Geier, Ebeling\\n  and Ulbricht}]{17-fs-88}\\nSchweitzer, F.; \
+Schimansky-Geier, L.; Ebeling, W.; Ulbricht, H. (1988).\\n\\\\newblock {A \
+stochastic approach to nucleation in finite systems: Theory and\\n  computer \
+simulations}.\\n\\\\newblock \\\\emph{Physica A} \\\\textbf{150}, \
+261--279.\\n\\n\\\\bibitem[{Scott(1988)}]{scott1988social}\\nScott, J. \
+(1988).\\n\\\\newblock Social network analysis.\\n\\\\newblock \
+\\\\emph{Sociology} \\\\textbf{22}, 109--127.\\n\\n\\\\bibitem[{Shao \
+\\\\emph{et~al.}(2009)Shao, Havlin and Stanley}]{Shao2009}\\nShao, J.; \
+Havlin, S.; Stanley, H. (2009).\\n\\\\newblock {Dynamic Opinion Model and \
+Invasion Percolation}.\\n\\\\newblock \\\\emph{Physical Review Letters} \
+\\\\textbf{103}, 1--4.\\n\\n\\\\bibitem[{Singh \\\\emph{et~al.}(2016)Singh, \
+Sreenivasan, Szymanski and\\n  Korniss}]{Singh2016}\\nSingh, P.; Sreenivasan, \
+S.; Szymanski, B.~K.; Korniss, G. (2016).\\n\\\\newblock {Competing effects \
+of social balance and influence}.\\n\\\\newblock \\\\emph{Physical Review E} \
+\\\\textbf{93}, 042306.\\n\\n\\\\bibitem[{Solomon \
+\\\\emph{et~al.}(2000)Solomon, Weisbuch, de~Arcangelis, Jan and\\n  \
+Stauffer}]{solomon-et-00}\\nSolomon, S.; Weisbuch, G.; de~Arcangelis, L.; \
+Jan, N.; Stauffer, D. (2000).\\n\\\\newblock {Social percolation \
+models}.\\n\\\\newblock \\\\emph{Physica A} \\\\textbf{277}, \
+239--247.\\n\\n\\\\bibitem[{Stauffer(1979)}]{Stauffer_1979}\\nStauffer, D. \
+(1979).\\n\\\\newblock Scaling theory of percolation clusters.\\n\\\\newblock \
+\\\\emph{Physics Reports} \\\\textbf{54}, \
+1\[AHat]\.80\.9374.\\n\\n\\\\bibitem[{Tomasello \
+\\\\emph{et~al.}(2017)Tomasello, Napoletano, Garas and\\n  \
+Schweitzer}]{Tomasello2017}\\nTomasello, M.~V.; Napoletano, M.; Garas, A.; \
+Schweitzer, F. (2017).\\n\\\\newblock The Rise and Fall of R\\\\&D \
+Networks.\\n\\\\newblock \\\\emph{ICC - Industrial and Corporate Change} \
+\\\\textbf{26}, 617--646.\\n\\n\\\\bibitem[{Tomasello \
+\\\\emph{et~al.}(2014)Tomasello, Perra, Tessone, Karsai and\\n  \
+Schweitzer}]{tomasello_2014}\\nTomasello, M.~V.; Perra, N.; Tessone, C.~J.; \
+Karsai, M.; Schweitzer, F. (2014).\\n\\\\newblock The role of endogenous and \
+exogenous mechanisms in the formation of\\n  R\\\\&D networks.\\n\\\\newblock \
+\\\\emph{Scientific Reports} \\\\textbf{4}.\\n\\n\\\\bibitem[{Ulbricht \
+\\\\emph{et~al.}(1988)Ulbricht, Schmelzer, Mahnke and\\n  \
+Schweitzer}]{Book-Ulbricht1988}\\nUlbricht, H.; Schmelzer, J.; Mahnke, R.; \
+Schweitzer, F. (1988).\\n\\\\newblock \\\\emph{{Thermodynamics of Finite \
+Systems and the Kinetics of\\n  First-Order Phase \
+Transitions}}.\\n\\\\newblock Leipzig: \
+Teubner.\\n\\n\\\\bibitem[{Uzzi(1996)}]{Uzzi-network-effect}\\nUzzi, B. \
+(1996).\\n\\\\newblock The Sources and Consequences of Embeddedness for the \
+Economic\\n  Performance of Organizations: The Network Effect.\\n\\\\newblock \
+\\\\emph{American Sociological Review} \\\\textbf{61}, \
+674.\\n\\n\\\\bibitem[{Voorhees(1985)}]{voorhees1985theory}\\nVoorhees, P.~W. \
+(1985).\\n\\\\newblock The theory of Ostwald ripening.\\n\\\\newblock \
+\\\\emph{Journal of Statistical Physics} \\\\textbf{38}, \
+231--252.\\n\\n\\\\bibitem[{Watts and \
+Strogatz(1998)}]{watts1998collective}\\nWatts, D.~J.; Strogatz, S.~H. (1998).\
+\\n\\\\newblock Collective Dynamics of \[AHat]\.80\.98Small-World\[AHat]\.80\
+\.99 Networks.\\n\\\\newblock \\\\emph{Nature} \\\\textbf{393}, \
+440--442.\\n\\n\\\\bibitem[{Weidlich(2000)}]{weidlich-book-00}\\nWeidlich, W. \
+(2000).\\n\\\\newblock \\\\emph{Sociodynamics. A Systematic Approach to \
+Mathematical Modelling\\n  in the Social Sciences}.\\n\\\\newblock London: \
+Harwood Academic Publishers.\\n\\n\\\\bibitem[{Wider \
+\\\\emph{et~al.}(2016)Wider, Garas, Scholtes and\\n  \
+Schweitzer}]{Scholtes2016}\\nWider, N.; Garas, A.; Scholtes, I.; Schweitzer, \
+F. (2016).\\n\\\\newblock An ensemble perspective on multi-layer networks.\\n\
+\\\\newblock In: A.~Garas (ed.), \\\\emph{Interconnected Networks}, Springer. \
+pp.\\n  37--59.\\n\\n\\\\bibitem[{Wilkins and \
+Thurner(2010)}]{Wilkins2010}\\nWilkins, J.~F.; Thurner, S. \
+(2010).\\n\\\\newblock The Jerusalem Game: Cultural Evolution of the Golden \
+Rule.\\n\\\\newblock \\\\emph{Advances in Complex Systems} \\\\textbf{13}, \
+635--641.\\n\\n\\\\end{thebibliography}\\n\\n\\n\\n\\n\\n\\\\end{document}\"\>\
+"}}, 1]], "Output",
+ CellChangeTimes->{{3.9304161044976788`*^9, 3.930416113874117*^9}, 
+   3.93041619381386*^9, 3.9304318405737457`*^9, 3.931148415465191*^9, {
+   3.9311485008769827`*^9, 3.931148518739202*^9}},
+ CellLabel->"Out[11]=",
+ CellID->168594718,ExpressionUUID->"c6649012-1547-4605-a1a5-543abff5b868"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "More Examples",
+ Cell[BoxData[
+  TemplateBox[{"MoreExamples", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Extended examples in standardized sections.", "MoreInfoText"], 
+       BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "4539bc0e-3dec-4036-ba1a-0e3e5b4c05d4"]
+}], "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->801822652,ExpressionUUID->"98f13c8b-562d-4ccb-834b-eafa2bb44235"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Scope", "ExampleSection",ExpressionUUID->
+   "aaf9aa63-b51e-49f4-adc7-cd18bd634ed3"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->773427239,ExpressionUUID->"10547da3-fafb-48be-9595-e01a98c61532"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Generalizations & Extensions", "ExampleSection",ExpressionUUID->
+   "ec7da7ee-2ac2-4b91-a9b6-bd831baeea94"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->273090582,ExpressionUUID->"264d4ae8-9182-4b94-8a3b-4f97e41960c9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Options", "ExampleSection",ExpressionUUID->
+   "f1ed2a51-82b1-4667-9f5f-38e887e2aefb"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->660858035,ExpressionUUID->"ff64f556-bb1f-4e96-959f-bc4e3b279c26"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "XXXX", "ExampleSubsection",ExpressionUUID->
+   "65172621-e2ae-4b5c-8482-258fe0fbd283"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->255571961,ExpressionUUID->"039901c8-4fbe-41d0-99ab-745aff856226"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "XXXX", "ExampleSubsection",ExpressionUUID->
+   "4af3bea8-6f90-4e00-8400-1fe75cbca4c5"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->430654527,ExpressionUUID->"65da616f-1b39-44f3-97f2-10e81c75a171"]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Applications", "ExampleSection",ExpressionUUID->
+   "e2a21b10-2143-4952-a7e8-d60e50c7d456"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->990744899,ExpressionUUID->"5ffdb3a1-ce70-4fbe-b021-37a599bed5e2"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Properties & Relations", "ExampleSection",ExpressionUUID->
+   "864929dc-7ed6-4af9-863a-1550e36ebdc1"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2008802302,ExpressionUUID->"51632c52-6e31-4e3e-9543-757a34e55851"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Possible Issues", "ExampleSection",ExpressionUUID->
+   "9a5f8968-4534-479c-9f86-d9e74cbd559a"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1349875227,ExpressionUUID->"5dce57fb-55a1-4ccb-9817-3cd462c92fb7"],
+
+Cell["\<\
+Notice: to improve in later paclet versions, because it does not always work.\
+\
+\>", "Notes",
+ CellChangeTimes->{3.931148877847219*^9},
+ CellID->716965354,ExpressionUUID->"d67ba1b3-e56a-46af-bdd2-d2f04e90f1e1"]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Interactive Examples", "ExampleSection",ExpressionUUID->
+   "ce0d20b0-9cd4-4779-a05c-f7283d823c76"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1335693281,ExpressionUUID->"2751f3c5-0a16-41c8-a59d-cb68b4e10826"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Neat Examples", "ExampleSection",ExpressionUUID->
+   "776dcb30-2360-42f7-9692-9f5a0835c0f1"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1350411676,ExpressionUUID->"8fcaa400-d960-473e-b611-b26b6c91f5ba"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Metadata", "MetadataSection",
+ CellID->1761857036,ExpressionUUID->"7815a59c-8bec-4e0f-994e-d81e976cd580"],
+
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New",ExpressionUUID->"573d3817-835f-4aaf-89ba-3a75e957e79c"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified",ExpressionUUID->"79607ca7-ea80-490c-b101-2fea66538b78"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete",ExpressionUUID->
+  "dd179641-f4ad-4b34-af74-dd4fa903ef7e"]
+}], "History",
+ CellID->2026679216,ExpressionUUID->"a380ea8a-e265-4008-9d64-b80490d6a4f9"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Categorization",
+ Cell[BoxData[
+  TemplateBox[{"Metadata", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Metadata such as page URI, context, and type of documentation page.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "4ffff931-f66a-43f3-86ea-a1346f29f8a6"]
+}], "CategorizationSection",
+ CellID->1159458245,ExpressionUUID->"975797dd-885e-4ff8-af85-ccc0200a2e5f"],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->748110837,ExpressionUUID->"1fe0079c-c0f6-4894-976e-32206e88e2ad"],
+
+Cell["DanieleGregori/ArXivExplore", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->391223460,ExpressionUUID->"a934d11b-124a-4822-8faa-1ad7cc9e9362"],
+
+Cell["DanieleGregori`ArXivExplore`", "Categorization",
+ CellLabel->"Context",
+ CellID->1845248753,ExpressionUUID->"2e7a619a-7a63-4863-8836-6a086a872f90"],
+
+Cell["DanieleGregori/ArXivExplore/ref/ArXivTeXSections", "Categorization",
+ CellLabel->"URI",
+ CellID->1284445344,ExpressionUUID->"7e188608-3999-412a-b586-b5dcc3855922"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->179126048,ExpressionUUID->"484a8239-0293-404e-8665-e797bc6deb8a"],
+
+Cell["XXXX", "Keywords",
+ CellID->1946899289,ExpressionUUID->"50e72976-b3f6-4f4a-91ef-5a522ddbea43"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->328020884,ExpressionUUID->"a9f9eb36-b105-48b6-8868-053a0c5100bf"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->456475539,ExpressionUUID->"dd8b5567-de4a-4c6d-ac5e-1d367436aba9"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->1172796889,ExpressionUUID->"cc242d6c-8b37-4bee-94f7-cbed53ad0110"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1592401257,ExpressionUUID->"87cb8569-a46c-4a76-9ffa-22b4f3c01804"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->1546717485,ExpressionUUID->"040067c3-e8c8-47d7-9f1b-e3cacfa6f562"]
+}, Closed]]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{Automatic, 205}, {Automatic, 35}},
+TaggingRules-><|"Paclet" -> "DanieleGregori/ArXivExplore"|>,
+CellContext->"Global`",
+FrontEndVersion->"14.1 for Mac OS X x86 (64-bit) (July 16, 2024)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"822ce435-c70a-46e3-b6a4-2c08813c64f2"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ExtendedExamples"->{
+  Cell[160748, 2383, 487, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"98f13c8b-562d-4ccb-834b-eafa2bb44235",
+   CellTags->"ExtendedExamples",
+   CellID->801822652]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ExtendedExamples", 167346, 2581}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 114, 1, 72, "ObjectName",ExpressionUUID->"a5be542e-9801-4d1f-b95a-d9abe8fa210f",
+ CellID->1133709796],
+Cell[697, 25, 954, 25, 75, "Usage",ExpressionUUID->"2cd37853-8f3e-43a4-9b6c-a602dd718af4",
+ CellID->1785625188],
+Cell[1654, 52, 248, 5, 26, "Notes",ExpressionUUID->"43e23520-0d95-470d-9ceb-0c9daa70c762",
+ CellID->2066051538]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1939, 62, 459, 13, 38, "SeeAlsoSection",ExpressionUUID->"364cff40-436f-4dcd-b8f4-c57165c343d6",
+ CellID->1465110823],
+Cell[2401, 77, 1654, 42, 21, "SeeAlso",ExpressionUUID->"5057eaa2-71a6-4ff7-bf0b-c06485dbb5e8",
+ CellID->1070105659]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4092, 124, 434, 12, 39, "TechNotesSection",ExpressionUUID->"cf8f97d6-8435-472d-9ba2-0ede7f06987c",
+ CellID->90267188],
+Cell[4529, 138, 100, 1, 17, "Tutorials",ExpressionUUID->"353b3a31-5274-465e-9196-d93f50c70d3d",
+ CellID->997173934]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4666, 144, 117, 1, 37, "MoreAboutSection",ExpressionUUID->"30d2ba0e-1ace-49ca-8aa3-b003caa8b5b1",
+ CellID->539927550],
+Cell[4786, 147, 101, 1, 17, "MoreAbout",ExpressionUUID->"0a1806b2-0570-4b75-aea8-38b5f80fbc25",
+ CellID->1443924275]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4924, 153, 473, 13, 38, "RelatedLinksSection",ExpressionUUID->"86ec46df-82ad-4af7-b638-2ea3d6bf639c",
+ CellID->1470078825],
+Cell[5400, 168, 103, 1, 17, "RelatedLinks",ExpressionUUID->"ba283bff-2737-4f67-ae58-d3a369377f6b",
+ CellID->815453040]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5540, 174, 529, 14, 68, "ExamplesInitializationSection",ExpressionUUID->"835ed685-f837-4189-b8e2-4ba21092505d",
+ CellID->78608126],
+Cell[6072, 190, 187, 3, 46, "ExampleInitialization",ExpressionUUID->"1571d95b-2ea5-41cc-aa8d-e4d9312430c9",
+ CellID->464330777]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6296, 198, 441, 12, 70, "PrimaryExamplesSection",ExpressionUUID->"b3b9ebd4-bfca-4fab-bde4-5742cec86fd9",
+ CellID->51795841],
+Cell[CellGroupData[{
+Cell[6762, 214, 427, 10, 26, "Input",ExpressionUUID->"58df7bb6-7b10-4f2e-9ba0-f303662d0a9d",
+ CellID->2057254462],
+Cell[7192, 226, 161, 2, 21, "Echo",ExpressionUUID->"501b861c-00b8-47e4-8fc1-b41721315628",
+ CellID->17259409],
+Cell[7356, 230, 153343, 2147, 18204, "Output",ExpressionUUID->"c6649012-1547-4605-a1a5-543abff5b868",
+ CellID->168594718]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[160748, 2383, 487, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"98f13c8b-562d-4ccb-834b-eafa2bb44235",
+ CellTags->"ExtendedExamples",
+ CellID->801822652],
+Cell[161238, 2398, 241, 5, 32, "ExampleSection",ExpressionUUID->"10547da3-fafb-48be-9595-e01a98c61532",
+ CellID->773427239],
+Cell[161482, 2405, 264, 5, 20, "ExampleSection",ExpressionUUID->"264d4ae8-9182-4b94-8a3b-4f97e41960c9",
+ CellID->273090582],
+Cell[CellGroupData[{
+Cell[161771, 2414, 243, 5, 20, "ExampleSection",ExpressionUUID->"ff64f556-bb1f-4e96-959f-bc4e3b279c26",
+ CellID->660858035],
+Cell[162017, 2421, 246, 5, 23, "ExampleSubsection",ExpressionUUID->"039901c8-4fbe-41d0-99ab-745aff856226",
+ CellID->255571961],
+Cell[162266, 2428, 246, 5, 19, "ExampleSubsection",ExpressionUUID->"65da616f-1b39-44f3-97f2-10e81c75a171",
+ CellID->430654527]
+}, Open  ]],
+Cell[162527, 2436, 248, 5, 32, "ExampleSection",ExpressionUUID->"5ffdb3a1-ce70-4fbe-b021-37a599bed5e2",
+ CellID->990744899],
+Cell[162778, 2443, 259, 5, 20, "ExampleSection",ExpressionUUID->"51632c52-6e31-4e3e-9543-757a34e55851",
+ CellID->2008802302],
+Cell[CellGroupData[{
+Cell[163062, 2452, 252, 5, 20, "ExampleSection",ExpressionUUID->"5dce57fb-55a1-4ccb-9817-3cd462c92fb7",
+ CellID->1349875227],
+Cell[163317, 2459, 221, 5, 26, "Notes",ExpressionUUID->"d67ba1b3-e56a-46af-bdd2-d2f04e90f1e1",
+ CellID->716965354]
+}, Open  ]],
+Cell[163553, 2467, 257, 5, 32, "ExampleSection",ExpressionUUID->"2751f3c5-0a16-41c8-a59d-cb68b4e10826",
+ CellID->1335693281],
+Cell[163813, 2474, 250, 5, 20, "ExampleSection",ExpressionUUID->"8fcaa400-d960-473e-b611-b26b6c91f5ba",
+ CellID->1350411676]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[164100, 2484, 111, 1, 71, "MetadataSection",ExpressionUUID->"7815a59c-8bec-4e0f-994e-d81e976cd580",
+ CellID->1761857036],
+Cell[164214, 2487, 477, 12, 25, "History",ExpressionUUID->"a380ea8a-e265-4008-9d64-b80490d6a4f9",
+ CellID->2026679216],
+Cell[CellGroupData[{
+Cell[164716, 2503, 485, 13, 20, "CategorizationSection",ExpressionUUID->"975797dd-885e-4ff8-af85-ccc0200a2e5f",
+ CellID->1159458245],
+Cell[165204, 2518, 134, 2, 35, "Categorization",ExpressionUUID->"1fe0079c-c0f6-4894-976e-32206e88e2ad",
+ CellID->748110837],
+Cell[165341, 2522, 155, 2, 35, "Categorization",ExpressionUUID->"a934d11b-124a-4822-8faa-1ad7cc9e9362",
+ CellID->391223460],
+Cell[165499, 2526, 153, 2, 35, "Categorization",ExpressionUUID->"2e7a619a-7a63-4863-8836-6a086a872f90",
+ CellID->1845248753],
+Cell[165655, 2530, 169, 2, 35, "Categorization",ExpressionUUID->"7e188608-3999-412a-b586-b5dcc3855922",
+ CellID->1284445344]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[165861, 2537, 110, 1, 20, "KeywordsSection",ExpressionUUID->"484a8239-0293-404e-8665-e797bc6deb8a",
+ CellID->179126048],
+Cell[165974, 2540, 100, 1, 70, "Keywords",ExpressionUUID->"50e72976-b3f6-4f4a-91ef-5a522ddbea43",
+ CellID->1946899289]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[166111, 2546, 119, 1, 20, "TemplatesSection",ExpressionUUID->"a9f9eb36-b105-48b6-8868-053a0c5100bf",
+ CellID->328020884],
+Cell[166233, 2549, 148, 2, 70, "Template",ExpressionUUID->"dd8b5567-de4a-4c6d-ac5e-1d367436aba9",
+ CellID->456475539],
+Cell[166384, 2553, 138, 2, 70, "Template",ExpressionUUID->"cc242d6c-8b37-4bee-94f7-cbed53ad0110",
+ CellID->1172796889],
+Cell[166525, 2557, 136, 2, 70, "Template",ExpressionUUID->"87cb8569-a46c-4a76-9ffa-22b4f3c01804",
+ CellID->1592401257],
+Cell[166664, 2561, 138, 2, 70, "Template",ExpressionUUID->"040067c3-e8c8-47d7-9f1b-e3cacfa6f562",
+ CellID->1546717485]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+

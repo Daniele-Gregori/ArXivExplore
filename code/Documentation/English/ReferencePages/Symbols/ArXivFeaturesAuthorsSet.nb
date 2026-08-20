@@ -1,0 +1,1442 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     59563,       1434]
+NotebookOptionsPosition[     52836,       1288]
+NotebookOutlinePosition[     53625,       1314]
+CellTagsIndexPosition[     53545,       1309]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["ArXivFeaturesAuthorsSet", "ObjectName",
+ CellID->1728493981,ExpressionUUID->"535f171b-66bc-4c36-a729-e62a20eaab4b"],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo",ExpressionUUID->"99cac74a-125d-4522-9037-8d53437df59d"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["ArXivFeaturesAuthorsSet",
+    BaseStyle->"Link",
+    ButtonData->
+     "paclet:DanieleGregoriArXivExplore/ref/ArXivFeaturesAuthorsSet"], "[", 
+   RowBox[{
+    StyleBox["authorL_List", "TI"], ",", 
+    StyleBox["idL_List", "TI"], ",", 
+    StyleBox["colorL_List", "TI"]}], "]"}]], "InlineFormula",ExpressionUUID->
+  "d1d6e7ff-819f-4b30-ad98-b46bcbba1710"],
+ "\[LineSeparator]returns a 'idL' list of articles of author entities \
+'authorL',in a form suitable for feature extraction or clustering,as an \
+association with titles,abstracts,authors and colors 'colorL'; \n",
+ Cell["   ", "ModInfo",ExpressionUUID->"a8d96551-129c-464b-a203-f527416d9430"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["ArXivFeaturesAuthorsSet",
+    BaseStyle->"Link",
+    ButtonData->
+     "paclet:DanieleGregoriArXivExplore/ref/ArXivFeaturesAuthorsSet"], "[", 
+   RowBox[{
+    StyleBox["authorL_List", "TI"], ",", 
+    StyleBox["m_Integer", "TI"], ",", 
+    StyleBox["colorL_List", "TI"]}], "]"}]], "InlineFormula",ExpressionUUID->
+  "15d2ccb1-ad7c-43f5-8333-5c767cd07fd5"],
+ "\[LineSeparator]returns a 'm' number of articles for author entities \
+'authorL', in a form suitable for feature extraction or clustering, as an \
+association with titles, abstracts, authors and colors 'colorL'."
+}], "Usage",
+ CellChangeTimes->{{3.942662149906783*^9, 3.942662150002334*^9}},
+ CellID->1787045698,ExpressionUUID->"610d49ef-1f01-4577-a99e-9c1be8cc9e5c"],
+
+Cell["XXXX", "Notes",
+ CellID->170759344,ExpressionUUID->"eb4ecb73-e7b1-42b0-93f5-887d70a8f4c7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "See Also",
+ Cell[BoxData[
+  TemplateBox[{"SeeAlso", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related reference (function) pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "00343988-0999-4a3f-bece-e9a593136e5a"]
+}], "SeeAlsoSection",
+ CellID->914142216,ExpressionUUID->"6bbfa378-5316-4d1a-9b1d-25ee067d938d"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TagBox[
+   FrameBox["\<\"XXXX\"\>"],
+   "FunctionPlaceholder"]], "InlineSeeAlsoFunction",
+  TaggingRules->{"PageType" -> "Function"},ExpressionUUID->
+  "cd7bef7c-c397-49f0-9839-47af3fe50825"],
+ Cell[BoxData[
+  RowBox[{
+  Cell[TextData[StyleBox[
+   " \[FilledVerySmallSquare] ", "InlineSeparator"]],ExpressionUUID->
+    "8ffe704f-d647-46e6-b242-257ce743fda1"], 
+   DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
+    "8c616fa5-a5ee-4c64-b7bc-f30eaa38431a", 
+     "dd8e299d-9641-417a-b8f6-1b2ea3d41fca"], $CellContext`cellobj$$ = 
+    CellObject[
+    "63a527d4-074d-4c95-8e55-bd9a14a3ffdf", 
+     "e59b9e74-ddfb-4482-8d2a-2134c0ba6dff"]}, 
+    TemplateBox[{
+      GraphicsBox[{{
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         CircleBox[{0, 0}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{0, 0.62}, {0, -0.62}}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{-0.62, 0}, {0.62, 0}}]}}, 
+       ImagePadding -> {{1., 1.}, {2.4, 1.}}, ImageSize -> 16, 
+       PlotRange -> {{-1.06, 1.06}, {-1.06, 1.06}}, 
+       BaselinePosition -> (Center -> 
+        Center)], $CellContext`nbobj$$, $CellContext`cellobj$$},
+     "InlineListingAddButton"],
+    Initialization:>($CellContext`nbobj$$ = 
+      EvaluationNotebook[]; $CellContext`cellobj$$ = EvaluationCell[])]}]], 
+  "InlineListingAddButton",ExpressionUUID->
+  "63a527d4-074d-4c95-8e55-bd9a14a3ffdf"]
+}], "SeeAlso",
+ CellID->890213674,ExpressionUUID->"17b87665-5dfa-4d37-a797-1bf8fb7318b1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Tech Notes",
+ Cell[BoxData[
+  TemplateBox[{"TechNotes", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Insert links to related tech notes.", "MoreInfoText"], BaseStyle -> 
+       "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "500f1bc6-9111-4729-b918-946cb6477e34"]
+}], "TechNotesSection",
+ CellID->302650269,ExpressionUUID->"8a0abb6b-5e91-464f-b97f-17a84ddd4553"],
+
+Cell["XXXX", "Tutorials",
+ CellID->1401794987,ExpressionUUID->"9d5f7549-9f12-406a-8492-82754644cb23"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "MoreAboutSection",
+ CellID->2072738919,ExpressionUUID->"1f957da1-03b2-4592-85fc-e41a786c1b8c"],
+
+Cell["XXXX", "MoreAbout",
+ CellID->43289999,ExpressionUUID->"80097903-b2b2-4f3d-a5a3-a62f61189c66"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Related Links",
+ Cell[BoxData[
+  TemplateBox[{"RelatedLinks", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related page, including web pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "cfa34ab1-87c2-4a93-899c-b229a0ba18a2"]
+}], "RelatedLinksSection",
+ CellID->1725540507,ExpressionUUID->"0a536af2-1dfc-4629-80f9-265bd133445b"],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1540132061,ExpressionUUID->"ceac0328-de71-4e46-b68e-1574e041ca84"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Examples Initialization",
+ Cell[BoxData[
+  TemplateBox[{"ExamplesInitialization", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Input that is to be evaluated before any examples are run, e.g. \
+Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]], 
+     "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "9faa26eb-437b-4d62-b09d-8f196bd8b196"]
+}], "ExamplesInitializationSection",
+ CellID->1379151936,ExpressionUUID->"b1ffa0df-bde8-43db-b9d8-74d1c1ed40c3"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<DanieleGregori`ArXivExplore`\>\"", 
+  "]"}]], "ExampleInitialization",
+ CellID->1615586281,ExpressionUUID->"c1b4a1d6-62ee-4567-ba85-3394ec9984f6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox[
+      RowBox[{"Basic", " ", "Examples"}], "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->375392099,ExpressionUUID->"66d2fa66-52da-476a-83e7-7fac06ad3f53"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"setAut", "=", 
+   RowBox[{"ArXivFeaturesAuthorsSet", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"\"Sharif (gr)\"", 
+         RowBox[{"Entity", "[", 
+           RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+         "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+         "\"ArXivAuthor\""},
+        "Entity"], ",", 
+       TemplateBox[{"\"Cardoso (gr)\"", 
+         RowBox[{"Entity", "[", 
+           RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+         "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+         "\"ArXivAuthor\""},
+        "Entity"], ",", 
+       TemplateBox[{"\"Lu (het)\"", 
+         RowBox[{"Entity", "[", 
+           RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+         "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", 
+         "\"ArXivAuthor\""},
+        "Entity"], ",", 
+       TemplateBox[{"\"Vafa (het)\"", 
+         RowBox[{"Entity", "[", 
+           RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+         "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+         "\"ArXivAuthor\""},
+        "Entity"]}], "}"}], ",", "10", ",", 
+     RowBox[{"{", 
+      RowBox[{"Yellow", ",", "Red", ",", "Purple", ",", "Blue"}], "}"}]}], 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.938763981633041*^9, 3.938764022620243*^9}, {
+  3.938764684895598*^9, 3.9387646851002407`*^9}},
+ CellLabel->"In[7]:=",
+ CellID->235388333,ExpressionUUID->"78d62212-26c2-4984-88ff-804c2e1933aa"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"setAut", "//", 
+   RowBox[{"Map", "[", 
+    RowBox[{
+     RowBox[{"Short", "[", 
+      RowBox[{"#", ",", "15"}], "]"}], "&"}], "]"}]}], "//", 
+  "TabView"}]], "Input",
+ CellChangeTimes->{{3.9387640280668917`*^9, 3.938764030013728*^9}, {
+  3.94266228469958*^9, 3.9426623128133*^9}},
+ CellLabel->"In[642]:=",
+ CellID->1914408113,ExpressionUUID->"303b648f-06b6-4d7d-a773-82265f3cb850"],
+
+Cell[BoxData[
+ TabViewBox[{{1,"\<\"InIDs\"\>"->
+  TagBox[
+   RowBox[{"{", 
+    RowBox[{"\<\"1006.3595\"\>", ",", "\<\"1210.2714\"\>", 
+     ",", "\<\"1206.2591\"\>", ",", "\<\"0905.3212\"\>", 
+     ",", "\<\"1008.2678\"\>", ",", "\<\"1512.03098\"\>", 
+     ",", "\<\"2408.01473\"\>", ",", "\<\"1504.04367\"\>", 
+     ",", "\<\"1806.09275\"\>", ",", "\<\"2307.08005\"\>", 
+     ",", "\<\"1307.1100\"\>", ",", "\<\"1012.0085\"\>", 
+     ",", "\<\"2209.01017\"\>", ",", "\<\"2409.03202\"\>", 
+     ",", "\<\"gr-qc/0601060\"\>", ",", "\<\"1203.3799\"\>", 
+     ",", "\<\"1305.0739\"\>", ",", "\<\"1402.0431\"\>", 
+     ",", "\<\"gr-qc/0610033\"\>", ",", "\<\"1311.6689\"\>", 
+     ",", "\<\"1102.4352\"\>", ",", "\<\"1406.5510\"\>", 
+     ",", "\<\"gr-qc/0604101\"\>", ",", "\<\"2211.05261\"\>", 
+     ",", "\<\"1803.03271\"\>", ",", "\<\"2201.13407\"\>", 
+     ",", "\<\"1511.08209\"\>", ",", "\<\"1904.05109\"\>", 
+     ",", "\<\"0902.1569\"\>", ",", "\<\"1305.6936\"\>", 
+     ",", "\<\"1105.5391\"\>", ",", 
+     RowBox[{"\[LeftSkeleton]", "19", "\[RightSkeleton]"}], 
+     ",", "\<\"hep-th/0405061\"\>", ",", "\<\"0711.0400\"\>", 
+     ",", "\<\"1701.05204\"\>", ",", "\<\"0904.1595\"\>", 
+     ",", "\<\"hep-th/9708055\"\>", ",", "\<\"hep-th/0406028\"\>", 
+     ",", "\<\"hep-th/9212117\"\>", ",", "\<\"2202.08290\"\>", 
+     ",", "\<\"2405.05367\"\>", ",", "\<\"1602.07712\"\>", 
+     ",", "\<\"hep-th/9505183\"\>", ",", "\<\"hep-th/0701156\"\>", 
+     ",", "\<\"hep-th/0110171\"\>", ",", "\<\"2112.11467\"\>", 
+     ",", "\<\"1811.07884\"\>", ",", "\<\"1709.02496\"\>", 
+     ",", "\<\"hep-th/9310069\"\>", ",", "\<\"0804.2489\"\>", 
+     ",", "\<\"0709.4446\"\>", ",", "\<\"1603.05665\"\>", 
+     ",", "\<\"1705.05836\"\>", ",", "\<\"2402.00118\"\>", 
+     ",", "\<\"0812.3155\"\>", ",", "\<\"2104.05724\"\>", 
+     ",", "\<\"hep-th/0411280\"\>", ",", "\<\"hep-th/9910182\"\>", 
+     ",", "\<\"1402.2674\"\>", ",", "\<\"1412.3152\"\>", 
+     ",", "\<\"1504.04614\"\>", ",", "\<\"hep-th/9609239\"\>"}], "}"}],
+   Short[#, 15]& ]}, {2,"\<\"InTitles\"\>"->
+  TagBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"singularity\"\>", ",", "\<\"in\"\>", 
+       ",", "\<\"gravitational\"\>", ",", "\<\"collapse\"\>", 
+       ",", "\<\"of\"\>", ",", "\<\"plane\"\>", ",", "\<\"symmetric\"\>", 
+       ",", "\<\"charged\"\>", ",", "\<\"vaidya\"\>", 
+       ",", "\<\"spacetime\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"analysis\"\>", ",", "\<\"of\"\>", ",", "\<\"f\"\>", 
+       ",", "\<\"r\"\>", ",", "\<\"t\"\>", ",", "\<\"gravity\"\>", 
+       ",", "\<\"models\"\>", ",", "\<\"through\"\>", ",", "\<\"energy\"\>", 
+       ",", "\<\"conditions\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"fermions\"\>", ",", "\<\"tunneling\"\>", 
+       ",", "\<\"from\"\>", ",", "\<\"charged\"\>", 
+       ",", "\<\"accelerating\"\>", ",", "\<\"and\"\>", 
+       ",", "\<\"rotating\"\>", ",", "\<\"black\"\>", ",", "\<\"holes\"\>", 
+       ",", "\<\"with\"\>", ",", "\<\"nut\"\>", ",", "\<\"parameter\"\>"}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"teleparallel\"\>", ",", "\<\"killing\"\>", 
+       ",", "\<\"vectors\"\>", ",", "\<\"of\"\>", ",", "\<\"spherically\"\>", 
+       ",", "\<\"symmetric\"\>", ",", "\<\"spacetimes\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"effects\"\>", ",", "\<\"of\"\>", ",", "\<\"f\"\>", 
+       ",", "\<\"r\"\>", ",", "\<\"dark\"\>", ",", "\<\"energy\"\>", 
+       ",", "\<\"on\"\>", ",", "\<\"dissipative\"\>", 
+       ",", "\<\"anisotropic\"\>", ",", "\<\"collapsing\"\>", 
+       ",", "\<\"fluid\"\>"}], "}"}], ",", 
+     RowBox[{"\[LeftSkeleton]", "70", "\[RightSkeleton]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"bps\"\>", ",", "\<\"structure\"\>", ",", "\<\"of\"\>", 
+       ",", "\<\"argyres-douglas\"\>", ",", "\<\"superconformal\"\>", 
+       ",", "\<\"theories\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"tt\"\>", ",", "\<\"geometry\"\>", ",", "\<\"and\"\>", 
+       ",", "\<\"a\"\>", ",", "\<\"twistorial\"\>", ",", "\<\"extension\"\>", 
+       ",", "\<\"of\"\>", ",", "\<\"topological\"\>", 
+       ",", "\<\"strings\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"strings\"\>", ",", "\<\"of\"\>", ",", "\<\"minimal\"\>", 
+       ",", "\<\"6d\"\>", ",", "\<\"scfts\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"6d\"\>", ",", "\<\"string\"\>", ",", "\<\"chains\"\>"}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"geometric\"\>", ",", "\<\"engineering\"\>", 
+       ",", "\<\"of\"\>", ",", "\<\"quantum\"\>", ",", "\<\"field\"\>", 
+       ",", "\<\"theories\"\>"}], "}"}]}], "}"}],
+   Short[#, 15]& ]}, {3,"\<\"InAbstracts\"\>"->
+  TagBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"we\"\>", ",", "\<\"study\"\>", ",", "\<\"the\"\>", 
+       ",", "\<\"final\"\>", ",", "\<\"outcome\"\>", ",", "\<\"of\"\>", 
+       ",", "\<\"gravitational\"\>", ",", "\<\"collapse\"\>", 
+       ",", "\<\"resulting\"\>", ",", "\<\"from\"\>", ",", "\<\"the\"\>", 
+       ",", "\<\"plane\"\>", ",", "\<\"symmetric\"\>", ",", "\<\"charged\"\>",
+        ",", "\<\"vaidya\"\>", ",", "\<\"spacetime\"\>", ",", "\<\"using\"\>",
+        ",", "\<\"the\"\>", ",", "\<\"field\"\>", ",", "\<\"equations\"\>", 
+       ",", "\<\"we\"\>", ",", "\<\"show\"\>", ",", "\<\"that\"\>", 
+       ",", "\<\"the\"\>", ",", "\<\"weak\"\>", ",", "\<\"energy\"\>", 
+       ",", "\<\"condition\"\>", ",", "\<\"is\"\>", ",", "\<\"always\"\>", 
+       ",", "\<\"satisfied\"\>", ",", "\<\"by\"\>", ",", "\<\"collapsing\"\>",
+        ",", "\<\"fluid\"\>", ",", "\<\"it\"\>", ",", "\<\"is\"\>", 
+       ",", "\<\"found\"\>", ",", "\<\"that\"\>", ",", "\<\"the\"\>", 
+       ",", "\<\"singularity\"\>", ",", "\<\"formed\"\>", ",", "\<\"is\"\>", 
+       ",", "\<\"naked\"\>", ",", "\<\"the\"\>", ",", "\<\"strength\"\>", 
+       ",", "\<\"of\"\>", ",", "\<\"singularity\"\>", ",", "\<\"is\"\>", 
+       ",", "\<\"also\"\>", ",", "\<\"investigated\"\>", ",", "\<\"by\"\>", 
+       ",", "\<\"using\"\>", ",", "\<\"nolan's\"\>", ",", "\<\"method\"\>", 
+       ",", "\<\"this\"\>", ",", "\<\"turns\"\>", ",", "\<\"out\"\>", 
+       ",", "\<\"to\"\>", ",", "\<\"be\"\>", ",", "\<\"a\"\>", 
+       ",", "\<\"strong\"\>", ",", "\<\"curvature\"\>", 
+       ",", "\<\"singularity\"\>", ",", "\<\"in\"\>", ",", "\<\"tipler's\"\>",
+        ",", "\<\"sense\"\>", ",", "\<\"and\"\>", ",", "\<\"hence\"\>", 
+       ",", "\<\"provides\"\>", ",", "\<\"a\"\>", ",", "\<\"counter\"\>", 
+       ",", "\<\"example\"\>", ",", "\<\"to\"\>", ",", "\<\"the\"\>", 
+       ",", "\<\"cosmic\"\>", ",", "\<\"censorship\"\>", 
+       ",", "\<\"hypothesis\"\>"}], "}"}], ",", 
+     RowBox[{"\[LeftSkeleton]", "78", "\[RightSkeleton]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"using\"\>", ",", "\<\"the\"\>", ",", "\<\"recent\"\>", 
+       ",", "\<\"advances\"\>", ",", "\<\"in\"\>", ",", "\<\"our\"\>", 
+       ",", "\<\"understanding\"\>", ",", "\<\"of\"\>", 
+       ",", "\<\"non-perturbative\"\>", ",", "\<\"aspects\"\>", 
+       ",", "\<\"of\"\>", ",", 
+       RowBox[{"\[LeftSkeleton]", "89", "\[RightSkeleton]"}], 
+       ",", "\<\"arbitrary\"\>", ",", "\<\"$\"\>", ",", "\<\"n\"\>", 
+       ",", "\<\"2\"\>", ",", "\<\"$\"\>", ",", "\<\"gauge\"\>", 
+       ",", "\<\"theories\"\>", ",", "\<\"with\"\>", ",", "\<\"matter\"\>", 
+       ",", "\<\"representations\"\>"}], "}"}]}], "}"}],
+   Short[#, 15]& ]}, {4,"\<\"Out\"\>"->
+  TagBox[
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Sharif (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Cardoso (gr)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Lu (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Vafa (het)\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+       "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+       "\"ArXivAuthor\""},
+      "Entity"]}], "}"}],
+   Short[#, 15]& ]}, {5,"\<\"Color\"\>"->
+  TagBox[
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 0, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0.5, 0, 0.5]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 0, 1]|>,
+      "RGBColorSwatchTemplate"]}], "}"}],
+   Short[#, 15]& ]}}, 1]], "Output",
+ CellChangeTimes->{
+  3.938764051147156*^9, {3.9426622903983183`*^9, 3.942662313114738*^9}},
+ CellLabel->"Out[642]=",
+ CellID->1359455219,ExpressionUUID->"cb838da9-763e-4966-83a1-b3a3fcd11531"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "More Examples",
+ Cell[BoxData[
+  TemplateBox[{"MoreExamples", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Extended examples in standardized sections.", "MoreInfoText"], 
+       BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "cb21ed83-2b96-4bfe-bb7a-ef76e8aea6ec"]
+}], "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->2055536654,ExpressionUUID->"265ae42d-8b04-4a7c-a050-7e640a464e70"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Scope", "ExampleSection",ExpressionUUID->
+   "ef702a6c-8f95-4f34-88d8-cfbf8963a1ea"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->835114489,ExpressionUUID->"933f30e3-a4d8-4306-999c-ef885c62180f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"idsTry", "=", 
+  RowBox[{"RandomSample", "[", 
+   RowBox[{
+    RowBox[{"Lookup", "[", 
+     RowBox[{"setAut", ",", "\"\<InIDs\>\""}], "]"}], ",", "20"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.938766269128542*^9, 3.93876629767733*^9}},
+ CellLabel->"In[643]:=",
+ CellID->1636843081,ExpressionUUID->"f68eb452-ca23-42c8-9bdc-bd4e14691d78"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"1305.0739\"\>", ",", "\<\"1210.2714\"\>", 
+   ",", "\<\"1402.2674\"\>", ",", "\<\"1405.4038\"\>", 
+   ",", "\<\"2202.08290\"\>", ",", "\<\"1901.11037\"\>", 
+   ",", "\<\"1709.02496\"\>", ",", "\<\"0709.4446\"\>", 
+   ",", "\<\"1012.1343\"\>", ",", "\<\"hep-th/0212037\"\>", 
+   ",", "\<\"1803.03271\"\>", ",", "\<\"1811.07884\"\>", 
+   ",", "\<\"1004.4007\"\>", ",", "\<\"hep-th/9505183\"\>", 
+   ",", "\<\"1105.5391\"\>", ",", "\<\"1206.2591\"\>", 
+   ",", "\<\"hep-th/0405061\"\>", ",", "\<\"0711.0400\"\>", 
+   ",", "\<\"1907.01561\"\>", ",", "\<\"hep-th/0001002\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.93876627393377*^9, 3.938766298236435*^9}, 
+   3.942662346197382*^9},
+ CellLabel->"Out[643]=",
+ CellID->905332318,ExpressionUUID->"e6d5a1e8-9541-4b0a-a704-780ea2aa384b"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"setAut2", "=", 
+   RowBox[{"ArXivFeaturesAuthorsSet", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[{"\"Sharif (gr)\"", 
+         RowBox[{"Entity", "[", 
+           RowBox[{"\"ArXivAuthor\"", ",", "\"Sharif (gr)\""}], "]"}], 
+         "\"Entity[\\\"ArXivAuthor\\\", \\\"Sharif (gr)\\\"]\"", 
+         "\"ArXivAuthor\""},
+        "Entity"], ",", 
+       TemplateBox[{"\"Cardoso (gr)\"", 
+         RowBox[{"Entity", "[", 
+           RowBox[{"\"ArXivAuthor\"", ",", "\"Cardoso (gr)\""}], "]"}], 
+         "\"Entity[\\\"ArXivAuthor\\\", \\\"Cardoso (gr)\\\"]\"", 
+         "\"ArXivAuthor\""},
+        "Entity"], ",", 
+       TemplateBox[{"\"Lu (het)\"", 
+         RowBox[{"Entity", "[", 
+           RowBox[{"\"ArXivAuthor\"", ",", "\"Lu (het)\""}], "]"}], 
+         "\"Entity[\\\"ArXivAuthor\\\", \\\"Lu (het)\\\"]\"", 
+         "\"ArXivAuthor\""},
+        "Entity"], ",", 
+       TemplateBox[{"\"Vafa (het)\"", 
+         RowBox[{"Entity", "[", 
+           RowBox[{"\"ArXivAuthor\"", ",", "\"Vafa (het)\""}], "]"}], 
+         "\"Entity[\\\"ArXivAuthor\\\", \\\"Vafa (het)\\\"]\"", 
+         "\"ArXivAuthor\""},
+        "Entity"]}], "}"}], ",", "idsTry", ",", 
+     RowBox[{"{", 
+      RowBox[{"Yellow", ",", "Red", ",", "Purple", ",", "Blue"}], "}"}]}], 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.9387663211433887`*^9, 3.938766332037837*^9}},
+ CellLabel->"In[3]:=",
+ CellID->1383506912,ExpressionUUID->"f490b40d-0454-4f05-8377-9201e2d972c4"]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Generalizations & Extensions", "ExampleSection",ExpressionUUID->
+   "0fc88a2c-49f7-4148-bfb2-afb15f14b294"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1963583478,ExpressionUUID->"5be7fe77-2fed-4955-9d41-dac133628f3e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Options", "ExampleSection",ExpressionUUID->
+   "7ea97ea4-4849-4890-b0ea-9dafb2e0198c"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1566311297,ExpressionUUID->"7a9ae1c7-cb0a-43d7-b8e0-b82e0f00876b"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "XXXX", "ExampleSubsection",ExpressionUUID->
+   "78fd220b-acf4-43ad-8069-b33c1ff84ed3"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1139423753,ExpressionUUID->"bd20b4a4-47ab-49b8-abb9-d4dc8232c4db"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "XXXX", "ExampleSubsection",ExpressionUUID->
+   "afa6086a-46cd-4e38-a6d4-1428f1d6fffe"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1183336372,ExpressionUUID->"f0ab06f1-a762-48cc-a448-ba351bda84b5"]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Applications", "ExampleSection",ExpressionUUID->
+   "c26b7b63-1739-4e6a-9f9b-8a23b3dc6e0d"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->488349337,ExpressionUUID->"49180d17-7827-42ee-ab72-6b1af3fcc9a0"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Properties & Relations", "ExampleSection",ExpressionUUID->
+   "4a213da7-df34-44e5-91db-6ea44554cdd2"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->4808125,ExpressionUUID->"8dc27138-7983-47e5-8c24-8c06d5ad82d6"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Possible Issues", "ExampleSection",ExpressionUUID->
+   "41bc7173-4172-4095-9e48-bf482af9d54e"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1353261936,ExpressionUUID->"14b23ef8-77ca-49b4-b6b5-c46254121a29"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Interactive Examples", "ExampleSection",ExpressionUUID->
+   "4bc33c7a-984b-4af6-9e4a-c3256c928ee9"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->274052975,ExpressionUUID->"c09fbd3f-f305-4843-9cd1-d05a7bd86b10"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Neat Examples", "ExampleSection",ExpressionUUID->
+   "2a24c114-566a-4281-840e-dab54a6188df"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1803411657,ExpressionUUID->"a45cbb9f-736e-451c-8c22-66bfd57ec8c6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Metadata", "MetadataSection",
+ CellID->355525441,ExpressionUUID->"a09e3706-b2b3-4974-9f7a-367614a5074a"],
+
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New",ExpressionUUID->"6ce738f6-350f-4006-9b60-9ab15e9fb573"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified",ExpressionUUID->"54f73e9a-ab4e-4722-aa76-dee6110fb897"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete",ExpressionUUID->
+  "35045ac1-6136-4551-97a9-2cd04bc549b6"]
+}], "History",
+ CellID->1016580933,ExpressionUUID->"cba7279b-2fb2-4f36-8fa2-c5580d8a2688"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Categorization",
+ Cell[BoxData[
+  TemplateBox[{"Metadata", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Metadata such as page URI, context, and type of documentation page.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "a17fc088-6bd3-4132-9b52-40cae5f5e201"]
+}], "CategorizationSection",
+ CellID->295845399,ExpressionUUID->"c82f7d82-ae5a-48df-a2f3-cf20d342595c"],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->848978188,ExpressionUUID->"5988adf5-0f54-492f-b1b4-9f9200796687"],
+
+Cell["DanieleGregori/ArXivExplore", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->842233808,ExpressionUUID->"2e4f3742-27f4-4f6b-b2d9-31e940f08acd"],
+
+Cell["DanieleGregori`ArXivExplore`", "Categorization",
+ CellLabel->"Context",
+ CellID->1358893679,ExpressionUUID->"17aeca67-865e-4ca8-a1ab-364bcab7d154"],
+
+Cell["DanieleGregori/ArXivExplore/ref/ArXivFeaturesAuthorsSet", \
+"Categorization",
+ CellLabel->"URI",
+ CellID->437477108,ExpressionUUID->"3aa40d98-9ee6-42de-9422-900b93e8c32f"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->1989280525,ExpressionUUID->"dabe9e56-e84f-40be-ae03-2cf18494e24a"],
+
+Cell["XXXX", "Keywords",
+ CellID->1812367179,ExpressionUUID->"f7419093-e2d9-4881-aa1a-3dda1a5a869c"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->547128405,ExpressionUUID->"fa44b4d2-b7b2-489a-8b0e-0b589d9d0a5a"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->62126381,ExpressionUUID->"fb7b47cb-7e58-4397-a86d-22192b4da10b"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->481033025,ExpressionUUID->"805a97fb-6f6c-4b77-aa5b-78f1fd6a4a1c"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1593603867,ExpressionUUID->"9fc157f9-874c-4394-b26d-61e87654f296"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->284147285,ExpressionUUID->"e0ae2882-4ef6-41c7-89f0-b32fb0592308"]
+}, Closed]]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{5, Automatic}, {Automatic, 0}},
+TaggingRules-><|"Paclet" -> "DanieleGregori/ArXivExplore"|>,
+CellContext->"Global`",
+FrontEndVersion->"14.1 for Mac OS X x86 (64-bit) (July 16, 2024)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"8c616fa5-a5ee-4c64-b7bc-f30eaa38431a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ExtendedExamples"->{
+  Cell[44227, 1040, 488, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"265ae42d-8b04-4a7c-a050-7e640a464e70",
+   CellTags->"ExtendedExamples",
+   CellID->2055536654]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ExtendedExamples", 53349, 1302}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 121, 1, 72, "ObjectName",ExpressionUUID->"535f171b-66bc-4c36-a729-e62a20eaab4b",
+ CellID->1728493981],
+Cell[700, 25, 1552, 33, 152, "Usage",ExpressionUUID->"610d49ef-1f01-4577-a99e-9c1be8cc9e5c",
+ CellID->1787045698],
+Cell[2255, 60, 96, 1, 26, "Notes",ExpressionUUID->"eb4ecb73-e7b1-42b0-93f5-887d70a8f4c7",
+ CellID->170759344]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2388, 66, 458, 13, 38, "SeeAlsoSection",ExpressionUUID->"6bbfa378-5316-4d1a-9b1d-25ee067d938d",
+ CellID->914142216],
+Cell[2849, 81, 1653, 42, 21, "SeeAlso",ExpressionUUID->"17b87665-5dfa-4d37-a797-1bf8fb7318b1",
+ CellID->890213674]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4539, 128, 435, 12, 39, "TechNotesSection",ExpressionUUID->"8a0abb6b-5e91-464f-b97f-17a84ddd4553",
+ CellID->302650269],
+Cell[4977, 142, 101, 1, 17, "Tutorials",ExpressionUUID->"9d5f7549-9f12-406a-8492-82754644cb23",
+ CellID->1401794987]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5115, 148, 118, 1, 37, "MoreAboutSection",ExpressionUUID->"1f957da1-03b2-4592-85fc-e41a786c1b8c",
+ CellID->2072738919],
+Cell[5236, 151, 99, 1, 17, "MoreAbout",ExpressionUUID->"80097903-b2b2-4f3d-a5a3-a62f61189c66",
+ CellID->43289999]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5372, 157, 473, 13, 38, "RelatedLinksSection",ExpressionUUID->"0a536af2-1dfc-4629-80f9-265bd133445b",
+ CellID->1725540507],
+Cell[5848, 172, 104, 1, 17, "RelatedLinks",ExpressionUUID->"ceac0328-de71-4e46-b68e-1574e041ca84",
+ CellID->1540132061]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5989, 178, 531, 14, 68, "ExamplesInitializationSection",ExpressionUUID->"b1ffa0df-bde8-43db-b9d8-74d1c1ed40c3",
+ CellID->1379151936],
+Cell[6523, 194, 188, 3, 46, "ExampleInitialization",ExpressionUUID->"c1b4a1d6-62ee-4567-ba85-3394ec9984f6",
+ CellID->1615586281]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6748, 202, 442, 12, 70, "PrimaryExamplesSection",ExpressionUUID->"66d2fa66-52da-476a-83e7-7fac06ad3f53",
+ CellID->375392099],
+Cell[7193, 216, 1551, 37, 85, "Input",ExpressionUUID->"78d62212-26c2-4984-88ff-804c2e1933aa",
+ CellID->235388333],
+Cell[CellGroupData[{
+Cell[8769, 257, 417, 11, 26, "Input",ExpressionUUID->"303b648f-06b6-4d7d-a773-82265f3cb850",
+ CellID->1914408113],
+Cell[9189, 270, 34989, 764, 387, "Output",ExpressionUUID->"cb838da9-763e-4966-83a1-b3a3fcd11531",
+ CellID->1359455219]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44227, 1040, 488, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"265ae42d-8b04-4a7c-a050-7e640a464e70",
+ CellTags->"ExtendedExamples",
+ CellID->2055536654],
+Cell[CellGroupData[{
+Cell[44740, 1057, 241, 5, 32, "ExampleSection",ExpressionUUID->"933f30e3-a4d8-4306-999c-ef885c62180f",
+ CellID->835114489],
+Cell[CellGroupData[{
+Cell[45006, 1066, 366, 9, 26, "Input",ExpressionUUID->"f68eb452-ca23-42c8-9bdc-bd4e14691d78",
+ CellID->1636843081],
+Cell[45375, 1077, 829, 16, 81, "Output",ExpressionUUID->"e6d5a1e8-9541-4b0a-a704-780ea2aa384b",
+ CellID->905332318]
+}, Open  ]],
+Cell[46219, 1096, 1508, 36, 85, "Input",ExpressionUUID->"f490b40d-0454-4f05-8377-9201e2d972c4",
+ CellID->1383506912]
+}, Open  ]],
+Cell[47742, 1135, 265, 5, 32, "ExampleSection",ExpressionUUID->"5be7fe77-2fed-4955-9d41-dac133628f3e",
+ CellID->1963583478],
+Cell[CellGroupData[{
+Cell[48032, 1144, 244, 5, 20, "ExampleSection",ExpressionUUID->"7a9ae1c7-cb0a-43d7-b8e0-b82e0f00876b",
+ CellID->1566311297],
+Cell[48279, 1151, 247, 5, 23, "ExampleSubsection",ExpressionUUID->"bd20b4a4-47ab-49b8-abb9-d4dc8232c4db",
+ CellID->1139423753],
+Cell[48529, 1158, 247, 5, 19, "ExampleSubsection",ExpressionUUID->"f0ab06f1-a762-48cc-a448-ba351bda84b5",
+ CellID->1183336372]
+}, Open  ]],
+Cell[48791, 1166, 248, 5, 32, "ExampleSection",ExpressionUUID->"49180d17-7827-42ee-ab72-6b1af3fcc9a0",
+ CellID->488349337],
+Cell[49042, 1173, 256, 5, 20, "ExampleSection",ExpressionUUID->"8dc27138-7983-47e5-8c24-8c06d5ad82d6",
+ CellID->4808125],
+Cell[49301, 1180, 252, 5, 20, "ExampleSection",ExpressionUUID->"14b23ef8-77ca-49b4-b6b5-c46254121a29",
+ CellID->1353261936],
+Cell[49556, 1187, 256, 5, 20, "ExampleSection",ExpressionUUID->"c09fbd3f-f305-4843-9cd1-d05a7bd86b10",
+ CellID->274052975],
+Cell[49815, 1194, 250, 5, 20, "ExampleSection",ExpressionUUID->"a45cbb9f-736e-451c-8c22-66bfd57ec8c6",
+ CellID->1803411657]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[50102, 1204, 110, 1, 71, "MetadataSection",ExpressionUUID->"a09e3706-b2b3-4974-9f7a-367614a5074a",
+ CellID->355525441],
+Cell[50215, 1207, 477, 12, 25, "History",ExpressionUUID->"cba7279b-2fb2-4f36-8fa2-c5580d8a2688",
+ CellID->1016580933],
+Cell[CellGroupData[{
+Cell[50717, 1223, 484, 13, 20, "CategorizationSection",ExpressionUUID->"c82f7d82-ae5a-48df-a2f3-cf20d342595c",
+ CellID->295845399],
+Cell[51204, 1238, 134, 2, 34, "Categorization",ExpressionUUID->"5988adf5-0f54-492f-b1b4-9f9200796687",
+ CellID->848978188],
+Cell[51341, 1242, 155, 2, 34, "Categorization",ExpressionUUID->"2e4f3742-27f4-4f6b-b2d9-31e940f08acd",
+ CellID->842233808],
+Cell[51499, 1246, 153, 2, 34, "Categorization",ExpressionUUID->"17aeca67-865e-4ca8-a1ab-364bcab7d154",
+ CellID->1358893679],
+Cell[51655, 1250, 177, 3, 34, "Categorization",ExpressionUUID->"3aa40d98-9ee6-42de-9422-900b93e8c32f",
+ CellID->437477108]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[51869, 1258, 111, 1, 20, "KeywordsSection",ExpressionUUID->"dabe9e56-e84f-40be-ae03-2cf18494e24a",
+ CellID->1989280525],
+Cell[51983, 1261, 100, 1, 70, "Keywords",ExpressionUUID->"f7419093-e2d9-4881-aa1a-3dda1a5a869c",
+ CellID->1812367179]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[52120, 1267, 119, 1, 20, "TemplatesSection",ExpressionUUID->"fa44b4d2-b7b2-489a-8b0e-0b589d9d0a5a",
+ CellID->547128405],
+Cell[52242, 1270, 147, 2, 70, "Template",ExpressionUUID->"fb7b47cb-7e58-4397-a86d-22192b4da10b",
+ CellID->62126381],
+Cell[52392, 1274, 137, 2, 70, "Template",ExpressionUUID->"805a97fb-6f6c-4b77-aa5b-78f1fd6a4a1c",
+ CellID->481033025],
+Cell[52532, 1278, 136, 2, 70, "Template",ExpressionUUID->"9fc157f9-874c-4394-b26d-61e87654f296",
+ CellID->1593603867],
+Cell[52671, 1282, 137, 2, 70, "Template",ExpressionUUID->"e0ae2882-4ef6-41c7-89f0-b32fb0592308",
+ CellID->284147285]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+

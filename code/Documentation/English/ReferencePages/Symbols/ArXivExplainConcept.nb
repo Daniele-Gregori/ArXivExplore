@@ -1,0 +1,803 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     33688,        795]
+NotebookOptionsPosition[     26276,        631]
+NotebookOutlinePosition[     27063,        657]
+CellTagsIndexPosition[     26984,        652]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["ArXivExplainConcept", "ObjectName",
+ CellID->863249672,ExpressionUUID->"c191e2be-e014-42cd-b340-25afd7791b24"],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo",ExpressionUUID->"53330186-85b1-4e2d-b976-bba894e5baf7"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["ArXivExplainConcept",
+    BaseStyle->"Link",
+    ButtonData->"paclet:DanieleGregoriArXivExplore/ref/ArXivExplainConcept"], 
+   "[", 
+   RowBox[{
+    StyleBox["concept_String", "TI"], ",", 
+    StyleBox["id_String", "TI"]}], "]"}]], "InlineFormula",ExpressionUUID->
+  "26373c8e-0dd4-4f05-9aa9-972d61ef6899"],
+ "\[LineSeparator]explains 'concept' given an article id; \n",
+ Cell["   ", "ModInfo",ExpressionUUID->"c16d912e-8f66-45e0-8456-dc45db3e7a1b"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["ArXivExplainConcept",
+    BaseStyle->"Link",
+    ButtonData->"paclet:DanieleGregoriArXivExplore/ref/ArXivExplainConcept"], 
+   "[", 
+   RowBox[{
+    StyleBox["concept_String", "TI"], ",", 
+    StyleBox["idL_List", "TI"]}], "]"}]], "InlineFormula",ExpressionUUID->
+  "7d8df73e-c5ac-4a8f-90ab-70c019e1fae1"],
+ "\[LineSeparator]explains 'concept' given an articles list 'idL'."
+}], "Usage",
+ CellChangeTimes->{{3.931171110688929*^9, 3.931171110731159*^9}},
+ CellID->237718172,ExpressionUUID->"e230dabe-0bf5-46ce-903f-49c20c27eefa"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "See Also",
+ Cell[BoxData[
+  TemplateBox[{"SeeAlso", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related reference (function) pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "b91253b3-1ec7-4e57-a739-1322361a2018"]
+}], "SeeAlsoSection",
+ CellID->2030820151,ExpressionUUID->"d7e786a7-c965-4e8a-8c6c-baa81b05715c"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TagBox[
+   FrameBox["\<\"XXXX\"\>"],
+   "FunctionPlaceholder"]], "InlineSeeAlsoFunction",
+  TaggingRules->{"PageType" -> "Function"},ExpressionUUID->
+  "529d14b2-1163-4fed-82e4-adc127a46f29"],
+ Cell[BoxData[
+  RowBox[{
+  Cell[TextData[StyleBox[
+   " \[FilledVerySmallSquare] ", "InlineSeparator"]],ExpressionUUID->
+    "4471ee71-da6a-4336-b5df-fd20317a9d37"], 
+   DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
+    "e1150944-a613-4e66-b278-f5483a56e217", 
+     "88a2b08c-c273-49bc-844f-d7b574a44f30"], $CellContext`cellobj$$ = 
+    CellObject[
+    "f06df9b4-659e-46d5-85c2-a2f3278074c7", 
+     "e0b978cd-4675-4a74-99f9-b53dd7ab8e62"]}, 
+    TemplateBox[{
+      GraphicsBox[{{
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         CircleBox[{0, 0}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{0, 0.62}, {0, -0.62}}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{-0.62, 0}, {0.62, 0}}]}}, 
+       ImagePadding -> {{1., 1.}, {2.4, 1.}}, ImageSize -> 16, 
+       PlotRange -> {{-1.06, 1.06}, {-1.06, 1.06}}, 
+       BaselinePosition -> (Center -> 
+        Center)], $CellContext`nbobj$$, $CellContext`cellobj$$},
+     "InlineListingAddButton"],
+    Initialization:>($CellContext`nbobj$$ = 
+      EvaluationNotebook[]; $CellContext`cellobj$$ = EvaluationCell[])]}]], 
+  "InlineListingAddButton",ExpressionUUID->
+  "f06df9b4-659e-46d5-85c2-a2f3278074c7"]
+}], "SeeAlso",
+ CellID->2036676086,ExpressionUUID->"114cd6f0-f739-4f82-9ec0-84caa2df9f81"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Tech Notes",
+ Cell[BoxData[
+  TemplateBox[{"TechNotes", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Insert links to related tech notes.", "MoreInfoText"], BaseStyle -> 
+       "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "ae80c099-3c1f-48c8-a406-67538f3e9904"]
+}], "TechNotesSection",
+ CellID->1673127869,ExpressionUUID->"24d32dab-0953-44d3-8b62-ba327fa6f7a7"],
+
+Cell["XXXX", "Tutorials",
+ CellID->1109220465,ExpressionUUID->"1bc60188-c3c9-4512-8b8a-b376e8acc226"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "MoreAboutSection",
+ CellID->362815648,ExpressionUUID->"683dd149-0bcd-44a2-a1c8-bdc0a157fb4e"],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1136522103,ExpressionUUID->"95b5309e-7bc4-45ec-b01b-ea09be6af02a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Related Links",
+ Cell[BoxData[
+  TemplateBox[{"RelatedLinks", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related page, including web pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "486245eb-0d65-43ff-bdcd-351cafbbcfc3"]
+}], "RelatedLinksSection",
+ CellID->1807428703,ExpressionUUID->"622e8cec-207b-4b3c-823c-8016d005f984"],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1298024506,ExpressionUUID->"8a52f8d3-dd48-411c-95d6-c936cf31ac98"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Examples Initialization",
+ Cell[BoxData[
+  TemplateBox[{"ExamplesInitialization", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Input that is to be evaluated before any examples are run, e.g. \
+Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]], 
+     "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "008ca9cb-c5cc-4fa9-916f-43edf96e2dea"]
+}], "ExamplesInitializationSection",
+ CellID->1758986116,ExpressionUUID->"96693915-1f06-4091-8023-09f8493cfd2b"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<DanieleGregori`ArXivExplore`\>\"", 
+  "]"}]], "ExampleInitialization",
+ CellID->1019767010,ExpressionUUID->"7875f7a5-8e2d-472d-990f-8771aa318cf9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox[
+      RowBox[{"Basic", " ", "Examples"}], "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->157150363,ExpressionUUID->"b963480a-dd7f-4aa8-8e9a-fa3da4e662ef"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ArXivExplainConcept", "[", 
+  RowBox[{"\"\<Viterbi algorithm\>\"", ",", "\"\<2401.02314\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.931170959269385*^9, 3.931170974283442*^9}},
+ CellLabel->"In[1065]:=",
+ CellID->1557355027,ExpressionUUID->"fa7d3c71-3251-47ec-abbf-8b41e4070624"],
+
+Cell[BoxData["\<\"The **Viterbi algorithm** is a dynamic programming \
+algorithm used to find the most likely sequence of hidden states in a hidden \
+Markov model (HMM). It is widely used in various fields such as signal \
+processing, speech recognition, bioinformatics, and gravitational wave (GW) \
+data analysis.\\n\\n### Key Concepts:\\n1. **Hidden Markov Model (HMM)**: \\n \
+  - An HMM is a statistical model where the system being modeled is assumed \
+to follow a Markov process with hidden (unobservable) states. In an HMM, you \
+have:\\n     - **Hidden states**: The actual states of the system, which are \
+not directly observable.\\n     - **Observations**: The data or signals that \
+are observed, which are related to the hidden states.\\n     - **Transition \
+probabilities**: The probabilities of moving from one hidden state to \
+another.\\n     - **Emission probabilities**: The probabilities of observing \
+a particular output given a hidden state.\\n\\n2. **Viterbi Algorithm**:\\n   \
+- The Viterbi algorithm is used to find the most probable sequence of hidden \
+states that could have produced a given sequence of observations. It does \
+this by maximizing the joint probability of the hidden states and the \
+observations.\\n   - The algorithm works by breaking the problem into smaller \
+subproblems and solving them recursively, which makes it computationally \
+efficient.\\n\\n### Steps of the Viterbi Algorithm:\\n1. **Initialization**: \
+\\n   - Start by initializing the probabilities of the first observation \
+being generated by each possible hidden state.\\n   \\n2. **Recursion**:\\n   \
+- For each subsequent observation, calculate the probability of each hidden \
+state being the most likely state, given the previous states and the current \
+observation. This is done by considering all possible transitions from the \
+previous states and selecting the one with the highest probability.\\n\\n3. \
+**Termination**:\\n   - Once all observations have been processed, the \
+algorithm identifies the final state with the highest probability.\\n\\n4. \
+**Backtracking**:\\n   - After determining the most likely final state, the \
+algorithm traces back through the sequence of states to reconstruct the most \
+likely sequence of hidden states.\\n\\n### Application in Gravitational Wave \
+Searches:\\nIn the context of gravitational wave (GW) searches, the Viterbi \
+algorithm is used to detect signals that evolve over time, such as continuous \
+waves (CWs) or inspiral signals from binary black hole mergers. The algorithm \
+is particularly useful when the signal's frequency evolution is not \
+well-modeled by simple power laws, as it can detect arbitrary curves in the \
+time-frequency domain.\\n\\n- **Advantages**:\\n  - **Model-agnostic**: \
+Unlike other methods (e.g., Frequency-Hough), the Viterbi algorithm does not \
+assume a specific form for the signal's frequency evolution. This makes it \
+flexible and capable of detecting signals with complex time-frequency \
+behavior.\\n  - **Computational efficiency**: The algorithm is \
+computationally efficient, making it suitable for large-scale searches where \
+computational resources are a limiting factor.\\n\\n- **Disadvantages**:\\n  \
+- **Sensitivity**: The Viterbi algorithm may be less sensitive than other \
+methods (e.g., Frequency-Hough) that are tailored to specific signal models. \
+However, its flexibility and efficiency often make it a preferred choice in \
+certain parameter spaces.\\n\\n### Summary:\\nThe Viterbi algorithm is a \
+powerful tool for detecting the most likely sequence of hidden states in a \
+hidden Markov model. In gravitational wave searches, it is used to identify \
+signals with complex frequency evolution, offering a flexible and \
+computationally efficient approach to detecting signals that may not follow \
+simple models.\"\>"], "Output",
+ CellChangeTimes->{3.931171012698784*^9, 3.9361717008137417`*^9},
+ CellLabel->"Out[1065]=",
+ CellID->712562545,ExpressionUUID->"66cbef9c-589d-44fc-81f8-fe4f27458003"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "More Examples",
+ Cell[BoxData[
+  TemplateBox[{"MoreExamples", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Extended examples in standardized sections.", "MoreInfoText"], 
+       BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "bed32669-f710-4b68-843b-ec709fa70481"]
+}], "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1968748778,ExpressionUUID->"32aef18d-cd00-4c50-bceb-6e9bd1c9fea1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Scope", "ExampleSection",ExpressionUUID->
+   "85ed7e36-3c42-4cb9-a11b-0d6cd504d597"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->332678870,ExpressionUUID->"b8e3781b-fc68-49d3-a4d7-a30e4de17538"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ArXivExplainConcept", "[", 
+  RowBox[{"\"\<teleparallel gravity\>\"", ",", "\"\<2401.02201\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.931170755647599*^9, 3.931170831661133*^9}, {
+  3.936171272750058*^9, 3.9361712757564497`*^9}},
+ CellLabel->"In[1059]:=",
+ CellID->1650155646,ExpressionUUID->"20f43e31-9e17-4e18-acbf-c4c98edfa42f"],
+
+Cell[BoxData["\<\"**Teleparallel Gravity** is an alternative formulation of \
+gravity that differs from the traditional understanding provided by \
+Einstein's General Relativity (GR). In GR, gravity is described as the \
+curvature of spacetime, which is mathematically represented by the Riemann \
+curvature tensor. In contrast, **teleparallel gravity** conceptualizes \
+gravity not as a result of spacetime curvature, but rather as a manifestation \
+of **torsion** in spacetime.\\n\\n### Key Concepts of Teleparallel \
+Gravity:\\n\\n1. **Torsion vs. Curvature**:\\n   - In General Relativity, \
+gravity is understood as the curvature of spacetime caused by the presence of \
+mass and energy. This curvature is described using the Riemann curvature \
+tensor.\\n   - In teleparallel gravity, the curvature of spacetime is set to \
+zero, and instead, gravity is attributed to **torsion**, which is a measure \
+of how much spacetime \\\"twists\\\" rather than \\\"bends.\\\" Torsion is \
+described by the **torsion tensor**.\\n\\n2. **Vielbein (Tetrad) Field**:\\n  \
+ - Teleparallel gravity uses a mathematical object called the **vielbein** \
+(or tetrad) field as the fundamental variable, instead of the metric tensor \
+used in GR. The vielbein field relates the local spacetime coordinates to a \
+flat, Minkowski-like reference frame at each point in spacetime.\\n   - The \
+vielbein field allows for the description of torsion in spacetime, which is \
+central to teleparallel gravity.\\n\\n3. **Weitzenb\[ODoubleDot]ck \
+Connection**:\\n   - In teleparallel gravity, the **Weitzenb\[ODoubleDot]ck \
+connection** is used instead of the Levi-Civita connection (which is used in \
+GR). The Weitzenb\[ODoubleDot]ck connection has zero curvature but non-zero \
+torsion, which is the key feature that distinguishes teleparallel gravity \
+from GR.\\n   - The Levi-Civita connection, on the other hand, has zero \
+torsion but non-zero curvature, which is why GR describes gravity as \
+curvature.\\n\\n4. **Teleparallel Equivalent of General Relativity \
+(TEGR)**:\\n   - The **Teleparallel Equivalent of General Relativity (TEGR)** \
+is a specific formulation of teleparallel gravity that is dynamically \
+equivalent to Einstein's General Relativity. This means that TEGR produces \
+the same equations of motion and predictions as GR, but it interprets gravity \
+differently \[LongDash] as torsion rather than curvature.\\n   - In TEGR, the \
+gravitational action is constructed using the torsion scalar \\\\( T \\\\), \
+analogous to how the Einstein-Hilbert action in GR is constructed using the \
+Ricci scalar \\\\( R \\\\).\\n\\n5. **Extensions of Teleparallel \
+Gravity**:\\n   - Just as General Relativity has extensions like \\\\( f(R) \
+\\\\) gravity, teleparallel gravity also has extensions, such as **\\\\( f(T) \
+\\\\) gravity** and **\\\\( f(Q) \\\\) gravity**. These models introduce \
+additional degrees of freedom by modifying the action with functions of the \
+torsion scalar \\\\( T \\\\) or the non-metricity scalar \\\\( Q \\\\), \
+respectively.\\n   - **\\\\( f(Q) \\\\) gravity** is a more recent \
+development where the gravitational dynamics are governed by the \
+non-metricity tensor, which measures how the length of vectors changes under \
+parallel transport, rather than torsion or curvature.\\n\\n### Why \
+Teleparallel Gravity?\\nTeleparallel gravity offers a different geometric \
+interpretation of gravity, which can be useful in exploring alternative \
+theories of gravity. It has been studied as a potential framework for \
+addressing some of the unresolved issues in cosmology and astrophysics, such \
+as the nature of dark matter and dark energy. Additionally, teleparallel \
+gravity provides a natural setting for formulating gravitational theories \
+that incorporate torsion, which may have implications for quantum gravity and \
+string theory.\\n\\nIn summary, **teleparallel gravity** is an alternative \
+theory of gravity where spacetime torsion, rather than curvature, is \
+responsible for gravitational interactions. The **Teleparallel Equivalent of \
+General Relativity (TEGR)** is dynamically equivalent to Einstein's General \
+Relativity but offers a different geometric interpretation of gravity. \
+Extensions of teleparallel gravity, such as \\\\( f(T) \\\\) and \\\\( f(Q) \
+\\\\) gravity, are actively being explored to address open questions in \
+modern physics.\"\>"], "Output",
+ CellChangeTimes->{3.9361713157623997`*^9},
+ CellLabel->"Out[1059]=",
+ CellID->1842442140,ExpressionUUID->"a793dd78-2c96-46a5-92e8-0b052d5792a0"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Generalizations & Extensions", "ExampleSection",ExpressionUUID->
+   "6b4640e8-f363-4bfa-891f-9663098ac2f2"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1433834949,ExpressionUUID->"97c63b3f-cbe3-473a-b4f2-2baae44ac942"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Options", "ExampleSection",ExpressionUUID->
+   "74b99e02-176d-46df-954c-f423dca81243"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1444854623,ExpressionUUID->"e3b2d364-13bc-45cd-a731-c1b1ca8a4a7d"],
+
+Cell["ArXivExplainConcept inherits the options of LLMSynthesize", "Text",
+ CellChangeTimes->{{3.936171393541012*^9, 3.936171426547337*^9}, {
+  3.936171639521174*^9, 3.936171647692415*^9}},
+ CellID->1414998946,ExpressionUUID->"e728c884-d0c4-4a93-bff6-69a6bea11660"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ArXivExplainConcept", "[", 
+  RowBox[{"\"\<teleparallel gravity\>\"", ",", "\"\<2401.02201\>\"", ",", 
+   RowBox[{"LLMEvaluator", "->", 
+    RowBox[{"<|", 
+     RowBox[{"\"\<MaxTokens\>\"", "->", "100"}], "|>"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.936171471811719*^9, 3.936171486700554*^9}, {
+  3.936171559294071*^9, 3.936171559669076*^9}},
+ CellLabel->"In[1063]:=",
+ CellID->2093513163,ExpressionUUID->"3a49c123-fad5-42f2-b1d8-c40e94ee1a4e"],
+
+Cell[BoxData["\<\"**Teleparallel Gravity** is an alternative formulation of \
+gravity that differs from the traditional understanding in Einstein's General \
+Relativity (GR). In GR, gravity is described as the curvature of spacetime, \
+which is mathematically represented by the Riemann curvature tensor. \
+Teleparallel gravity, on the other hand, conceptualizes gravity not as a \
+result of spacetime curvature, but as a manifestation of **torsion** in \
+spacetime.\\n\\n### Key Concepts of Teleparallel Gravity:\\n\\n1. **Torsion\"\
+\>"], "Output",
+ CellChangeTimes->{3.9361715316290293`*^9, 3.9361715825181932`*^9},
+ CellLabel->"Out[1063]=",
+ CellID->340093455,ExpressionUUID->"7612c676-b063-4c7d-bae8-f2a8a05c896f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "@", 
+  RowBox[{"TextWords", "[", "%", "]"}]}]], "Input",
+ CellChangeTimes->{{3.936171547281941*^9, 3.936171553242196*^9}, 
+   3.9361715838030252`*^9},
+ CellLabel->"In[1064]:=",
+ CellID->1496713518,ExpressionUUID->"d927ea45-2cf6-46b5-86f6-6aec83c2c1b9"],
+
+Cell[BoxData["68"], "Output",
+ CellChangeTimes->{3.936171584364287*^9},
+ CellLabel->"Out[1064]=",
+ CellID->4405914,ExpressionUUID->"12c4b778-b2a8-4e63-af52-026f8cf8abc6"]
+}, Open  ]],
+
+Cell[" and besides it adds \"LLMUse\".", "ExampleText",
+ CellChangeTimes->{{3.936171652009632*^9, 3.9361716571752853`*^9}},
+ CellID->1214289810,ExpressionUUID->"e406acb4-60e3-4d4d-a86e-5ed889753bea"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "\"LLMUse\"", "ExampleSubsection",ExpressionUUID->
+   "9462057a-e7cf-4c5c-b637-80e10772299d"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->2074052132,ExpressionUUID->"06fdf9e3-c3ce-4832-a621-debf394a0797"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ArXivExplainConcept", "[", 
+  RowBox[{"\"\<teleparallel gravity\>\"", ",", "\"\<2401.02201\>\"", ",", 
+   RowBox[{"\"\<LLMUse\>\"", "->", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.931170755647599*^9, 3.931170831661133*^9}, {
+  3.936171334818972*^9, 3.936171335554091*^9}},
+ CellLabel->"In[1060]:=",
+ CellID->347996239,ExpressionUUID->"b37254a7-e993-4e72-872a-3cdbd601873e"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"0.4871965276478425`", ",", 
+     TemplateBox[{
+      "\"Another intriguing avenue is the teleparallel equivalent of general \
+relativity (TEGR), conceptualizing gravity as \"", 
+       FrameBox[
+       "\"arising from the torsion of spacetime\"", DefaultBaseStyle -> 
+        "HighlightedInput", StripOnInput -> False, FrameStyle -> None], 
+       "\" rather than curvature \\\\cite{Aldrovandi}.\""},
+      "RowDefault"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0.2786819994944129`", ",", 
+     TemplateBox[{
+      "\"Another intriguing avenue is the teleparallel equivalent of general \
+relativity (TEGR), conceptualizing gravity as arising from the torsion of \
+spacetime rather than \"", 
+       FrameBox[
+       "\"curvature \\\\cite{Aldrovandi}\"", DefaultBaseStyle -> 
+        "HighlightedInput", StripOnInput -> False, FrameStyle -> None], 
+       "\".\""},
+      "RowDefault"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0.18848542919248434`", ",", 
+     TemplateBox[{
+      "\"Another intriguing avenue is the teleparallel equivalent of general \
+relativity (TEGR), \"", 
+       FrameBox[
+       "\"conceptualizing gravity\"", DefaultBaseStyle -> "HighlightedInput", 
+        StripOnInput -> False, FrameStyle -> None], 
+       "\" as arising from the torsion of spacetime rather than curvature \
+\\\\cite{Aldrovandi}.\""},
+      "RowDefault"]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.931170866653215*^9, 3.9361713597586718`*^9},
+ CellLabel->"Out[1060]=",
+ CellID->1425749239,ExpressionUUID->"72e09b91-a232-488a-84c2-1cffed5ddfd2"]
+}, Open  ]],
+
+Cell["Compare with default \"LLMUse\"->True above.", "ExampleText",
+ CellChangeTimes->{{3.9361713685008297`*^9, 3.936171378566021*^9}, {
+  3.9361716143561068`*^9, 3.936171615180542*^9}},
+ CellID->1295892372,ExpressionUUID->"cec27dac-dc6c-4625-983f-3ea4a6fe02ba"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Applications", "ExampleSection",ExpressionUUID->
+   "9ccfb27f-cbfd-4b4f-9c56-2b21e5fec164"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1106603006,ExpressionUUID->"50329316-d963-4900-bab2-f059de9f34e2"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Properties & Relations", "ExampleSection",ExpressionUUID->
+   "3ea1b1d0-e8f1-41c1-aafb-2f7c4414e9d5"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1468338822,ExpressionUUID->"4c567260-8e0f-4e32-8e8c-de286016d5e1"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Possible Issues", "ExampleSection",ExpressionUUID->
+   "f5b691ee-6729-448a-9ed7-f70a0eef50d7"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1635993677,ExpressionUUID->"51fde482-0ba0-4bb9-806a-6d20d3525a69"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Interactive Examples", "ExampleSection",ExpressionUUID->
+   "b47b6539-500a-46d8-a04c-de83111219ad"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1912596798,ExpressionUUID->"78e5b634-296e-466d-92f8-a764cb3c00eb"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Neat Examples", "ExampleSection",ExpressionUUID->
+   "19b8d10f-f74f-44ca-b38c-fad35956ae68"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1479155690,ExpressionUUID->"859c07e6-2604-43b1-b5d2-fa2af85cfbef"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Metadata", "MetadataSection",
+ CellID->898984158,ExpressionUUID->"001d0946-74b0-475f-ac69-62561157b28c"],
+
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New",ExpressionUUID->"645e4143-59fb-4457-8342-fb6687abf32c"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified",ExpressionUUID->"336e1cc3-bd05-45ee-a486-6a09d1bbd7ca"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete",ExpressionUUID->
+  "6e2573a5-c6b6-4109-9f4b-7b02fd8e54bc"]
+}], "History",
+ CellID->1679286861,ExpressionUUID->"0fcb83f9-fcbf-4ca9-95a6-2cf8e4954d59"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Categorization",
+ Cell[BoxData[
+  TemplateBox[{"Metadata", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Metadata such as page URI, context, and type of documentation page.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "96a54b08-6a90-489d-8d2f-f36530d4373f"]
+}], "CategorizationSection",
+ CellID->1544183953,ExpressionUUID->"6b494763-07e2-4a2d-94ac-78057526d09f"],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->759824076,ExpressionUUID->"fb2f1e6e-5b68-4fd1-9370-722cd106a59d"],
+
+Cell["DanieleGregori/ArXivExplore", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->639624420,ExpressionUUID->"6d425a6a-d739-482e-a45e-3e5fd6a89c9f"],
+
+Cell["DanieleGregori`ArXivExplore`", "Categorization",
+ CellLabel->"Context",
+ CellID->2011973705,ExpressionUUID->"dec275fa-08de-4e62-bd2f-99e0aee34662"],
+
+Cell["DanieleGregori/ArXivExplore/ref/ArXivExplainConcept", "Categorization",
+ CellLabel->"URI",
+ CellID->964554273,ExpressionUUID->"6890a780-38f0-4f70-85c4-da0d2ae3f312"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->1494676444,ExpressionUUID->"1e664fc6-101e-49bc-b6f0-c39ce992034b"],
+
+Cell["XXXX", "Keywords",
+ CellID->1910775349,ExpressionUUID->"eff01908-d96d-4960-be84-1aa11ea1866a"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->930833405,ExpressionUUID->"67845379-aacf-4144-97e7-4dbc01fd8c81"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->98669440,ExpressionUUID->"9167bae3-bafa-4463-8f29-9f41dba1942f"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->479902596,ExpressionUUID->"dd17b0f5-606c-4477-8cdb-5ae710c7c923"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1921836487,ExpressionUUID->"28a07c2d-4273-401c-82c8-20e7a3cb8558"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->4302482,ExpressionUUID->"74ea9a45-a567-449f-81a1-f559a999a409"]
+}, Closed]]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{5, Automatic}, {Automatic, 0}},
+TaggingRules-><|"Paclet" -> "DanieleGregori/ArXivExplore"|>,
+CellContext->"Global`",
+FrontEndVersion->"14.1 for Mac OS X x86 (64-bit) (July 16, 2024)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"e1150944-a613-4e66-b278-f5483a56e217"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ExtendedExamples"->{
+  Cell[11118, 276, 488, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"32aef18d-cd00-4c50-bceb-6e9bd1c9fea1",
+   CellTags->"ExtendedExamples",
+   CellID->1968748778]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ExtendedExamples", 26789, 645}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 116, 1, 72, "ObjectName",ExpressionUUID->"c191e2be-e014-42cd-b340-25afd7791b24",
+ CellID->863249672],
+Cell[699, 25, 1155, 27, 117, "Usage",ExpressionUUID->"e230dabe-0bf5-46ce-903f-49c20c27eefa",
+ CellID->237718172]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1891, 57, 459, 13, 38, "SeeAlsoSection",ExpressionUUID->"d7e786a7-c965-4e8a-8c6c-baa81b05715c",
+ CellID->2030820151],
+Cell[2353, 72, 1654, 42, 21, "SeeAlso",ExpressionUUID->"114cd6f0-f739-4f82-9ec0-84caa2df9f81",
+ CellID->2036676086]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4044, 119, 436, 12, 39, "TechNotesSection",ExpressionUUID->"24d32dab-0953-44d3-8b62-ba327fa6f7a7",
+ CellID->1673127869],
+Cell[4483, 133, 101, 1, 17, "Tutorials",ExpressionUUID->"1bc60188-c3c9-4512-8b8a-b376e8acc226",
+ CellID->1109220465]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4621, 139, 117, 1, 37, "MoreAboutSection",ExpressionUUID->"683dd149-0bcd-44a2-a1c8-bdc0a157fb4e",
+ CellID->362815648],
+Cell[4741, 142, 101, 1, 17, "MoreAbout",ExpressionUUID->"95b5309e-7bc4-45ec-b01b-ea09be6af02a",
+ CellID->1136522103]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4879, 148, 473, 13, 38, "RelatedLinksSection",ExpressionUUID->"622e8cec-207b-4b3c-823c-8016d005f984",
+ CellID->1807428703],
+Cell[5355, 163, 104, 1, 17, "RelatedLinks",ExpressionUUID->"8a52f8d3-dd48-411c-95d6-c936cf31ac98",
+ CellID->1298024506]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5496, 169, 531, 14, 68, "ExamplesInitializationSection",ExpressionUUID->"96693915-1f06-4091-8023-09f8493cfd2b",
+ CellID->1758986116],
+Cell[6030, 185, 188, 3, 46, "ExampleInitialization",ExpressionUUID->"7875f7a5-8e2d-472d-990f-8771aa318cf9",
+ CellID->1019767010]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6255, 193, 442, 12, 70, "PrimaryExamplesSection",ExpressionUUID->"b963480a-dd7f-4aa8-8e9a-fa3da4e662ef",
+ CellID->157150363],
+Cell[CellGroupData[{
+Cell[6722, 209, 307, 6, 26, "Input",ExpressionUUID->"fa7d3c71-3251-47ec-abbf-8b41e4070624",
+ CellID->1557355027],
+Cell[7032, 217, 4037, 53, 1495, "Output",ExpressionUUID->"66cbef9c-589d-44fc-81f8-fe4f27458003",
+ CellID->712562545]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11118, 276, 488, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"32aef18d-cd00-4c50-bceb-6e9bd1c9fea1",
+ CellTags->"ExtendedExamples",
+ CellID->1968748778],
+Cell[CellGroupData[{
+Cell[11631, 293, 241, 5, 32, "ExampleSection",ExpressionUUID->"b8e3781b-fc68-49d3-a4d7-a30e4de17538",
+ CellID->332678870],
+Cell[CellGroupData[{
+Cell[11897, 302, 361, 7, 26, "Input",ExpressionUUID->"20f43e31-9e17-4e18-acbf-c4c98edfa42f",
+ CellID->1650155646],
+Cell[12261, 311, 4569, 61, 1439, "Output",ExpressionUUID->"a793dd78-2c96-46a5-92e8-0b052d5792a0",
+ CellID->1842442140]
+}, Open  ]]
+}, Open  ]],
+Cell[16857, 376, 265, 5, 32, "ExampleSection",ExpressionUUID->"97c63b3f-cbe3-473a-b4f2-2baae44ac942",
+ CellID->1433834949],
+Cell[CellGroupData[{
+Cell[17147, 385, 244, 5, 20, "ExampleSection",ExpressionUUID->"e3b2d364-13bc-45cd-a731-c1b1ca8a4a7d",
+ CellID->1444854623],
+Cell[17394, 392, 264, 3, 20, "Text",ExpressionUUID->"e728c884-d0c4-4a93-bff6-69a6bea11660",
+ CellID->1414998946],
+Cell[CellGroupData[{
+Cell[17683, 399, 474, 9, 44, "Input",ExpressionUUID->"3a49c123-fad5-42f2-b1d8-c40e94ee1a4e",
+ CellID->2093513163],
+Cell[18160, 410, 719, 10, 213, "Output",ExpressionUUID->"7612c676-b063-4c7d-bae8-f2a8a05c896f",
+ CellID->340093455]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18916, 425, 286, 6, 26, "Input",ExpressionUUID->"d927ea45-2cf6-46b5-86f6-6aec83c2c1b9",
+ CellID->1496713518],
+Cell[19205, 433, 170, 3, 25, "Output",ExpressionUUID->"12c4b778-b2a8-4e63-af52-026f8cf8abc6",
+ CellID->4405914]
+}, Open  ]],
+Cell[19390, 439, 199, 2, 23, "ExampleText",ExpressionUUID->"e406acb4-60e3-4d4d-a86e-5ed889753bea",
+ CellID->1214289810],
+Cell[CellGroupData[{
+Cell[19614, 445, 253, 5, 23, "ExampleSubsection",ExpressionUUID->"06fdf9e3-c3ce-4832-a621-debf394a0797",
+ CellID->2074052132],
+Cell[CellGroupData[{
+Cell[19892, 454, 407, 7, 44, "Input",ExpressionUUID->"b37254a7-e993-4e72-872a-3cdbd601873e",
+ CellID->347996239],
+Cell[20302, 463, 1627, 37, 341, "Output",ExpressionUUID->"72e09b91-a232-488a-84c2-1cffed5ddfd2",
+ CellID->1425749239]
+}, Open  ]],
+Cell[21944, 503, 262, 3, 23, "ExampleText",ExpressionUUID->"cec27dac-dc6c-4625-983f-3ea4a6fe02ba",
+ CellID->1295892372]
+}, Open  ]]
+}, Open  ]],
+Cell[22233, 510, 249, 5, 32, "ExampleSection",ExpressionUUID->"50329316-d963-4900-bab2-f059de9f34e2",
+ CellID->1106603006],
+Cell[22485, 517, 259, 5, 20, "ExampleSection",ExpressionUUID->"4c567260-8e0f-4e32-8e8c-de286016d5e1",
+ CellID->1468338822],
+Cell[22747, 524, 252, 5, 20, "ExampleSection",ExpressionUUID->"51fde482-0ba0-4bb9-806a-6d20d3525a69",
+ CellID->1635993677],
+Cell[23002, 531, 257, 5, 20, "ExampleSection",ExpressionUUID->"78e5b634-296e-466d-92f8-a764cb3c00eb",
+ CellID->1912596798],
+Cell[23262, 538, 250, 5, 20, "ExampleSection",ExpressionUUID->"859c07e6-2604-43b1-b5d2-fa2af85cfbef",
+ CellID->1479155690]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23549, 548, 110, 1, 71, "MetadataSection",ExpressionUUID->"001d0946-74b0-475f-ac69-62561157b28c",
+ CellID->898984158],
+Cell[23662, 551, 477, 12, 25, "History",ExpressionUUID->"0fcb83f9-fcbf-4ca9-95a6-2cf8e4954d59",
+ CellID->1679286861],
+Cell[CellGroupData[{
+Cell[24164, 567, 485, 13, 20, "CategorizationSection",ExpressionUUID->"6b494763-07e2-4a2d-94ac-78057526d09f",
+ CellID->1544183953],
+Cell[24652, 582, 134, 2, 35, "Categorization",ExpressionUUID->"fb2f1e6e-5b68-4fd1-9370-722cd106a59d",
+ CellID->759824076],
+Cell[24789, 586, 155, 2, 35, "Categorization",ExpressionUUID->"6d425a6a-d739-482e-a45e-3e5fd6a89c9f",
+ CellID->639624420],
+Cell[24947, 590, 153, 2, 35, "Categorization",ExpressionUUID->"dec275fa-08de-4e62-bd2f-99e0aee34662",
+ CellID->2011973705],
+Cell[25103, 594, 171, 2, 35, "Categorization",ExpressionUUID->"6890a780-38f0-4f70-85c4-da0d2ae3f312",
+ CellID->964554273]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[25311, 601, 111, 1, 20, "KeywordsSection",ExpressionUUID->"1e664fc6-101e-49bc-b6f0-c39ce992034b",
+ CellID->1494676444],
+Cell[25425, 604, 100, 1, 70, "Keywords",ExpressionUUID->"eff01908-d96d-4960-be84-1aa11ea1866a",
+ CellID->1910775349]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[25562, 610, 119, 1, 20, "TemplatesSection",ExpressionUUID->"67845379-aacf-4144-97e7-4dbc01fd8c81",
+ CellID->930833405],
+Cell[25684, 613, 147, 2, 70, "Template",ExpressionUUID->"9167bae3-bafa-4463-8f29-9f41dba1942f",
+ CellID->98669440],
+Cell[25834, 617, 137, 2, 70, "Template",ExpressionUUID->"dd17b0f5-606c-4477-8cdb-5ae710c7c923",
+ CellID->479902596],
+Cell[25974, 621, 136, 2, 70, "Template",ExpressionUUID->"28a07c2d-4273-401c-82c8-20e7a3cb8558",
+ CellID->1921836487],
+Cell[26113, 625, 135, 2, 70, "Template",ExpressionUUID->"74ea9a45-a567-449f-81a1-f559a999a409",
+ CellID->4302482]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+

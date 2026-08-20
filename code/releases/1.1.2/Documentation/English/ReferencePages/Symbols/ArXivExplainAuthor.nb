@@ -1,0 +1,883 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     40784,        875]
+NotebookOptionsPosition[     33938,        725]
+NotebookOutlinePosition[     34724,        751]
+CellTagsIndexPosition[     34645,        746]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["ArXivExplainAuthor", "ObjectName",
+ CellID->1178167734,ExpressionUUID->"cecfa0d1-cae0-4448-8fcb-1243e5324868"],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo",ExpressionUUID->"76c7a0a0-705c-4e7f-9afc-a2db84ba193f"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["ArXivExplainAuthor",
+    BaseStyle->"Link",
+    ButtonData->"paclet:DanieleGregoriArXivExplore/ref/ArXivExplainAuthor"], 
+   "[", 
+   StyleBox["author_Entity", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+  "c8a74a2b-c152-4ced-b676-746d14418572"],
+ "\[LineSeparator]explains the work of an 'author' as registered entity; \n",
+ Cell["   ", "ModInfo",ExpressionUUID->"b1518973-efed-41f6-8ed6-f91221cd9e34"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["ArXivExplainAuthor",
+    BaseStyle->"Link",
+    ButtonData->"paclet:DanieleGregoriArXivExplore/ref/ArXivExplainAuthor"], 
+   "[", 
+   StyleBox["author_String", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+  "79564c62-cc45-48a6-b601-6b7d52f0669e"],
+ "\[LineSeparator]explains the work of an 'author' as string; \n",
+ Cell["   ", "ModInfo",ExpressionUUID->"ac176463-4b86-4789-8821-bc8cfab65a34"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["ArXivExplainAuthor",
+    BaseStyle->"Link",
+    ButtonData->"paclet:DanieleGregoriArXivExplore/ref/ArXivExplainAuthor"], 
+   "[", 
+   RowBox[{
+    StyleBox["author_String", "TI"], ",", 
+    StyleBox["cat_", "TI"]}], "]"}]], "InlineFormula",ExpressionUUID->
+  "eed9ed92-ad46-41bd-8849-5680e065cb2b"],
+ "\[LineSeparator]explains the work of an 'author' in category 'cat'; \n",
+ Cell["   ", "ModInfo",ExpressionUUID->"7989fb4e-a6f5-4939-88c9-f5ef3d12b7fa"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["ArXivExplainAuthor",
+    BaseStyle->"Link",
+    ButtonData->"paclet:DanieleGregoriArXivExplore/ref/ArXivExplainAuthor"], 
+   "[", 
+   StyleBox["authorL_List", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+  "c0a36b5e-3f1c-4bbe-9674-29a002a8f7e4"],
+ "\[LineSeparator]explains the work of an author whose possible names are the \
+list 'authorL'.; \n",
+ Cell["   ", "ModInfo",ExpressionUUID->"84aadd67-5912-41cc-8266-66c30578781f"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["ArXivExplainAuthor",
+    BaseStyle->"Link",
+    ButtonData->"paclet:DanieleGregoriArXivExplore/ref/ArXivExplainAuthor"], 
+   "[", 
+   RowBox[{
+    StyleBox["authorL_List", "TI"], ",", 
+    StyleBox["catL_List", "TI"]}], "]"}]], "InlineFormula",ExpressionUUID->
+  "174a6551-224a-465d-96da-4f840a5d13cf"],
+ "\[LineSeparator]the two lists 'doubleL' - the first made of author names \
+and the second of corresponding categories."
+}], "Usage",
+ CellChangeTimes->{{3.942665916378419*^9, 3.942665916762597*^9}},
+ CellID->1665879998,ExpressionUUID->"b24f9e87-beda-4e5c-afa2-5709b39bfd8b"],
+
+Cell["The following options can be given: ", "Notes",
+ CellID->1700820447,ExpressionUUID->"f8a41ff5-2070-4c3e-90d2-fb17d217f038"],
+
+Cell[BoxData[GridBox[{
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "b0e0753f-9a8a-4cc9-9027-ec9fa578c946"], "\"\<Introductions\>\"", 
+    ButtonBox["False",
+     BaseStyle->"Link"], Cell[
+    "Uses also the (summarized) article introductions", "TableText",
+     ExpressionUUID->"f83d30dd-58a0-4c9c-8766-050bfe057054"]}
+  }]], "3ColumnTableMod",
+ CellChangeTimes->{{3.942666386396446*^9, 3.9426664006168528`*^9}},
+ CellID->534427512,ExpressionUUID->"1059d391-e6be-4151-9918-e818c5100f32"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "See Also",
+ Cell[BoxData[
+  TemplateBox[{"SeeAlso", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related reference (function) pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "942d9bdc-d32e-41c3-890a-8d20fadccb9b"]
+}], "SeeAlsoSection",
+ CellID->1346582430,ExpressionUUID->"9e592a89-aa99-4c64-a877-eafd58623512"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TagBox[
+   FrameBox["\<\"XXXX\"\>"],
+   "FunctionPlaceholder"]], "InlineSeeAlsoFunction",
+  TaggingRules->{"PageType" -> "Function"},ExpressionUUID->
+  "0762dcc2-5b7d-4252-bb17-b65dcbf31c6f"],
+ Cell[BoxData[
+  RowBox[{
+  Cell[TextData[StyleBox[
+   " \[FilledVerySmallSquare] ", "InlineSeparator"]],ExpressionUUID->
+    "e47a373f-bc66-40f8-9bc9-72395fc8c712"], 
+   DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
+    "9f61284c-fddb-4dde-b7cf-2370579a6976", 
+     "bdd28405-2387-496e-b862-b0b9e259c976"], $CellContext`cellobj$$ = 
+    CellObject[
+    "883edb26-ce34-4093-b944-6f5516d37836", 
+     "316ea2f8-bfcd-46f8-9669-50a82ec2785f"]}, 
+    TemplateBox[{
+      GraphicsBox[{{
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         CircleBox[{0, 0}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{0, 0.62}, {0, -0.62}}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{-0.62, 0}, {0.62, 0}}]}}, 
+       ImagePadding -> {{1., 1.}, {2.4, 1.}}, ImageSize -> 16, 
+       PlotRange -> {{-1.06, 1.06}, {-1.06, 1.06}}, 
+       BaselinePosition -> (Center -> 
+        Center)], $CellContext`nbobj$$, $CellContext`cellobj$$},
+     "InlineListingAddButton"],
+    Initialization:>($CellContext`nbobj$$ = 
+      EvaluationNotebook[]; $CellContext`cellobj$$ = EvaluationCell[])]}]], 
+  "InlineListingAddButton",ExpressionUUID->
+  "883edb26-ce34-4093-b944-6f5516d37836"]
+}], "SeeAlso",
+ CellID->1828228924,ExpressionUUID->"0ed04737-7e63-4f50-baf8-2b3c4629f5e4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Tech Notes",
+ Cell[BoxData[
+  TemplateBox[{"TechNotes", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Insert links to related tech notes.", "MoreInfoText"], BaseStyle -> 
+       "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "29d96a48-34a7-4997-89cd-2a69dd602190"]
+}], "TechNotesSection",
+ CellID->847504392,ExpressionUUID->"4dbdfd44-154d-4605-a80e-cd14ba75fb8e"],
+
+Cell["XXXX", "Tutorials",
+ CellID->1894769440,ExpressionUUID->"ddac392d-6809-4f09-b381-5fa3e1f25cf8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "MoreAboutSection",
+ CellID->354976717,ExpressionUUID->"23f0b696-6fee-4248-995b-26cccd5b8521"],
+
+Cell["XXXX", "MoreAbout",
+ CellID->384111253,ExpressionUUID->"f897a484-3b34-4b9b-a8c2-c137b4af2672"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Related Links",
+ Cell[BoxData[
+  TemplateBox[{"RelatedLinks", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related page, including web pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "faa7ee16-9af6-422a-b9d9-537a8bef6123"]
+}], "RelatedLinksSection",
+ CellID->421986289,ExpressionUUID->"2d8b9f07-f134-4427-ae1a-891c5a05c6f0"],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1332556829,ExpressionUUID->"628042ae-f317-4e2e-9cf7-ae117eb913ab"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Examples Initialization",
+ Cell[BoxData[
+  TemplateBox[{"ExamplesInitialization", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Input that is to be evaluated before any examples are run, e.g. \
+Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]], 
+     "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "c3a3aa0e-659b-48eb-a9a3-e34475cf7088"]
+}], "ExamplesInitializationSection",
+ CellID->175670440,ExpressionUUID->"7ce72fff-951c-4a90-b2b3-ae5d91b78ea1"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<DanieleGregori`ArXivExplore`\>\"", 
+  "]"}]], "ExampleInitialization",
+ CellID->1850554102,ExpressionUUID->"a96ebe2e-b585-469f-9175-c9f52aa812a9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox[
+      RowBox[{"Basic", " ", "Examples"}], "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->257132813,ExpressionUUID->"c7fc906c-fe14-486b-b9e3-779cf6689135"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ArXivAuthorRegister", "[", 
+  RowBox[{"\"\<Witten\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{"\"\<E. Witten\>\"", ",", "\"\<Edward Witten\>\""}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.942666005422812*^9, 3.942666027613637*^9}},
+ CellLabel->"In[855]:=",
+ CellID->1252423751,ExpressionUUID->"0701ebc0-d9d0-4c04-aac5-42a438734960"],
+
+Cell[BoxData[
+ TemplateBox[{"\"Witten\"", 
+   RowBox[{"Entity", "[", 
+     RowBox[{"\"ArXivAuthor\"", ",", "\"Witten\""}], "]"}], 
+   "\"Entity[\\\"ArXivAuthor\\\", \\\"Witten\\\"]\"", "\"ArXivAuthor\""},
+  "Entity"]], "Output",
+ CellChangeTimes->{3.942666126082033*^9},
+ CellLabel->"Out[855]=",
+ CellID->2048452863,ExpressionUUID->"ed94291b-c353-4e6c-9fbb-89deff2eb339"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ArXivExplainAuthor", "[", 
+  TemplateBox[{"\"Witten\"", 
+    RowBox[{"Entity", "[", 
+      RowBox[{"\"ArXivAuthor\"", ",", "\"Witten\""}], "]"}], 
+    "\"Entity[\\\"ArXivAuthor\\\", \\\"Witten\\\"]\"", "\"ArXivAuthor\""},
+   "Entity"], "]"}]], "Input",
+ CellChangeTimes->{{3.942666035317492*^9, 3.942666041104982*^9}, 
+   3.942666131099806*^9},
+ CellLabel->"In[856]:=",
+ CellID->215461843,ExpressionUUID->"c480cdda-42c6-446a-ad91-641471c6811a"],
+
+Cell[BoxData["\<\"### Report on the Work of Edward Witten\\n\\nEdward Witten \
+is one of the most influential theoretical physicists and mathematicians of \
+the modern era. His work spans a wide range of topics in quantum field \
+theory, string theory, geometry, and mathematical physics. Below is a summary \
+of his contributions based on the provided list of \
+articles.\\n\\n---\\n\\n### **1. String Theory and Quantum Gravity**\\nWitten \
+has made groundbreaking contributions to string theory, a framework that \
+seeks to unify quantum mechanics and general relativity. His work \
+includes:\\n- **Two-Dimensional String Theory**: Explored algebraic \
+structures and symmetries in 2D string theory, including the role of BRST \
+cohomology and matrix models (hep-th/9108004, hep-th/9201056).\\n- **Black \
+Holes in String Theory**: Investigated the connection between black holes in \
+two and four dimensions, emphasizing their role in string theory \
+(hep-th/9111052, hep-th/9206069).\\n- **M-Theory and F-Theory**: Played a \
+pivotal role in understanding M-theory, an 11-dimensional framework unifying \
+string theories, and its compactifications on manifolds of G\:2082 and \
+Spin(7) holonomy (hep-th/9503124, hep-th/9603142, hep-th/9603150).\\n- \
+**AdS/CFT Correspondence**: Contributed to the development of the AdS/CFT \
+duality, which relates string theory in Anti-de Sitter (AdS) space to \
+conformal field theories (CFTs) on the boundary (hep-th/9802150, \
+hep-th/9803131).\\n\\n---\\n\\n### **2. Topological Field Theory and \
+Geometry**\\nWitten's work has profoundly influenced the intersection of \
+physics and geometry:\\n- **Topological Quantum Field Theory (TQFT)**: \
+Introduced TQFTs, which have applications in knot theory, Donaldson \
+invariants, and mirror symmetry (hep-th/9204083, hep-th/9403195).\\n- \
+**Chern-Simons Theory**: Developed connections between Chern-Simons gauge \
+theory and knot invariants, including the Jones polynomial and Khovanov \
+homology (hep-th/9307038, hep-th/1101.3216, hep-th/1106.4789).\\n- **Mirror \
+Symmetry**: Provided a physical interpretation of mirror symmetry, a duality \
+between Calabi-Yau manifolds, and its implications for string \
+compactifications (hep-th/9112056, hep-th/9404184).\\n\\n---\\n\\n### **3. \
+Supersymmetric Gauge Theories**\\nWitten has extensively studied \
+supersymmetric gauge theories, uncovering deep mathematical structures:\\n- \
+**N=2 Supersymmetric Yang-Mills Theory**: Solved the low-energy dynamics of \
+N=2 gauge theories, introducing concepts like Seiberg-Witten theory and \
+electric-magnetic duality (hep-th/9407087, hep-th/9408099).\\n- **Anomalies \
+and Dualities**: Investigated anomalies in gauge theories and their \
+implications for dualities, including S-duality and mirror symmetry \
+(hep-th/9505186, hep-th/0604151).\\n- **Chiral Rings and Matrix Models**: \
+Explored the structure of chiral rings in supersymmetric theories and their \
+connection to matrix models (hep-th/0211170, \
+hep-th/0303207).\\n\\n---\\n\\n### **4. Quantum Field Theory and Mathematical \
+Physics**\\nWitten has made significant contributions to the mathematical \
+foundations of quantum field theory:\\n- **Geometric Langlands Program**: \
+Interpreted the geometric Langlands correspondence using gauge theory, \
+connecting it to S-duality and branes (hep-th/0604151, hep-th/0706.3359).\\n- \
+**Anomalies and Index Theory**: Studied anomalies in quantum field theory, \
+including global anomalies and their relation to the \[Eta]-invariant \
+(hep-th/9902098, hep-th/1909.08775).\\n- **Path Integrals and Localization**: \
+Developed new techniques for path integrals, including fermionic localization \
+and its applications to gauge theory and string theory (hep-th/1703.04612, \
+hep-th/1009.6032).\\n\\n---\\n\\n### **5. Entanglement and Quantum \
+Information**\\nWitten has explored the role of entanglement in quantum field \
+theory and gravity:\\n- **Entanglement Entropy**: Investigated the algebraic \
+structure of entanglement in quantum field theory and its implications for \
+holography (hep-th/1803.04993, hep-th/2209.10454).\\n- **Black Hole \
+Entropy**: Analyzed the entropy of black holes in the context of AdS/CFT and \
+quantum gravity (hep-th/9807205, hep-th/2301.07257).\\n\\n---\\n\\n### **6. \
+Cosmology and Astrophysics**\\nWitten has also contributed to cosmology and \
+astrophysics:\\n- **Axions and Dark Matter**: Studied the role of axions in \
+solving the strong CP problem and their potential as dark matter candidates \
+(hep-th/0605206, hep-th/1610.08297).\\n- **Primordial Black Holes**: Proposed \
+methods to detect primordial black holes in the outer solar system \
+(hep-th/2004.14192, hep-th/2005.12336).\\n\\n---\\n\\n### **7. SYK Model and \
+Quantum Chaos**\\nWitten has investigated the Sachdev-Ye-Kitaev (SYK) model, \
+a quantum mechanical system with connections to black hole physics and \
+quantum chaos:\\n- **SYK and Holography**: Explored the large-N limit of the \
+SYK model and its relation to holography and the Schwarzian action \
+(hep-th/1610.09758, hep-th/1703.04612).\\n- **Supersymmetric Extensions**: \
+Developed supersymmetric and higher-dimensional analogs of the SYK model \
+(hep-th/1706.05362).\\n\\n---\\n\\n### **8. Recent Advances**\\nWitten's \
+recent work continues to push the boundaries of theoretical physics:\\n- **JT \
+Gravity and Matrix Models**: Analyzed the connection between \
+Jackiw-Teitelboim (JT) gravity and random matrix theory, extending it to \
+supersymmetric cases (hep-th/1907.03363, hep-th/2305.19438).\\n- **Quantum \
+Gravity and Observables**: Investigated the role of algebras and observables \
+in quantum gravity, including the implications of Type II von Neumann \
+algebras (hep-th/2112.12828, hep-th/2303.02837).\\n- **Complex Metrics and \
+Path Integrals**: Proposed restrictions on complex metrics in the \
+gravitational path integral, inspired by recent developments in quantum field \
+theory (hep-th/2111.06514).\\n\\n---\\n\\n### **Conclusion**\\nEdward \
+Witten's work has profoundly shaped modern theoretical physics and \
+mathematics. His insights into string theory, quantum field theory, and \
+geometry have not only advanced our understanding of fundamental physics but \
+also bridged the gap between physics and pure mathematics. His contributions \
+continue to inspire and guide research in a wide range of disciplines.\"\>"], \
+"Output",
+ CellChangeTimes->{3.942666166576295*^9},
+ CellLabel->"Out[856]=",
+ CellID->940799397,ExpressionUUID->"72b11988-4770-4577-b167-9b56bcd76111"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "More Examples",
+ Cell[BoxData[
+  TemplateBox[{"MoreExamples", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Extended examples in standardized sections.", "MoreInfoText"], 
+       BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "bcfda70c-9677-4798-95b8-188d4c06e404"]
+}], "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->894090327,ExpressionUUID->"3fae3f6b-7238-4d34-b363-d36007146616"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Scope", "ExampleSection",ExpressionUUID->
+   "38f26439-fa2e-4be8-aced-ec95fa9d9dda"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1033047830,ExpressionUUID->"6a6257ea-61d4-4862-af8d-b100df2b50f5"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Generalizations & Extensions", "ExampleSection",ExpressionUUID->
+   "71523913-f539-4042-b6bd-f85259616e8c"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->29592815,ExpressionUUID->"81407e9f-727d-4fc6-8c5e-8b26f817cd9e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Options", "ExampleSection",ExpressionUUID->
+   "488753dd-ac7a-4a2d-a280-681d0eaf5078"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1614600527,ExpressionUUID->"db749902-b1b7-4121-bd91-01af524a06cd"],
+
+Cell["ArXivExplainAuthor inherits the options of LLMSynthesize.", "Text",
+ CellChangeTimes->{{3.936171393541012*^9, 3.936171426547337*^9}, {
+  3.936171639521174*^9, 3.936171647692415*^9}, {3.936171729017839*^9, 
+  3.9361717301602488`*^9}, {3.9376223740543613`*^9, 3.9376223749222717`*^9}},
+ CellID->1414998946,ExpressionUUID->"aa22e100-636e-4026-bce1-c54b95803ec3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "\"Introductions\"", "ExampleSubsection",ExpressionUUID->
+   "7fe25f4b-ffaf-4d4d-8e3b-afc764c6b0c6"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->987693797,ExpressionUUID->"99a121af-69d1-4f25-956f-6d3b5261e323"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ArXivExplainAuthor", "[", 
+   RowBox[{"\"\<Kevin Carlberg\>\"", ",", "\"\<cs.NA\>\"", ",", 
+    RowBox[{"\"\<Introductions\>\"", "->", "True"}], ",", 
+    RowBox[{"LLMEvaluator", "->", 
+     RowBox[{"<|", 
+      RowBox[{"\"\<Prompts\>\"", "->", "\"\<Keep the output short\>\""}], 
+      "|>"}]}]}], "]"}], "//", "Text"}]], "Input",
+ TaggingRules->{},
+ CellChangeTimes->{{3.936241794197136*^9, 3.936241795394568*^9}, {
+   3.93651538349993*^9, 3.936515406701997*^9}, {3.9365159001264257`*^9, 
+   3.936515903992648*^9}, 3.9372996611443653`*^9, {3.9426662549820967`*^9, 
+   3.942666257448456*^9}},
+ CellLabel->"In[857]:=",
+ CellID->678863671,ExpressionUUID->"45520b52-2998-4e13-9f27-2673b8cfeba6"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[BoxData[
+   FormBox["\<\"### Report on the Work of Kevin Carlberg\\n\\nKevin \
+Carlberg's research focuses on advancing reduced-order modeling (ROM) \
+techniques to address computational challenges in high-fidelity simulations \
+of parameterized systems. His contributions span a wide range of topics, \
+including adaptive refinement, error quantification, nonlinear model \
+reduction, and statistical modeling. Below is a summary of his key \
+contributions based on the provided articles:\\n\\n---\\n\\n#### 1. \
+**Adaptive Refinement for Reduced-Order Models**\\n   - **Key Work**: \
+*Adaptive $h$-refinement for reduced-order models* (1404.0442)\\n   - \
+**Contribution**: Developed an adaptive $h$-refinement method for ROMs that \
+enriches the reduced basis online by splitting basis vectors using $k$-means \
+clustering. This approach ensures error control and enables ROMs to capture \
+phenomena like moving shocks, achieving equivalence to full-order models \
+(FOMs) when fully refined.\\n\\n---\\n\\n#### 2. **Error Quantification and \
+Statistical Modeling**\\n   - **Key Works**:\\n     - *The ROMES method for \
+statistical modeling of reduced-order-model error* (1405.5170)\\n     - \
+*Statistical closure modeling for reduced-order models of stationary systems \
+by the ROMES method* (1901.02792)\\n   - **Contribution**: Introduced the \
+ROMES method, which uses Gaussian-process regression to model ROM errors \
+probabilistically. Extended this to construct statistical closure models for \
+stationary systems, enabling efficient error quantification and propagation \
+to quantities of interest. These methods improve ROM accuracy and robustness \
+in uncertainty quantification (UQ) applications.\\n\\n---\\n\\n#### 3. \
+**Comparative Analysis of Galerkin and LSPG Projections**\\n   - **Key \
+Work**: *Galerkin v. least-squares Petrov--Galerkin projection in nonlinear \
+model reduction* (1504.03749)\\n   - **Contribution**: Conducted a \
+theoretical and computational comparison of Galerkin and Least-Squares Petrov\
+\[Dash]Galerkin (LSPG) projections. Demonstrated that LSPG achieves lower \
+error bounds and better stability for time-discrete systems, particularly in \
+large-scale fluid dynamics problems.\\n\\n---\\n\\n#### 4. **Time-Parallelism \
+and Data-Driven Forecasting**\\n   - **Key Work**: *Data-driven time \
+parallelism via forecasting* (1610.09049)\\n   - **Contribution**: Proposed a \
+data-driven approach to enable time-parallel numerical solutions for ODEs \
+using gappy POD and forecasting techniques. This method enhances the \
+scalability of ROMs by addressing temporal complexity and achieving \
+near-ideal speedups in time-parallel frameworks.\\n\\n---\\n\\n#### 5. \
+**Machine Learning for Error Modeling**\\n   - **Key Work**: *Error modeling \
+for surrogates of dynamical systems using machine learning* (1701.03240)\\n   \
+- **Contribution**: Developed a machine-learning-based framework (EMML) for \
+error modeling in ROMs. By automating feature selection and using \
+high-dimensional regression techniques, this approach improves error \
+prediction and correction, particularly for nonlinear dynamical \
+systems.\\n\\n---\\n\\n#### 6. **Space-Time Model Reduction**\\n   - **Key \
+Work**: *Space-time least-squares Petrov-Galerkin projection for nonlinear \
+model reduction* (1703.04560)\\n   - **Contribution**: Introduced a \
+space-time LSPG method that simultaneously reduces spatial and temporal \
+dimensions. This approach addresses temporal complexity, removes spurious \
+modes, and achieves significant computational savings while maintaining \
+accuracy.\\n\\n---\\n\\n#### 7. **Conservative Model Reduction**\\n   - **Key \
+Work**: *Conservative model reduction for finite-volume models* \
+(1711.11550)\\n   - **Contribution**: Developed conservative Galerkin and \
+LSPG projection methods for finite-volume models, ensuring conservation \
+properties and improving accuracy for fluid dynamics problems. This framework \
+addresses the limitations of standard ROMs in preserving conservation \
+laws.\\n\\n---\\n\\n#### 8. **Nonlinear Manifold Reduction with Deep \
+Learning**\\n   - **Key Work**: *Model reduction of dynamical systems on \
+nonlinear manifolds using deep convolutional autoencoders* (1812.08373)\\n   \
+- **Contribution**: Proposed a novel framework for ROMs using nonlinear \
+manifolds constructed with deep convolutional autoencoders. This method \
+overcomes the limitations of linear subspaces, achieving superior accuracy \
+for advection-dominated problems and systems with slowly decaying Kolmogorov \
+$n$-width.\\n\\n---\\n\\n### Summary of Impact\\nKevin Carlberg's work has \
+significantly advanced the field of reduced-order modeling by addressing key \
+challenges in accuracy, efficiency, and scalability. His contributions span \
+adaptive refinement, statistical error modeling, space-time reduction, and \
+the integration of machine learning and deep learning into ROM frameworks. \
+These innovations have broad applications in real-time control, uncertainty \
+quantification, and large-scale simulations, particularly in fluid dynamics \
+and other computationally intensive fields.\"\>", TextForm]], "InlineText",
+   ExpressionUUID->"97cc0406-4b28-4363-be24-afc536ee2dd5"],
+  Text["### Report on the Work of Kevin Carlberg\n\nKevin Carlberg's research \
+focuses on advancing reduced-order modeling (ROM) techniques to address \
+computational challenges in high-fidelity simulations of parameterized \
+systems. His contributions span a wide range of topics, including adaptive \
+refinement, error quantification, nonlinear model reduction, and statistical \
+modeling. Below is a summary of his key contributions based on the provided \
+articles:\n\n---\n\n#### 1. **Adaptive Refinement for Reduced-Order Models**\n\
+   - **Key Work**: *Adaptive $h$-refinement for reduced-order models* \
+(1404.0442)\n   - **Contribution**: Developed an adaptive $h$-refinement \
+method for ROMs that enriches the reduced basis online by splitting basis \
+vectors using $k$-means clustering. This approach ensures error control and \
+enables ROMs to capture phenomena like moving shocks, achieving equivalence \
+to full-order models (FOMs) when fully refined.\n\n---\n\n#### 2. **Error \
+Quantification and Statistical Modeling**\n   - **Key Works**:\n     - *The \
+ROMES method for statistical modeling of reduced-order-model error* \
+(1405.5170)\n     - *Statistical closure modeling for reduced-order models of \
+stationary systems by the ROMES method* (1901.02792)\n   - **Contribution**: \
+Introduced the ROMES method, which uses Gaussian-process regression to model \
+ROM errors probabilistically. Extended this to construct statistical closure \
+models for stationary systems, enabling efficient error quantification and \
+propagation to quantities of interest. These methods improve ROM accuracy and \
+robustness in uncertainty quantification (UQ) applications.\n\n---\n\n#### 3. \
+**Comparative Analysis of Galerkin and LSPG Projections**\n   - **Key Work**: \
+*Galerkin v. least-squares Petrov--Galerkin projection in nonlinear model \
+reduction* (1504.03749)\n   - **Contribution**: Conducted a theoretical and \
+computational comparison of Galerkin and Least-Squares Petrov\[Dash]Galerkin \
+(LSPG) projections. Demonstrated that LSPG achieves lower error bounds and \
+better stability for time-discrete systems, particularly in large-scale fluid \
+dynamics problems.\n\n---\n\n#### 4. **Time-Parallelism and Data-Driven \
+Forecasting**\n   - **Key Work**: *Data-driven time parallelism via \
+forecasting* (1610.09049)\n   - **Contribution**: Proposed a data-driven \
+approach to enable time-parallel numerical solutions for ODEs using gappy POD \
+and forecasting techniques. This method enhances the scalability of ROMs by \
+addressing temporal complexity and achieving near-ideal speedups in \
+time-parallel frameworks.\n\n---\n\n#### 5. **Machine Learning for Error \
+Modeling**\n   - **Key Work**: *Error modeling for surrogates of dynamical \
+systems using machine learning* (1701.03240)\n   - **Contribution**: \
+Developed a machine-learning-based framework (EMML) for error modeling in \
+ROMs. By automating feature selection and using high-dimensional regression \
+techniques, this approach improves error prediction and correction, \
+particularly for nonlinear dynamical systems.\n\n---\n\n#### 6. **Space-Time \
+Model Reduction**\n   - **Key Work**: *Space-time least-squares \
+Petrov-Galerkin projection for nonlinear model reduction* (1703.04560)\n   - \
+**Contribution**: Introduced a space-time LSPG method that simultaneously \
+reduces spatial and temporal dimensions. This approach addresses temporal \
+complexity, removes spurious modes, and achieves significant computational \
+savings while maintaining accuracy.\n\n---\n\n#### 7. **Conservative Model \
+Reduction**\n   - **Key Work**: *Conservative model reduction for \
+finite-volume models* (1711.11550)\n   - **Contribution**: Developed \
+conservative Galerkin and LSPG projection methods for finite-volume models, \
+ensuring conservation properties and improving accuracy for fluid dynamics \
+problems. This framework addresses the limitations of standard ROMs in \
+preserving conservation laws.\n\n---\n\n#### 8. **Nonlinear Manifold \
+Reduction with Deep Learning**\n   - **Key Work**: *Model reduction of \
+dynamical systems on nonlinear manifolds using deep convolutional \
+autoencoders* (1812.08373)\n   - **Contribution**: Proposed a novel framework \
+for ROMs using nonlinear manifolds constructed with deep convolutional \
+autoencoders. This method overcomes the limitations of linear subspaces, \
+achieving superior accuracy for advection-dominated problems and systems with \
+slowly decaying Kolmogorov $n$-width.\n\n---\n\n### Summary of Impact\nKevin \
+Carlberg's work has significantly advanced the field of reduced-order \
+modeling by addressing key challenges in accuracy, efficiency, and \
+scalability. His contributions span adaptive refinement, statistical error \
+modeling, space-time reduction, and the integration of machine learning and \
+deep learning into ROM frameworks. These innovations have broad applications \
+in real-time control, uncertainty quantification, and large-scale \
+simulations, particularly in fluid dynamics and other computationally \
+intensive fields."]]], "Output",
+ CellChangeTimes->{3.9373005260194397`*^9, 3.942667176730739*^9},
+ CellLabel->"Out[857]=",
+ CellID->1978978533,ExpressionUUID->"fbc24d91-2b8e-4f81-9e65-f6c6a4b81bb0"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Applications", "ExampleSection",ExpressionUUID->
+   "2d24577d-6950-4240-afdf-ccd4545fcf02"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1081765314,ExpressionUUID->"18997f80-ff05-4f48-a3ed-1dff4a9a43a2"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Properties & Relations", "ExampleSection",ExpressionUUID->
+   "844c079c-2853-40f4-816b-010893d1c620"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->633076896,ExpressionUUID->"61bc56c6-bc56-4fb6-9caa-2e497b01a6fe"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Possible Issues", "ExampleSection",ExpressionUUID->
+   "7cc9e413-e24c-413c-bd65-20e50bedf3c7"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1489403834,ExpressionUUID->"735e8b0b-3765-4a89-ab51-1c5d9d00d2a6"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Interactive Examples", "ExampleSection",ExpressionUUID->
+   "90871678-8dbc-4938-acac-7c475aa234a9"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1340848606,ExpressionUUID->"fce8e4d7-fb7f-4ba9-a1c6-b14974196df7"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Neat Examples", "ExampleSection",ExpressionUUID->
+   "9f88b0d5-ecb5-47ec-8023-769829f47703"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2096613071,ExpressionUUID->"e4d16f91-c00d-4a1a-9b0a-da822acc820d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Metadata", "MetadataSection",
+ CellID->1864204321,ExpressionUUID->"57df2c31-f42c-43cd-b5db-e96f0d7f99f4"],
+
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New",ExpressionUUID->"8c9971b5-7b79-4f87-93cb-42c5c844d326"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified",ExpressionUUID->"a3d22bdb-2843-4097-99da-c610a328dd62"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete",ExpressionUUID->
+  "403fd996-a92f-4354-a0a0-1b08bd79b949"]
+}], "History",
+ CellID->2043096964,ExpressionUUID->"2cf1b5dd-3064-41fe-ad4b-4e6c38c68232"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Categorization",
+ Cell[BoxData[
+  TemplateBox[{"Metadata", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Metadata such as page URI, context, and type of documentation page.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "59dca22a-797f-4990-b2e8-8615b3bcac68"]
+}], "CategorizationSection",
+ CellID->67158418,ExpressionUUID->"ecdee4c6-8d42-48fe-a51f-b80def825b04"],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->1302616651,ExpressionUUID->"b8231c60-e010-4f6d-8f2b-e56c88df0465"],
+
+Cell["DanieleGregori/ArXivExplore", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->1367573145,ExpressionUUID->"58ae1543-dd67-4045-9fbe-351bd2b9e142"],
+
+Cell["DanieleGregori`ArXivExplore`", "Categorization",
+ CellLabel->"Context",
+ CellID->284374174,ExpressionUUID->"dc6133b9-97bb-4f4f-a749-014bbc668f95"],
+
+Cell["DanieleGregori/ArXivExplore/ref/ArXivExplainAuthor", "Categorization",
+ CellLabel->"URI",
+ CellID->1325627843,ExpressionUUID->"9e7ce589-c53c-4a77-aff0-3ed62708337c"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->1775607552,ExpressionUUID->"8eb4dd46-0ebd-4afa-9be3-2771adacc016"],
+
+Cell["XXXX", "Keywords",
+ CellID->1203367752,ExpressionUUID->"6babca74-3798-4737-9319-f75e18ea808f"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->820418,ExpressionUUID->"ace6496c-613a-4a97-bae8-753fb5f81651"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->903863444,ExpressionUUID->"a2c23055-5eb9-4a37-af3e-cc8e32fc1f31"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->2081068077,ExpressionUUID->"1010ecfc-5224-4805-a9cf-07e326205d68"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->445011450,ExpressionUUID->"f4826d75-2a38-4730-9b46-29745ee89a93"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->1769381296,ExpressionUUID->"af46f325-2a21-4847-b668-2549dbdc11df"]
+}, Closed]]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{5, Automatic}, {Automatic, 0}},
+TaggingRules-><|"Paclet" -> "DanieleGregori/ArXivExplore"|>,
+CellContext->"Global`",
+FrontEndVersion->"14.1 for Mac OS X x86 (64-bit) (July 16, 2024)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"9f61284c-fddb-4dde-b7cf-2370579a6976"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ExtendedExamples"->{
+  Cell[16612, 385, 487, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"3fae3f6b-7238-4d34-b363-d36007146616",
+   CellTags->"ExtendedExamples",
+   CellID->894090327]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ExtendedExamples", 34451, 739}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 116, 1, 72, "ObjectName",ExpressionUUID->"cecfa0d1-cae0-4448-8fcb-1243e5324868",
+ CellID->1178167734],
+Cell[695, 25, 2570, 59, 241, "Usage",ExpressionUUID->"b24f9e87-beda-4e5c-afa2-5709b39bfd8b",
+ CellID->1665879998],
+Cell[3268, 86, 129, 1, 26, "Notes",ExpressionUUID->"f8a41ff5-2070-4c3e-90d2-fb17d217f038",
+ CellID->1700820447],
+Cell[3400, 89, 491, 9, 22, "3ColumnTableMod",ExpressionUUID->"1059d391-e6be-4151-9918-e818c5100f32",
+ CellID->534427512]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3928, 103, 459, 13, 38, "SeeAlsoSection",ExpressionUUID->"9e592a89-aa99-4c64-a877-eafd58623512",
+ CellID->1346582430],
+Cell[4390, 118, 1654, 42, 21, "SeeAlso",ExpressionUUID->"0ed04737-7e63-4f50-baf8-2b3c4629f5e4",
+ CellID->1828228924]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6081, 165, 435, 12, 39, "TechNotesSection",ExpressionUUID->"4dbdfd44-154d-4605-a80e-cd14ba75fb8e",
+ CellID->847504392],
+Cell[6519, 179, 101, 1, 17, "Tutorials",ExpressionUUID->"ddac392d-6809-4f09-b381-5fa3e1f25cf8",
+ CellID->1894769440]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6657, 185, 117, 1, 37, "MoreAboutSection",ExpressionUUID->"23f0b696-6fee-4248-995b-26cccd5b8521",
+ CellID->354976717],
+Cell[6777, 188, 100, 1, 17, "MoreAbout",ExpressionUUID->"f897a484-3b34-4b9b-a8c2-c137b4af2672",
+ CellID->384111253]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6914, 194, 472, 13, 38, "RelatedLinksSection",ExpressionUUID->"2d8b9f07-f134-4427-ae1a-891c5a05c6f0",
+ CellID->421986289],
+Cell[7389, 209, 104, 1, 17, "RelatedLinks",ExpressionUUID->"628042ae-f317-4e2e-9cf7-ae117eb913ab",
+ CellID->1332556829]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7530, 215, 530, 14, 68, "ExamplesInitializationSection",ExpressionUUID->"7ce72fff-951c-4a90-b2b3-ae5d91b78ea1",
+ CellID->175670440],
+Cell[8063, 231, 188, 3, 46, "ExampleInitialization",ExpressionUUID->"a96ebe2e-b585-469f-9175-c9f52aa812a9",
+ CellID->1850554102]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8288, 239, 442, 12, 70, "PrimaryExamplesSection",ExpressionUUID->"c7fc906c-fe14-486b-b9e3-779cf6689135",
+ CellID->257132813],
+Cell[CellGroupData[{
+Cell[8755, 255, 363, 8, 26, "Input",ExpressionUUID->"0701ebc0-d9d0-4c04-aac5-42a438734960",
+ CellID->1252423751],
+Cell[9121, 265, 371, 8, 30, "Output",ExpressionUUID->"ed94291b-c353-4e6c-9fbb-89deff2eb339",
+ CellID->2048452863]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9529, 278, 468, 10, 32, "Input",ExpressionUUID->"c480cdda-42c6-446a-ad91-641471c6811a",
+ CellID->215461843],
+Cell[10000, 290, 6563, 89, 2551, "Output",ExpressionUUID->"72b11988-4770-4577-b167-9b56bcd76111",
+ CellID->940799397]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16612, 385, 487, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"3fae3f6b-7238-4d34-b363-d36007146616",
+ CellTags->"ExtendedExamples",
+ CellID->894090327],
+Cell[17102, 400, 242, 5, 32, "ExampleSection",ExpressionUUID->"6a6257ea-61d4-4862-af8d-b100df2b50f5",
+ CellID->1033047830],
+Cell[17347, 407, 263, 5, 20, "ExampleSection",ExpressionUUID->"81407e9f-727d-4fc6-8c5e-8b26f817cd9e",
+ CellID->29592815],
+Cell[CellGroupData[{
+Cell[17635, 416, 244, 5, 20, "ExampleSection",ExpressionUUID->"db749902-b1b7-4121-bd91-01af524a06cd",
+ CellID->1614600527],
+Cell[17882, 423, 365, 4, 20, "Text",ExpressionUUID->"aa22e100-636e-4026-bce1-c54b95803ec3",
+ CellID->1414998946],
+Cell[CellGroupData[{
+Cell[18272, 431, 259, 5, 23, "ExampleSubsection",ExpressionUUID->"99a121af-69d1-4f25-956f-6d3b5261e323",
+ CellID->987693797],
+Cell[CellGroupData[{
+Cell[18556, 440, 728, 15, 44, "Input",ExpressionUUID->"45520b52-2998-4e13-9f27-2673b8cfeba6",
+ CellID->678863671],
+Cell[19287, 457, 10569, 142, 1616, "Output",ExpressionUUID->"fbc24d91-2b8e-4f81-9e65-f6c6a4b81bb0",
+ CellID->1978978533]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[29895, 604, 249, 5, 32, "ExampleSection",ExpressionUUID->"18997f80-ff05-4f48-a3ed-1dff4a9a43a2",
+ CellID->1081765314],
+Cell[30147, 611, 258, 5, 20, "ExampleSection",ExpressionUUID->"61bc56c6-bc56-4fb6-9caa-2e497b01a6fe",
+ CellID->633076896],
+Cell[30408, 618, 252, 5, 20, "ExampleSection",ExpressionUUID->"735e8b0b-3765-4a89-ab51-1c5d9d00d2a6",
+ CellID->1489403834],
+Cell[30663, 625, 257, 5, 20, "ExampleSection",ExpressionUUID->"fce8e4d7-fb7f-4ba9-a1c6-b14974196df7",
+ CellID->1340848606],
+Cell[30923, 632, 250, 5, 20, "ExampleSection",ExpressionUUID->"e4d16f91-c00d-4a1a-9b0a-da822acc820d",
+ CellID->2096613071]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31210, 642, 111, 1, 71, "MetadataSection",ExpressionUUID->"57df2c31-f42c-43cd-b5db-e96f0d7f99f4",
+ CellID->1864204321],
+Cell[31324, 645, 477, 12, 25, "History",ExpressionUUID->"2cf1b5dd-3064-41fe-ad4b-4e6c38c68232",
+ CellID->2043096964],
+Cell[CellGroupData[{
+Cell[31826, 661, 483, 13, 20, "CategorizationSection",ExpressionUUID->"ecdee4c6-8d42-48fe-a51f-b80def825b04",
+ CellID->67158418],
+Cell[32312, 676, 135, 2, 34, "Categorization",ExpressionUUID->"b8231c60-e010-4f6d-8f2b-e56c88df0465",
+ CellID->1302616651],
+Cell[32450, 680, 156, 2, 34, "Categorization",ExpressionUUID->"58ae1543-dd67-4045-9fbe-351bd2b9e142",
+ CellID->1367573145],
+Cell[32609, 684, 152, 2, 34, "Categorization",ExpressionUUID->"dc6133b9-97bb-4f4f-a749-014bbc668f95",
+ CellID->284374174],
+Cell[32764, 688, 171, 2, 34, "Categorization",ExpressionUUID->"9e7ce589-c53c-4a77-aff0-3ed62708337c",
+ CellID->1325627843]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[32972, 695, 111, 1, 20, "KeywordsSection",ExpressionUUID->"8eb4dd46-0ebd-4afa-9be3-2771adacc016",
+ CellID->1775607552],
+Cell[33086, 698, 100, 1, 70, "Keywords",ExpressionUUID->"6babca74-3798-4737-9319-f75e18ea808f",
+ CellID->1203367752]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[33223, 704, 116, 1, 20, "TemplatesSection",ExpressionUUID->"ace6496c-613a-4a97-bae8-753fb5f81651",
+ CellID->820418],
+Cell[33342, 707, 148, 2, 70, "Template",ExpressionUUID->"a2c23055-5eb9-4a37-af3e-cc8e32fc1f31",
+ CellID->903863444],
+Cell[33493, 711, 138, 2, 70, "Template",ExpressionUUID->"1010ecfc-5224-4805-a9cf-07e326205d68",
+ CellID->2081068077],
+Cell[33634, 715, 135, 2, 70, "Template",ExpressionUUID->"f4826d75-2a38-4730-9b46-29745ee89a93",
+ CellID->445011450],
+Cell[33772, 719, 138, 2, 70, "Template",ExpressionUUID->"af46f325-2a21-4847-b668-2549dbdc11df",
+ CellID->1769381296]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+

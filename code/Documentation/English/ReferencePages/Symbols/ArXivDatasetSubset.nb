@@ -1,0 +1,2452 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[    113230,       2444]
+NotebookOptionsPosition[    106621,       2302]
+NotebookOutlinePosition[    107412,       2328]
+CellTagsIndexPosition[    107331,       2323]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["ArXivDatasetSubset", "ObjectName",
+ CellID->1244803259,ExpressionUUID->"70e32b64-bbea-4f20-a7f9-bd6bbf162778"],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo",ExpressionUUID->"81b23f0b-c329-45f9-8b5c-f9721c9d7d5d"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["ArXivDatasetSubset",
+    BaseStyle->"Link",
+    ButtonData->"paclet:DanieleGregoriArXivExplore/ref/ArXivDatasetSubset"], 
+   "[", 
+   StyleBox["idL_List", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+  "d231f590-5ad5-44a4-819b-eeacce014bdd"],
+ "\[LineSeparator]allow to create a custom dataset with the given article id \
+list 'idL'."
+}], "Usage",
+ CellChangeTimes->{3.936169623888946*^9},
+ CellID->622684939,ExpressionUUID->"4dd0c5be-32b7-4259-8580-a37f6e117ffe"],
+
+Cell["XXXX", "Notes",
+ CellID->777957942,ExpressionUUID->"be7e30a2-5e8f-4a51-984f-d7e3a9ff1590"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "See Also",
+ Cell[BoxData[
+  TemplateBox[{"SeeAlso", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related reference (function) pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "af5d26d8-f3a2-4491-bdb2-0a37b40b5e73"]
+}], "SeeAlsoSection",
+ CellID->1258688258,ExpressionUUID->"34e8d3a0-db7a-47c7-8f70-76e8806fd2df"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TagBox[
+   FrameBox["\<\"XXXX\"\>"],
+   "FunctionPlaceholder"]], "InlineSeeAlsoFunction",
+  TaggingRules->{"PageType" -> "Function"},ExpressionUUID->
+  "785f77cb-4589-4fbd-b600-7ddb6a12c015"],
+ Cell[BoxData[
+  RowBox[{
+  Cell[TextData[StyleBox[
+   " \[FilledVerySmallSquare] ", "InlineSeparator"]],ExpressionUUID->
+    "ecd5e607-20ba-4f4d-8e3a-24d8eb9d2be1"], 
+   DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
+    "79d662be-a4b3-4632-8cbe-2b90f5c0f9b6", 
+     "a6b61479-20fe-4445-85f4-b5a290ab5704"], $CellContext`cellobj$$ = 
+    CellObject[
+    "cff05f9a-fd5b-4874-a691-6a4b6dd16a2b", 
+     "1517dcfa-9e11-449d-ada0-5ad618710337"]}, 
+    TemplateBox[{
+      GraphicsBox[{{
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         CircleBox[{0, 0}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{0, 0.62}, {0, -0.62}}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{-0.62, 0}, {0.62, 0}}]}}, 
+       ImagePadding -> {{1., 1.}, {2.4, 1.}}, ImageSize -> 16, 
+       PlotRange -> {{-1.06, 1.06}, {-1.06, 1.06}}, 
+       BaselinePosition -> (Center -> 
+        Center)], $CellContext`nbobj$$, $CellContext`cellobj$$},
+     "InlineListingAddButton"],
+    Initialization:>($CellContext`nbobj$$ = 
+      EvaluationNotebook[]; $CellContext`cellobj$$ = EvaluationCell[])]}]], 
+  "InlineListingAddButton",ExpressionUUID->
+  "cff05f9a-fd5b-4874-a691-6a4b6dd16a2b"]
+}], "SeeAlso",
+ CellID->2059629256,ExpressionUUID->"96b5860b-8421-4463-906c-5b4b7a92ad8d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Tech Notes",
+ Cell[BoxData[
+  TemplateBox[{"TechNotes", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Insert links to related tech notes.", "MoreInfoText"], BaseStyle -> 
+       "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "5420101e-b1ec-4dda-ac6d-baf688c8ba65"]
+}], "TechNotesSection",
+ CellID->899999599,ExpressionUUID->"75f8b7ab-3b2b-4dd0-b98d-84dc72b5a331"],
+
+Cell["XXXX", "Tutorials",
+ CellID->1565934572,ExpressionUUID->"f169c329-5ced-4f8e-820a-987883566e51"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "MoreAboutSection",
+ CellID->1250257619,ExpressionUUID->"a7c5813f-347f-495c-a138-643aa9b4e7c9"],
+
+Cell["XXXX", "MoreAbout",
+ CellID->2099800285,ExpressionUUID->"a34af511-b39b-46f3-84bc-bab8402cd74e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Related Links",
+ Cell[BoxData[
+  TemplateBox[{"RelatedLinks", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related page, including web pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "697069f2-5bd7-4c27-b10a-b9d110ee2fbf"]
+}], "RelatedLinksSection",
+ CellID->1744618844,ExpressionUUID->"3b64b7ca-249f-4182-8452-aea678922754"],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->67194970,ExpressionUUID->"0ff90de3-7f6c-49fa-920e-e2e9dfef5427"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Examples Initialization",
+ Cell[BoxData[
+  TemplateBox[{"ExamplesInitialization", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Input that is to be evaluated before any examples are run, e.g. \
+Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]], 
+     "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "c8e6e0ee-3701-4429-a730-514d2e6258b7"]
+}], "ExamplesInitializationSection",
+ CellID->1916946115,ExpressionUUID->"2d7b2f48-e51e-413c-ad98-28ff6d48dca7"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<DanieleGregori`ArXivExplore`\>\"", 
+  "]"}]], "ExampleInitialization",
+ CellID->1563682511,ExpressionUUID->"bb312758-946b-4130-bcd5-64a6ea91847a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox[
+      RowBox[{"Basic", " ", "Examples"}], "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->2054574038,ExpressionUUID->"55d29f9f-58ab-4f38-8790-7241c9626435"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"idCiting", "=", 
+  RowBox[{"ArXivCitations", "[", "\"\<1908.08030\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.936169637716508*^9, 3.936169662194421*^9}},
+ CellLabel->"In[828]:=",
+ CellID->1569959786,ExpressionUUID->"ee491fd0-1a58-4eb4-b518-abf2f62763d8"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"2408.01124\"\>", ",", "\<\"2405.13830\"\>", 
+   ",", "\<\"2401.03766\"\>", ",", "\<\"2310.09262\"\>", 
+   ",", "\<\"2308.16677\"\>", ",", "\<\"2305.03283\"\>", 
+   ",", "\<\"2212.06741\"\>", ",", "\<\"2212.04738\"\>", 
+   ",", "\<\"2208.14031\"\>", ",", "\<\"2207.07135\"\>", 
+   ",", "\<\"2206.07720\"\>", ",", "\<\"2202.10700\"\>", 
+   ",", "\<\"2201.00438\"\>", ",", "\<\"2111.11047\"\>", 
+   ",", "\<\"2109.09804\"\>", ",", "\<\"2106.07792\"\>", 
+   ",", "\<\"2106.07600\"\>", ",", "\<\"2105.04245\"\>", 
+   ",", "\<\"2105.03777\"\>", ",", "\<\"2104.13680\"\>", 
+   ",", "\<\"2103.02248\"\>", ",", "\<\"2010.08498\"\>", 
+   ",", "\<\"2007.11596\"\>", ",", "\<\"2006.14025\"\>", 
+   ",", "\<\"2004.10722\"\>", ",", "\<\"2002.06829\"\>", 
+   ",", "\<\"2002.01794\"\>", ",", "\<\"2001.08891\"\>", 
+   ",", "\<\"1911.13290\"\>", ",", "\<\"1910.09406\"\>", 
+   ",", "\<\"1909.11100\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.9361696678800707`*^9},
+ CellLabel->"Out[828]=",
+ CellID->1016204941,ExpressionUUID->"1e3ca1f9-bbd8-4528-b47d-60a0880b9544"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"ArXivDataset", "[", "\"\<myCitations\>\"", "]"}], "=", 
+   RowBox[{"ArXivDatasetSubset", "[", "idCiting", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.936169671582603*^9, 3.936169697627198*^9}},
+ CellLabel->"In[829]:=",
+ CellID->513885859,ExpressionUUID->"380491a7-7070-4f0a-b331-ed38639e8ca4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"ArXivDataset", "[", "\"\<myCitations\>\"", "]"}], "//", 
+   "Reverse"}], "//", "TabView"}]], "Input",
+ CellChangeTimes->{{3.9361697034414797`*^9, 3.936169728933606*^9}},
+ CellLabel->"In[831]:=",
+ CellID->151200113,ExpressionUUID->"7d8feb5b-055c-4325-87b1-5993212b977c"],
+
+Cell[BoxData[
+ TabViewBox[{{1,"1"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"1909.11100\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Hasmik Poghosyan Mrs\"\>"}], 
+    ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Davide Fioravanti, Hasmik Poghosyan and Rubik Poghossian\
+\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"$T$, $Q$ and periods in $SU(3)$ ${\\\\cal N}=2$ \
+SYM\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", 
+     "\[Rule]", "\<\"20 pages, minor corrections, references added\"\>"}], 
+    ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP03(2020)049\"\>"}], 
+    ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We consider the third order differential equation \
+derived from the deformed\\nSeiberg-Witten differential for pure ${\\\\cal \
+N}=2$ SYM with gauge group $SU(3)$\\nin Nekrasov-Shatashvili limit of \
+$\\\\Omega$-background. We show that this is the\\nsame differential equation \
+that emerges in the context of Ordinary Differential\\nEquation/Integrable \
+Models (ODI/IM) correspondence for $2d$ $A_2$ Toda CFT with\\ncentral charge \
+$c=98$. We derive the corresponding $QQ$ and related $TQ$\\nfunctional \
+relations and establish the asymptotic behaviour of $Q$ and $T$\\nfunctions \
+at small instanton parameter $q \\\\rightarrow 0$. Moreover, \
+numerical\\nintegration of the Floquet monodromy matrix of the differential \
+equation leads\\nto evaluation of the $A$-cycles $a_{1,2,3}$ at any point of \
+the moduli space of\\nvacua parametrised by the vector multiplet scalar VEVs \
+$\\\\langle\\n\\\\textbf{tr}\\\\,\\\\phi^2\\\\rangle$ and $\\\\langle \
+\\\\textbf{tr}\\\\,\\\\phi^3\\\\rangle$ even for\\nlarge values of $q$ which \
+are well beyond the reach of instanton calculus. The\\nnumerical results at \
+small $q$ are in excellent agreement with instanton\\ncalculation. We \
+conjecture a very simple relation between Baxter's $T$-function\\nand \
+$A$-cycle periods $a_{1,2,3}$, which is an extension of \
+Alexei\\nZamolodchikov's conjecture about Mathieu equation.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Tue, 24 Sep 2019 18:00:06 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Mon, 28 Oct 2019 17:28:04 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2020-04-22\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Fioravanti\"\>", ",", "\<\"Davide\"\>", 
+         ",", "\<\"\"\>"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Poghosyan\"\>", ",", "\<\"Hasmik\"\>", ",", "\<\"\"\>"}],
+         "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Poghossian\"\>", ",", "\<\"Rubik\"\>", ",", "\<\"\"\>"}],
+         "}"}]}], "}"}]}]}], "}"}]}, {2,"2"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"1910.09406\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Hongfei Shu\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Katsushi Ito and Hongfei Shu\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"TBA equations for the Schr\\\\\\\"odinger equation with \
+a regular singularity\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", 
+     "\[Rule]", "\<\"39 pages, typos corrected\"\>"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", 
+     "\[Rule]", "\<\"J.Phys.A 53 (2020) 33, 335201\"\>"}], ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1088/1751-8121/ab96ee\"\>"}], 
+    ",", 
+    RowBox[{"\<\"report-no\"\>", 
+     "\[Rule]", "\<\"TIT/HEP-676, NORDITA 2019-092\"\>"}], ",", 
+    RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We derive the Thermodynamic Bethe Ansatz (TBA) \
+equations for the\\nSchr\\\\\\\"odinger equation with an arbitrary polynomial \
+potential and a regular\\nsingular (simple and double pole) term. The TBA \
+equations provide a non-trivial\\ngeneralization of the ODE/IM correspondence \
+and also give a solution for the\\nRiemann-Hilbert problem in the exact WKB \
+method. We study the TBA equations in\\ndetail for the linear and the \
+harmonic oscillator potentials together with\\ninverse and centrifugal terms. \
+As an application, we also compute numerically\\nthe Voros spectrum for these \
+potentials using the Bohr-Sommerfeld quantization\\ncondition.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Mon, 21 Oct 2019 14:31:46 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Tue, 18 Feb 2020 15:45:40 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2021-01-08\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Ito\"\>", ",", "\<\"Katsushi\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Shu\"\>", ",", "\<\"Hongfei\"\>", ",", "\<\"\"\>"}], 
+        "}"}]}], "}"}]}]}], "}"}]}, {3,"3"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"1911.13290\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Stefano Negro\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Patrick Dorey, Clare Dunning, Stefano Negro, Roberto \
+Tateo\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"Geometric aspects of the ODE/IM correspondence\"\>"}], 
+    ",", 
+    RowBox[{"\<\"comments\"\>", 
+     "\[Rule]", "\<\"Partially based on lectures given at the Young \
+Researchers\\n  Integrability School 2017,in Dublin. 62 pages, 8 figures. \
+Minor amendments.\\n  Version published in J. Phys A \\\"Special Issue on \
+Recent Advances in AdS/CFT\\n  Integrability\\\"\"\>"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", 
+     "\[Rule]", "\<\"J. Phys. A: Math. Theor. (2020)\"\>"}], ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1088/1751-8121/ab83c9\"\>"}], 
+    ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th math-ph math.MP\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  This review describes a link between Lax operators, \
+embedded surfaces and\\nThermodynamic Bethe Ansatz equations for integrable \
+quantum field theories.\\nThis surprising connection between classical and \
+quantum models is undoubtedly\\none of the most striking discoveries that \
+emerged from the off-critical\\ngeneralisation of the ODE/IM correspondence, \
+which initially involved only\\nconformal invariant quantum field theories. \
+We will mainly focus of the KdV and\\nsinh-Gordon models. However, various \
+aspects of other interesting systems, such\\nas affine Toda field theories \
+and non-linear sigma models, will be mentioned.\\nWe also discuss the \
+implications of these ideas in the AdS/CFT context,\\ninvolving minimal \
+surfaces and Wilson loops. This work is a follow-up of the\\nODE/IM review \
+published more than ten years ago by JPA, before the discovery of\\nits \
+off-critical generalisation and the corresponding \
+geometrical\\ninterpretation. (Partially based on lectures given at the Young \
+Researchers\\nIntegrability School 2017, in Dublin.)\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Fri, 29 Nov 2019 18:46:27 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Sat, 14 Dec 2019 18:38:13 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v3\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Fri, 27 Mar 2020 04:12:16 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2020-03-30\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Dorey\"\>", ",", "\<\"Patrick\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Dunning\"\>", ",", "\<\"Clare\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Negro\"\>", ",", "\<\"Stefano\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Tateo\"\>", ",", "\<\"Roberto\"\>", ",", "\<\"\"\>"}], 
+        "}"}]}], "}"}]}]}], "}"}]}, {4,"4"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2001.08891\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Saki Koizumi\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Katsushi Ito, Saki Koizumi and Takafumi Okubo\"\>"}], 
+    ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"Quantum Seiberg-Witten periods for $\\\\mathcal{N}=2$ \
+$SU(N_c)$ SQCD around\\n  the superconformal point\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", "\[Rule]", "\<\"33 pages\"\>"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"doi\"\>", 
+     "\[Rule]", "\<\"10.1016/j.nuclphysb.2020.115004\"\>"}], ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "\<\"TIT/HEP-678\"\>"}], ",", 
+    RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We study the quantum Seiberg-Witten periods of \
+${\\\\cal N}=2$ superconformal\\nfield theories which are obtained by taking \
+the scaling limit of ${\\\\cal N}=2$\\n$SU(N_c)$ SQCD around the \
+superconformal fixed point. The quantum\\nSeiberg-Witten curves of these \
+superconformal field theories are shown to be\\nclassified into the \
+Schr\\\\\\\"odinger type and the SQCD type, which depend on\\nflavor symmetry \
+at the fixed point. We study the quantum periods and compute\\nthe \
+differential operators which relate the quantum periods to the \
+classical\\nones up to the fourth-order in the deformation \
+parameter.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+        RowBox[{"\<\"created\"\>", 
+         "\[Rule]", "\<\"Fri, 24 Jan 2020 05:51:21 GMT\"\>"}]}], "}"}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2020-04-22\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Ito\"\>", ",", "\<\"Katsushi\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Koizumi\"\>", ",", "\<\"Saki\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Okubo\"\>", ",", "\<\"Takafumi\"\>", ",", "\<\"\"\>"}], 
+        "}"}]}], "}"}]}]}], "}"}]}, {5,"5"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2002.01794\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Madhusudhan Raman\"\>"}], 
+    ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Madhusudhan Raman, P. N. Bala Subramanian\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"On Chebyshev Wells: Periods, Deformations, and \
+Resurgence\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", 
+     "\[Rule]", "\<\"v2: 36 pages, 2 figures, typos corrected, references \
+added and\\n  discussion improved, matches version to appear in PRD\"\>"}], 
+    ",", 
+    RowBox[{"\<\"journal-ref\"\>", 
+     "\[Rule]", "\<\"Phys. Rev. D 101, 126014 (2020)\"\>"}], ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1103/PhysRevD.101.126014\"\>"}],
+     ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We study the geometry and mechanics (both classical \
+and quantum) of potential\\nwells described by squares of Chebyshev \
+polynomials. We show that in a small\\nneighbourhood of the locus cut out by \
+them in the space of hyperelliptic\\ncurves, these systems exhibit \
+low-orders/low-orders resurgence, where\\nperturbative fluctuations about the \
+vacuum determine perturbative fluctuations\\nabout non-perturbative \
+saddles.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Wed, 5 Feb 2020 13:59:11 GMT\"\>"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Mon, 22 Jun 2020 14:29:42 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2020-07-01\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Raman\"\>", ",", "\<\"Madhusudhan\"\>", 
+         ",", "\<\"\"\>"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Subramanian\"\>", ",", "\<\"P. N. Bala\"\>", 
+         ",", "\<\"\"\>"}], "}"}]}], "}"}]}]}], "}"}]}, {6,"6"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2002.06829\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Keita Imaizumi\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", "\[Rule]", "\<\"Keita Imaizumi\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"Exact WKB analysis and TBA equations for the Mathieu \
+equation\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", "\[Rule]", "\<\"17 pages, 5 figures\"\>"}], 
+    ",", 
+    RowBox[{"\<\"journal-ref\"\>", 
+     "\[Rule]", "\<\"Phys. Lett. B 806 (2020) 135500\"\>"}], ",", 
+    RowBox[{"\<\"doi\"\>", 
+     "\[Rule]", "\<\"10.1016/j.physletb.2020.135500\"\>"}], ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "\<\"TIT/HEP-679\"\>"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th math-ph math.MP quant-ph\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We derive the Thermodynamic Bethe Ansatz (TBA) \
+equations for the exact WKB\\nperiods of the Mathieu equation in the weak \
+coupling region. We will use the\\nTBA equations to calculate the quantum \
+corrections to the WKB periods, which\\nare regarded the quantum periods of $\
+\\\\mathcal{N} = 2$ $SU(2)$ super Yang-Mills\\ntheory at strong coupling. We \
+calculate the effective central charge of the TBA\\nequations, which is found \
+to be proportional to the coefficient of the one-loop\\nbeta function of the \
+4d theory. We also study the spectral problem for the\\nMathieu equation \
+based on the TBA equations numerically.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Mon, 17 Feb 2020 08:30:52 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Sun, 7 Jun 2020 04:44:44 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2020-06-09\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{"\<\"Imaizumi\"\>", ",", "\<\"Keita\"\>", ",", "\<\"\"\>"}], 
+       "}"}], "}"}]}]}], "}"}]}, {7,"7"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2004.10722\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Davide Fioravanti\"\>"}], 
+    ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Davide Fioravanti, Marco Rossi, Hongfei Shu\"\>"}], ",", 
+    
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"$QQ$-system and non-linear integral equations for \
+scattering amplitudes\\n  at strong coupling\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", "\[Rule]", "\<\"Latex, 22 pages\"\>"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP12(2020)086\"\>"}], 
+    ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "\<\"NORDITA 2020-035\"\>"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th math-ph math.MP nlin.SI\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We provide the two fundamental sets of functional \
+relations which describe\\nthe strong coupling limit of scattering amplitudes \
+in $\\\\mathcal{N} = 4$ SYM\\ndual to Wilson loops in $AdS_3$: the basic \
+$QQ$-system and the derived\\n$TQ$-system. We use the $TQ$ relations and the \
+knowledge of the main properties\\nof the $Q$-function (eigenvalue of some \
+$Q$-operator) to write the Bethe Ansatz\\nequations, {\\\\it viz.} a set of \
+('complex') non-linear-integral equations, whose\\nsolutions give exact \
+values to the strong coupling amplitudes/Wilson loops.\\nMoreover, they have \
+some advantages with respect to the ('real')\\nnon-linear-integral equations \
+of Thermodynamic Bethe Ansatz and still\\nreproduce, both analytically and \
+numerically, the findings coming from the\\nlatter. In any case, these new \
+functional and integral equations give a larger\\nperspective on the \
+topic.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+        RowBox[{"\<\"created\"\>", 
+         "\[Rule]", "\<\"Wed, 22 Apr 2020 17:23:44 GMT\"\>"}]}], "}"}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2020-12-30\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Fioravanti\"\>", ",", "\<\"Davide\"\>", 
+         ",", "\<\"\"\>"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Rossi\"\>", ",", "\<\"Marco\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Shu\"\>", ",", "\<\"Hongfei\"\>", ",", "\<\"\"\>"}], 
+        "}"}]}], "}"}]}]}], "}"}]}, {8,"8"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2006.14025\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Bruno Le Floch\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", "\[Rule]", "\<\"Bruno Le Floch\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"A slow review of the AGT correspondence\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", 
+     "\[Rule]", "\<\"106 pages plus 1309 refs. Published version\"\>"}], ",", 
+    
+    RowBox[{"\<\"journal-ref\"\>", 
+     "\[Rule]", "\<\"2022 J. Phys. A: Math. Theor. 55 353002\"\>"}], ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1088/1751-8121/ac5945\"\>"}], 
+    ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  Starting with a gentle approach to the AGT \
+correspondence from its 6d origin,\\nthese notes provide a wide (albeit \
+shallow) survey of the literature on\\nnumerous extensions of the \
+correspondence up to early 2020. This is an extended\\nwriteup of the \
+lectures given at the Winter School YRISW 2020, to appear in a\\nspecial \
+issue of JPhysA.\\n  Class S is a wide class of 4d $N=2$ supersymmetric gauge \
+theories (ranging\\nfrom super-QCD to non-Lagrangian theories) obtained by \
+twisted compactification\\nof 6d $N=(2,0)$ superconformal theories on a \
+Riemann surface. This 6d\\nconstruction yields the Coulomb branch and \
+Seiberg-Witten geometry of class S\\ntheories, geometrizes S-duality, and \
+leads to the AGT correspondence, which\\nstates that many observables of \
+class S theories are equal to 2d CFT\\ncorrelators. For instance, the \
+four-sphere partition function of a 4d $N=2$\\nSU(2) superconformal quiver \
+theory is equal to a Liouville CFT correlator of\\nprimary operators.\\n  \
+Extensions of the AGT correspondence abound: asymptotically-free \
+gauge\\ntheories and Argyres-Douglas theories correspond to irregular CFT \
+operators,\\nquivers with higher-rank gauge groups and non-Lagrangian \
+tinkertoys such as\\n$T_N$ correspond to Toda CFT correlators, and nonlocal \
+operators (Wilson-'t\\nHooft loops, surface operators, domain walls) \
+correspond to Verlinde networks,\\ndegenerate primary operators, braiding and \
+fusion kernels, and Riemann surfaces\\nwith boundaries.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Wed, 24 Jun 2020 20:18:09 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Mon, 3 Jan 2022 18:10:51 GMT\"\>"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v3\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Wed, 6 Apr 2022 08:45:22 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2024-04-09\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{"\<\"Floch\"\>", ",", "\<\"Bruno Le\"\>", ",", "\<\"\"\>"}], 
+       "}"}], "}"}]}]}], "}"}]}, {9,"9"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2007.11596\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Fabrizio Del Monte\"\>"}], 
+    ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Giulio Bonelli, Fabrizio Del Monte, Alessandro Tanzini\"\
+\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"BPS quivers of five-dimensional SCFTs, Topological \
+Strings and\\n  q-Painlev\\\\'e equations\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", "\[Rule]", "\<\"52 pages, 14 figures\"\>"}], 
+    ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/s00023-021-01034-3\"\>"}], 
+    ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th math-ph math.MP nlin.SI\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We study the discrete flows generated by the symmetry \
+group of the BPS\\nquivers for Calabi-Yau geometries describing five \
+dimensional superconformal\\nquantum field theories on a circle. These flows \
+naturally describe the BPS\\nparticle spectrum of such theories and at the \
+same time generate bilinear\\nequations of q-difference type which, in the \
+rank one case, are q-Painlev\\\\'e\\nequations. The solutions of these \
+equations are shown to be given by grand\\ncanonical topological string \
+partition functions which we identify with\\n$\\\\tau$-functions of the \
+cluster algebra associated to the quiver. We exemplify\\nour construction in \
+the case corresponding to five dimensional $SU(2)$ pure\\nSuper Yang-Mills \
+and $N_f = 2$ on a circle.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Wed, 22 Jul 2020 18:00:10 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Mon, 3 Aug 2020 17:58:32 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2021-08-04\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Bonelli\"\>", ",", "\<\"Giulio\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Del Monte\"\>", ",", "\<\"Fabrizio\"\>", 
+         ",", "\<\"\"\>"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Tanzini\"\>", ",", "\<\"Alessandro\"\>", 
+         ",", "\<\"\"\>"}], "}"}]}], "}"}]}]}], "}"}]}, {10,"10"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2010.08498\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Hasmik Poghosyan Mrs\"\>"}], 
+    ",", 
+    RowBox[{"\<\"authors\"\>", "\[Rule]", "\<\"Hasmik Poghosyan\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"Recursion relation for instanton counting for $SU(2)$ ${\
+\\\\cal N}=2$ SYM\\n  in NS limit of $\\\\Omega$ background\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", 
+     "\[Rule]", "\<\"28 pages, 6 figures, some clarifications and citations \
+added,\\n  published version\"\>"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP05(2021)088\"\>"}], 
+    ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  In this paper we investigate different ways of \
+deriving the A-cycle period as\\na series in instanton counting parameter $q$ \
+for ${\\\\cal N}=2$ SYM with up to\\nfour antifundamental hypermultiplets in \
+NS limit of $\\\\Omega$ background. We\\npropose a new method for calculating \
+the period and demonstrate its efficiency\\nby explicit calculations. The new \
+way of doing instanton counting is more\\nadvantageous compared to known \
+standard techniques and allows to reach\\nsubstantially higher order terms \
+with less effort. This approach is applied for\\nthe pure case as well as for \
+the case with several hypermultiplets.\\n  We also investigate a numerical \
+method for deriving the $A$-cycle period\\nvalid for arbitrary values of $q$. \
+Analyzing large $q$ asymptotic we get\\nconvincing agreement with an analytic \
+expression deduced from a conjecture by\\nAlexei Zamolodchikov in a different \
+context.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Fri, 16 Oct 2020 16:55:21 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Sat, 24 Oct 2020 09:11:06 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v3\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Wed, 19 May 2021 05:29:54 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2021-06-02\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{"\<\"Poghosyan\"\>", ",", "\<\"Hasmik\"\>", ",", "\<\"\"\>"}], 
+       "}"}], "}"}]}]}], "}"}]}, {11,"11"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2103.02248\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Keita Imaizumi\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", "\[Rule]", "\<\"Keita Imaizumi\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"Quantum periods and TBA equations for \
+$\\\\mathcal{N}=2\\\\ SU(2)\\\\ N_f=2$ SQCD\\n  with flavor symmetry\"\>"}], 
+    ",", 
+    RowBox[{"\<\"comments\"\>", 
+     "\[Rule]", "\<\"17 pages, 2 figures, (v2) references are added, (v3) \
+typos corrected,\\n  references are added, minor modification, published \
+version\"\>"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", 
+     "\[Rule]", "\<\"Phys. Lett. B 816 (2021) 136270\"\>"}], ",", 
+    RowBox[{"\<\"doi\"\>", 
+     "\[Rule]", "\<\"10.1016/j.physletb.2021.136270\"\>"}], ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "\<\"TIT/HEP-683\"\>"}], ",", 
+    RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We apply the exact WKB analysis to the quantum \
+Seiberg-Witten curve for\\n4-dimensional $\\\\mathcal{N} = 2\\\\ SU(2)\\\\ \
+N_f=2$ SQCD with the flavor symmetry.\\nThe discontinuity and the asymptotic \
+behavior of the quantum periods define a\\nRiemann-Hilbert problem. We derive \
+the thermodynamic Bethe ansatz (TBA)\\nequations as a solution to this \
+problem. We also compute the effective central\\ncharge of the underlying \
+CFT, which is shown to be proportional to the one-loop\\nbeta function of the \
+SQCD.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Wed, 3 Mar 2021 08:17:32 GMT\"\>"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Wed, 10 Mar 2021 08:02:03 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v3\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Thu, 8 Apr 2021 05:25:55 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2021-05-11\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{"\<\"Imaizumi\"\>", ",", "\<\"Keita\"\>", ",", "\<\"\"\>"}], 
+       "}"}], "}"}]}]}], "}"}]}, {12,"12"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2104.13680\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Hongfei Shu\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Katsushi Ito, Takayasu Kondo, Kohei Kuroda, Hongfei \
+Shu\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"WKB periods for higher order ODE and TBA \
+equations\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", 
+     "\[Rule]", "\<\"1+31 pages, references added, typos corrected, \
+discussions on\\n  wall-crossing added, published version\"\>"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "\<\"JHEP10(2021)167\"\>"}], 
+    ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP10(2021)167\"\>"}], 
+    ",", 
+    RowBox[{"\<\"report-no\"\>", 
+     "\[Rule]", "\<\"TIT/HEP-684, NORDITA 2021-032\"\>"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th math-ph math.MP\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", "\<\"http://creativecommons.org/licenses/by-nc-sa/4.0/\"\>"}],
+     ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We study the WKB periods for the $(r+1)$-th order \
+ordinary differential\\nequation (ODE) which is obtained by the conformal \
+limit of the linear problem\\nassociated with the $A_r^{(1)}$ affine Toda \
+field equation. We compute the\\nquantum corrections by using the \
+Picard-Fuchs operators. The ODE/IM\\ncorrespondence provides a relation \
+between the Wronskians of the solutions and\\nthe Y-functions which satisfy \
+the thermodynamic Bethe ansatz (TBA) equation\\nrelated to the Lie algebra \
+$A_r$. For the quadratic potential, we propose a\\nformula to show the \
+equivalence between the logarithm of the Y-function and the\\nWKB period, \
+which is confirmed by solving the TBA equation numerically.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Wed, 28 Apr 2021 10:07:45 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Thu, 6 May 2021 08:42:05 GMT\"\>"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v3\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Thu, 7 Oct 2021 00:38:34 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2021-10-22\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Ito\"\>", ",", "\<\"Katsushi\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Kondo\"\>", ",", "\<\"Takayasu\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Kuroda\"\>", ",", "\<\"Kohei\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Shu\"\>", ",", "\<\"Hongfei\"\>", ",", "\<\"\"\>"}], 
+        "}"}]}], "}"}]}]}], "}"}]}, {13,"13"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2105.03777\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Qianyu Hao\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Alba Grassi, Qianyu Hao, Andrew Neitzke\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"Exact WKB methods in $SU(2)$ $N_f=1$\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", "\[Rule]", "\<\"63 pages, 18 figures\"\>"}], 
+    ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP01(2022)046\"\>"}], 
+    ",", 
+    RowBox[{"\<\"report-no\"\>", 
+     "\[Rule]", "\<\"UTTG 03-2021, CERN-TH-2021-071\"\>"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th math-ph math.MP\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We study in detail the Schr\\\\\\\"{o}dinger equation \
+corresponding to the four\\ndimensional $SU(2)$ $\\\\mathcal{N}=2$ SQCD \
+theory with one flavour. We calculate\\nthe Voros symbols, or quantum \
+periods, in four different ways: Borel summation\\nof the WKB series, direct \
+computation of Wronskians of exponentially decaying\\nsolutions, the TBA \
+equations of Gaiotto-Moore-Neitzke/Gaiotto, and instanton\\ncounting. We make \
+computations by all of these methods, finding good agreement.\\nWe also study \
+the exact quantization condition for the spectrum, and we compute\\nthe \
+Fredholm determinant of the inverse of the Schr\\\\\\\"odinger operator using \
+the\\nTS/ST correspondence and Zamolodchikov's TBA, again finding good \
+agreement. In\\naddition, we explore two aspects of the relationship between \
+singularities of\\nthe Borel transformed WKB series and BPS states: BPS \
+states of the 4d theory\\nare related to singularities in the Borel \
+transformed WKB series for the\\nquantum periods, and BPS states of a coupled \
+2d+4d system are related to\\nsingularities in the Borel transformed WKB \
+series for local solutions of the\\nSchr\\\\\\\"odinger equation.\\n\"\>"}], 
+    ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Sat, 8 May 2021 20:55:47 GMT\"\>"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Mon, 13 Jun 2022 11:57:06 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2022-06-14\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Grassi\"\>", ",", "\<\"Alba\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Hao\"\>", ",", "\<\"Qianyu\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Neitzke\"\>", ",", "\<\"Andrew\"\>", ",", "\<\"\"\>"}], 
+        "}"}]}], "}"}]}]}], "}"}]}, {14,"14"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2105.04245\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Dario Consoli\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Massimo Bianchi, Dario Consoli, Alfredo Grillo, \
+Jos\\\\`e Francisco\\n  Morales\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"QNMs of branes, BHs and fuzzballs from Quantum SW \
+geometries\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", "\[Rule]", "\<\"7 pages, 2 figures\"\>"}], 
+    ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"doi\"\>", 
+     "\[Rule]", "\<\"10.1016/j.physletb.2021.136837\"\>"}], ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th astro-ph.HE gr-qc\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", "\<\"http://creativecommons.org/licenses/by/4.0/\"\>"}], ",", 
+    
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  QNMs govern the linear response to perturbations of \
+BHs, D-branes and\\nfuzzballs and the gravitational wave signals in the \
+ring-down phase of binary\\nmergers. A remarkable connection between QNMs of \
+neutral BHs in 4d and quantum\\nSW geometries describing the dynamics of ${\\\
+\\cal N}=2$ SYM theories has been\\nrecently put forward. We extend the \
+gauge/gravity dictionary to a large class\\nof gravity backgrounds including \
+charged and rotating BHs of Einstein-Maxwell\\ntheory in $d=4,5$ dimensions, \
+D3-branes, D1D5 `circular' fuzzballs and smooth\\nhorizonless geometries; all \
+related to ${\\\\cal N}=2$ SYM with a single $SU(2)$\\ngauge group and \
+fundamental matter. We find that photon-spheres, a common\\nfeature of all \
+examples, are associated to degenerations of the classical\\nelliptic SW \
+geometry whereby a cycle pinches to zero size. Quantum effects\\nresolve the \
+singular geometry and lead to a spectrum of quantized energies,\\nlabeled by \
+the overtone number $n$. We compute the spectrum of QNMs using exact\\nWKB \
+quantization, geodetic motion and numerical simulations and show \
+excellent\\nagreement between the three methods. We explicitly illustrate our \
+findings for\\nthe case D3-brane QNMs.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Mon, 10 May 2021 10:19:52 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Mon, 21 Jun 2021 15:19:54 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2021-12-15\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Bianchi\"\>", ",", "\<\"Massimo\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Consoli\"\>", ",", "\<\"Dario\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Grillo\"\>", ",", "\<\"Alfredo\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Morales\"\>", ",", "\<\"Jos\[EGrave] Francisco\"\>", 
+         ",", "\<\"\"\>"}], "}"}]}], "}"}]}]}], "}"}]}, {15,"15"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2106.07600\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Davide Fioravanti\"\>"}], 
+    ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Davide Fioravanti and Marco Rossi\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"On the origin of the correspondence between classical \
+and quantum\\n  integrable theories\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", 
+     "\[Rule]", "\<\"More comprehensive and explicit version (v2 is not to be \
+considered\\n  as appeared wrongly preceded by v1)\"\>"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"doi\"\>", 
+     "\[Rule]", "\<\"10.1016/j.physletb.2023.137706\"\>"}], ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th math-ph math.MP nlin.SI\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  If we start from certain functional relations as \
+definition of a quantum\\nintegrable theory, then we can derive from them a \
+linear integral equation. It\\ncan be extended, by introducing dynamical \
+variables, to become an equation with\\nthe form of Marchenko's. Then, we \
+derive from the latter a classical\\n(differential) Lax pair. We exemplify \
+our method by focusing on the massive\\nversion of the ODE/IM (Ordinary \
+Differential Equations/Integrable Models)\\ncorrespondence from Quantum \
+sine-Gordon (sG) with many moduli/masses to the\\nclassical sinh-Gordon (shG) \
+equation, so describing, in a particular case, some\\nsuper-symmetric gauge \
+theories and the $AdS_3$ strong coupling scattering\\namplitudes/Wilson \
+loops. Yet, we present it in a way which reveals its\\ngenerality of \
+application. In fact, we give some hints on how it works for \
+spin\\nchains.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Mon, 14 Jun 2021 17:07:13 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Wed, 17 Aug 2022 13:52:52 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v3\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Thu, 18 Aug 2022 11:45:03 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2023-01-25\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Fioravanti\"\>", ",", "\<\"Davide\"\>", 
+         ",", "\<\"\"\>"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Rossi\"\>", ",", "\<\"Marco\"\>", ",", "\<\"\"\>"}], 
+        "}"}]}], "}"}]}]}], "}"}]}, {16,"16"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2106.07792\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Jingxiang Wu\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", "\[Rule]", "\<\"Jingxiang Wu\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"Anisotropic Kondo line defect and ODE/IM \
+correspondence\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", 
+     "\[Rule]", "\<\"34 pages, 5 figures; v2: added references and a \
+discussion on the\\n  relation with the transfer matrix; v3: typos \
+fixed\"\>"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", 
+     "\[Rule]", "\<\"SciPost Phys. 15, 248 (2023)\"\>"}], ",", 
+    RowBox[{"\<\"doi\"\>", 
+     "\[Rule]", "\<\"10.21468/SciPostPhys.15.6.248\"\>"}], ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th math-ph math.MP\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", "\<\"http://creativecommons.org/licenses/by/4.0/\"\>"}], ",", 
+    
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We study the anisotropic Kondo line defects in \
+products of chiral $SU(2)$ WZW\\nmodels. We propose an ODE/IM correspondence \
+for the anisotropic Kondo problems\\nby considering the four-dimensional \
+Chern Simons theory in the trigonometric\\ncase. We verify the claim both by \
+explicit perturbative calculations in the\\nultraviolet and by exact WKB \
+analysis in the infrared. In doing so, we derived\\nthe infrared dynamics of \
+a large class of anisotropic line defects.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Mon, 14 Jun 2021 22:55:51 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Sat, 17 Jul 2021 14:48:24 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v3\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Sat, 21 Oct 2023 16:49:06 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2023-12-20\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{"\<\"Wu\"\>", ",", "\<\"Jingxiang\"\>", ",", "\<\"\"\>"}], 
+       "}"}], "}"}]}]}], "}"}]}, {17,"17"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2109.09804\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Dario Consoli\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Massimo Bianchi, Dario Consoli, Alfredo Grillo, Jose \
+Francisco Morales\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"More on the SW-QNM correspondence\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", 
+     "\[Rule]", "\<\"33 pages plus appendices and 4 figures\"\>"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP01(2022)024\"\>"}], 
+    ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th astro-ph.HE gr-qc\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", "\<\"http://creativecommons.org/licenses/by/4.0/\"\>"}], ",", 
+    
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We exploit the recently proposed correspondence \
+between gravitational\\nperturbations and quantum Seiberg-Witten curves to \
+compute the spectrum of\\nquasi-normal modes of asymptotically flat Kerr \
+Newman black holes and establish\\ndetailed gauge/gravity dictionaries for a \
+large class of black holes, D-branes\\nand fuzzballs in diverse dimensions. \
+QNM frequencies obtained from the quantum\\nperiods of $SU(2)$ ${\\\\cal \
+N}=2$ SYM with $N_f=3$ flavours are compared against\\nnumerical results, WKB \
+(eikonal) approximation and geodetic motion showing\\nremarkable agreement. \
+Starting from the master example relating quasi-normal\\nmodes of Kerr-Newman \
+black holes in AdS$_4$ to $SU(2)$ gauge theory with\\n$N_f=4$, we illustrate \
+the procedure for some simple toy-models that allow\\nanalytic solutions. We \
+also argue that the AGT version of the gauge/gravity\\ncorrespondence may \
+give precious hints as to the physical/geometric origin of\\nthe quasi-normal \
+modes/Seiberg-Witten connection and further elucidate\\ninteresting \
+properties (such as tidal Love numbers and grey-body factors) that\\ncan help \
+discriminating black holes from fuzzballs.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Mon, 20 Sep 2021 19:24:30 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Tue, 11 Jan 2022 15:23:32 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2022-01-12\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Bianchi\"\>", ",", "\<\"Massimo\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Consoli\"\>", ",", "\<\"Dario\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Grillo\"\>", ",", "\<\"Alfredo\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Morales\"\>", ",", "\<\"Jose Francisco\"\>", 
+         ",", "\<\"\"\>"}], "}"}]}], "}"}]}]}], "}"}]}, {18,"18"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2111.11047\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Hongfei Shu\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Katsushi Ito, Takayasu Kondo and Hongfei Shu\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"Wall-crossing of TBA equations and WKB periods for the \
+third order ODE\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", 
+     "\[Rule]", "\<\"65+1 pages, 10 figures, typos corrected, published \
+version\"\>"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"doi\"\>", 
+     "\[Rule]", "\<\"10.1016/j.nuclphysb.2022.115788\"\>"}], ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "\<\"TIT/HEP-687\"\>"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th math-ph math.MP\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", "\<\"http://creativecommons.org/licenses/by-nc-sa/4.0/\"\>"}],
+     ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We study the WKB periods for the third order ordinary \
+differential equation\\n(ODE) with polynomial potential, which is obtained by \
+the Nekrasov-Shatashvili\\nlimit of ($A_2,A_N$) Argyres-Douglas theory in the \
+Omega background. In the\\nminimal chamber of the moduli space, we derive the \
+Y-system and the\\nthermodynamic Bethe ansatz (TBA) equations by using the \
+ODE/IM correspondence.\\nThe exact WKB periods are identified with the \
+Y-functions. Varying the moduli\\nparameters of the potential, the \
+wall-crossing of the TBA equations occurs. We\\nstudy the process of the \
+wall-crossing from the minimal chamber to the maximal\\nchamber for \
+$(A_2,A_2)$ and $(A_2,A_3)$. When the potential is a monomial type,\\nwe show \
+the TBA equations obtained from the ($A_2, A_2$) and ($A_2, A_3$)-type\\nODE \
+lead to the $D_4$ and $E_6$-type TBA equations respectively.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Mon, 22 Nov 2021 08:43:44 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Thu, 21 Apr 2022 06:30:05 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2022-04-22\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Ito\"\>", ",", "\<\"Katsushi\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Kondo\"\>", ",", "\<\"Takayasu\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Shu\"\>", ",", "\<\"Hongfei\"\>", ",", "\<\"\"\>"}], 
+        "}"}]}], "}"}]}]}], "}"}]}, {19,"19"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2201.00438\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Julio Oliva\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Monserrat Aguayo, Ankai Hern\\\\'andez, Jos\\\\'e Mena, \
+Julio Oliva, Marcelo\\n  Oyarzo\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"Exact scalar (quasi-)normal modes of black holes and \
+solitons in gauged\\n  SUGRA\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", "\[Rule]", "\<\"18 pages, 3 figures\"\>"}], 
+    ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP07(2022)021\"\>"}], 
+    ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th gr-qc\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", "\<\"http://creativecommons.org/licenses/by/4.0/\"\>"}], ",", 
+    
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  In this paper we identify a new family of black holes \
+and solitons that lead\\nto the exact integration of scalar probes, even in \
+the presence of a\\nnon-minimal coupling with the Ricci scalar which has a \
+non-trivial profile. The\\nbackgrounds are planar and spherical black holes \
+as well as solitons of\\n$SU\\\\left( 2\\\\right) \\\\times SU\\\\left( \
+2\\\\right) $ $\\\\mathcal{N}=4$ gauged\\nsupergravity in four dimensions. On \
+these geometries, we compute the spectrum\\nof (quasi-)normal modes for the \
+non-minimally coupled scalar field. We find\\nthat the equation for the \
+radial dependence can be integrated in terms of\\nhypergeometric functions \
+leading to an exact expression for the frequencies.\\nThe solutions do not \
+asymptote to a constant curvature spacetime, nevertheless\\nthe asymptotic \
+region acquires an extra conformal Killing vector. For the black\\nhole, the \
+scalar probe is purely ingoing at the horizon, and requiring that \
+the\\nsolutions lead to an extremum of the action principle we impose a \
+Dirichlet\\nboundary condition at infinity. Surprisingly, the quasinormal \
+modes do not\\ndepend on the radius of the black hole, therefore this family \
+of geometries can\\nbe interpreted as isospectral in what regards to the wave \
+operator\\nnon-minimally coupled to the Ricci scalar. We find both purely \
+damped modes, as\\nwell as exponentially growing unstable modes depending on \
+the values of the\\nnon-minimal coupling parameter. For the solitons we show \
+that the same\\nintegrability property is achieved separately in a \
+non-supersymmetric solutions\\nas well as for the supersymmetric one. \
+Imposing regularity at the origin and a\\nwell defined extremum for the \
+action principle we obtain the spectra that can\\nalso lead to purely \
+oscillatory modes as well as to unstable scalar probes,\\ndepending on the \
+values of the non-minimal coupling.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+        RowBox[{"\<\"created\"\>", 
+         "\[Rule]", "\<\"Mon, 3 Jan 2022 00:01:37 GMT\"\>"}]}], "}"}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2022-07-13\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Aguayo\"\>", ",", "\<\"Monserrat\"\>", ",", "\<\"\"\>"}],
+         "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Hern\[AAcute]ndez\"\>", ",", "\<\"Ankai\"\>", 
+         ",", "\<\"\"\>"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Mena\"\>", ",", "\<\"Jos\[EAcute]\"\>", 
+         ",", "\<\"\"\>"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Oliva\"\>", ",", "\<\"Julio\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Oyarzo\"\>", ",", "\<\"Marcelo\"\>", ",", "\<\"\"\>"}], 
+        "}"}]}], "}"}]}]}], "}"}]}, {20,"20"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2202.10700\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Hongfei Shu\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Hao Ouyang and Hongfei Shu\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"TBA-like equations for non-planar scattering \
+amplitude/Wilson lines\\n  duality at strong coupling\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", "\[Rule]", "\<\"31 pages, 8 figures\"\>"}], 
+    ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP05(2022)099\"\>"}], 
+    ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th math-ph math.MP\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We compute the minimal area of a string worldsheet \
+ending on two infinite\\nperiodic light-like Wilson lines in the AdS$_3$ \
+boundary, which is dual to the\\nfirst non-planar correction to the gluon \
+scattering amplitude in\\n$\\\\mathcal{N}=4$ SYM at the strong coupling. \
+Using the connection between the\\nHitchin system and the thermodynamic Bethe \
+ansatz (TBA) equations, we present\\nan analytic method to compute the \
+minimal area surface and express the\\nnon-trivial part of the minimal area \
+in terms of the free energy of the\\nTBA-like equations. Given the cross \
+ratios as inputs, the area computed from\\nthe TBA-like equations matches \
+that calculated using the numerical integration.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+        RowBox[{"\<\"created\"\>", 
+         "\[Rule]", "\<\"Tue, 22 Feb 2022 07:16:30 GMT\"\>"}]}], "}"}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2022-06-01\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Ouyang\"\>", ",", "\<\"Hao\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Shu\"\>", ",", "\<\"Hongfei\"\>", ",", "\<\"\"\>"}], 
+        "}"}]}], "}"}]}]}], "}"}]}, {21,"21"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2206.07720\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Matthew Dodelson\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Matthew Dodelson, Alba Grassi, Cristoforo Iossa, Daniel \
+Panea Lichtig,\\n  and Alexander Zhiboedov\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"Holographic thermal correlators from supersymmetric \
+instantons\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", 
+     "\[Rule]", "\<\"9 pages + appendices, 2 figures. v2: typos corrected, \
+references\\n  added\"\>"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", 
+     "\[Rule]", "\<\"SciPost Phys. 14, 116 (2023)\"\>"}], ",", 
+    RowBox[{"\<\"doi\"\>", 
+     "\[Rule]", "\<\"10.21468/SciPostPhys.14.5.116\"\>"}], ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "\<\"CERN-TH-2022-095\"\>"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th gr-qc math-ph math.MP\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We present an exact formula for the thermal scalar \
+two-point function in\\nfour-dimensional holographic conformal field \
+theories. The problem of finding\\nit reduces to the analysis of the wave \
+equation on the AdS-Schwarzschild\\nbackground. The two-point function is \
+computed from the connection coefficients\\nof the Heun equation, which can \
+be expressed in terms of the\\nNekrasov-Shatashvili partition function of an \
+SU(2) supersymmetric gauge theory\\nwith four fundamental hypermultiplets. \
+The result is amenable to numerical\\nevaluation upon truncating the number \
+of instantons in the convergent expansion\\nof the partition function. We \
+also examine it analytically in various limits.\\nAt large spin the instanton \
+expansion of the thermal two-point function\\ndirectly maps to the light-cone \
+bootstrap analysis of the heavy-light\\nfour-point function. Using this \
+connection, we compute the OPE data of\\nheavy-light double-twist operators. \
+We compare our prediction to the\\nperturbative results available in the \
+literature and find perfect agreement.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Wed, 15 Jun 2022 18:00:01 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Fri, 16 Sep 2022 18:20:34 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2023-05-17\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Dodelson\"\>", ",", "\<\"Matthew\"\>", ",", "\<\"\"\>"}],
+         "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Grassi\"\>", ",", "\<\"Alba\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Iossa\"\>", ",", "\<\"Cristoforo\"\>", ",", "\<\"\"\>"}],
+         "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Lichtig\"\>", ",", "\<\"Daniel Panea\"\>", 
+         ",", "\<\"\"\>"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Zhiboedov\"\>", ",", "\<\"Alexander\"\>", 
+         ",", "\<\"\"\>"}], "}"}]}], "}"}]}]}], "}"}]}, {22,"22"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2207.07135\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Fabrizio Del Monte\"\>"}], 
+    ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Fabrizio Del Monte, Pietro Longhi\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"The threefold way to quantum periods: WKB, TBA equations \
+and\\n  q-Painlev\\\\'e\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", 
+     "\[Rule]", "\<\"39 Pages + 2 Appendices, 11 Figures v2: Added a new \
+stability\\n  condition and consequent several changes to Sections 2 and 5 \
+and addition of\\n  Figure 5. Sharpened and revised the conclusions. Fixed \
+some typos\"\>"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th math-ph math.MP nlin.SI\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We show that TBA equations defined by the BPS spectrum \
+of $5d$\\n$\\\\mathcal{N}=1$ $SU(2)$ Yang-Mills on $S^1\\\\times \
+\\\\mathbb{R}^4$ encode the\\nq-Painlev\\\\'e III$_3$ equation. We find a \
+fine-tuned stratum in the physical\\nmoduli space of the theory where \
+solutions to TBA equations can be obtained\\nexactly, and verify that they \
+agree with the algebraic solutions to\\nq-Painlev\\\\'e. Switching from the \
+physical moduli space to that of stability\\nconditions, we identify a \
+one-parameter deformation of the fine-tuned stratum,\\nwhere the general \
+solution of the q-Painlev\\\\'e equation in terms of dual\\ninstanton \
+partition functions continues to provide explicit TBA solutions.\\nMotivated \
+by these observations, we propose a further extensions of the range\\nof \
+validity of this correspondence, under a suitable identification of \
+moduli.\\nAs further checks of our proposal, we study the behavior of exact \
+WKB quantum\\nperiods for the quantum curve of local \
+$\\\\mathbb{P}^1\\\\times\\\\mathbb{P}^1$.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Thu, 14 Jul 2022 18:00:08 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Fri, 30 Dec 2022 11:19:36 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2023-01-02\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Del Monte\"\>", ",", "\<\"Fabrizio\"\>", 
+         ",", "\<\"\"\>"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Longhi\"\>", ",", "\<\"Pietro\"\>", ",", "\<\"\"\>"}], 
+        "}"}]}], "}"}]}]}], "}"}]}, {23,"23"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2208.14031\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Davide Fioravanti\"\>"}], 
+    ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Davide Fioravanti, Daniele Gregori and Hongfei \
+Shu\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"Integrability, susy $SU(2)$ matter gauge theories and \
+black holes\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th gr-qc nlin.SI\"\>"}],
+     ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We show that previous correspondence between some \
+(integrable) statistical\\nfield theory quantities and periods of $SU(2)$ $\\\
+\\mathcal{N}=2$ deformed gauge\\ntheory still holds if we add $N_f=1,2$ \
+flavours of matter. Moreover, the\\ncorrespondence entails a new \
+non-perturbative solution to the theory.\\nEventually, we use this solution \
+to give exact results on quasinormal modes of\\nblack branes and \
+holes.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+        RowBox[{"\<\"created\"\>", 
+         "\[Rule]", "\<\"Tue, 30 Aug 2022 07:26:07 GMT\"\>"}]}], "}"}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2022-08-31\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Fioravanti\"\>", ",", "\<\"Davide\"\>", 
+         ",", "\<\"\"\>"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Gregori\"\>", ",", "\<\"Daniele\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Shu\"\>", ",", "\<\"Hongfei\"\>", ",", "\<\"\"\>"}], 
+        "}"}]}], "}"}]}]}], "}"}]}, {24,"24"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2212.04738\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Keita Imaizumi\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", "\[Rule]", "\<\"Keita Imaizumi\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"Exact conditions for Quasi-normal modes of extremal \
+M5-branes and Exact\\n  WKB analysis\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", "\[Rule]", "\<\"25 pages, 8 figures\"\>"}], 
+    ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"doi\"\>", 
+     "\[Rule]", "\<\"10.1016/j.nuclphysb.2023.116221\"\>"}], ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We study the quasi-normal modes (QNMs) of a massless \
+scalar perturbation to\\nthe extremal M5-branes metric by using the exact WKB \
+analysis. The exact WKB\\nanalysis provides two exact QNMs conditions \
+depending on the argument of the\\ncomplex frequency of the perturbation. The \
+exact conditions show that the\\ndiscontinuity of the perturbative part of \
+the QNMs leads the non-perturbative\\npart of themselves. We also find a new \
+example of the Seiberg-Witten/gravity\\ncorrespondence, which helps us to \
+compute the QNMs from our conditions.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+        RowBox[{"\<\"created\"\>", 
+         "\[Rule]", "\<\"Fri, 9 Dec 2022 09:16:33 GMT\"\>"}]}], "}"}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2023-05-31\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{"\<\"Imaizumi\"\>", ",", "\<\"Keita\"\>", ",", "\<\"\"\>"}], 
+       "}"}], "}"}]}]}], "}"}]}, {25,"25"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2212.06741\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Alessandro Tanzini\"\>"}], 
+    ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Paolo Arnaudo, Giulio Bonelli, Alessandro Tanzini\"\>"}],
+     ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"On the convergence of Nekrasov functions\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", 
+     "\[Rule]", "\<\"1+25 pages, comments welcome. v2 published \
+version\"\>"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th math-ph math.MP\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  In this note we present some results on the \
+convergence of Nekrasov partition\\nfunctions as power series in the \
+instanton counting parameter. We focus on\\n$U(N)$ ${\\\\mathcal N}=2$ gauge \
+theories in four dimensions with matter in the\\nadjoint and in the \
+fundamental representations of the gauge group respectively\\nand find \
+rigorous lower bounds for the convergence radius in the two cases: if\\nthe \
+theory is {\\\\it conformal}, then the series has at least a {\\\\it \
+finite}\\nradius of convergence, while if it is {\\\\it asymptotically free} \
+it has {\\\\it\\ninfinite} radius of convergence. Via AGT correspondence, \
+this implies that the\\nrelated irregular conformal blocks of $W_N$ algebrae \
+admit a power expansion in\\nthe modulus converging in the whole plane. By \
+specifying to the $SU(2)$ case,\\nwe apply our results to analyse the \
+convergence properties of the corresponding\\nPainlev\\\\'e \
+$\\\\tau$-functions.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Tue, 13 Dec 2022 17:21:33 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Wed, 29 Nov 2023 11:17:23 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2023-11-30\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Arnaudo\"\>", ",", "\<\"Paolo\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Bonelli\"\>", ",", "\<\"Giulio\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Tanzini\"\>", ",", "\<\"Alessandro\"\>", 
+         ",", "\<\"\"\>"}], "}"}]}], "}"}]}]}], "}"}]}, {26,"26"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2305.03283\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Mingshuo Zhu\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Katsushi Ito, Mingshuo Zhu\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"WKB analysis of the linear problem for modified affine \
+Toda field\\n  equations\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", "\[Rule]", "\<\"42 pages\"\>"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "\<\"JHEP08(2023)007\"\>"}], 
+    ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP08(2023)007\"\>"}], 
+    ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "\<\"TIT/HEP-694\"\>"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th math-ph math.MP\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We study the WKB analysis of the solutions to the \
+linear problem for a\\nmodified affine Toda field equation, which is \
+equivalent to the higher-order\\nordinary differential equation (ODE) studied \
+in the ODE/IM correspondence.\\nAfter gauge transformation, we diagonalize \
+the flat connection of the linear\\nproblem to reduce the latter to a set of \
+independent first-order linear\\ndifferential equations. We explicitly \
+perform this procedure for classical\\naffine Lie algebras with lower ranks. \
+In particular, we study the WKB solutions\\nof the $D_r^{(1)}$- and \
+$D^{(2)}_{r+1}$-type linear problems, which correspond\\nto the higher-order \
+ODEs with the pseudo-differential operator. The\\ndiagonalized connection is \
+obtained from the Riccati equations of the adjoint\\nlinear problem and \
+related to the conserved currents of the integrable\\nhierarchy constructed \
+by Drinfeld and Sokolov up to total derivatives.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Fri, 5 May 2023 04:58:02 GMT\"\>"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Fri, 21 Jul 2023 12:19:59 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2023-08-09\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Ito\"\>", ",", "\<\"Katsushi\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Zhu\"\>", ",", "\<\"Mingshuo\"\>", ",", "\<\"\"\>"}], 
+        "}"}]}], "}"}]}]}], "}"}]}, {27,"27"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2308.16677\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Nick R.D. Zhu\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Yang Lei, Hongfei Shu, Kilar Zhang, Rui-Dong Zhu\"\>"}], 
+    ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"Quasinormal Modes of C-metric from SCFTs\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", 
+     "\[Rule]", "\<\"32+24 pages; typoes corrected and remark added in \
+v4\"\>"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "\<\"JHEP02(2024)140\"\>"}], 
+    ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP02(2024)140\"\>"}], 
+    ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th astro-ph.HE gr-qc hep-ph math-ph math.MP\"\>"}], 
+    ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We study the quasinormal modes (QNM) of the charged \
+C-metric, which\\nphysically stands for a charged accelerating black hole, \
+with the help of\\nNekrasov's partition function of 4d $\\\\mathcal{N}=2$ \
+superconformal field\\ntheories (SCFTs). The QNM in the charged C-metric are \
+classified into three\\ntypes: the photon-surface modes, the accelerating \
+modes and the near-extremal\\nmodes, and it is curious how the single \
+quantization condition proposed in\\narXiv:2006.06111 can reproduce all the \
+different families. We show that the\\nconnection formula encoded in terms of \
+Nekrasov's partition function captures\\nall these families of QNM \
+numerically and recovers the asymptotic behavior of\\nthe accelerating and \
+the near-extremal modes analytically. Using the connection\\nformulae of \
+different 4d $\\\\mathcal{N}=2$ SCFTs, one can solve both the radial\\nand \
+the angular part of the scalar perturbation equation respectively. The \
+same\\nalgorithm can be applied to the de Sitter (dS) black holes to \
+calculate both\\nthe dS modes and the photon-sphere modes.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Thu, 31 Aug 2023 12:28:39 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Mon, 9 Oct 2023 05:53:57 GMT\"\>"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v3\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Sun, 17 Dec 2023 02:20:28 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v4\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Tue, 30 Jan 2024 15:41:29 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2024-02-22\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Lei\"\>", ",", "\<\"Yang\"\>", ",", "\<\"\"\>"}], "}"}], 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Shu\"\>", ",", "\<\"Hongfei\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Zhang\"\>", ",", "\<\"Kilar\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Zhu\"\>", ",", "\<\"Rui-Dong\"\>", ",", "\<\"\"\>"}], 
+        "}"}]}], "}"}]}]}], "}"}]}, {28,"28"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2310.09262\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", 
+     "\[Rule]", "\<\"Matijn Fran\\\\c{c}ois\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Matijn Fran\\\\c{c}ois and Alba Grassi\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"Painlev\\\\'e Kernels and Surface Defects at Strong \
+Coupling\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", 
+     "\[Rule]", "\<\"Version 2: 50 pages, 1 figure. Minor corrections and \
+clarifications,\\n  additional references. Comments welcome\"\>"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", 
+     "\[Rule]", "\<\"Ann. Henri Poincar\\\\'e (2024)\"\>"}], ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/s00023-024-01469-4\"\>"}], 
+    ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "\<\"CERN-TH-2023-169\"\>"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th math-ph math.MP math.SP\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", "\<\"http://creativecommons.org/licenses/by/4.0/\"\>"}], ",", 
+    
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  It is well established that the spectral analysis of \
+canonically quantized\\nfour-dimensional Seiberg-Witten curves can be \
+systematically studied via the\\nNekrasov-Shatashvili functions. In this \
+paper, we explore another aspect of the\\nrelation between $\\\\mathcal{N}=2$ \
+supersymmetric gauge theories in four\\ndimensions and operator theory. \
+Specifically, we study an example of an\\nintegral operator associated with \
+Painlev\\\\'e equations and whose spectral\\ntraces are related to \
+correlation functions of the 2d Ising model. This\\noperator does not \
+correspond to a canonically quantized Seiberg-Witten curve,\\nbut its kernel \
+can nevertheless be interpreted as the density matrix of an\\nideal Fermi \
+gas. Adopting the approach of Tracy and Widom, we provide an\\nexplicit \
+expression for its eigenfunctions via an $\\\\mathrm{O}(2)$ matrix \
+model.\\nWe then show that these eigenfunctions are computed by surface \
+defects in\\n$\\\\mathrm{SU}(2)$ super Yang-Mills in the self-dual phase of \
+the\\n$\\\\Omega$-background. Our result also yields a strong coupling \
+expression for\\nsuch defects which resums the instanton expansion. Even \
+though we focus on one\\nconcrete example, we expect these results to hold \
+for a larger class of\\noperators arising in the context of isomonodromic \
+deformation equations.\\n\"\>"}], ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Fri, 13 Oct 2023 17:20:47 GMT\"\>"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Tue, 16 Jul 2024 11:29:58 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2024-07-17\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Fran\[CCedilla]ois\"\>", ",", "\<\"Matijn\"\>", 
+         ",", "\<\"\"\>"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Grassi\"\>", ",", "\<\"Alba\"\>", ",", "\<\"\"\>"}], 
+        "}"}]}], "}"}]}]}], "}"}]}, {29,"29"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2401.03766\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Hongfei Shu\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Katsushi Ito and Hongfei Shu\"\>"}], ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"TBA equations and exact WKB analysis in deformed \
+supersymmetric quantum\\n  mechanics\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", 
+     "\[Rule]", "\<\"31 pages, 1 figure; Published version\"\>"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "\<\"JHEP03(2024)122\"\>"}], 
+    ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP03(2024)122\"\>"}], 
+    ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "\<\"TIT/HEP- 698\"\>"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th math-ph math.MP\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We study the spectral problem in deformed \
+supersymmetric quantum mechanics\\nwith polynomial superpotential by using \
+the exact WKB method and the TBA\\nequations. We apply the ODE/IM \
+correspondence to the Schr\\\\\\\"odinger equation\\nwith an effective \
+potential deformed by integrating out the fermions, which\\nadmits a \
+continuous deformation parameter. We find that the TBA equations \
+are\\ndescribed by the ${\\\\mathbb Z}_4$-extended ones. For cubic \
+superpotential\\ncorresponding to the symmetric double-well potential, the \
+TBA system splits\\ninto the two $D_3$-type TBA equations. We investigate in \
+detail this example\\nbased on the TBA equations and their analytic \
+continuation as well as the\\nmassless limit. We find that the energy \
+spectrum obtained from the exact\\nquantization condition is in good \
+agreement with the diagonalization approach\\nof the Hamiltonian.\\n\"\>"}], 
+    ",", 
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Mon, 8 Jan 2024 09:42:59 GMT\"\>"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Fri, 22 Mar 2024 06:15:13 GMT\"\>"}]}], "}"}]}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2024-03-25\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Ito\"\>", ",", "\<\"Katsushi\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Shu\"\>", ",", "\<\"Hongfei\"\>", ",", "\<\"\"\>"}], 
+        "}"}]}], "}"}]}]}], "}"}]}, {30,"30"->
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2405.13830\"\>"}], ",", 
+    RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Paolo Arnaudo\"\>"}], ",", 
+    RowBox[{"\<\"authors\"\>", 
+     "\[Rule]", "\<\"Paolo Arnaudo, Giulio Bonelli, Alessandro Tanzini\"\>"}],
+     ",", 
+    RowBox[{"\<\"title\"\>", 
+     "\[Rule]", "\<\"One loop effective actions in Kerr-(A)dS Black \
+Holes\"\>"}], ",", 
+    RowBox[{"\<\"comments\"\>", "\[Rule]", "\<\"35 pages\"\>"}], ",", 
+    RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"doi\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+    RowBox[{"\<\"categories\"\>", 
+     "\[Rule]", "\<\"hep-th gr-qc math-ph math.MP\"\>"}], ",", 
+    RowBox[{"\<\"license\"\>", 
+     "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+    RowBox[{"\<\"abstract\"\>", 
+     "\[Rule]", "\<\"  We compute new exact analytic expressions for one-loop \
+scalar effective\\nactions in Kerr (A)dS black hole (BH) backgrounds in four \
+and five dimensions.\\nThese are computed by the connection coefficients of \
+the Heun equation via a\\ngeneralization of the Gelfand-Yaglom formalism to \
+second-order linear ODEs with\\nregular singularities. The expressions we \
+find are in terms of\\nNekrasov-Shatashvili special functions, making \
+explicit the analytic properties\\nof the one-loop effective actions with \
+respect to the gravitational parameters\\nand the precise contributions of \
+the quasi-normal modes. The latter arise via\\nan associated integrable \
+system. In particular, we prove asymptotic formulae\\nfor large angular \
+momenta in terms of hypergeometric functions and give a\\nprecise \
+mathematical meaning to Rindler-like region contributions. Moreover \
+we\\nidentify the leading terms in the large distance expansion as the \
+point\\nparticle approximation of the BH and their finite size corrections as \
+encoding\\nthe BH tidal response. We also discuss exact properties of the \
+thermal version\\nof the BH effective actions. Although we focus on the real \
+scalar field in\\ndS-Kerr and (A)dS-Schwarzschild in four and five \
+dimensions, similar formulae\\ncan be given for higher spin matter and \
+radiation fields in more general\\ngravitational backgrounds.\\n\"\>"}], ",", 
+    
+    RowBox[{"\<\"versions\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+        RowBox[{"\<\"created\"\>", 
+         "\[Rule]", "\<\"Wed, 22 May 2024 16:58:05 GMT\"\>"}]}], "}"}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2024-05-24\"\>"}], ",", 
+    RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Arnaudo\"\>", ",", "\<\"Paolo\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Bonelli\"\>", ",", "\<\"Giulio\"\>", ",", "\<\"\"\>"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Tanzini\"\>", ",", "\<\"Alessandro\"\>", 
+         ",", "\<\"\"\>"}], "}"}]}], "}"}]}]}], "}"}]}, {31,"31"->
+  RowBox[{"Missing", "[", 
+   RowBox[{"\<\"KeyAbsent\"\>", ",", "\<\"2408.01124\"\>"}], "]"}]}}, 
+  1]], "Output",
+ CellChangeTimes->{{3.936169711741508*^9, 3.936169729584972*^9}},
+ CellLabel->"Out[831]=",
+ CellID->2131226274,ExpressionUUID->"3fc8f5af-13e7-4736-b35e-12a7c37888e2"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "More Examples",
+ Cell[BoxData[
+  TemplateBox[{"MoreExamples", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Extended examples in standardized sections.", "MoreInfoText"], 
+       BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "7eeb5ea7-3b19-4202-8bbe-8f99a93c7e04"]
+}], "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1836296553,ExpressionUUID->"8220bac3-170b-4706-9c56-960a0ae53c88"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Scope", "ExampleSection",ExpressionUUID->
+   "12523bfc-2a79-43b7-bae0-b3d29cdc32cf"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1148675234,ExpressionUUID->"707177f4-9ee8-4154-af82-a6b889bbd492"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Generalizations & Extensions", "ExampleSection",ExpressionUUID->
+   "79f0b6f0-2474-4772-85cb-5d66d761d8c0"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2054154955,ExpressionUUID->"7846995d-24cc-40c1-b094-77b9c97d5d8b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Options", "ExampleSection",ExpressionUUID->
+   "1d98aa42-cfad-4a30-96ad-7ac50fed8522"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1235219513,ExpressionUUID->"ff66a90d-f22e-4b37-8752-aa49ff7c2aab"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "XXXX", "ExampleSubsection",ExpressionUUID->
+   "a9a8d970-494b-40ce-84bc-8b05c9a767ed"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->609939442,ExpressionUUID->"688151db-99a6-4f2c-936c-3e7f67e4b416"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "XXXX", "ExampleSubsection",ExpressionUUID->
+   "f145fb87-1b64-4c8f-855c-0f65fb9af5a3"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1312754563,ExpressionUUID->"d2ec34f6-a873-4699-b748-5d27e4d78167"]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Applications", "ExampleSection",ExpressionUUID->
+   "6ce24d85-e730-47b6-ab73-bb5e9aee7908"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->218951063,ExpressionUUID->"cdade80d-ad56-40e6-a8c7-b87176c4000b"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Properties & Relations", "ExampleSection",ExpressionUUID->
+   "2fcb0335-5c1e-47f0-96dd-648aeb17bb9f"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1271028530,ExpressionUUID->"acdc3d6f-ddaf-4bde-845d-f3451624bcec"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Possible Issues", "ExampleSection",ExpressionUUID->
+   "aa1bb82b-36ad-4fae-9f9a-66783581594f"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1156667001,ExpressionUUID->"b6072f4d-ef7f-475e-a8dd-0f8f8844bac1"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Interactive Examples", "ExampleSection",ExpressionUUID->
+   "17cc4f22-d962-49b2-a9f7-6279faff561d"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1080313163,ExpressionUUID->"d420251b-6221-4b82-9491-9a497384d8b3"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Neat Examples", "ExampleSection",ExpressionUUID->
+   "0c1c266d-3da6-46c5-873f-2118dc778cc1"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1996578803,ExpressionUUID->"a8b7c448-db68-4f80-90a8-21c82b2b7036"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Metadata", "MetadataSection",
+ CellID->2067957646,ExpressionUUID->"9da3fb9a-46d2-4c3d-98f2-2b15cc93f7d3"],
+
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New",ExpressionUUID->"abff846b-e9df-41e5-b3c6-2748c1b2cde4"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified",ExpressionUUID->"3be13018-6b41-417f-bb1d-6a6813f807cb"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete",ExpressionUUID->
+  "6781f177-3d2f-4cd3-a447-b0d93b1e56fe"]
+}], "History",
+ CellID->1288813274,ExpressionUUID->"29289dd5-9b4b-4de4-aa9d-655b239f8a9c"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Categorization",
+ Cell[BoxData[
+  TemplateBox[{"Metadata", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Metadata such as page URI, context, and type of documentation page.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "b3b300ff-b85c-44ce-83b9-1f072858def1"]
+}], "CategorizationSection",
+ CellID->1564632476,ExpressionUUID->"e1b7ace5-d412-479d-b3c6-701f2a31c3c8"],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->840766617,ExpressionUUID->"48d461fe-3eec-44f4-87c9-b3eced7d1dff"],
+
+Cell["DanieleGregori/ArXivExplore", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->652021112,ExpressionUUID->"b2a2afb0-1a3a-48ec-a3cd-e5002b64e3ff"],
+
+Cell["DanieleGregori`ArXivExplore`", "Categorization",
+ CellLabel->"Context",
+ CellID->2057262390,ExpressionUUID->"88ef7d7c-c89e-4412-9a7b-3cad7b1e81d6"],
+
+Cell["DanieleGregori/ArXivExplore/ref/ArXivDatasetSubset", "Categorization",
+ CellLabel->"URI",
+ CellID->1922272030,ExpressionUUID->"dfcfb0dc-2c26-4a5e-bd7e-7b3d289bd3b3"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->1726323793,ExpressionUUID->"90be6b28-d17c-4281-bdde-b7c23ab61774"],
+
+Cell["XXXX", "Keywords",
+ CellID->1819917981,ExpressionUUID->"b2fa8d30-34cd-4b28-9494-a14d0f43f0b8"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->751922446,ExpressionUUID->"6df62b83-967a-4d8a-85a4-721799ed0489"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1766770974,ExpressionUUID->"d8fa0751-68f7-4ca8-847e-2fb5e9890901"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->863372949,ExpressionUUID->"3a6c43a5-92dc-449e-ae5c-bea1cb9917c1"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->162151064,ExpressionUUID->"f108a5c5-037e-4fb0-9108-550845bdd967"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->116184605,ExpressionUUID->"75093da9-938a-4d7b-8d99-76857aee6bce"]
+}, Closed]]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{5, Automatic}, {Automatic, 0}},
+TaggingRules-><|"Paclet" -> "DanieleGregori/ArXivExplore"|>,
+CellContext->"Global`",
+FrontEndVersion->"14.1 for Mac OS X x86 (64-bit) (July 16, 2024)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"79d662be-a4b3-4632-8cbe-2b90f5c0f9b6"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ExtendedExamples"->{
+  Cell[100791, 2128, 488, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"8220bac3-170b-4706-9c56-960a0ae53c88",
+   CellTags->"ExtendedExamples",
+   CellID->1836296553]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ExtendedExamples", 107134, 2316}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 116, 1, 72, "ObjectName",ExpressionUUID->"70e32b64-bbea-4f20-a7f9-bd6bbf162778",
+ CellID->1244803259],
+Cell[695, 25, 603, 14, 75, "Usage",ExpressionUUID->"4dd0c5be-32b7-4259-8580-a37f6e117ffe",
+ CellID->622684939],
+Cell[1301, 41, 96, 1, 26, "Notes",ExpressionUUID->"be7e30a2-5e8f-4a51-984f-d7e3a9ff1590",
+ CellID->777957942]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1434, 47, 459, 13, 38, "SeeAlsoSection",ExpressionUUID->"34e8d3a0-db7a-47c7-8f70-76e8806fd2df",
+ CellID->1258688258],
+Cell[1896, 62, 1654, 42, 21, "SeeAlso",ExpressionUUID->"96b5860b-8421-4463-906c-5b4b7a92ad8d",
+ CellID->2059629256]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3587, 109, 435, 12, 39, "TechNotesSection",ExpressionUUID->"75f8b7ab-3b2b-4dd0-b98d-84dc72b5a331",
+ CellID->899999599],
+Cell[4025, 123, 101, 1, 17, "Tutorials",ExpressionUUID->"f169c329-5ced-4f8e-820a-987883566e51",
+ CellID->1565934572]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4163, 129, 118, 1, 37, "MoreAboutSection",ExpressionUUID->"a7c5813f-347f-495c-a138-643aa9b4e7c9",
+ CellID->1250257619],
+Cell[4284, 132, 101, 1, 17, "MoreAbout",ExpressionUUID->"a34af511-b39b-46f3-84bc-bab8402cd74e",
+ CellID->2099800285]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4422, 138, 473, 13, 38, "RelatedLinksSection",ExpressionUUID->"3b64b7ca-249f-4182-8452-aea678922754",
+ CellID->1744618844],
+Cell[4898, 153, 102, 1, 17, "RelatedLinks",ExpressionUUID->"0ff90de3-7f6c-49fa-920e-e2e9dfef5427",
+ CellID->67194970]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5037, 159, 531, 14, 68, "ExamplesInitializationSection",ExpressionUUID->"2d7b2f48-e51e-413c-ad98-28ff6d48dca7",
+ CellID->1916946115],
+Cell[5571, 175, 188, 3, 46, "ExampleInitialization",ExpressionUUID->"bb312758-946b-4130-bcd5-64a6ea91847a",
+ CellID->1563682511]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5796, 183, 443, 12, 70, "PrimaryExamplesSection",ExpressionUUID->"55d29f9f-58ab-4f38-8790-7241c9626435",
+ CellID->2054574038],
+Cell[CellGroupData[{
+Cell[6264, 199, 281, 5, 26, "Input",ExpressionUUID->"ee491fd0-1a58-4eb4-b518-abf2f62763d8",
+ CellID->1569959786],
+Cell[6548, 206, 1095, 20, 119, "Output",ExpressionUUID->"1e3ca1f9-bbd8-4528-b47d-60a0880b9544",
+ CellID->1016204941]
+}, Open  ]],
+Cell[7658, 229, 344, 7, 26, "Input",ExpressionUUID->"380491a7-7070-4f0a-b331-ed38639e8ca4",
+ CellID->513885859],
+Cell[CellGroupData[{
+Cell[8027, 240, 316, 7, 26, "Input",ExpressionUUID->"7d8feb5b-055c-4325-87b1-5993212b977c",
+ CellID->151200113],
+Cell[8346, 249, 92396, 1873, 1122, "Output",ExpressionUUID->"3fc8f5af-13e7-4736-b35e-12a7c37888e2",
+ CellID->2131226274]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[100791, 2128, 488, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"8220bac3-170b-4706-9c56-960a0ae53c88",
+ CellTags->"ExtendedExamples",
+ CellID->1836296553],
+Cell[101282, 2143, 242, 5, 32, "ExampleSection",ExpressionUUID->"707177f4-9ee8-4154-af82-a6b889bbd492",
+ CellID->1148675234],
+Cell[101527, 2150, 265, 5, 20, "ExampleSection",ExpressionUUID->"7846995d-24cc-40c1-b094-77b9c97d5d8b",
+ CellID->2054154955],
+Cell[CellGroupData[{
+Cell[101817, 2159, 244, 5, 20, "ExampleSection",ExpressionUUID->"ff66a90d-f22e-4b37-8752-aa49ff7c2aab",
+ CellID->1235219513],
+Cell[102064, 2166, 246, 5, 23, "ExampleSubsection",ExpressionUUID->"688151db-99a6-4f2c-936c-3e7f67e4b416",
+ CellID->609939442],
+Cell[102313, 2173, 247, 5, 19, "ExampleSubsection",ExpressionUUID->"d2ec34f6-a873-4699-b748-5d27e4d78167",
+ CellID->1312754563]
+}, Open  ]],
+Cell[102575, 2181, 248, 5, 32, "ExampleSection",ExpressionUUID->"cdade80d-ad56-40e6-a8c7-b87176c4000b",
+ CellID->218951063],
+Cell[102826, 2188, 259, 5, 20, "ExampleSection",ExpressionUUID->"acdc3d6f-ddaf-4bde-845d-f3451624bcec",
+ CellID->1271028530],
+Cell[103088, 2195, 252, 5, 20, "ExampleSection",ExpressionUUID->"b6072f4d-ef7f-475e-a8dd-0f8f8844bac1",
+ CellID->1156667001],
+Cell[103343, 2202, 257, 5, 20, "ExampleSection",ExpressionUUID->"d420251b-6221-4b82-9491-9a497384d8b3",
+ CellID->1080313163],
+Cell[103603, 2209, 250, 5, 20, "ExampleSection",ExpressionUUID->"a8b7c448-db68-4f80-90a8-21c82b2b7036",
+ CellID->1996578803]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[103890, 2219, 111, 1, 71, "MetadataSection",ExpressionUUID->"9da3fb9a-46d2-4c3d-98f2-2b15cc93f7d3",
+ CellID->2067957646],
+Cell[104004, 2222, 477, 12, 25, "History",ExpressionUUID->"29289dd5-9b4b-4de4-aa9d-655b239f8a9c",
+ CellID->1288813274],
+Cell[CellGroupData[{
+Cell[104506, 2238, 485, 13, 20, "CategorizationSection",ExpressionUUID->"e1b7ace5-d412-479d-b3c6-701f2a31c3c8",
+ CellID->1564632476],
+Cell[104994, 2253, 134, 2, 34, "Categorization",ExpressionUUID->"48d461fe-3eec-44f4-87c9-b3eced7d1dff",
+ CellID->840766617],
+Cell[105131, 2257, 155, 2, 34, "Categorization",ExpressionUUID->"b2a2afb0-1a3a-48ec-a3cd-e5002b64e3ff",
+ CellID->652021112],
+Cell[105289, 2261, 153, 2, 34, "Categorization",ExpressionUUID->"88ef7d7c-c89e-4412-9a7b-3cad7b1e81d6",
+ CellID->2057262390],
+Cell[105445, 2265, 171, 2, 34, "Categorization",ExpressionUUID->"dfcfb0dc-2c26-4a5e-bd7e-7b3d289bd3b3",
+ CellID->1922272030]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[105653, 2272, 111, 1, 20, "KeywordsSection",ExpressionUUID->"90be6b28-d17c-4281-bdde-b7c23ab61774",
+ CellID->1726323793],
+Cell[105767, 2275, 100, 1, 70, "Keywords",ExpressionUUID->"b2fa8d30-34cd-4b28-9494-a14d0f43f0b8",
+ CellID->1819917981]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[105904, 2281, 119, 1, 20, "TemplatesSection",ExpressionUUID->"6df62b83-967a-4d8a-85a4-721799ed0489",
+ CellID->751922446],
+Cell[106026, 2284, 149, 2, 70, "Template",ExpressionUUID->"d8fa0751-68f7-4ca8-847e-2fb5e9890901",
+ CellID->1766770974],
+Cell[106178, 2288, 137, 2, 70, "Template",ExpressionUUID->"3a6c43a5-92dc-449e-ae5c-bea1cb9917c1",
+ CellID->863372949],
+Cell[106318, 2292, 135, 2, 70, "Template",ExpressionUUID->"f108a5c5-037e-4fb0-9108-550845bdd967",
+ CellID->162151064],
+Cell[106456, 2296, 137, 2, 70, "Template",ExpressionUUID->"75093da9-938a-4d7b-8d99-76857aee6bce",
+ CellID->116184605]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+

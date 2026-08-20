@@ -1,0 +1,420 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 15.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     16404,        410]
+NotebookOptionsPosition[     12157,        319]
+NotebookOutlinePosition[     12686,        337]
+CellTagsIndexPosition[     12643,        334]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["ArXivCitations", "GuideTitle",
+ CellID->666299527,ExpressionUUID->"b49fc0c9-fb94-4b44-ade7-c72454399ecd"],
+
+Cell["Citations extraction through Semantic Scholar API", "GuideAbstract",
+ CellChangeTimes->{{3.9319318358131323`*^9, 3.9319318552261763`*^9}},
+ CellID->1516414831,ExpressionUUID->"2de5f403-0841-495f-8df4-c1e9fdbd0942"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "GuideFunctionsSection",
+ CellID->48142021,ExpressionUUID->"13753040-c14c-46c7-a60c-9bee3474f965"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ArXivCitations",
+   BaseStyle->"Hyperlink",
+   ButtonData->{
+     URL["https://resources.wolframcloud.com/PacletRepository/resources/\
+DanieleGregori/ArXivExplore/ref/ArXivCitations.html"], None},
+   ButtonNote->
+    "https://resources.wolframcloud.com/PacletRepository/resources/\
+DanieleGregori/ArXivExplore/ref/ArXivCitations.html"]], "InlineGuideFunction",
+  
+  TaggingRules->{"PageType" -> "Function"},
+  CellTags->"c5c6736a-1ff4-4e4e-8fcf-2d9846cbae62",ExpressionUUID->
+  "ad38ed2b-e381-4362-9b8c-2fe4e3884b2b"],
+ " \[LongDash] Detailed citations of a given article"
+}], "GuideText",
+ CellChangeTimes->{{3.931926803441964*^9, 3.931926833176497*^9}, {
+  3.936175656688581*^9, 3.936175657022859*^9}, {3.996205595367276*^9, 
+  3.9962055953673267`*^9}},
+ CellID->2059612611,ExpressionUUID->"2e8fb018-f899-4c4f-88aa-8d1a8951ddc4"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ArXivCitationsTotal",
+   BaseStyle->"Hyperlink",
+   ButtonData->{
+     URL["https://resources.wolframcloud.com/PacletRepository/resources/\
+DanieleGregori/ArXivExplore/ref/ArXivCitationsTotal.html"], None},
+   ButtonNote->
+    "https://resources.wolframcloud.com/PacletRepository/resources/\
+DanieleGregori/ArXivExplore/ref/ArXivCitationsTotal.html"]], 
+  "InlineGuideFunction",
+  TaggingRules->{"PageType" -> "Function"},
+  CellTags->"c40ac8e4-27e1-4161-a8df-4d4f38357a23",ExpressionUUID->
+  "7db41c44-ce20-465d-bb6b-a0b6906e5347"],
+ " \[LongDash] Total citations of a list of articles"
+}], "GuideText",
+ CellChangeTimes->{{3.931926640777499*^9, 3.931926661332322*^9}, {
+  3.9962056053055058`*^9, 3.996205605305546*^9}},
+ CellID->1669095675,ExpressionUUID->"c9266fee-95bc-40f2-942e-ea0a3e64283d"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ArXivCitationsAuthor",
+   BaseStyle->"Hyperlink",
+   ButtonData->{
+     URL["https://resources.wolframcloud.com/PacletRepository/resources/\
+DanieleGregori/ArXivExplore/ref/ArXivCitationsAuthor.html"], None},
+   ButtonNote->
+    "https://resources.wolframcloud.com/PacletRepository/resources/\
+DanieleGregori/ArXivExplore/ref/ArXivCitationsAuthor.html"]], 
+  "InlineGuideFunction",
+  TaggingRules->{"PageType" -> "Function"},
+  CellTags->"c5c6736a-1ff4-4e4e-8fcf-2d9846cbae62",ExpressionUUID->
+  "963b7e1d-a4f9-4976-bdd2-abac1ec868b8"],
+ " \[LongDash] Detailed citations for each paper of an author"
+}], "GuideText",
+ CellChangeTimes->{{3.931926799458437*^9, 3.931926799458482*^9}, {
+  3.931926840572484*^9, 3.9319268517910767`*^9}, {3.996205616952771*^9, 
+  3.99620561695282*^9}},
+ CellID->1951897214,ExpressionUUID->"6db0b774-a132-4993-8e6f-cc3446801c89"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ArXivCitationsTitles",
+   BaseStyle->"Hyperlink",
+   ButtonData->{
+     URL["https://resources.wolframcloud.com/PacletRepository/resources/\
+DanieleGregori/ArXivExplore/ref/ArXivCitationsTitles.html"], None},
+   ButtonNote->
+    "https://resources.wolframcloud.com/PacletRepository/resources/\
+DanieleGregori/ArXivExplore/ref/ArXivCitationsTitles.html"]], 
+  "InlineGuideFunction",
+  TaggingRules->{"PageType" -> "Function"},
+  CellTags->"c5c6736a-1ff4-4e4e-8fcf-2d9846cbae62",ExpressionUUID->
+  "d575f6b5-bf4a-40bc-99f9-74672c895790"],
+ " \[LongDash] All papers with given title word, with their citations"
+}], "GuideText",
+ CellChangeTimes->{{3.931926799458437*^9, 3.931926799458482*^9}, {
+  3.931926840572484*^9, 3.9319268517910767`*^9}, {3.936175704699684*^9, 
+  3.9361757138763647`*^9}, {3.996205626296015*^9, 3.9962056262960567`*^9}},
+ CellID->1094607013,ExpressionUUID->"7226a674-90ab-461a-a629-efb41bd55b99"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ArXivCitationsAbstracts",
+   BaseStyle->"Hyperlink",
+   ButtonData->{
+     URL["https://resources.wolframcloud.com/PacletRepository/resources/\
+DanieleGregori/ArXivExplore/ref/ArXivCitationsAbstracts.html"], None},
+   ButtonNote->
+    "https://resources.wolframcloud.com/PacletRepository/resources/\
+DanieleGregori/ArXivExplore/ref/ArXivCitationsAbstracts.html"]], 
+  "InlineGuideFunction",
+  TaggingRules->{"PageType" -> "Function"},
+  CellTags->"c5c6736a-1ff4-4e4e-8fcf-2d9846cbae62",ExpressionUUID->
+  "573428ce-9aed-6b4c-9ad4-dd1fc35ae145"],
+ " \[LongDash] All papers with given abstract word, with their citations"
+}], "GuideText",
+ CellChangeTimes->{{3.931926799458437*^9, 3.931926799458482*^9}, {
+  3.931926840572484*^9, 3.9319268517910767`*^9}, {3.936175704699684*^9, 
+  3.9361757138763647`*^9}, {3.9434446815364017`*^9, 3.9434446867402515`*^9}, {
+  3.9962056354098*^9, 3.996205635409834*^9}},
+ CellID->683413708,ExpressionUUID->"80379a92-47df-3d46-8539-804eab425dce"],
+
+Cell[CellGroupData[{
+
+Cell["\t", "GuideDelimiter",
+ CellID->1434881639,ExpressionUUID->"6d0301b6-007f-45c2-b17b-7d39787c4d34"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ArXivCitationsGraph",
+   BaseStyle->"Hyperlink",
+   ButtonData->{
+     URL["https://resources.wolframcloud.com/PacletRepository/resources/\
+DanieleGregori/ArXivExplore/ref/ArXivCitationsGraph.html"], None},
+   ButtonNote->
+    "https://resources.wolframcloud.com/PacletRepository/resources/\
+DanieleGregori/ArXivExplore/ref/ArXivCitationsGraph.html"]], 
+  "InlineGuideFunction",
+  TaggingRules->{"PageType" -> "Function"},
+  CellTags->"c5c6736a-1ff4-4e4e-8fcf-2d9846cbae62",ExpressionUUID->
+  "624fe72e-b6e3-4fb0-8bfa-f5991e6e8332"],
+ " \[LongDash] Citations graph of a given id or id list"
+}], "GuideText",
+ CellChangeTimes->{{3.931926857405801*^9, 3.9319268692113247`*^9}, {
+  3.936175672679179*^9, 3.936175692279499*^9}, {3.943444669549244*^9, 
+  3.943444670475439*^9}, {3.99620564481466*^9, 3.996205644814707*^9}},
+ CellID->801945941,ExpressionUUID->"8c58fcad-9c04-48d2-9ae3-928becbf3bdf"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ArXivAuthorGraph",
+   BaseStyle->"Hyperlink",
+   ButtonData->{
+     URL["https://resources.wolframcloud.com/PacletRepository/resources/\
+DanieleGregori/ArXivExplore/ref/ArXivAuthorGraph.html"], None},
+   ButtonNote->
+    "https://resources.wolframcloud.com/PacletRepository/resources/\
+DanieleGregori/ArXivExplore/ref/ArXivAuthorGraph.html"]], 
+  "InlineGuideFunction",
+  TaggingRules->{"PageType" -> "Function"},
+  CellTags->"c5c6736a-1ff4-4e4e-8fcf-2d9846cbae62",ExpressionUUID->
+  "4470dafc-5855-4e40-95cb-d1de8925cc3a"],
+ " \[LongDash] Citations graph of a given author"
+}], "GuideText",
+ CellChangeTimes->{{3.931926857405801*^9, 3.9319268692113247`*^9}, {
+  3.936175672679179*^9, 3.9361756766397877`*^9}, {3.936176175623171*^9, 
+  3.936176176480633*^9}, {3.9434446734420376`*^9, 3.943444675005293*^9}, {
+  3.9962056528698263`*^9, 3.9962056528698673`*^9}},
+ CellID->576284126,ExpressionUUID->"09e9db46-3ac9-4579-9502-6048c8b0453a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\t", "GuideDelimiter",
+ CellID->620247084,ExpressionUUID->"8ae925d8-e217-4e75-9171-36d3a5c6561a"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TagBox[
+   FrameBox["\<\"XXXX\"\>"],
+   "FunctionPlaceholder"]], "InlineGuideFunction",
+  TaggingRules->{"PageType" -> "Function"},ExpressionUUID->
+  "c6d41d30-b65c-4f97-8a19-2c6e649c5b23"],
+ Cell[BoxData[
+  RowBox[{
+  Cell[TextData[StyleBox[
+   " \[FilledVerySmallSquare] ", "InlineSeparator"]],ExpressionUUID->
+    "229b473d-1423-4287-a693-a98ffd91a506"], 
+   DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
+    "9ae49138-673e-478b-8515-38bd32402994", 
+     "2a96f1d9-a0de-461b-a565-e6fbeee4e76f"], $CellContext`cellobj$$ = 
+    CellObject[
+    "37f427d9-ded9-4e5d-9115-9bbb4c1256fa", 
+     "7a065182-d901-43ca-939d-2b73694e5afe"]}, 
+    TemplateBox[{
+      GraphicsBox[{{
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         CircleBox[{0, 0}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{0, 0.62}, {0, -0.62}}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{-0.62, 0}, {0.62, 0}}]}}, 
+       ImagePadding -> {{1., 1.}, {2.4, 1.}}, ImageSize -> 16, 
+       PlotRange -> {{-1.06, 1.06}, {-1.06, 1.06}}, 
+       BaselinePosition -> (Center -> 
+        Center)], $CellContext`nbobj$$, $CellContext`cellobj$$},
+     "InlineListingAddButton"],
+    Initialization:>($CellContext`nbobj$$ = 
+      EvaluationNotebook[]; $CellContext`cellobj$$ = EvaluationCell[])]}]], 
+  "InlineListingAddButton",ExpressionUUID->
+  "37f427d9-ded9-4e5d-9115-9bbb4c1256fa"]
+}], "InlineGuideFunctionListing",
+ CellID->607118250,ExpressionUUID->"80ba69c5-e5b0-4fa8-a695-5bc6fc1b9403"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tech Notes", "GuideTutorialsSection",
+ CellID->1141620853,ExpressionUUID->"94ad1166-fac9-4159-9c02-2875f632cd28"],
+
+Cell["XXXX", "GuideTutorial",
+ CellID->1602774073,ExpressionUUID->"2cc23501-be35-45fc-9af1-0deaab030ff6"],
+
+Cell["XXXX", "GuideTutorial",
+ CellID->1936460590,ExpressionUUID->"36646910-7f66-4cb2-8961-e8ab36d91e29"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "GuideMoreAboutSection",
+ CellChangeTimes->{{3.8430423939366693`*^9, 3.843042395176153*^9}},
+ CellID->978465845,ExpressionUUID->"fb451147-aa38-4eb8-a1a8-6a7c9d0bd243"],
+
+Cell["XXXX", "GuideMoreAbout",
+ CellID->1793171836,ExpressionUUID->"7647f881-3de4-40df-9547-748283c4bd8a"],
+
+Cell["XXXX", "GuideMoreAbout",
+ CellID->53545654,ExpressionUUID->"c5e7c59c-5a7f-4c09-9ff7-1e30a9e176c6"]
+}, Open  ]],
+
+Cell["Related Links", "GuideRelatedLinksSection",
+ CellID->146158685,ExpressionUUID->"58cc7c03-5c95-4b16-b59b-fd741713c2c2"],
+
+Cell[CellGroupData[{
+
+Cell["Metadata", "MetadataSection",
+ CellID->1915210274,ExpressionUUID->"42b9e217-4bc3-48bb-a589-403b2fc85811"],
+
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New",ExpressionUUID->"da5d939c-fa00-4afa-95fe-834f235ad66f"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified",ExpressionUUID->"64c10138-f529-440f-895e-60b0e8d0572e"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete",ExpressionUUID->
+  "a2bd01cf-24bd-4e9b-a58c-9d2044d382c1"]
+}], "History",
+ CellID->306690235,ExpressionUUID->"d59e4861-5fb5-45a9-bc38-5ec1c88c73a3"],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->582026845,ExpressionUUID->"11a18655-a5d2-4eb7-9b03-07e7efaffd6f"],
+
+Cell["Guide", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->337171830,ExpressionUUID->"c0e6ba61-1509-4a14-80de-62b6c1bc08e0"],
+
+Cell["DanieleGregori/ArXivExplore", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->1785086024,ExpressionUUID->"4b1d64ca-9ba4-40bd-8944-49f384b02101"],
+
+Cell["DanieleGregori`ArXivExplore`", "Categorization",
+ CellLabel->"Context",
+ CellID->1594256778,ExpressionUUID->"8770aa12-3097-4dd5-a5f1-da3514043367"],
+
+Cell["DanieleGregori/ArXivExplore/guide/ArXivCitations", "Categorization",
+ CellLabel->"URI",
+ CellID->520204227,ExpressionUUID->"746988f3-49b4-492e-9b7b-abdb09735b1d"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->666516252,ExpressionUUID->"d9626a06-ef17-481a-9605-8d2e7c879837"],
+
+Cell["XXXX", "Keywords",
+ CellID->863944612,ExpressionUUID->"d8cef0d6-f1e6-4089-86e2-63a6b6d1748b"]
+}, Closed]]
+}, Open  ]]
+},
+WindowSize->{700, 721},
+WindowMargins->{{190, Automatic}, {Automatic, 0}},
+TaggingRules-><|"Paclet" -> "DanieleGregori/ArXivExplore"|>,
+FrontEndVersion->"15.0 for Mac OS X x86 (64-bit) (July 2, 2026)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "GuidePageStylesExt.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"9ae49138-673e-478b-8515-38bd32402994"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 111, 1, 86, "GuideTitle",ExpressionUUID->"b49fc0c9-fb94-4b44-ade7-c72454399ecd",
+ CellID->666299527],
+Cell[690, 25, 220, 2, 28, "GuideAbstract",ExpressionUUID->"2de5f403-0841-495f-8df4-c1e9fdbd0942",
+ CellID->1516414831]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[947, 32, 107, 1, 71, "GuideFunctionsSection",ExpressionUUID->"13753040-c14c-46c7-a60c-9bee3474f965",
+ CellID->48142021],
+Cell[1057, 35, 875, 19, 24, "GuideText",ExpressionUUID->"2e8fb018-f899-4c4f-88aa-8d1a8951ddc4",
+ CellID->2059612611],
+Cell[1935, 56, 841, 18, 24, "GuideText",ExpressionUUID->"c9266fee-95bc-40f2-942e-ea0a3e64283d",
+ CellID->1669095675],
+Cell[2779, 76, 901, 19, 24, "GuideText",ExpressionUUID->"6db0b774-a132-4993-8e6f-cc3446801c89",
+ CellID->1951897214],
+Cell[3683, 97, 960, 19, 24, "GuideText",ExpressionUUID->"7226a674-90ab-461a-a629-efb41bd55b99",
+ CellID->1094607013],
+Cell[4646, 118, 1020, 20, 24, "GuideText",ExpressionUUID->"80379a92-47df-3d46-8539-804eab425dce",
+ CellID->683413708],
+Cell[CellGroupData[{
+Cell[5691, 142, 104, 1, 26, "GuideDelimiter",ExpressionUUID->"6d0301b6-007f-45c2-b17b-7d39787c4d34",
+ CellID->1434881639],
+Cell[5798, 145, 937, 19, 24, "GuideText",ExpressionUUID->"8c58fcad-9c04-48d2-9ae3-928becbf3bdf",
+ CellID->801945941],
+Cell[6738, 166, 979, 20, 24, "GuideText",ExpressionUUID->"09e9db46-3ac9-4579-9502-6048c8b0453a",
+ CellID->576284126]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7754, 191, 103, 1, 26, "GuideDelimiter",ExpressionUUID->"8ae925d8-e217-4e75-9171-36d3a5c6561a",
+ CellID->620247084],
+Cell[7860, 194, 1670, 42, 25, "InlineGuideFunctionListing",ExpressionUUID->"80ba69c5-e5b0-4fa8-a695-5bc6fc1b9403",
+ CellID->607118250]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9579, 242, 119, 1, 73, "GuideTutorialsSection",ExpressionUUID->"94ad1166-fac9-4159-9c02-2875f632cd28",
+ CellID->1141620853],
+Cell[9701, 245, 105, 1, 23, "GuideTutorial",ExpressionUUID->"2cc23501-be35-45fc-9af1-0deaab030ff6",
+ CellID->1602774073],
+Cell[9809, 248, 105, 1, 23, "GuideTutorial",ExpressionUUID->"36646910-7f66-4cb2-8961-e8ab36d91e29",
+ CellID->1936460590]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9951, 254, 190, 2, 73, "GuideMoreAboutSection",ExpressionUUID->"fb451147-aa38-4eb8-a1a8-6a7c9d0bd243",
+ CellID->978465845],
+Cell[10144, 258, 106, 1, 23, "GuideMoreAbout",ExpressionUUID->"7647f881-3de4-40df-9547-748283c4bd8a",
+ CellID->1793171836],
+Cell[10253, 261, 104, 1, 23, "GuideMoreAbout",ExpressionUUID->"c5e7c59c-5a7f-4c09-9ff7-1e30a9e176c6",
+ CellID->53545654]
+}, Open  ]],
+Cell[10372, 265, 124, 1, 73, "GuideRelatedLinksSection",ExpressionUUID->"58cc7c03-5c95-4b16-b59b-fd741713c2c2",
+ CellID->146158685],
+Cell[CellGroupData[{
+Cell[10521, 270, 111, 1, 71, "MetadataSection",ExpressionUUID->"42b9e217-4bc3-48bb-a589-403b2fc85811",
+ CellID->1915210274],
+Cell[10635, 273, 476, 12, 25, "History",ExpressionUUID->"d59e4861-5fb5-45a9-bc38-5ec1c88c73a3",
+ CellID->306690235],
+Cell[CellGroupData[{
+Cell[11136, 289, 122, 1, 20, "CategorizationSection",ExpressionUUID->"11a18655-a5d2-4eb7-9b03-07e7efaffd6f",
+ CellID->582026845],
+Cell[11261, 292, 133, 2, 70, "Categorization",ExpressionUUID->"c0e6ba61-1509-4a14-80de-62b6c1bc08e0",
+ CellID->337171830],
+Cell[11397, 296, 156, 2, 70, "Categorization",ExpressionUUID->"4b1d64ca-9ba4-40bd-8944-49f384b02101",
+ CellID->1785086024],
+Cell[11556, 300, 153, 2, 70, "Categorization",ExpressionUUID->"8770aa12-3097-4dd5-a5f1-da3514043367",
+ CellID->1594256778],
+Cell[11712, 304, 168, 2, 70, "Categorization",ExpressionUUID->"746988f3-49b4-492e-9b7b-abdb09735b1d",
+ CellID->520204227]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[11917, 311, 110, 1, 20, "KeywordsSection",ExpressionUUID->"d9626a06-ef17-481a-9605-8d2e7c879837",
+ CellID->666516252],
+Cell[12030, 314, 99, 1, 70, "Keywords",ExpressionUUID->"d8cef0d6-f1e6-4089-86e2-63a6b6d1748b",
+ CellID->863944612]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

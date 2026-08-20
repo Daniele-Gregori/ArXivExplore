@@ -1,0 +1,1674 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    101363,       1666]
+NotebookOptionsPosition[     95050,       1530]
+NotebookOutlinePosition[     95842,       1556]
+CellTagsIndexPosition[     95762,       1551]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["ArXivTeXDocument", "ObjectName",
+ CellID->603580745,ExpressionUUID->"1c4ea8fd-190b-435c-862e-7ac56071ef90"],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo",ExpressionUUID->"836f15ac-5c3d-4d74-80a5-76af5858cff9"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["ArXivTeXDocument",
+    BaseStyle->"Link",
+    ButtonData->"paclet:DanieleGregoriArXivExplore/ref/ArXivTeXDocument"], 
+   "[", 
+   StyleBox["id", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+  "0ec789d0-cf1b-4888-b6b6-75fbc53f3757"],
+ "\[LineSeparator]scrapes the ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{"T", 
+     AdjustmentBox["E",
+      BoxBaselineShift->0.5,
+      BoxMargins->{{-0.3, 0}, {0, 0}}], "X"}],
+    SingleLetterItalics->False], TraditionalForm]],ExpressionUUID->
+  "0945cead-3251-4b69-86a0-92d7fa212ea3"],
+ " source of a given article id."
+}], "Usage",
+ CellChangeTimes->{{3.9311492209598017`*^9, 3.931149226298934*^9}},
+ CellID->1816316434,ExpressionUUID->"0c347e96-29f4-4638-99f8-e5b421dd00e7"],
+
+Cell["\<\
+Notice: to improve in later paclet versions, because it does not always work.\
+\
+\>", "Notes",
+ CellChangeTimes->{3.931149264707911*^9},
+ CellID->350264133,ExpressionUUID->"5d740cc4-838a-40aa-8527-6c4e04917436"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "See Also",
+ Cell[BoxData[
+  TemplateBox[{"SeeAlso", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related reference (function) pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "8f514925-dc54-45a2-82ce-bc80847b8b3e"]
+}], "SeeAlsoSection",
+ CellID->636606904,ExpressionUUID->"5f78f20d-893a-4acb-9c5a-1cabfe619c8a"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TagBox[
+   FrameBox["\<\"XXXX\"\>"],
+   "FunctionPlaceholder"]], "InlineSeeAlsoFunction",
+  TaggingRules->{"PageType" -> "Function"},ExpressionUUID->
+  "86649736-2acf-47d0-af9d-9680fbd82546"],
+ Cell[BoxData[
+  RowBox[{
+  Cell[TextData[StyleBox[
+   " \[FilledVerySmallSquare] ", "InlineSeparator"]],ExpressionUUID->
+    "8dcd58c9-6ba9-41ff-9ca4-3e9fa71f74b4"], 
+   DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
+    "c9679f04-008c-4c90-989b-6c931c4cb75a", 
+     "74624438-da11-4a8a-8fa6-6df8ed0d61f3"], $CellContext`cellobj$$ = 
+    CellObject[
+    "75f2da15-2a2d-41dc-8d3c-282b9a33ab58", 
+     "24e1b6cd-6445-4a8e-ade9-729ccd42853e"]}, 
+    TemplateBox[{
+      GraphicsBox[{{
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         CircleBox[{0, 0}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{0, 0.62}, {0, -0.62}}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{-0.62, 0}, {0.62, 0}}]}}, 
+       ImagePadding -> {{1., 1.}, {2.4, 1.}}, ImageSize -> 16, 
+       PlotRange -> {{-1.06, 1.06}, {-1.06, 1.06}}, 
+       BaselinePosition -> (Center -> 
+        Center)], $CellContext`nbobj$$, $CellContext`cellobj$$},
+     "InlineListingAddButton"],
+    Initialization:>($CellContext`nbobj$$ = 
+      EvaluationNotebook[]; $CellContext`cellobj$$ = EvaluationCell[])]}]], 
+  "InlineListingAddButton",ExpressionUUID->
+  "75f2da15-2a2d-41dc-8d3c-282b9a33ab58"]
+}], "SeeAlso",
+ CellID->688706174,ExpressionUUID->"fb1c9a53-5865-4829-ac3a-536a07400f91"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Tech Notes",
+ Cell[BoxData[
+  TemplateBox[{"TechNotes", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Insert links to related tech notes.", "MoreInfoText"], BaseStyle -> 
+       "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "45c35c2a-1556-4e8b-b8db-7327365195a9"]
+}], "TechNotesSection",
+ CellID->147809088,ExpressionUUID->"e8d440a8-e059-4e05-92d5-82fe43fe49db"],
+
+Cell["XXXX", "Tutorials",
+ CellID->1736246084,ExpressionUUID->"47789f7a-c02d-4092-b1d5-8666035c415f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "MoreAboutSection",
+ CellID->1080138352,ExpressionUUID->"da940f84-30d0-4bfe-ad8c-3e7fdc8becaa"],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1206013973,ExpressionUUID->"19ea8758-734c-4990-af16-e1b468475a3d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Related Links",
+ Cell[BoxData[
+  TemplateBox[{"RelatedLinks", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related page, including web pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "88e43381-feb5-430d-a42f-fce4f24d7c53"]
+}], "RelatedLinksSection",
+ CellID->1526183825,ExpressionUUID->"1fa08678-2b61-4304-8685-7cd9912c5a1d"],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1026867007,ExpressionUUID->"ffdd0325-061e-48f4-8e6d-6e4cbd0a450a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Examples Initialization",
+ Cell[BoxData[
+  TemplateBox[{"ExamplesInitialization", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Input that is to be evaluated before any examples are run, e.g. \
+Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]], 
+     "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "93a36072-2f2f-4b29-84ae-0b8186f4c215"]
+}], "ExamplesInitializationSection",
+ CellID->1375199357,ExpressionUUID->"8079415c-ccf4-45fc-be13-e26dccb2a9f2"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<DanieleGregori`ArXivExplore`\>\"", 
+  "]"}]], "ExampleInitialization",
+ CellID->1756584085,ExpressionUUID->"9aa4ca66-802a-4b36-be2c-9c72da5b4366"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox[
+      RowBox[{"Basic", " ", "Examples"}], "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->1451021286,ExpressionUUID->"492f981a-97cf-4477-85e1-4d50bd5e70e0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ArXivTeXDocument", "[", 
+  RowBox[{"Echo", "@", 
+   RowBox[{"RandomChoice", "[", 
+    RowBox[{"ArXivIDs", "[", "All", "]"}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.93114923003319*^9, 3.931149242671526*^9}},
+ CellLabel->"In[10]:=",
+ CellID->1703586990,ExpressionUUID->"2c5441c0-b8ac-4e04-94a8-e9d244775467"],
+
+Cell[BoxData["\<\"1405.3077\"\>"], "Echo",
+ CellChangeTimes->{3.9311492434410143`*^9},
+ CellID->1933075779,ExpressionUUID->"949bade0-3139-4c60-a97a-19a81495855d"],
+
+Cell[BoxData["\<\"\\\\begin{document}\\n%\\\\setpagewiselinenumbers\\n%\\\\\
+modulolinenumbers[5]\\n%\\\\linenumbers\\n%\\\\begin{CJK*}{GBK}{}\\n%\\\\\
+preprint{APS/123-QED}\\n\\n\\\\title{Electronic and Transport Property of \
+Phosphorene Nanoribbon}\\n\\n\\n\\\\author{Qingyun \
+Wu}\\n\\\\affiliation{Department of Physics, National University of \
+Singapore, Singapore 117542, Singapore}%\\n\\\\author{Lei \
+Shen}%\\n\\\\email{shenlei@nus.edu.sg}\\n\\\\affiliation{Engineering Science \
+Programme, Faculty of Engineering, National University of Singapore, \
+Singapore 117579, Singapore}%\\n\\\\author{Ming \
+Yang}\\n\\\\affiliation{Department of Physics, National University of \
+Singapore, Singapore 117542, Singapore}%\\n\\\\author{Yongqing \
+Cai}\\n\\\\affiliation {Institute of High Performance Computing, ASTAR, \
+Singapore 138632, Singapore}%\\n\\\\author{Zhigao \
+Huang}\\n\\\\affiliation{College of Physics and Energy, Fujian Normal \
+University, Fuzhou 350007, People's Republic of China}%\\n\\\\author{Yuan \
+Ping Feng}\\n\\\\email{phyfyp@nus.edu.sg}\\n\\\\affiliation{Department of \
+Physics, National University of Singapore, Singapore 117542, \
+Singapore}%\\n\\n\\\\date{\\\\today}\\n\\n\\\\begin{abstract}\\n%A \
+fundamental dilemma of nanoribbon transistors is to have robust transport \
+insensitive to the edge-defect perturbation, while have the electric field \
+tuning (gate perturbation). By combining nonequilibrium Green's function with \
+density functional theory, we study the transport property of monolayer black \
+phosphorus nanoribbons (PNRs) and its modulation by a transverse electric \
+field. In contrast to graphene and MoS$_{2}$ nanoribbons, the carrier \
+transport channels under low bias are mainly located in the interior of both \
+armchair and zigzag PNRs without chirality, and immune to a small amount of \
+edge defects. Meanwhile, our calculations indicate a giant Stark effect in \
+PNRs, which can switch on transport channels of semiconducting PNRs under low \
+bias, inducing an insulator-metal-transition. A PNR-based dual-gate \
+field-effect-transistor, with high on/off ratio of 10$^3$, is proposed based \
+on the giant electric field tuning effect.\\nBy combining density functional \
+theory and nonequilibrium Green's function, we study the electronic and \
+transport properties of monolayer black phosphorus nanoribbons (PNRs). First, \
+we investigate the band-gap of PNRs and its modulation by the ribbon width \
+and an external transverse electric field. Our calculations indicate a giant \
+Stark effect in PNRs, which can switch on transport channels of \
+semiconducting PNRs under low bias, inducing an insulator-metal-transition. \
+Next, we study the transport channels in PNRs via the calculations of the \
+current density and local electron transmission pathway. In contrast to \
+graphene and MoS$_{2}$ nanoribbons, the carrier transport channels under low \
+bias are mainly located in the interior of both armchair and zigzag PNRs, and \
+immune to a small amount of edge defects. Lastly, a device of the PNR-based \
+dual-gate field-effect-transistor, with high on/off ratio of 10$^3$, is \
+proposed based on the giant electric field tuning effect.\\n\\\\end{abstract}\
+\\n\\n\\n\\n\\\\pacs{73.61.Cw, 73.22.-f, 73.63.-b, \
+71.15.Mb}\\n%\\\\keywords{Suggested \
+keywords}%\\n\\\\maketitle\\n%\\\\end{CJK*}\\n%\\\\tableofcontents\\n\\n\\\\\
+section{Introduction}\\nAlthough many two dimensional (2D) materials, such as \
+graphene and MoS$_2$, have good carrier mobilities or high on/off \
+ratio,\\\\cite{Schwierz2010NN,Radisavljevic2011NN} a fundamental dilemma \
+hampers their nanoribbon device applications: Whereas robust transport is \
+needed to immune the edge-defect perturbation, modulation of transport by an \
+electric field (or gate voltage) is desired for on/off transistors. One of \
+the reasons is that the transport channels in most nanoribbons are located at \
+two edges.\\\\cite{Kim2008NN,Zheng2008PRB,Yue2012JPCM} A small amount of edge \
+disorder or defects, such as vacancies and impurities, can strongly suppress \
+the carrier mobility in the transport channels because of Coulomb blockage or \
+scattering.\\\\cite{Sols2007PRL,Shen2012PRB} Another reason is that many \
+nanoribbons have a metallic edge-morphology, such as zigzag graphene \
+\\\\cite{Wang2008PRL,Son2006PRL} and zigzag MoS$_2$ nanoribbons \
+\\\\cite{Li2008JACS}, which has little response to the gate voltage, \
+resulting in very low on/off ratio of graphene/MoS$_2$ \
+field-effect-transistors (FETs). Actually, such different transport behaviors \
+due to different edge-morphologies in nanoribbons are similar to the \
+chirality of carbon nanotubes (CNTs), which hinders the development of CNT \
+FETs till now. Very recently, layered black phosphorus (phosphorene) and its \
+sisters \\\\cite{Zhu2014PRL,Zhu2015PRB,Guan2014PRL2,Guan2014PRL} have \
+attracted much attention because of its unique electronic properties \
+\\\\cite{Li2014NN,Liu2014AN,Qiao2014NC,Rodin2014PRL,Zhu2014PRL,\
+Reich2014Nature,Churchill2014NN,Koenig2014APL,Fei2014NL,Fei2015PRB,\
+Tran2014PRB,Tran2014PRB2,Guo2014JPCC,Peng2014PRB,Peng2014MRE,Wang2015PRB,\
+Cai2014SR} and thermoelectronic properties\\\\cite{Zhang2014SR,Cai2015AFM}. \
+In bulk form, black phosphorus consists of puckered honeycomb layers of \
+phosphorus atoms which are held together via van der Waals interactions, \
+similar to graphite.\\\\cite{brown1965} It is a direct band gap semiconductor \
+with an energy gap of 0.3 eV,\\\\cite{Akahama1983JPSJ} while the gap of \
+monolayer phosphorene is 1.5 eV.\\\\cite{Qiao2014NC} Field-effect-transistors \
+(FETs) based on a few layers of phosphorene were found to have on/off ratio \
+up to 10$^{5}$ [ref. 21] and carrier mobilities as high as 1,000 cm$^{2}$/Vs \
+[ref. 15] at room temperature. It seems promising for phosphorene to compete \
+with other hot contenders, graphene and layered MoS$_{2}$, for next \
+generation semiconductor devices.\\n\\nOne-dimensional nanoribbons etched or \
+patterned from their parent 2D materials offer additional tenability of their \
+electronic properties through the quantum confinement effect \
+.\\\\cite{Dolui2012AN,Li2008JACS,Son2006PRL,Yue2012JPCM,Zhang2008PRB,\
+Zheng2008PRB,Park2008Nl} However, as mentioned above, most nanoribbons are \
+chiral and their transport properties are dominated by edge states. Taking \
+MoS$_{2}$ nanoribbon as an example, it is known that armchair MoS$_{2}$ \
+nanoribbons are semiconducting while zigzag MoS$_{2}$ nanoribbons are \
+metallic.\\\\cite{Li2008JACS,Dolui2012AN} The carrier mobility of armchair \
+MoS$_{2}$ nanoribbons can be strongly suppressed by the scattering of edge \
+defects .\\\\cite{Dolui2012AN,Yue2012JPCM,Cai2014JACS} Due to the limit of \
+the chirality and edge transport channels, one have to fabricate high quality \
+\\\\emph{armchair} MoS$_{2}$ nanoribbons in the experiment for making \
+transistors with good performance.\\\\cite{Radisavljevic2011NN} Clearly, it \
+is very difficult to fabricate edge-defect-free nanoribbons with controlled \
+chirality as well. Compared to graphene and 2D dichalcogenides, phosphorene \
+shows certain advantages. Even though there have been many studies in \
+electronic structures of phosphorene \
+ribbons,\\\\cite{Carvalho2014EPL,Li2014JPCC,Ramasubramaniam2014PRB,Han2014NL,\
+Du2015SR,Maity2014arxiv,Peng2014JAP} further \\\\emph{transport} studies \
+compared to graphene and MoS$_{2}$ are less,\\\\cite{Schwierz2010NN} but \
+essential to fully understand its intriguing properties and find avenues to \
+tune these properties for various device applications.\\n\\n\\nInspired by \
+ubiquitous gate-control in everyday semiconductor devices, in this work, we \
+report the robust central transport in achirial PNRs under low bias, and its \
+effective electric-field-modulation through a giant Stark effect. By using \
+the giant electric field tuning effect, we propose a PNRs-based dual-gate \
+FET, which is expected to have high on/off ratio. This article is organized \
+as following:\\nThe computational details are given in Sec. \\\\textbf{II.} \
+and Sec. \\\\textbf{X.} We present details of the optimized geometric \
+structures in Sec. \\\\textbf{III.} The calculated energy band structures and \
+band gap tuning by the ribbon width or electric field are investigated in \
+Sec. \\\\textbf{IV.} and \\\\textbf{VI.} Transport properties, including in \
+transport channels and their defect/bias effects, are studied in Sec. \
+\\\\textbf{V.} and subsections. The PNR-based electronic devices, in Sec. \
+\\\\textbf{VII.}, are proposed. Lastly, the conclusions and discussions of \
+this article are shown in Sec. \
+\\\\textbf{VIII.}\\n\\n\\\\section{Computational details}\\nFirst-principles \
+calculations based on density functional theory (DFT) and the non-equilibrium \
+Green's function (NEGF) formalism were carried out to study electronic and \
+transport properties of PNRs, which was implemented in the \
+\\\\textsc{Atomistix ToolKit} package.\\\\cite{atk1,atk2} Geometry \
+optimization was done until all atomic forces are smaller than 0.01 \
+eV/{\\\\AA}. The generalized gradient approximation (GGA) with \
+Perdew-Burke-Ernzerhof (PBE) functional\\\\cite{pbe} was used for the \
+exchange-correlation functional. The electron wave function was expanded \
+using a double-$\\\\zeta$ polarized (DZP)basis set. A mesh cut-off of 150 Ry \
+and a Monkhorst-Pack $k$-point grid\\\\cite{Monkhorst} of \
+$1\\\\times1\\\\times9$ were employed in the electronic calculations. During \
+the transport calculations, a $k$-point grid of $1\\\\times1\\\\times100$ was \
+adopted. Vacuum layers of 15 \\\\AA~both in plane and out of plane of the \
+ribbons were used to avoid the interaction between periodic images. Regarding \
+the width of PNRs to N=35, band gaps of 1.08 eV and 1.16 eV were found for \
+35-aPNR and 35-zPNR respectively, which are close to the DFT calculated band \
+gap of monolayer phosphorene (0.95 eV). It should be noted that the band gaps \
+calculated at DFT-GGA level are typically underestimated compared to the \
+experimental values or GW or hybrid functionals calculations. However, the \
+focus of this study is not to quantitatively obtain band gaps of PNRs but to \
+reveal the general trend and underlying physics of band gap modulation of \
+PNRs by the quantum confinement and external electric field. Therefore, the \
+underestimate of band gaps do not affect our main conclusions. The \
+theoretical back ground of the transport and current density calculations \
+were described in the APPENDIX of this article.\\n\\n\\\\section{Geometric \
+structures}\\nThe calculated lattice parameters of monolayer phosphorene \
+lattice are $a_{1}=3.33$ {\\\\AA} and $a_{2}=4.63$ {\\\\AA}, respectively, \
+which are in agreement with results of previous \
+calculation.\\\\cite{Liu2014AN,Qiao2014NC,Cai2014SR} Hydrogen saturated \
+zigzag (zPNRs) and armchair (aPNRs) PNRs were constructed from the optimized \
+phosphorene lattice as shown in \\\\textbf{Fig. 1}. The number of zigzag \
+lines (dimmer lines) across the zPNRs (aPNRs), $N$, is used to indicate the \
+width of a PNR. Up on structural relaxation, the interior part of the \
+nanoribbons experiences negligible structural changes and the P-P bond length \
+decreased from 2.28 \\\\AA [ref. 17] in bulk phosphorene to 2.24 \\\\AA, \
+while the edges of the zPNRs show some degree of deformation (see \
+\\\\textbf{Fig. 1}). The bonding angle in the edge of zPNRs is 98.7 degree \
+compared to 103.8 degree in the central region. This is different from the \
+case of bare zPNRs, which have larger bonding angles in the edge because of \
+the edge reconstruction.\\\\cite{Peng2014MRE,Guo2014JPCC}\\n\\n\\\\begin{\
+figure}[ptb]\\n\\\\centering\\n\\\\includegraphics \
+[width=0.75\\\\textwidth]{fig1.pdf}\\\\newline\\n\\\\caption{Top view and \
+side view of the optimized geometry structure of hydrogen saturated \
+phosphorene nanoribbons (PNRs): (a) zigzag phosphorene nanoribbons (ZPNRs) \
+and (b) armchair phosphorene nanoribbons \
+(APNRs).}%\\n\\\\label{fig1}%\\n\\\\end{figure}\\n\\n\\n\\\\section{Energy \
+band structures}\\n\\nDifferent from hydrogen saturated graphene and \
+MoS$_{2}$ nanoribbons which exhibit chirality-dependent electronic \
+properties, {\\\\em i.e.}, armchiar nanoribbns are semiconducting but zigzag \
+nanoribbons are metallic, both armchair and zigzag hydrogen saturated PNRs \
+inherit property of 2D phosphorene and exhibit semiconducting \
+characteristics. The calculated band structures of an aPNR of width 10 \
+(10-aPNR) and a zPNR of width 8 (8-zPNR) are presented in \\\\textbf{Fig. 2}. \
+At the level of the Perdew-Burke-Ernzerhof (PBE) functional, 10-aPNR has a \
+direct band gap of 1.17 eV located at the $\\\\Gamma$ point in the reciprocal \
+space, while 8-zPNR possesses a band gap of 1.73 eV near the $\\\\Gamma$ \
+point which is almost direct. For both types PNRs, the calculated partial \
+charge densities indicate that both VBM and CBM are contributed by hybridized \
+$s$-$p$ states of the P atoms in the \\\\emph{central} region of the \
+nanoribbons. Therefore, hydrogen saturation provides perfect passivation of \
+dangling bonds at the edges of \
+PNRs.\\n\\n\\\\begin{figure}[ptb]\\n\\\\centering\\n\\\\includegraphics \
+[width=0.9\\\\textwidth]{fig2.pdf}\\\\newline\\n\\\\caption{(Color online) \
+Band structures and partial charge densities of the CBM and VBM of the (a) \
+8-zPNR and (b) 10-aPNR. The distribution of charge densities shows both \
+electrons and holes are distributed in the center of ribbons. (c) Variation \
+of band gaps of aPNRs (up to 5.8 nm) and zPNRs (up to 8.1 nm) as a function \
+of ribbon width N. The scale law of band gap is $\\\\sim 1/w$ for zPNRs and  \
+$\\\\sim 1/w^2$ for aPNRs, where $w$ is width of ribbon (in unit of \
+Angstrom). The blue dashed line indicates the band gap of monolayer \
+phosphorene.}%\\n\\\\end{figure}\\n\\n\\\\begin{figure}[ptb]\\n\\\\centering\\\
+n\\\\includegraphics \
+[width=0.8\\\\textwidth]{fig3.pdf}\\\\newline\\n\\\\caption{(Color online) \
+The current density of aPNR (a) and zPNR (b) at the energy level sampling on \
+the VBM, which shows the transport channels are at the center of \
+ribbons.}%\\n\\\\label{fig3}%\\n\\\\end{figure}\\n\\nWe further examined \
+dependence of band gaps of hydrogen saturated PNRs on ribbon width $N$. As \
+shown in \\\\textbf{Fig. 2(c)}, band gaps of both aPNRs and zPNRs decrease \
+monotonously with increasing ribbon width and eventually converge to the band \
+gap of 2D phosphorene. It is noted that the band gap of aPNRs approaches to \
+the 2D limit faster than zPNRs. This\\nis because charges in aPNS are more \
+localized in the central part of the nanoribbon, as shown by the charge \
+density and isovalue bar in \\\\textbf{Figs. 2(a) and 2(b)}, and therefore \
+less affected by the edges, compared to zPNRs. In contrast, even though the \
+band gaps of zigzag nanoribbons of MoS$_2$, BN and graphene vary monotonously \
+with ribbon width, the band gaps of \\\\emph{armchair} nanoribbons of \
+MoS$_2$, BN and graphene nanoribbons all show an oscillatory behavior as a \
+function of ribbon width, due to changes in the symmetry\\nof wave function \
+of the edge states as the width of the ribbon increases. Compared to the \
+chirality dependent properties of MoS$_{2}$ and graphene nanoribbons, the \
+robust semiconducting behavior and monotonous width-dependence of band gap of \
+PNRs make PNRs a more promising candidate than MoS$_{2}$ and graphene \
+nanoribbons for PNRs-based FETs.\\n\\n\\n\\\\section{Transport properties}\\n\
+\\n\\\\subsection{Transport channels}\\n\\nTo study the transport properties \
+of phosphorene nanoribbons, we first calculate the current density of both \
+armchair and zigzag PNRs without defects at the energy level sampling on the \
+valance band maximum (VBM), which can be approximately referred as applying a \
+small bias. The dangling bonds are saturated by pseudo-hydrogen. The contour \
+plots of current density of PNRs are shown in \\\\textbf{Fig. 3}. \
+Surprisedly, in contrast to other nanoribbons, such as graphene and \
+MoS$_{2}$, the transport channels in both armchair \\\\textbf{(Fig. 3(a))} \
+and zigzag PNRs \\\\textbf{(Fig. 3(b))} are in the interior of PNRs, and the \
+electron densities decay from the center to two edges. The current flow \
+direction is from left to right and the current density difference is \
+demonstrated by warm color in the figures. Besides the current density, the \
+local electron transmission pathway are shown in \\\\textbf{Figs. 4(a) and \
+4(b)}. It is found that the armchair phosphorene has a characterize of \
+inter-layer transport, whereas the zigzag phosphorene shows a characterize of \
+intra-layer transport, which may be one of the reasons of anisotropic \
+conductivity of phosphorene in the \
+experiment.\\\\cite{Liu2014AN}\\n\\n\\\\begin{figure}[ptb]\\n\\\\centering\\n\
+\\\\includegraphics \
+[width=0.8\\\\textwidth]{fig4.pdf}\\\\newline\\n\\\\caption{(Color online) \
+The local electron transmission pathway of armchair PNRs (a) and zigzag PNRs \
+(b) with the energy level sampling on the valance band maximum. \
+}%\\n\\\\label{fig4}%\\n\\\\end{figure}\\n\\nIn order to understand the \
+central transport behavior in phosphorene nanoribbons, we further calculate \
+the charge density of both armchair and zigzag PNRs (\\\\textbf{Fig. 2}). For \
+both types of PNRs, the calculated partial charge densities indicate that \
+both VBM and conduction band maximum (CBM) are contributed by hybridized \
+$s$-$p$ states of the P atoms in the \\\\emph{central} region of the \
+nanoribbons. As a matter of fact, the H-P bond is stronger than the P-P bond \
+such that the edge states of PNRs are located deep in the bands. This is \
+fundamentally different from armchair graphene and MoS$_{2}$ nanoribbons \
+whose VBM and CBM consist of mainly edge states. Therefore, the electronic \
+properties of armchair graphene and MoS$_{2}$ nanoribbons depend strongly on \
+the edge symmetry of the \
+nanoribbons.\\\\cite{Dolui2012AN,Son2006PRL,Yue2012JPCM} Having the transport \
+channels in the central region of PNRs means that carrier transport under a \
+low bias (for electrons in CBM or holes in VBM) is robust against edge \
+disorder or defects, a desired property for device \
+applications.\\n\\n\\\\subsection{Defect effect}\\n\\nIt is well known that \
+the transport channels in most nanoribbons are located at the two \
+edges.\\\\cite{Kim2008NN,Zheng2008PRB,Yue2012JPCM} A small amount of \
+edge-defects, such as vacancies and impurities, can strongly suppress the \
+carrier mobility and device conductivity as Coulomb blockage and scattering \
+centers,\\\\cite{Sols2007PRL,Shen2012PRB} which hinders the development of \
+nanoribbon devices. The unique central transport channels in PNRs may render \
+the electrons travelling in PNR-based devices insensitive to scattering of \
+edge vacancies and impurities. To verify this hypothesis, we calculate the \
+current density at VBM of zPNRs with an edge P vacancy and $H_2$-impurity, \
+which are shown in \\\\textbf{Figs. 5(a) and 5(b)}. As can be seen, the \
+current really immune to different types of edge \
+defects.\\n\\n\\\\begin{figure}[ptb]\\n\\\\centering\\n\\\\includegraphics \
+[width=0.8\\\\textwidth]{fig5.pdf}\\\\newline\\n\\\\caption{(Color online) \
+The current density of zPNR with a P vacancy defect (a) and H2 defect (b) at \
+the energy level sampling on the \
+VBM.}%\\n\\\\label{fig5}%\\n\\\\end{figure}\\n\\n\\n\\\\subsection{Bias \
+voltage effect}\\n\\nIf more carriers are explicitly injected into the \
+system, for example applying a high bias, they may want to populate deep \
+bands instead of the VBM in order to minimize the electrostatic interaction \
+between them. Thus, under a high bias, the edge transport channels might be \
+opened since these deep bands are contributed by the orbitals of edge atoms. \
+To demonstrate this assumption, i.e., whether edges conduct under a high \
+bias, we first plot the weight of states of outermost edge P atoms of the \
+aPNR onto the band structure [\\\\textbf{Fig. 6(a)}] to find the ``edge\\\" \
+bands. Because the zPNR has the similar deep edge bands, the case of zPNR is \
+not discussed here. As can be seen, the energy band at -1.02 eV is mainly \
+contributed by the orbitals of outermost edge P atoms. We next calculate the \
+current density from left to right going states at this special deep energy \
+level (-1.02 eV) as shown in \\\\textbf{Fig. 6(d)}. As can be seen, both \
+central and edge transport channels are opened if high bias voltage cover \
+deep bands. Although the transmission spectrum is different from the energy \
+band,\\\\cite{Das2014NL} we can estimate the trend based on an aPNR \
+Current-Voltage (I-V) curve (\\\\textbf{Fig. 6(e)}). The trend is (I) under a \
+very low bias (Region I), the semiconducting PNRs are not electrically \
+conducting (\\\\textbf{Fig. 6(b)}); (II) under a small bias (Region II), the \
+PNRs become conducting and the conductive channels are in the center of \
+ribbons (\\\\textbf{Fig. 6(c)}); (III) under a high bias (Region III), both \
+the central and edge channels are conducting (\\\\textbf{Fig. 6(d)}). In this \
+paper, we mainly focus on the case of low source-drain bias because the \
+sournce-drain bias is usually only a few voltage in the phosphorene \
+experiments.\\\\cite{Li2014NN,Liu2014AN}\\n\\\\begin{figure}[ptb]\\n\\\\\
+centering\\n\\\\includegraphics [width=0.9\\\\textwidth]{fig6.pdf}\\\\newline\
+\\n\\\\caption{(Color online) (a) Band structure of the armchair PNR. The red \
+solid circles indicate the weight of states of outermost edge P atoms. \
+(b)-(d) The current density at different energy levels (Ef, VBM and Ef-1.02 \
+eV). (e) A schematic diagram of the aPNR I-V curve.}%\\n\\\\label{fig6}%\\n\\\
+\\end{figure}\\n\\n\\\\section{Electric field \
+effect}\\n\\n\\n\\\\begin{figure}[ptb]\\n\\\\centering\\n\\\\includegraphics \
+[width=0.55\\\\textwidth]{fig7.pdf}\\\\newline\\n\\\\caption{(Color online) \
+Band structures of the 10-aPNR (a) and 8-zPNR (b) under electric fields. The \
+figures show VBM and CBM energy levels shift and split both in aPNRs and \
+zPNRs, leading to a reduction in the band gap and closure at the Fermi \
+level.}%\\n\\\\label{fig7}%\\n\\\\end{figure}\\n\\n\\n\\\\begin{figure}[ptb]\\\
+n\\\\centering\\n\\\\includegraphics \
+[width=0.90\\\\textwidth]{fig8.pdf}\\\\newline\\n\\\\caption{(Color online) \
+(a) and (b) The total charge density of 10-aPNRs under a 0~V/nm and 5~V/nm \
+electric field. (c) The charge density difference of (a) and (b). (d) \
+Electric field induced charge density difference \
+$\\\\Delta\\\\rho=\\\\rho_{E_{ext}}-\\\\rho_{0}$ as a function of the \
+position across the nanoribbon of the 10-aPNR. $\\\\Delta\\\\rho$ is averaged \
+over the plane perpendicular to the electric field direction (yz-plane). (e) \
+the accumulated charge $\\\\Delta\\\\rho_{acc}$ as a function of the external \
+electric field, which shows a parallel-plate-capacitor-like \
+behavior.}%\\n\\\\label{fig8}%\\n\\\\end{figure}\\n\\n\\n For the \
+field-effect-transistor application, large on/off ratio is required, which \
+means the electronic structure should be sensitive to the gate voltage or \
+external electric field as large as possible.\\\\cite{Koenig2014APL} We, \
+thus, investigate the band modulation of PNRs by an external electric field. \
+We first considered an external electric fields applied perpendicular to the \
+plane of a PNR, but found it has no effect to the band gap of the PNR. We \
+thus conclude that a planar phosphorene nanostructure with a longitudinal \
+gate will not be electronically responsive. On the other hand, when an \
+in-plane transverse electric field is applied across the nanoribbon, \
+significant changes in band structures are induced for both aPNRs and zPNRs. \
+\\\\textbf{Figure 7} shows the external electric field-dependence of the band \
+gaps of aPNR and zPNR. Compared to the band structure without electric field \
+(0 V/nm), the energy bands of degenerate edge states above CBM and below VBM \
+under the electric field show certain degree of splitting and localization \
+[see very right panel in \\\\textbf{Fig. 7(a) and 7(b)}], which pushes the \
+CBM and VBM closer to the Fermi level, leading to the band gap narrowing. \
+Note that this behavior is in contrast to the electric field effect on band \
+structures of other nanoribbons, in which the CBM and VBM are consisted of \
+edge states. Under an external electric field, these CBM and VBM bands are \
+split, narrowing the band gap. \\\\textbf{Figures 8(a) and 8(b)} show the \
+total charge density distribution of 10-aPNRs without electric field and \
+under a 5~V/nm field. \\\\textbf{Figure 8(c)} shows the charge density \
+difference of \\\\textbf{Figures 8(a) and 8(b)}. As can be seen, the in-plane \
+transverse electric field induces obvious charge redistributions, with holes \
+in the VBM shifting in the direction of the field, towards the edge with low \
+electrical potential, and electrons in CBM in opposite direction. What we see \
+here is actually a giant Stark effect \
+(GSE).\\\\cite{Zhang2008PRB,Zheng2008PRB} The applied transverse electric \
+field breaks the symmetry of the nanoribbon, induces a difference of \
+electrostatic potential across the nanoribbon, splits the edge energy levels \
+above CBM and below VBM, and leads to the band gap narrowing. This can be \
+further verified by a quantitative charge density redistribution analysis. \
+The electric field induced charge density difference, $\\\\Delta\\\\rho$, as \
+a function of the position across the nanoribbon is shown in \\\\textbf{Fig. \
+8(d)}. $\\\\Delta\\\\rho$ is defined as \
+$\\\\Delta\\\\rho=\\\\rho_{E_{ext}}-\\\\rho_{0}$, where $\\\\rho_{E_{ext}}$ \
+and $\\\\rho_{0}$ are the charge densities with and without applied external \
+electric fields, respectively. $\\\\Delta\\\\rho$ has also been averaged over \
+the plane perpendicular to the electric field direction (xy-plane) for easy \
+understanding. As can be seen, charges accumulate at the positive potential \
+ribbon edge, while deplete at the negative potential ribbon edge. When the \
+electric field increases, there are more charge accumulation and depletion at \
+each edge of the ribbon, which will further narrow the band gap and finally \
+close it. The accumulated charge $\\\\Delta\\\\rho_{acc}$, which is defined \
+as the integration of $\\\\Delta\\\\rho$ from the ribbon middle point to the \
+ribbon edge \
+($\\\\Delta\\\\rho_{acc}=\\\\int\\\\nolimits_{x_{edge}}^{x_{middle}}\\\\Delta\
+\\\\rho (x)dx$), as a function of applied external electric fields is also \
+shown in \\\\textbf{Fig. 8(e)}. There is an obvious linear relationship \
+between $\\\\Delta\\\\rho_{acc}$ and the field. This \
+parallel-plate-capacitor-like behavior directly indicates the Stark \
+effect.\\n\\n\\n\\\\begin{figure}[ptb]\\n\\\\centering\\n\\\\includegraphics \
+[width=0.95\\\\textwidth]{fig9.pdf}\\\\newline\\n\\\\caption{(Color online) \
+Variation of band gaps of zPNRs (a) and aPNRs (b) as a function of external \
+electric field. Three different widths of ribbons were considered for each \
+case. (c) Calculated giant Stark effect coefficient S$_{L}$ as a function of \
+the ribbon width W.}%\\n\\\\label{fig9}%\\n\\\\end{figure}\\n\\n\\n\\n To \
+estimate the intensity of the GSE, different widths ($N=8, 12, 16$ for zPNR \
+and $N=10,15,20$ for aPNR) were considered in each case in \\\\textbf{Fig. \
+9(a) and 9(b)}. Overall, the band gap decreases linearly with increasing \
+electric field, similar to the trend found in the cases of armchair \
+nanoribbons of MoS$_{2}$ and BN \
+.\\\\cite{Dolui2012AN,Park2008Nl,Zhang2008PRB,Zheng2008PRB} When the field \
+reaches a certain critical value, the band gap becomes zero, exhibiting a \
+field-induced metal-insulator-transition. For both aPNRs and zPNRs, the \
+electric field effect is more appreciable in wider nanoribbons. For example, \
+based on PBE, an electric field as high as 6 V/nm is required to close the \
+gap of 8-zPNR, compared to the critical field of 2 V/nm for 16-zPNR. The \
+enhanced sensitivity to electric field in wider PNRs is important, as it \
+means the band gap of a wide PNR can be tuned by a relatively weak electric \
+field. The method is applicable to experimentally available nanoribbons which \
+are typically of more than tens of nanometers in width. Next, we took the \
+linear part of the band gap curves in \\\\textbf{Fig. 9(a) and 9(b)}, then \
+calculated the linear GSE coefficient $S_{L}$ using $\\\\frac{\\\\Delta \
+E_{g}}{\\\\Delta E_{ext}}=-eS_{L}$, where $E_{ext}$ is the external electric \
+field and $e$ is the electron charge. The external electric field induces a \
+potential of $eE_{ext}x$ across the ribbon, therefore, the band gap change is \
+approximately $\\\\Delta E_{g}=eE_{ext}\\\\left(  \\\\left\\\\langle \
+x\\\\right\\\\rangle _{cb}-\\\\left\\\\langle x\\\\right\\\\rangle \
+_{vb}\\\\right)$, where $\\\\left\\\\langle x\\\\right\\\\rangle _{cb}$ and $\
+\\\\left\\\\langle x\\\\right\\\\rangle_{vb}$ are the centers of the CBM and \
+VBM respectively.\\\\cite{Zheng2008PRB} Since $\\\\left(  \\\\left\\\\langle \
+x\\\\right\\\\rangle _{cb}-\\\\left\\\\langle x\\\\right\\\\rangle \
+_{vb}\\\\right)  $ is proportional to the ribbon width $W$ (in unit of \
+Angstrom), using the two equations above we can get the linear scaling law of \
+the GSE coefficient $S_{L}$ on the ribbon width $W$, $S_{L}=\\\\alpha W+C$, \
+where $\\\\alpha$ is the slope of the line and $C$ is a constant. Our \
+calculated GSE coefficient $S_{L}$ as a function of ribbon width $W$ is given \
+in \\\\textbf{Fig. 9(c)} and it demonstrates the linear relationship of \
+$S_{L}$ and $W$, following the GSE mechanism. The slopes of aPNR and zPNR are \
+0.27 and 0.17, respectively, which are much higher than that of CNTs \
+\\\\cite{Son2005PRL} because of the reduced screening of the electric field. \
+As can be seen, the two lines cross at about 13 \\\\AA. Since the GSE \
+coefficient $S_{L}$ indicates the ability of band gap tuning by electric \
+fields, we know that the electronic structure of wider aPNRs (ribbon widths \
+$>$13 \\\\AA) is more sensitive to the external electric field than zPNRs.\\n\
+\\n\\\\section{Device design}\\n\\nThis giant Stark effect can be utilized to \
+design PNRs-based transistors. Taking zigzag PNRs in \\\\textbf{Fig. 1(a)} as \
+an example, we demonstrate that the PNR-FETs can have high on/off ratio. The \
+designed FET is shown in \\\\textbf{Fig. 10(a)}, where unsaturated zPNRs are \
+used as metallic electrodes.\\\\cite{Guo2014JPCC,Peng2014MRE} In the middle \
+part of the device, saturated zPNRs (by pseudo-hydrogen) serve as tunneling \
+barriers with top and bottom gates to generate a transverse electric field. \
+This is an all-phosphorus based FET which can avoid the metal-semiconductor \
+interfacial contact effect on the transport property. The calculated \
+transmission spectrum of the zPNR based FET under zero and 7 V/nm electric \
+fields without source-drain voltage are shown in \\\\textbf{Fig. 10(b)}. Due \
+to the semiconducting characteristic of saturated zPNRs, there is no \
+transmission states near the Fermi level under zero electric field with a \
+transmission gap of 1.9 eV. When an electric field of 7 V/nm is applied, a \
+transmission peak emerges at the Fermi level with sufficient large dispersion \
+(-0.1 eV to +0.2 eV), not a usual Van Hove-like singularity in \
+one-dimensional materials. This means that the on-state of the FET can be \
+stable at room temperature. The transmission eigenchannels at E$_{f}$ and at \
+the (0,0) point of the $k$-space, presented in \\\\textbf{Fig. 10(c)}, \
+vividly illustrate off- and on-state of the zPNRs based FET controlled by a \
+dual-gate induced electric field. Without an external transverse electric \
+field, the calculated transmission eigenvalue is 0.001 G$_0$ (G$_0$ = \
+2$e^2/h$, where $e$ and $h$ are the electron charge and Planck`s constant, \
+respectively), and thus the transmission channels are blocked, resulting an \
+off-state. On the contrary, with the external transverse field of 7 V/nm, the \
+transmission eigenvalue reaches the value of 1 G$_0$ and the transmission \
+channels are opened (on-state), with on/off ratio of 10$^3$. Because of the \
+quantum confinement effect, the on/off ratio of PNR-FETs is 2 order lower \
+than phosphorene FETs (10$^5$) [ref. 21], but comparable to graphene and \
+MoS$_2$ nanoribbon FETs .\\\\cite{Koenig2014APL,Li2014NN} The calculated \
+density of states (DOS) of the scattering region under an external electric \
+field of 7 V/nm is shown in the inset of \\\\textbf{Fig. 10(b)}. Our \
+calculated DOS shows a peak at the Fermi level, which implies a strong \
+correlation between transmission and DOS. The physics of such strong \
+correlation is that the transport at the Fermi level is dominated by resonant \
+tunneling through interface states (see \\\\textbf{Fig. 10c}), not barrier \
+tunneling.\\n\\n\\\\begin{figure}[ptb]\\n\\\\centering\\n\\\\includegraphics \
+[width=0.85\\\\textwidth]{fig10.pdf}\\\\newline\\n\\\\caption{(Color online) \
+(a) Top view of a dual-gate field effect transistor based on zPNR. \
+Semi-infinite metallic bare zPNRs serves as two leads while hydrogen \
+saturated zPNR is used as semiconducting channel (scattering area). (b) \
+Transmission spectrum under E = 0 V/nm (black line) and E = 7 V/nm (red \
+line). Inset: the DOS of the hydrogen saturated zPNR (the scattering region) \
+under an external electric field of 7 V/nm. (c) Transmission eigenstates at \
+E$_{f}$ and at the (0,0) point of the k space under E = 0 V/nm and E = 7 \
+V/nm. }%\\n\\\\label{fig10}%\\n\\\\end{figure}\\n\\n\\n\\\\section{\
+Conclusions and discussions}\\n\\nIn conclusion, based on both electronic and \
+transport calculations, we report unique electronic band structures and \
+carrier transport properties in phosphene nanoribbons. For example, 1) the \
+central atoms contribute to the states of VBM and CBM; 2) the transport is \
+achiral and robust under low  bias, which can offer more feasibility of using \
+PNRs to fabricate nano-scale FETs easily. Meanwhile, the electric field can \
+effectively switch on transport channels of semiconducting PNRs due to the \
+giant Stark effect. Thus, high on/off ratio can be demonstrated in a \
+dual-gate PNR-FET. Furthermore, our calculation results imply that the direct \
+bandgap behavior of aPNRs is not affected by the electric field during \
+bandgap modulation, which indicates the potential application of aPNRs in \
+opto-electronics as well. Furthermore, recently zPNRs are reported having \
+magnetic behavior which sheds light on PNRs in spintronics \
+applications.\\\\cite{Du2015SR,Zhu2014APL}\\n\\n\\n\\n\\n\\\\section{\
+Acknowledgement}\\n\\nThe Authors thank M. G. Zeng for helpful discussion on \
+the FET devices. The first-principles calculations were carried out on the \
+GRC-NUS high-performance computing \
+facilities.\\n\\n\\n\\n\\\\section{Appendix}\\n\\nIn the transport \
+calculations, the device system is compose of a finite\\ncentral (C) region \
+sandwiched between semi-infinite left (L) and right (R)\\nelectrodes. To \
+decompose the Kohn-Sham equation into these three regions, the\\nlocal \
+orbital basis set $\\\\left\\\\{  {\\\\psi}_{i}\\\\right\\\\}  $ is adopted. \
+Under such\\na condition, the Hamiltonian $H$ can be written \
+as%\\n\\n\\\\[\\nH_{ij}=\\\\left\\\\langle {\\\\psi}_{i}\\\\right\\\\vert \
+{-\\\\frac{\\\\hbar^{2}}{2m}\\\\nabla\\n^{2}+V_{eff}}\\\\left\\\\vert \
+{{\\\\psi}_{j}}\\\\right\\\\rangle ,\\n\\\\]\\nwhere ${V_{eff}}$ is the \
+Kohn-Sham effective potential, and overlap matrix $S$\\nis defined as\\n\\\\[\
+\\nS_{ij}=\\\\left\\\\langle {\\\\psi}_{i}\\\\right\\\\vert \\\\left.  \
+{{\\\\psi}_{j}}\\\\right\\\\rangle .\\n\\\\]\\n\\n\\nThus, the Green's \
+function for the central region to describe the device can\\nbe evaluated by%\
+\\n\\\\[\\nG(E)=\\\\left[  \
+(E+i\\\\delta_{+})S-H-\\\\Sigma_{L}(E)-\\\\Sigma_{R}(E)\\\\right]  \
+^{-1},\\n\\\\]\\nwhere $S$ and $H$ are the overlap matrix and the system \
+Hamiltonian of the\\ncentral region, respecitvely, $\\\\Sigma_{L/R}$ is the \
+self energy which\\ndescribes the coupling between the central region and the \
+left/right\\nelectrode, and $\\\\delta_{+}$\\\\ is a positive \
+infinitesimal.\\n\\nThen, the density matrix $D$ can be calculated from the \
+above Green's \
+function%\\n\\n\\\\[\\nD=-\\\\frac{1}{\\\\pi}{\\\\text{Im}}\\\\int G(E)f(E-\\\
+\\mu)dE,\\n\\\\]\\nwhere, $f$ and $\\\\mu$ are the Fermi function and the \
+chemical potential\\nrespectively. After that one gets the electron \
+density%\\n\\n\\\\[\\n\\\\rho(\\\\mathbf{r})=\\\\sum_{i,j}{\\\\psi}_{i}(\\\\\
+mathbf{r})D_{i,j}{\\\\psi}_{{j}%\\n}(\\\\mathbf{r}).\\n\\\\]\\n\\n\\\
+nAccording to the Kohn-Sham theory, the Hamiltonian $H$ depends on the \
+electron\\ndensity $\\\\rho(\\\\mathbf{r})$. Therefore, one can use a \
+self-consistent iteration\\nscheme to find the ground state of the system. \
+When the system finally\\nconverges to its ground state, the transmission can \
+be calculated using\\n\\\\[\\nT(E)=Tr[\\\\Gamma_{L}(E)G(E)\\\\Gamma_{R}(E)G^{\
+\\\\dagger}(E)],\\n\\\\]\\nwhere $\\\\Gamma_{L/R}$ is the coupling matrix for \
+the left/right electrode,\\n$G/G^{\\\\dagger}$ is the retarded/advanced \
+Green's function matrix. The current\\ndensity is evaluated \
+by%\\n\\n\\\\[\\nJ(r,E)=-\\\\frac{e\\\\hbar}{4\\\\pi \
+m}\\\\int\\\\sum_{i,j}G_{i,j}^{<}(E)\\\\psi_{i}\\\\nabla\\n\\\\psi_{j}dE,\\n\\\
+\\]\\nwhere $G^{<}(E)=G(E)\\\\Gamma_{L/R}(E)G^{\\\\dagger}(E)w(E)$ is the \
+lesser Green\\nfunction, in which, $G$ is the retarded Green function, \
+$\\\\Gamma$ is the\\ncoupling matrix, and $w(E)=f_{R}(E)-f_{L}(E)$ is a \
+spectral weight given by\\nthe left/right Fermi function. The positive \
+current means current from left to\\nright (warm color in the contour plot). \
+Through the definition of the spectral\\nweight $w(E)$, one can use the \
+current density to analyze zero bias \
+calculations.\\n\\n\\n\\n\\n%\\\\bibliography{phosphorene}\\n%merlin.mbs \
+apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked\\n%Control: key \
+(0)\\n%Control: author (8) initials jnrlst\\n%Control: editor formatted (1) \
+identically to author\\n%Control: production of article title (-1) \
+disabled\\n%Control: page (0) single\\n%Control: year (1) \
+truncated\\n%Control: production of eprint (0) \
+enabled\\n\\\\begin{thebibliography}{52}%\\n\\\\makeatletter\\n\\\\\
+providecommand \\\\@ifxundefined [1]{%\\n \\\\@ifx{#1\\\\undefined}\\n}%\\n\\\
+\\providecommand \\\\@ifnum [1]{%\\n \\\\ifnum #1\\\\expandafter \
+\\\\@firstoftwo\\n \\\\else \\\\expandafter \\\\@secondoftwo\\n \
+\\\\fi\\n}%\\n\\\\providecommand \\\\@ifx [1]{%\\n \\\\ifx #1\\\\expandafter \
+\\\\@firstoftwo\\n \\\\else \\\\expandafter \\\\@secondoftwo\\n \
+\\\\fi\\n}%\\n\\\\providecommand \\\\natexlab [1]{#1}%\\n\\\\providecommand \
+\\\\enquote  [1]{``#1''}%\\n\\\\providecommand \\\\bibnamefont  [1]{#1}%\\n\\\
+\\providecommand \\\\bibfnamefont [1]{#1}%\\n\\\\providecommand \
+\\\\citenamefont [1]{#1}%\\n\\\\providecommand \\\\href@noop \
+[0]{\\\\@secondoftwo}%\\n\\\\providecommand \\\\href [0]{\\\\begingroup \
+\\\\@sanitize@url \\\\@href}%\\n\\\\providecommand \
+\\\\@href[1]{\\\\@@startlink{#1}\\\\@@href}%\\n\\\\providecommand \
+\\\\@@href[1]{\\\\endgroup#1\\\\@@endlink}%\\n\\\\providecommand \
+\\\\@sanitize@url [0]{\\\\catcode `\\\\\\\\12\\\\catcode \
+`\\\\$12\\\\catcode\\n  `\\\\&12\\\\catcode `\\\\#12\\\\catcode \
+`\\\\^12\\\\catcode `\\\\_12\\\\catcode \
+`\\\\%12\\\\relax}%\\n\\\\providecommand \
+\\\\@@startlink[1]{}%\\n\\\\providecommand \
+\\\\@@endlink[0]{}%\\n\\\\providecommand \\\\url  \
+[0]{\\\\begingroup\\\\@sanitize@url \\\\@url }%\\n\\\\providecommand \\\\@url \
+[1]{\\\\endgroup\\\\@href {#1}{\\\\urlprefix }}%\\n\\\\providecommand \
+\\\\urlprefix  [0]{URL }%\\n\\\\providecommand \\\\Eprint [0]{\\\\href \
+}%\\n\\\\providecommand \\\\doibase \
+[0]{http://dx.doi.org/}%\\n\\\\providecommand \\\\selectlanguage \
+[0]{\\\\@gobble}%\\n\\\\providecommand \\\\bibinfo  [0]{\\\\@secondoftwo}%\\n\
+\\\\providecommand \\\\bibfield  [0]{\\\\@secondoftwo}%\\n\\\\providecommand \
+\\\\translation [1]{[#1]}%\\n\\\\providecommand \\\\BibitemOpen \
+[0]{}%\\n\\\\providecommand \\\\bibitemStop [0]{}%\\n\\\\providecommand \
+\\\\bibitemNoStop [0]{.\\\\EOS\\\\space}%\\n\\\\providecommand \\\\EOS [0]{\\\
+\\spacefactor3000\\\\relax}%\\n\\\\providecommand \\\\BibitemShut  \
+[1]{\\\\csname \
+bibitem#1\\\\endcsname}%\\n\\\\let\\\\auto@bib@innerbib\\\\@empty\\n%</\
+preamble>\\n\\\\bibitem [{\\\\citenamefont \
+{Schwierz}(2010)}]{Schwierz2010NN}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  \
+{author} {\\\\bibinfo {author} {\\\\bibfnamefont {F.}~\\\\bibnamefont\\n  \
+{Schwierz}},\\\\ }\\\\href@noop {} {\\\\bibfield  {journal} {\\\\bibinfo  \
+{journal} {Nat.\\n  Nanotechnol.}\\\\ }\\\\textbf {\\\\bibinfo {volume} {5}},\
+\\\\ \\\\bibinfo {pages} {487}\\n  (\\\\bibinfo {year} \
+{2010})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont \
+{Radisavljevic}\\\\ \\\\emph {et~al.}(2011)\\\\citenamefont\\n  \
+{Radisavljevic}, \\\\citenamefont {Radenovic}, \\\\citenamefont {Brivio},\\n  \
+\\\\citenamefont {Giacometti},\\\\ and\\\\ \\\\citenamefont \
+{Kis}}]{Radisavljevic2011NN}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} \
+{\\\\bibinfo {author} {\\\\bibfnamefont {B.}~\\\\bibnamefont\\n  \
+{Radisavljevic}}, \\\\bibinfo {author} {\\\\bibfnamefont {A.}~\\\\bibnamefont\
+\\n  {Radenovic}}, \\\\bibinfo {author} {\\\\bibfnamefont \
+{J.}~\\\\bibnamefont {Brivio}},\\n  \\\\bibinfo {author} {\\\\bibfnamefont \
+{V.}~\\\\bibnamefont {Giacometti}}, \\\\ and\\\\\\n  \\\\bibinfo {author} {\\\
+\\bibfnamefont {A.}~\\\\bibnamefont {Kis}},\\\\ }\\\\href@noop {}\\n  \
+{\\\\bibfield  {journal} {\\\\bibinfo  {journal} {Nat. Nanotechnol.}\\\\ \
+}\\\\textbf\\n  {\\\\bibinfo {volume} {6}},\\\\ \\\\bibinfo {pages} {147} (\\\
+\\bibinfo {year}\\n  {2011})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem \
+[{\\\\citenamefont {Kim}\\\\ and\\\\ \\\\citenamefont \
+{Kim}(2008)}]{Kim2008NN}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} \
+{\\\\bibinfo {author} {\\\\bibfnamefont {W.~Y.}\\\\ \\\\bibnamefont\\n  \
+{Kim}}\\\\ and\\\\ \\\\bibinfo {author} {\\\\bibfnamefont {K.~S.}\\\\ \
+\\\\bibnamefont {Kim}},\\\\\\n  }\\\\href@noop {} {\\\\bibfield  {journal} \
+{\\\\bibinfo  {journal} {Nat.\\n  Nanotechnol.}\\\\ }\\\\textbf {\\\\bibinfo \
+{volume} {3}},\\\\ \\\\bibinfo {pages} {408}\\n  (\\\\bibinfo {year} {2008})}\
+\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Zheng}\\\\ \
+\\\\emph {et~al.}(2008)\\\\citenamefont {Zheng},\\n  \\\\citenamefont {Liu}, \
+\\\\citenamefont {Wu}, \\\\citenamefont {Duan},\\\\ and\\\\\\n  \
+\\\\citenamefont {Gu}}]{Zheng2008PRB}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  \
+{author} {\\\\bibinfo {author} {\\\\bibfnamefont {F.}~\\\\bibnamefont\\n  \
+{Zheng}}, \\\\bibinfo {author} {\\\\bibfnamefont {Z.}~\\\\bibnamefont {Liu}}, \
+\\\\bibinfo\\n  {author} {\\\\bibfnamefont {J.}~\\\\bibnamefont {Wu}}, \
+\\\\bibinfo {author}\\n  {\\\\bibfnamefont {W.}~\\\\bibnamefont {Duan}}, \\\\ \
+and\\\\ \\\\bibinfo {author}\\n  {\\\\bibfnamefont {B.-L.}\\\\ \
+\\\\bibnamefont {Gu}},\\\\ }\\\\href@noop {} {\\\\bibfield\\n  {journal} \
+{\\\\bibinfo  {journal} {Phys. Rev. B}\\\\ }\\\\textbf {\\\\bibinfo \
+{volume}\\n  {78}},\\\\ \\\\bibinfo {pages} {085423} (\\\\bibinfo {year} \
+{2008})}\\\\BibitemShut\\n  {NoStop}%\\n\\\\bibitem [{\\\\citenamefont \
+{Yue}\\\\ \\\\emph {et~al.}(2012)\\\\citenamefont {Yue},\\n  \\\\citenamefont \
+{Chang}, \\\\citenamefont {Kang}, \\\\citenamefont {Zhang},\\n  \
+\\\\citenamefont {Shao}, \\\\citenamefont {Qin},\\\\ and\\\\ \\\\citenamefont\
+\\n  {Li}}]{Yue2012JPCM}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} \
+{\\\\bibinfo {author} {\\\\bibfnamefont {Q.}~\\\\bibnamefont\\n  {Yue}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont {S.}~\\\\bibnamefont {Chang}}, \
+\\\\bibinfo\\n  {author} {\\\\bibfnamefont {J.}~\\\\bibnamefont {Kang}}, \
+\\\\bibinfo {author}\\n  {\\\\bibfnamefont {X.}~\\\\bibnamefont {Zhang}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont\\n  {Z.}~\\\\bibnamefont {Shao}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont {S.}~\\\\bibnamefont\\n  {Qin}}, \\\\ \
+and\\\\ \\\\bibinfo {author} {\\\\bibfnamefont {J.}~\\\\bibnamefont \
+{Li}},\\\\\\n  }\\\\href@noop {} {\\\\bibfield  {journal} {\\\\bibinfo  \
+{journal} {J. Phys.: Condens.\\n  Matter}\\\\ }\\\\textbf {\\\\bibinfo \
+{volume} {24}},\\\\ \\\\bibinfo {pages} {335501}\\n  (\\\\bibinfo {year} \
+{2012})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Sols}\\\\ \
+\\\\emph {et~al.}(2007)\\\\citenamefont {Sols},\\n  \\\\citenamefont \
+{Guinea},\\\\ and\\\\ \\\\citenamefont {Neto}}]{Sols2007PRL}%\\n  \
+\\\\BibitemOpen\\n  \\\\bibfield  {author} {\\\\bibinfo {author} \
+{\\\\bibfnamefont {F.}~\\\\bibnamefont\\n  {Sols}}, \\\\bibinfo {author} \
+{\\\\bibfnamefont {F.}~\\\\bibnamefont {Guinea}}, \\\\ and\\\\\\n  \
+\\\\bibinfo {author} {\\\\bibfnamefont {A.~H.~C.}\\\\ \\\\bibnamefont \
+{Neto}},\\\\ }\\\\href\\n  {\\\\doibase 10.1103/PhysRevLett.99.166803} \
+{\\\\bibfield  {journal} {\\\\bibinfo\\n  {journal} {Phys. Rev. Lett.}\\\\ \
+}\\\\textbf {\\\\bibinfo {volume} {99}},\\\\ \\\\bibinfo\\n  {pages} {166803} \
+(\\\\bibinfo {year} {2007})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem \
+[{\\\\citenamefont {Shen}\\\\ \\\\emph {et~al.}(2012)\\\\citenamefont {Shen},\
+\\n  \\\\citenamefont {Zeng}, \\\\citenamefont {Li}, \\\\citenamefont \
+{Sullivan},\\\\ and\\\\\\n  \\\\citenamefont {Feng}}]{Shen2012PRB}%\\n  \
+\\\\BibitemOpen\\n  \\\\bibfield  {author} {\\\\bibinfo {author} \
+{\\\\bibfnamefont {L.}~\\\\bibnamefont\\n  {Shen}}, \\\\bibinfo {author} \
+{\\\\bibfnamefont {M.}~\\\\bibnamefont {Zeng}}, \\\\bibinfo\\n  {author} \
+{\\\\bibfnamefont {S.}~\\\\bibnamefont {Li}}, \\\\bibinfo {author}\\n  \
+{\\\\bibfnamefont {M.~B.}\\\\ \\\\bibnamefont {Sullivan}}, \\\\ and\\\\ \
+\\\\bibinfo {author}\\n  {\\\\bibfnamefont {Y.~P.}\\\\ \\\\bibnamefont \
+{Feng}},\\\\ }\\\\href@noop {} {\\\\bibfield\\n  {journal} {\\\\bibinfo  \
+{journal} {Phys. Rev. B}\\\\ }\\\\textbf {\\\\bibinfo {volume}\\n  {86}},\\\\ \
+\\\\bibinfo {pages} {115419} (\\\\bibinfo {year} {2012})}\\\\BibitemShut\\n  \
+{NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Wang}\\\\ \\\\emph {et~al.}(2008)\
+\\\\citenamefont {Wang},\\n  \\\\citenamefont {Ouyang}, \\\\citenamefont \
+{Li}, \\\\citenamefont {Wang},\\n  \\\\citenamefont {Guo},\\\\ and\\\\ \
+\\\\citenamefont {Dai}}]{Wang2008PRL}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  \
+{author} {\\\\bibinfo {author} {\\\\bibfnamefont {X.}~\\\\bibnamefont\\n  \
+{Wang}}, \\\\bibinfo {author} {\\\\bibfnamefont {Y.}~\\\\bibnamefont \
+{Ouyang}},\\n  \\\\bibinfo {author} {\\\\bibfnamefont {X.}~\\\\bibnamefont \
+{Li}}, \\\\bibinfo {author}\\n  {\\\\bibfnamefont {H.}~\\\\bibnamefont \
+{Wang}}, \\\\bibinfo {author} {\\\\bibfnamefont\\n  {J.}~\\\\bibnamefont \
+{Guo}}, \\\\ and\\\\ \\\\bibinfo {author} {\\\\bibfnamefont\\n  \
+{H.}~\\\\bibnamefont {Dai}},\\\\ }\\\\href@noop {} {\\\\bibfield  {journal} {\
+\\\\bibinfo\\n  {journal} {Phys. Rev. Lett.}\\\\ }\\\\textbf {\\\\bibinfo \
+{volume} {100}},\\\\ \\\\bibinfo\\n  {pages} {206803} (\\\\bibinfo {year} \
+{2008})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Son}\\\\ \
+\\\\emph {et~al.}(2006)\\\\citenamefont {Son},\\n  \\\\citenamefont \
+{Cohen},\\\\ and\\\\ \\\\citenamefont {Louie}}]{Son2006PRL}%\\n  \
+\\\\BibitemOpen\\n  \\\\bibfield  {author} {\\\\bibinfo {author} \
+{\\\\bibfnamefont {Y.-W.}\\\\ \\\\bibnamefont\\n  {Son}}, \\\\bibinfo \
+{author} {\\\\bibfnamefont {M.~L.}\\\\ \\\\bibnamefont {Cohen}}, \\\\\\n  and\
+\\\\ \\\\bibinfo {author} {\\\\bibfnamefont {S.~G.}\\\\ \\\\bibnamefont \
+{Louie}},\\\\\\n  }\\\\href@noop {} {\\\\bibfield  {journal} {\\\\bibinfo  \
+{journal} {Phys. Rev. Lett.}\\\\\\n  }\\\\textbf {\\\\bibinfo {volume} {97}},\
+\\\\ \\\\bibinfo {pages} {216803} (\\\\bibinfo\\n  {year} \
+{2006})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Li}\\\\ \
+\\\\emph {et~al.}(2008)\\\\citenamefont {Li},\\n  \\\\citenamefont {Zhou}, \\\
+\\citenamefont {Zhang},\\\\ and\\\\ \\\\citenamefont\\n  \
+{Chen}}]{Li2008JACS}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} \
+{\\\\bibinfo {author} {\\\\bibfnamefont {Y.}~\\\\bibnamefont\\n  {Li}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont {Z.}~\\\\bibnamefont {Zhou}}, \
+\\\\bibinfo\\n  {author} {\\\\bibfnamefont {S.}~\\\\bibnamefont {Zhang}}, \
+\\\\ and\\\\ \\\\bibinfo {author}\\n  {\\\\bibfnamefont {Z.}~\\\\bibnamefont \
+{Chen}},\\\\ }\\\\href@noop {} {\\\\bibfield\\n  {journal} {\\\\bibinfo  \
+{journal} {J. Am. Chem. Soc.}\\\\ }\\\\textbf {\\\\bibinfo\\n  {volume} \
+{130}},\\\\ \\\\bibinfo {pages} {16739} (\\\\bibinfo {year}\\n  \
+{2008})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Zhu}\\\\ \
+and\\\\ \\\\citenamefont\\n  {Tom\\\\'anek}(2014)}]{Zhu2014PRL}%\\n  \
+\\\\BibitemOpen\\n  \\\\bibfield  {author} {\\\\bibinfo {author} \
+{\\\\bibfnamefont {Z.}~\\\\bibnamefont\\n  {Zhu}}\\\\ and\\\\ \\\\bibinfo \
+{author} {\\\\bibfnamefont {D.}~\\\\bibnamefont\\n  {Tom\\\\'anek}},\\\\ \
+}\\\\href {\\\\doibase 10.1103/PhysRevLett.112.176802} {\\\\bibfield\\n  \
+{journal} {\\\\bibinfo  {journal} {Phys. Rev. Lett.}\\\\ }\\\\textbf \
+{\\\\bibinfo\\n  {volume} {112}},\\\\ \\\\bibinfo {pages} {176802} \
+(\\\\bibinfo {year}\\n  {2014})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem \
+[{\\\\citenamefont {Zhu}\\\\ \\\\emph {et~al.}(2015)\\\\citenamefont \
+{Zhu},\\n  \\\\citenamefont {Guan},\\\\ and\\\\ \\\\citenamefont \
+{Tom\\\\'anek}}]{Zhu2015PRB}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} \
+{\\\\bibinfo {author} {\\\\bibfnamefont {Z.}~\\\\bibnamefont\\n  {Zhu}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont {J.}~\\\\bibnamefont {Guan}}, \\\\ and\
+\\\\\\n  \\\\bibinfo {author} {\\\\bibfnamefont {D.}~\\\\bibnamefont \
+{Tom\\\\'anek}},\\\\ }\\\\href\\n  {\\\\doibase 10.1103/PhysRevB.91.161404} {\
+\\\\bibfield  {journal} {\\\\bibinfo\\n  {journal} {Phys. Rev. B}\\\\ \
+}\\\\textbf {\\\\bibinfo {volume} {91}},\\\\ \\\\bibinfo\\n  {pages} {161404} \
+(\\\\bibinfo {year} {2015})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem \
+[{\\\\citenamefont {Guan}\\\\ \\\\emph\\n  \
+{et~al.}(2014{\\\\natexlab{a}})\\\\citenamefont {Guan}, \\\\citenamefont \
+{Zhu},\\\\ and\\\\\\n  \\\\citenamefont {Tom\\\\'anek}}]{Guan2014PRL2}%\\n  \
+\\\\BibitemOpen\\n  \\\\bibfield  {author} {\\\\bibinfo {author} \
+{\\\\bibfnamefont {J.}~\\\\bibnamefont\\n  {Guan}}, \\\\bibinfo {author} \
+{\\\\bibfnamefont {Z.}~\\\\bibnamefont {Zhu}}, \\\\ and\\\\\\n  \\\\bibinfo \
+{author} {\\\\bibfnamefont {D.}~\\\\bibnamefont {Tom\\\\'anek}},\\\\ \
+}\\\\href\\n  {\\\\doibase 10.1103/PhysRevLett.113.046804} {\\\\bibfield  \
+{journal} {\\\\bibinfo\\n  {journal} {Phys. Rev. Lett.}\\\\ }\\\\textbf \
+{\\\\bibinfo {volume} {113}},\\\\ \\\\bibinfo\\n  {pages} {046804} \
+(\\\\bibinfo {year} {2014}{\\\\natexlab{a}})}\\\\BibitemShut\\n  {NoStop}%\\n\
+\\\\bibitem [{\\\\citenamefont {Guan}\\\\ \\\\emph\\n  \
+{et~al.}(2014{\\\\natexlab{b}})\\\\citenamefont {Guan}, \\\\citenamefont \
+{Zhu},\\\\ and\\\\\\n  \\\\citenamefont {Tom\\\\'anek}}]{Guan2014PRL}%\\n  \\\
+\\BibitemOpen\\n  \\\\bibfield  {author} {\\\\bibinfo {author} \
+{\\\\bibfnamefont {J.}~\\\\bibnamefont\\n  {Guan}}, \\\\bibinfo {author} \
+{\\\\bibfnamefont {Z.}~\\\\bibnamefont {Zhu}}, \\\\ and\\\\\\n  \\\\bibinfo \
+{author} {\\\\bibfnamefont {D.}~\\\\bibnamefont {Tom\\\\'anek}},\\\\ \
+}\\\\href\\n  {\\\\doibase 10.1103/PhysRevLett.113.226801} {\\\\bibfield  \
+{journal} {\\\\bibinfo\\n  {journal} {Phys. Rev. Lett.}\\\\ }\\\\textbf \
+{\\\\bibinfo {volume} {113}},\\\\ \\\\bibinfo\\n  {pages} {226801} \
+(\\\\bibinfo {year} {2014}{\\\\natexlab{b}})}\\\\BibitemShut\\n  {NoStop}%\\n\
+\\\\bibitem [{\\\\citenamefont {Li}\\\\ \\\\emph \
+{et~al.}(2014{\\\\natexlab{a}})\\\\citenamefont\\n  {Li}, \\\\citenamefont \
+{Yu}, \\\\citenamefont {Ye}, \\\\citenamefont {Ge},\\n  \\\\citenamefont \
+{Ou}, \\\\citenamefont {Wu}, \\\\citenamefont {Feng}, \\\\citenamefont\\n  \
+{Chen},\\\\ and\\\\ \\\\citenamefont {Zhang}}]{Li2014NN}%\\n  \\\\BibitemOpen\
+\\n  \\\\bibfield  {author} {\\\\bibinfo {author} {\\\\bibfnamefont \
+{L.}~\\\\bibnamefont\\n  {Li}}, \\\\bibinfo {author} {\\\\bibfnamefont \
+{Y.}~\\\\bibnamefont {Yu}}, \\\\bibinfo\\n  {author} {\\\\bibfnamefont \
+{G.~J.}\\\\ \\\\bibnamefont {Ye}}, \\\\bibinfo {author}\\n  {\\\\bibfnamefont \
+{Q.}~\\\\bibnamefont {Ge}}, \\\\bibinfo {author} {\\\\bibfnamefont\\n  \
+{X.}~\\\\bibnamefont {Ou}}, \\\\bibinfo {author} {\\\\bibfnamefont \
+{H.}~\\\\bibnamefont\\n  {Wu}}, \\\\bibinfo {author} {\\\\bibfnamefont \
+{D.}~\\\\bibnamefont {Feng}}, \\\\bibinfo\\n  {author} {\\\\bibfnamefont \
+{X.~H.}\\\\ \\\\bibnamefont {Chen}}, \\\\ and\\\\ \\\\bibinfo\\n  {author} \
+{\\\\bibfnamefont {Y.}~\\\\bibnamefont {Zhang}},\\\\ }\\\\href@noop {}\\n  \
+{\\\\bibfield  {journal} {\\\\bibinfo  {journal} {Nat. Nanotechnol.}\\\\ \
+}\\\\textbf\\n  {\\\\bibinfo {volume} {9}},\\\\ \\\\bibinfo {pages} {372} (\\\
+\\bibinfo {year}\\n  {2014}{\\\\natexlab{a}})}\\\\BibitemShut \
+{NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Liu}\\\\ \\\\emph \
+{et~al.}(2014)\\\\citenamefont {Liu},\\n  \\\\citenamefont {Neal}, \
+\\\\citenamefont {Zhu}, \\\\citenamefont {Luo}, \\\\citenamefont\\n  {Xu}, \\\
+\\citenamefont {Tom{\\\\'a}nek},\\\\ and\\\\ \\\\citenamefont \
+{Ye}}]{Liu2014AN}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} \
+{\\\\bibinfo {author} {\\\\bibfnamefont {H.}~\\\\bibnamefont\\n  {Liu}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont {A.~T.}\\\\ \\\\bibnamefont \
+{Neal}},\\n  \\\\bibinfo {author} {\\\\bibfnamefont {Z.}~\\\\bibnamefont \
+{Zhu}}, \\\\bibinfo {author}\\n  {\\\\bibfnamefont {Z.}~\\\\bibnamefont \
+{Luo}}, \\\\bibinfo {author} {\\\\bibfnamefont\\n  {X.}~\\\\bibnamefont \
+{Xu}}, \\\\bibinfo {author} {\\\\bibfnamefont {D.}~\\\\bibnamefont\\n  \
+{Tom{\\\\'a}nek}}, \\\\ and\\\\ \\\\bibinfo {author} {\\\\bibfnamefont \
+{P.~D.}\\\\ \\\\bibnamefont\\n  {Ye}},\\\\ }\\\\href@noop {} {\\\\bibfield  \
+{journal} {\\\\bibinfo  {journal} {Acs Nano}\\\\\\n  } (\\\\bibinfo {year} \
+{2014})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Qiao}\\\\ \
+\\\\emph {et~al.}(2014)\\\\citenamefont {Qiao},\\n  \\\\citenamefont {Kong}, \
+\\\\citenamefont {Hu}, \\\\citenamefont {Yang},\\\\ and\\\\\\n  \
+\\\\citenamefont {Ji}}]{Qiao2014NC}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  \
+{author} {\\\\bibinfo {author} {\\\\bibfnamefont {J.}~\\\\bibnamefont\\n  \
+{Qiao}}, \\\\bibinfo {author} {\\\\bibfnamefont {X.}~\\\\bibnamefont {Kong}}, \
+\\\\bibinfo\\n  {author} {\\\\bibfnamefont {Z.-X.}\\\\ \\\\bibnamefont {Hu}}, \
+\\\\bibinfo {author}\\n  {\\\\bibfnamefont {F.}~\\\\bibnamefont {Yang}}, \\\\ \
+and\\\\ \\\\bibinfo {author}\\n  {\\\\bibfnamefont {W.}~\\\\bibnamefont \
+{Ji}},\\\\ }\\\\href {\\\\doibase 10.1038/ncomms5475}\\n  {\\\\bibfield  \
+{journal} {\\\\bibinfo  {journal} {Nat. Commun.}\\\\ }\\\\textbf {\\\\bibinfo\
+\\n  {volume} {5}},\\\\ \\\\bibinfo {pages} {4475} (\\\\bibinfo {year} \
+{2014})}\\\\BibitemShut\\n  {NoStop}%\\n\\\\bibitem [{\\\\citenamefont \
+{Rodin}\\\\ \\\\emph {et~al.}(2014)\\\\citenamefont {Rodin},\\n  \
+\\\\citenamefont {Carvalho},\\\\ and\\\\ \\\\citenamefont \
+{Castro~Neto}}]{Rodin2014PRL}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} \
+{\\\\bibinfo {author} {\\\\bibfnamefont {A.~S.}\\\\ \\\\bibnamefont\\n  \
+{Rodin}}, \\\\bibinfo {author} {\\\\bibfnamefont {A.}~\\\\bibnamefont \
+{Carvalho}}, \\\\\\n  and\\\\ \\\\bibinfo {author} {\\\\bibfnamefont \
+{A.~H.}\\\\ \\\\bibnamefont {Castro~Neto}},\\\\\\n  }\\\\href {\\\\doibase \
+10.1103/PhysRevLett.112.176801} {\\\\bibfield  {journal}\\n  {\\\\bibinfo  \
+{journal} {Phys. Rev. Lett.}\\\\ }\\\\textbf {\\\\bibinfo {volume} \
+{112}},\\\\\\n  \\\\bibinfo {pages} {176801} (\\\\bibinfo {year} \
+{2014})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont \
+{Reich}(2014)}]{Reich2014Nature}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  \
+{author} {\\\\bibinfo {author} {\\\\bibfnamefont {E.~S.}\\\\ \
+\\\\bibnamefont\\n  {Reich}},\\\\ }\\\\href@noop {} {\\\\bibfield  {journal} \
+{\\\\bibinfo  {journal}\\n  {Nature}\\\\ }\\\\textbf {\\\\bibinfo {volume} \
+{506}},\\\\ \\\\bibinfo {pages} {19}\\n  (\\\\bibinfo {year} \
+{2014})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont \
+{Churchill}\\\\ and\\\\ \\\\citenamefont\\n  \
+{Jarillo-Herrero}(2014)}]{Churchill2014NN}%\\n  \\\\BibitemOpen\\n  \
+\\\\bibfield  {author} {\\\\bibinfo {author} {\\\\bibfnamefont {H.~O.}\\\\ \\\
+\\bibnamefont\\n  {Churchill}}\\\\ and\\\\ \\\\bibinfo {author} \
+{\\\\bibfnamefont {P.}~\\\\bibnamefont\\n  {Jarillo-Herrero}},\\\\ \
+}\\\\href@noop {} {\\\\bibfield  {journal} {\\\\bibinfo\\n  {journal} {Nat. \
+Nanotechnol.}\\\\ }\\\\textbf {\\\\bibinfo {volume} {9}},\\\\ \\\\bibinfo\\n  \
+{pages} {330} (\\\\bibinfo {year} {2014})}\\\\BibitemShut \
+{NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Koenig}\\\\ \\\\emph \
+{et~al.}(2014)\\\\citenamefont {Koenig},\\n  \\\\citenamefont {Doganov}, \
+\\\\citenamefont {Schmidt}, \\\\citenamefont {Neto},\\\\ and\\\\\\n  \
+\\\\citenamefont {Oezyilmaz}}]{Koenig2014APL}%\\n  \\\\BibitemOpen\\n  \
+\\\\bibfield  {author} {\\\\bibinfo {author} {\\\\bibfnamefont {S.~P.}\\\\ \\\
+\\bibnamefont\\n  {Koenig}}, \\\\bibinfo {author} {\\\\bibfnamefont {R.~A.}\\\
+\\ \\\\bibnamefont {Doganov}},\\n  \\\\bibinfo {author} {\\\\bibfnamefont \
+{H.}~\\\\bibnamefont {Schmidt}}, \\\\bibinfo\\n  {author} {\\\\bibfnamefont \
+{A.~C.}\\\\ \\\\bibnamefont {Neto}}, \\\\ and\\\\ \\\\bibinfo\\n  {author} \
+{\\\\bibfnamefont {B.}~\\\\bibnamefont {Oezyilmaz}},\\\\ }\\\\href@noop {}\\n \
+ {\\\\bibfield  {journal} {\\\\bibinfo  {journal} {Appl. Phys. Lett.}\\\\ }\\\
+\\textbf\\n  {\\\\bibinfo {volume} {104}},\\\\ \\\\bibinfo {pages} {103106} (\
+\\\\bibinfo {year}\\n  {2014})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem \
+[{\\\\citenamefont {Fei}\\\\ and\\\\ \\\\citenamefont \
+{Yang}(2014)}]{Fei2014NL}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} {\\\
+\\bibinfo {author} {\\\\bibfnamefont {R.}~\\\\bibnamefont\\n  {Fei}}\\\\ \
+and\\\\ \\\\bibinfo {author} {\\\\bibfnamefont {L.}~\\\\bibnamefont \
+{Yang}},\\\\\\n  }\\\\href@noop {} {\\\\bibfield  {journal} {\\\\bibinfo  \
+{journal} {Nano. Lett.}\\\\\\n  }\\\\textbf {\\\\bibinfo {volume} {14}},\\\\ \
+\\\\bibinfo {pages} {2884} (\\\\bibinfo {year}\\n  {2014})}\\\\BibitemShut \
+{NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Fei}\\\\ \\\\emph \
+{et~al.}(2015)\\\\citenamefont {Fei},\\n  \\\\citenamefont {Tran},\\\\ \
+and\\\\ \\\\citenamefont {Yang}}]{Fei2015PRB}%\\n  \\\\BibitemOpen\\n  \
+\\\\bibfield  {author} {\\\\bibinfo {author} {\\\\bibfnamefont \
+{R.}~\\\\bibnamefont\\n  {Fei}}, \\\\bibinfo {author} {\\\\bibfnamefont {V.}~\
+\\\\bibnamefont {Tran}}, \\\\ and\\\\\\n  \\\\bibinfo {author} \
+{\\\\bibfnamefont {L.}~\\\\bibnamefont {Yang}},\\\\ }\\\\href {\\\\doibase\\n \
+ 10.1103/PhysRevB.91.195319} {\\\\bibfield  {journal} {\\\\bibinfo  {journal} \
+{Phys.\\n  Rev. B}\\\\ }\\\\textbf {\\\\bibinfo {volume} {91}},\\\\ \
+\\\\bibinfo {pages} {195319}\\n  (\\\\bibinfo {year} {2015})}\\\\BibitemShut \
+{NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Tran}\\\\ and\\\\ \
+\\\\citenamefont\\n  {Yang}(2014)}]{Tran2014PRB}%\\n  \\\\BibitemOpen\\n  \
+\\\\bibfield  {author} {\\\\bibinfo {author} {\\\\bibfnamefont \
+{V.}~\\\\bibnamefont\\n  {Tran}}\\\\ and\\\\ \\\\bibinfo {author} \
+{\\\\bibfnamefont {L.}~\\\\bibnamefont {Yang}},\\\\\\n  }\\\\href@noop {} {\\\
+\\bibfield  {journal} {\\\\bibinfo  {journal} {Phys. Rev. B}\\\\\\n  \
+}\\\\textbf {\\\\bibinfo {volume} {89}},\\\\ \\\\bibinfo {pages} {245407} (\\\
+\\bibinfo\\n  {year} {2014})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem \
+[{\\\\citenamefont {Tran}\\\\ \\\\emph {et~al.}(2014)\\\\citenamefont {Tran},\
+\\n  \\\\citenamefont {Soklaski}, \\\\citenamefont {Liang},\\\\ and\\\\ \
+\\\\citenamefont\\n  {Yang}}]{Tran2014PRB2}%\\n  \\\\BibitemOpen\\n  \
+\\\\bibfield  {author} {\\\\bibinfo {author} {\\\\bibfnamefont \
+{V.}~\\\\bibnamefont\\n  {Tran}}, \\\\bibinfo {author} {\\\\bibfnamefont \
+{R.}~\\\\bibnamefont {Soklaski}},\\n  \\\\bibinfo {author} {\\\\bibfnamefont \
+{Y.}~\\\\bibnamefont {Liang}}, \\\\ and\\\\ \\\\bibinfo\\n  {author} \
+{\\\\bibfnamefont {L.}~\\\\bibnamefont {Yang}},\\\\ }\\\\href@noop {} \
+{\\\\bibfield\\n   {journal} {\\\\bibinfo  {journal} {Phys. Rev. B}\\\\ \
+}\\\\textbf {\\\\bibinfo {volume}\\n  {89}},\\\\ \\\\bibinfo {pages} {235319} \
+(\\\\bibinfo {year} {2014})}\\\\BibitemShut\\n  {NoStop}%\\n\\\\bibitem \
+[{\\\\citenamefont {Guo}\\\\ \\\\emph {et~al.}(2014)\\\\citenamefont \
+{Guo},\\n  \\\\citenamefont {Lu}, \\\\citenamefont {Dai}, \\\\citenamefont \
+{Wu},\\\\ and\\\\\\n  \\\\citenamefont {Zeng}}]{Guo2014JPCC}%\\n  \
+\\\\BibitemOpen\\n  \\\\bibfield  {author} {\\\\bibinfo {author} \
+{\\\\bibfnamefont {H.}~\\\\bibnamefont\\n  {Guo}}, \\\\bibinfo {author} \
+{\\\\bibfnamefont {N.}~\\\\bibnamefont {Lu}}, \\\\bibinfo\\n  {author} \
+{\\\\bibfnamefont {J.}~\\\\bibnamefont {Dai}}, \\\\bibinfo {author}\\n  \
+{\\\\bibfnamefont {X.}~\\\\bibnamefont {Wu}}, \\\\ and\\\\ \\\\bibinfo \
+{author}\\n  {\\\\bibfnamefont {X.~C.}\\\\ \\\\bibnamefont {Zeng}},\\\\ \
+}\\\\href {\\\\doibase\\n  10.1021/jp505257g} {\\\\bibfield  {journal} \
+{\\\\bibinfo  {journal} {J. Phys. Chem.\\n  C}\\\\ }\\\\textbf {\\\\bibinfo \
+{volume} {118}},\\\\ \\\\bibinfo {pages} {14051} (\\\\bibinfo\\n  {year} \
+{2014})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Peng}\\\\ \
+\\\\emph\\n  {et~al.}(2014{\\\\natexlab{a}})\\\\citenamefont {Peng}, \
+\\\\citenamefont {Wei},\\\\ and\\\\\\n  \\\\citenamefont \
+{Copple}}]{Peng2014PRB}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} \
+{\\\\bibinfo {author} {\\\\bibfnamefont {X.}~\\\\bibnamefont\\n  {Peng}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont {Q.}~\\\\bibnamefont {Wei}}, \\\\ \
+and\\\\\\n  \\\\bibinfo {author} {\\\\bibfnamefont {A.}~\\\\bibnamefont \
+{Copple}},\\\\ }\\\\href@noop {}\\n  {\\\\bibfield  {journal} {\\\\bibinfo  \
+{journal} {Phys. Rev. B}\\\\ }\\\\textbf {\\\\bibinfo\\n  {volume} {90}},\\\\ \
+\\\\bibinfo {pages} {085402} (\\\\bibinfo {year}\\n  \
+{2014}{\\\\natexlab{a}})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem \
+[{\\\\citenamefont {Peng}\\\\ and\\\\ \\\\citenamefont \
+{Wei}(2014)}]{Peng2014MRE}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} \
+{\\\\bibinfo {author} {\\\\bibfnamefont {X.}~\\\\bibnamefont\\n  {Peng}}\\\\ \
+and\\\\ \\\\bibinfo {author} {\\\\bibfnamefont {Q.}~\\\\bibnamefont {Wei}},\\\
+\\\\n  }\\\\href {http://stacks.iop.org/2053-1591/1/i=4/a=045041} \
+{\\\\bibfield  {journal}\\n  {\\\\bibinfo  {journal} {Mater. Res. \
+Express}\\\\ }\\\\textbf {\\\\bibinfo {volume}\\n  {1}},\\\\ \\\\bibinfo \
+{pages} {045041} (\\\\bibinfo {year} {2014})}\\\\BibitemShut\\n  {NoStop}%\\n\
+\\\\bibitem [{\\\\citenamefont {Wang}\\\\ \\\\emph \
+{et~al.}(2015)\\\\citenamefont {Wang},\\n  \\\\citenamefont {Kawazoe},\\\\ \
+and\\\\ \\\\citenamefont {Geng}}]{Wang2015PRB}%\\n  \\\\BibitemOpen\\n  \
+\\\\bibfield  {author} {\\\\bibinfo {author} {\\\\bibfnamefont \
+{V.}~\\\\bibnamefont\\n  {Wang}}, \\\\bibinfo {author} {\\\\bibfnamefont \
+{Y.}~\\\\bibnamefont {Kawazoe}}, \\\\\\n  and\\\\ \\\\bibinfo {author} \
+{\\\\bibfnamefont {W.}~\\\\bibnamefont {Geng}},\\\\ }\\\\href@noop\\n  {} {\\\
+\\bibfield  {journal} {\\\\bibinfo  {journal} {Phys. Rev. B}\\\\ \
+}\\\\textbf\\n  {\\\\bibinfo {volume} {91}},\\\\ \\\\bibinfo {pages} {045433} \
+(\\\\bibinfo {year}\\n  {2015})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem \
+[{\\\\citenamefont {Cai}\\\\ \\\\emph \
+{et~al.}(2014{\\\\natexlab{a}})\\\\citenamefont\\n  {Cai}, \\\\citenamefont \
+{Zhang},\\\\ and\\\\ \\\\citenamefont {Zhang}}]{Cai2014SR}%\\n  \
+\\\\BibitemOpen\\n  \\\\bibfield  {author} {\\\\bibinfo {author} \
+{\\\\bibfnamefont {Y.}~\\\\bibnamefont\\n  {Cai}}, \\\\bibinfo {author} \
+{\\\\bibfnamefont {G.}~\\\\bibnamefont {Zhang}}, \\\\ and\\\\\\n  \\\\bibinfo \
+{author} {\\\\bibfnamefont {Y.-W.}\\\\ \\\\bibnamefont {Zhang}},\\\\ \
+}\\\\href\\n  {\\\\doibase 10.1038/srep06677} {\\\\bibfield  {journal} \
+{\\\\bibinfo  {journal} {Sci.\\n  Rep.}\\\\ }\\\\textbf {\\\\bibinfo {volume} \
+{4}},\\\\ \\\\bibinfo {pages} {6677} (\\\\bibinfo\\n  {year} \
+{2014}{\\\\natexlab{a}})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem \
+[{\\\\citenamefont {Zhang}\\\\ \\\\emph {et~al.}(2014)\\\\citenamefont \
+{Zhang},\\n  \\\\citenamefont {Liu}, \\\\citenamefont {Cheng}, \
+\\\\citenamefont {Wei},\\n  \\\\citenamefont {Liang}, \\\\citenamefont {Fan}, \
+\\\\citenamefont {Shi},\\n  \\\\citenamefont {Tang},\\\\ and\\\\ \
+\\\\citenamefont {Zhang}}]{Zhang2014SR}%\\n  \\\\BibitemOpen\\n  \\\\bibfield \
+ {author} {\\\\bibinfo {author} {\\\\bibfnamefont {J.}~\\\\bibnamefont\\n  \
+{Zhang}}, \\\\bibinfo {author} {\\\\bibfnamefont {H.}~\\\\bibnamefont {Liu}}, \
+\\\\bibinfo\\n  {author} {\\\\bibfnamefont {L.}~\\\\bibnamefont {Cheng}}, \
+\\\\bibinfo {author}\\n  {\\\\bibfnamefont {J.}~\\\\bibnamefont {Wei}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont\\n  {J.}~\\\\bibnamefont {Liang}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont\\n  {D.}~\\\\bibnamefont {Fan}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont {J.}~\\\\bibnamefont\\n  {Shi}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont {X.}~\\\\bibnamefont {Tang}}, \\\\ and\
+\\\\\\n  \\\\bibinfo {author} {\\\\bibfnamefont {Q.}~\\\\bibnamefont \
+{Zhang}},\\\\ }\\\\href@noop {}\\n  {\\\\bibfield  {journal} {\\\\bibinfo  \
+{journal} {Sci. Rep.}\\\\ }\\\\textbf {\\\\bibinfo\\n  {volume} {4}},\\\\ \
+\\\\bibinfo {pages} {6452} (\\\\bibinfo {year} {2014})}\\\\BibitemShut\\n  \
+{NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Cai}\\\\ \\\\emph \
+{et~al.}(2015)\\\\citenamefont {Cai},\\n  \\\\citenamefont {Ke}, \
+\\\\citenamefont {Zhang}, \\\\citenamefont {Feng},\\n  \\\\citenamefont \
+{Shenoy},\\\\ and\\\\ \\\\citenamefont {Zhang}}]{Cai2015AFM}%\\n  \
+\\\\BibitemOpen\\n  \\\\bibfield  {author} {\\\\bibinfo {author} \
+{\\\\bibfnamefont {Y.}~\\\\bibnamefont\\n  {Cai}}, \\\\bibinfo {author} \
+{\\\\bibfnamefont {Q.}~\\\\bibnamefont {Ke}}, \\\\bibinfo\\n  {author} \
+{\\\\bibfnamefont {G.}~\\\\bibnamefont {Zhang}}, \\\\bibinfo {author}\\n  {\\\
+\\bibfnamefont {Y.~P.}\\\\ \\\\bibnamefont {Feng}}, \\\\bibinfo {author}\\n  \
+{\\\\bibfnamefont {V.~B.}\\\\ \\\\bibnamefont {Shenoy}}, \\\\ and\\\\ \
+\\\\bibinfo {author}\\n  {\\\\bibfnamefont {Y.-W.}\\\\ \\\\bibnamefont \
+{Zhang}},\\\\ }\\\\href {\\\\doibase\\n  10.1002/adfm.201404294} \
+{\\\\bibfield  {journal} {\\\\bibinfo  {journal} {Adv.\\n  Funct. Mater.}\\\\ \
+}\\\\textbf {\\\\bibinfo {volume} {25}},\\\\ \\\\bibinfo {pages} {2230}\\n  (\
+\\\\bibinfo {year} {2015})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem \
+[{\\\\citenamefont {Brown}\\\\ and\\\\ \\\\citenamefont\\n  \
+{Rundqvist}(1965)}]{brown1965}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  \
+{author} {\\\\bibinfo {author} {\\\\bibfnamefont {A.}~\\\\bibnamefont\\n  \
+{Brown}}\\\\ and\\\\ \\\\bibinfo {author} {\\\\bibfnamefont \
+{S.}~\\\\bibnamefont\\n  {Rundqvist}},\\\\ }\\\\href@noop {} {\\\\bibfield  \
+{journal} {\\\\bibinfo  {journal}\\n  {Acta Cryst.}\\\\ }\\\\textbf \
+{\\\\bibinfo {volume} {19}},\\\\ \\\\bibinfo {pages} {684}\\n  (\\\\bibinfo \
+{year} {1965})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont \
+{Akahama}\\\\ \\\\emph {et~al.}(1983)\\\\citenamefont\\n  {Akahama}, \
+\\\\citenamefont {Endo},\\\\ and\\\\ \\\\citenamefont\\n  \
+{Narita}}]{Akahama1983JPSJ}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} {\
+\\\\bibinfo {author} {\\\\bibfnamefont {Y.}~\\\\bibnamefont\\n  {Akahama}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont {S.}~\\\\bibnamefont {Endo}}, \\\\\\n  \
+and\\\\ \\\\bibinfo {author} {\\\\bibfnamefont {S.}~\\\\bibnamefont \
+{Narita}},\\\\\\n  }\\\\href@noop {} {\\\\bibfield  {journal} {\\\\bibinfo  \
+{journal} {J. Phys. Soc.\\n  Jpn.}\\\\ }\\\\textbf {\\\\bibinfo {volume} \
+{52}},\\\\ \\\\bibinfo {pages} {2148} (\\\\bibinfo\\n  {year} \
+{1983})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont \
+{Dolui}\\\\ \\\\emph {et~al.}(2012)\\\\citenamefont {Dolui},\\n  \
+\\\\citenamefont {Pemmaraju},\\\\ and\\\\ \\\\citenamefont \
+{Sanvito}}]{Dolui2012AN}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} \
+{\\\\bibinfo {author} {\\\\bibfnamefont {K.}~\\\\bibnamefont\\n  {Dolui}}, \\\
+\\bibinfo {author} {\\\\bibfnamefont {C.~D.}\\\\ \\\\bibnamefont\\n  \
+{Pemmaraju}}, \\\\ and\\\\ \\\\bibinfo {author} {\\\\bibfnamefont \
+{S.}~\\\\bibnamefont\\n  {Sanvito}},\\\\ }\\\\href@noop {} {\\\\bibfield  \
+{journal} {\\\\bibinfo  {journal} {Acs\\n  Nano}\\\\ }\\\\textbf {\\\\bibinfo \
+{volume} {6}},\\\\ \\\\bibinfo {pages} {4823} (\\\\bibinfo\\n  {year} \
+{2012})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont \
+{Zhang}\\\\ and\\\\ \\\\citenamefont\\n  {Guo}(2008)}]{Zhang2008PRB}%\\n  \
+\\\\BibitemOpen\\n  \\\\bibfield  {author} {\\\\bibinfo {author} \
+{\\\\bibfnamefont {Z.}~\\\\bibnamefont\\n  {Zhang}}\\\\ and\\\\ \\\\bibinfo \
+{author} {\\\\bibfnamefont {W.}~\\\\bibnamefont {Guo}},\\\\\\n  \
+}\\\\href@noop {} {\\\\bibfield  {journal} {\\\\bibinfo  {journal} {Phys. \
+Rev. B}\\\\\\n  }\\\\textbf {\\\\bibinfo {volume} {77}},\\\\ \\\\bibinfo \
+{pages} {075403} (\\\\bibinfo\\n  {year} {2008})}\\\\BibitemShut {NoStop}%\\n\
+\\\\bibitem [{\\\\citenamefont {Park}\\\\ and\\\\ \\\\citenamefont\\n  \
+{Louie}(2008)}]{Park2008Nl}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} {\
+\\\\bibinfo {author} {\\\\bibfnamefont {C.-H.}\\\\ \\\\bibnamefont\\n  \
+{Park}}\\\\ and\\\\ \\\\bibinfo {author} {\\\\bibfnamefont {S.~G.}\\\\ \
+\\\\bibnamefont\\n  {Louie}},\\\\ }\\\\href@noop {} {\\\\bibfield  {journal} \
+{\\\\bibinfo  {journal} {Nano.\\n  Lett.}\\\\ }\\\\textbf {\\\\bibinfo \
+{volume} {8}},\\\\ \\\\bibinfo {pages} {2200} (\\\\bibinfo\\n  {year} \
+{2008})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Cai}\\\\ \
+\\\\emph {et~al.}(2014{\\\\natexlab{b}})\\\\citenamefont\\n  {Cai}, \
+\\\\citenamefont {Zhang},\\\\ and\\\\ \\\\citenamefont \
+{Zhang}}]{Cai2014JACS}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} \
+{\\\\bibinfo {author} {\\\\bibfnamefont {Y.}~\\\\bibnamefont\\n  {Cai}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont {G.}~\\\\bibnamefont {Zhang}}, \\\\ \
+and\\\\\\n  \\\\bibinfo {author} {\\\\bibfnamefont {Y.-W.}\\\\ \
+\\\\bibnamefont {Zhang}},\\\\ }\\\\href@noop\\n  {} {\\\\bibfield  {journal} \
+{\\\\bibinfo  {journal} {J. Am. Chem. Soc.}\\\\ }\\\\textbf\\n  {\\\\bibinfo \
+{volume} {136}},\\\\ \\\\bibinfo {pages} {6269} (\\\\bibinfo {year}\\n  \
+{2014}{\\\\natexlab{b}})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem \
+[{\\\\citenamefont {Carvalho}\\\\ \\\\emph {et~al.}(2014)\\\\citenamefont\\n  \
+{Carvalho}, \\\\citenamefont {Rodin},\\\\ and\\\\ \\\\citenamefont\\n  \
+{Neto}}]{Carvalho2014EPL}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} {\\\
+\\bibinfo {author} {\\\\bibfnamefont {A.}~\\\\bibnamefont\\n  {Carvalho}}, \\\
+\\bibinfo {author} {\\\\bibfnamefont {A.~S.}\\\\ \\\\bibnamefont {Rodin}},\\n \
+ \\\\ and\\\\ \\\\bibinfo {author} {\\\\bibfnamefont {A.~H.~C.}\\\\ \
+\\\\bibnamefont {Neto}},\\\\\\n  }\\\\href \
+{http://stacks.iop.org/0295-5075/108/i=4/a=47005} {\\\\bibfield\\n  {journal} \
+{\\\\bibinfo  {journal} {EPL}\\\\ }\\\\textbf {\\\\bibinfo {volume} {108}},\\\
+\\\\n  \\\\bibinfo {pages} {47005} (\\\\bibinfo {year} \
+{2014})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Li}\\\\ \
+\\\\emph {et~al.}(2014{\\\\natexlab{b}})\\\\citenamefont\\n  {Li}, \
+\\\\citenamefont {Zhang},\\\\ and\\\\ \\\\citenamefont {Zhang}}]{Li2014JPCC}%\
+\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} {\\\\bibinfo {author} \
+{\\\\bibfnamefont {W.}~\\\\bibnamefont\\n  {Li}}, \\\\bibinfo {author} \
+{\\\\bibfnamefont {G.}~\\\\bibnamefont {Zhang}}, \\\\ and\\\\\\n  \\\\bibinfo \
+{author} {\\\\bibfnamefont {Y.-W.}\\\\ \\\\bibnamefont {Zhang}},\\\\ \
+}\\\\href@noop\\n  {} {\\\\bibfield  {journal} {\\\\bibinfo  {journal} {J. \
+Phys. Chem. C}\\\\ }\\\\textbf\\n  {\\\\bibinfo {volume} {118}},\\\\ \
+\\\\bibinfo {pages} {22368} (\\\\bibinfo {year}\\n  {2014}{\\\\natexlab{b}})}\
+\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont \
+{Ramasubramaniam}\\\\ and\\\\ \\\\citenamefont\\n  \
+{Muniz}(2014)}]{Ramasubramaniam2014PRB}%\\n  \\\\BibitemOpen\\n  \\\\bibfield \
+ {author} {\\\\bibinfo {author} {\\\\bibfnamefont {A.}~\\\\bibnamefont\\n  \
+{Ramasubramaniam}}\\\\ and\\\\ \\\\bibinfo {author} {\\\\bibfnamefont {A.~R.}\
+\\\\\\n  \\\\bibnamefont {Muniz}},\\\\ }\\\\href@noop {} {\\\\bibfield  \
+{journal} {\\\\bibinfo\\n  {journal} {Phys. Rev. B}\\\\ }\\\\textbf \
+{\\\\bibinfo {volume} {90}},\\\\ \\\\bibinfo\\n  {pages} {085424} \
+(\\\\bibinfo {year} {2014})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem \
+[{\\\\citenamefont {Han}\\\\ \\\\emph {et~al.}(2014)\\\\citenamefont \
+{Han},\\n  \\\\citenamefont {Morgan~Stewart}, \\\\citenamefont {Shevlin}, \
+\\\\citenamefont\\n  {Catlow},\\\\ and\\\\ \\\\citenamefont \
+{Guo}}]{Han2014NL}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} \
+{\\\\bibinfo {author} {\\\\bibfnamefont {X.}~\\\\bibnamefont\\n  {Han}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont {H.}~\\\\bibnamefont \
+{Morgan~Stewart}},\\n  \\\\bibinfo {author} {\\\\bibfnamefont {S.~A.}\\\\ \
+\\\\bibnamefont {Shevlin}}, \\\\bibinfo\\n  {author} {\\\\bibfnamefont \
+{C.~R.~A.}\\\\ \\\\bibnamefont {Catlow}}, \\\\ and\\\\ \\\\bibinfo\\n  \
+{author} {\\\\bibfnamefont {Z.~X.}\\\\ \\\\bibnamefont {Guo}},\\\\ \
+}\\\\href@noop {}\\n  {\\\\bibfield  {journal} {\\\\bibinfo  {journal} {Nano \
+Lett.}\\\\ }\\\\textbf {\\\\bibinfo\\n  {volume} {14}},\\\\ \\\\bibinfo \
+{pages} {4607} (\\\\bibinfo {year}\\n  {2014})}\\\\BibitemShut {NoStop}%\\n\\\
+\\bibitem [{\\\\citenamefont {Du}\\\\ \\\\emph {et~al.}(2015)\\\\citenamefont \
+{Du},\\n  \\\\citenamefont {Liu}, \\\\citenamefont {Xu}, \\\\citenamefont \
+{Sheng}, \\\\citenamefont\\n  {Yin}, \\\\citenamefont {Duan},\\\\ and\\\\ \
+\\\\citenamefont {Wan}}]{Du2015SR}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  \
+{author} {\\\\bibinfo {author} {\\\\bibfnamefont {Y.}~\\\\bibnamefont\\n  \
+{Du}}, \\\\bibinfo {author} {\\\\bibfnamefont {H.}~\\\\bibnamefont {Liu}}, \\\
+\\bibinfo\\n  {author} {\\\\bibfnamefont {B.}~\\\\bibnamefont {Xu}}, \
+\\\\bibinfo {author}\\n  {\\\\bibfnamefont {L.}~\\\\bibnamefont {Sheng}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont\\n  {J.}~\\\\bibnamefont {Yin}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont {C.-G.}\\\\\\n  \\\\bibnamefont \
+{Duan}}, \\\\ and\\\\ \\\\bibinfo {author} {\\\\bibfnamefont\\n  \
+{X.}~\\\\bibnamefont {Wan}},\\\\ }\\\\href@noop {} {\\\\bibfield  {journal} {\
+\\\\bibinfo\\n  {journal} {Sci. Rep.}\\\\ }\\\\textbf {\\\\bibinfo {volume} \
+{5}},\\\\ \\\\bibinfo {pages}\\n  {8921} (\\\\bibinfo {year} \
+{2015})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont \
+{Maity}\\\\ \\\\emph {et~al.}(2014)\\\\citenamefont {Maity},\\n  \
+\\\\citenamefont {Singh},\\\\ and\\\\ \\\\citenamefont \
+{Sen}}]{Maity2014arxiv}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} \
+{\\\\bibinfo {author} {\\\\bibfnamefont {A.}~\\\\bibnamefont\\n  {Maity}}, \\\
+\\bibinfo {author} {\\\\bibfnamefont {A.}~\\\\bibnamefont {Singh}}, \\\\ \
+and\\\\\\n  \\\\bibinfo {author} {\\\\bibfnamefont {P.}~\\\\bibnamefont \
+{Sen}},\\\\ }\\\\href@noop {}\\n  {\\\\bibfield  {journal} {\\\\bibinfo  \
+{journal} {arXiv:1404.2469}\\\\ } (\\\\bibinfo\\n  {year} \
+{2014})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Peng}\\\\ \
+\\\\emph\\n  {et~al.}(2014{\\\\natexlab{b}})\\\\citenamefont {Peng}, \
+\\\\citenamefont {Copple},\\\\\\n  and\\\\ \\\\citenamefont \
+{Wei}}]{Peng2014JAP}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} \
+{\\\\bibinfo {author} {\\\\bibfnamefont {X.}~\\\\bibnamefont\\n  {Peng}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont {A.}~\\\\bibnamefont {Copple}}, \\\\ \
+and\\\\\\n  \\\\bibinfo {author} {\\\\bibfnamefont {Q.}~\\\\bibnamefont \
+{Wei}},\\\\ }\\\\href {\\\\doibase\\n  http://dx.doi.org/10.1063/1.4897461} {\
+\\\\bibfield  {journal} {\\\\bibinfo\\n  {journal} {J. Appl. Phys.}\\\\ \
+}\\\\textbf {\\\\bibinfo {volume} {116}},\\\\ \\\\bibinfo\\n  {eid} {144301} \
+(\\\\bibinfo {year} {2014}{\\\\natexlab{b}})}\\\\BibitemShut \
+{NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Brandbyge}\\\\ \\\\emph \
+{et~al.}(2002)\\\\citenamefont\\n  {Brandbyge}, \\\\citenamefont {Mozos}, \
+\\\\citenamefont {Ordej{\\\\'o}n},\\n  \\\\citenamefont {Taylor},\\\\ and\\\\ \
+\\\\citenamefont {Stokbro}}]{atk1}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  \
+{author} {\\\\bibinfo {author} {\\\\bibfnamefont {M.}~\\\\bibnamefont\\n  \
+{Brandbyge}}, \\\\bibinfo {author} {\\\\bibfnamefont {J.-L.}\\\\ \
+\\\\bibnamefont\\n  {Mozos}}, \\\\bibinfo {author} {\\\\bibfnamefont \
+{P.}~\\\\bibnamefont {Ordej{\\\\'o}n}},\\n  \\\\bibinfo {author} \
+{\\\\bibfnamefont {J.}~\\\\bibnamefont {Taylor}}, \\\\ and\\\\ \\\\bibinfo\\n \
+ {author} {\\\\bibfnamefont {K.}~\\\\bibnamefont {Stokbro}},\\\\ \
+}\\\\href@noop {}\\n  {\\\\bibfield  {journal} {\\\\bibinfo  {journal} {Phys. \
+Rev. B}\\\\ }\\\\textbf {\\\\bibinfo\\n  {volume} {65}},\\\\ \\\\bibinfo \
+{pages} {165401} (\\\\bibinfo {year}\\n  {2002})}\\\\BibitemShut {NoStop}%\\n\
+\\\\bibitem [{\\\\citenamefont {Taylor}\\\\ \\\\emph \
+{et~al.}(2001)\\\\citenamefont {Taylor},\\n  \\\\citenamefont {Guo},\\\\ \
+and\\\\ \\\\citenamefont {Wang}}]{atk2}%\\n  \\\\BibitemOpen\\n  \\\\bibfield \
+ {author} {\\\\bibinfo {author} {\\\\bibfnamefont {J.}~\\\\bibnamefont\\n  \
+{Taylor}}, \\\\bibinfo {author} {\\\\bibfnamefont {H.}~\\\\bibnamefont \
+{Guo}}, \\\\ and\\\\\\n  \\\\bibinfo {author} {\\\\bibfnamefont \
+{J.}~\\\\bibnamefont {Wang}},\\\\ }\\\\href@noop {}\\n  {\\\\bibfield  \
+{journal} {\\\\bibinfo  {journal} {Phys. Rev. B}\\\\ }\\\\textbf {\\\\bibinfo\
+\\n  {volume} {63}},\\\\ \\\\bibinfo {pages} {245407} (\\\\bibinfo {year}\\n  \
+{2001})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Perdew}\\\
+\\ \\\\emph {et~al.}(1996)\\\\citenamefont {Perdew},\\n  \\\\citenamefont \
+{Burke},\\\\ and\\\\ \\\\citenamefont {Ernzerhof}}]{pbe}%\\n  \\\\BibitemOpen\
+\\n  \\\\bibfield  {author} {\\\\bibinfo {author} {\\\\bibfnamefont {J.~P.}\\\
+\\ \\\\bibnamefont\\n  {Perdew}}, \\\\bibinfo {author} {\\\\bibfnamefont \
+{K.}~\\\\bibnamefont {Burke}}, \\\\\\n  and\\\\ \\\\bibinfo {author} \
+{\\\\bibfnamefont {M.}~\\\\bibnamefont {Ernzerhof}},\\\\\\n  }\\\\href@noop \
+{} {\\\\bibfield  {journal} {\\\\bibinfo  {journal} {Phys. Rev. Lett.}\\\\\\n \
+ }\\\\textbf {\\\\bibinfo {volume} {77}},\\\\ \\\\bibinfo {pages} {3865} \
+(\\\\bibinfo {year}\\n  {1996})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem \
+[{\\\\citenamefont {Monkhorst}\\\\ and\\\\ \\\\citenamefont\\n  \
+{Pack}(1976)}]{Monkhorst}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} {\\\
+\\bibinfo {author} {\\\\bibfnamefont {H.~J.}\\\\ \\\\bibnamefont\\n  \
+{Monkhorst}}\\\\ and\\\\ \\\\bibinfo {author} {\\\\bibfnamefont {J.~D.}\\\\ \
+\\\\bibnamefont\\n  {Pack}},\\\\ }\\\\href@noop {} {\\\\bibfield  {journal} {\
+\\\\bibinfo  {journal} {Phys.\\n  Rev. B}\\\\ }\\\\textbf {\\\\bibinfo \
+{volume} {13}},\\\\ \\\\bibinfo {pages} {5188}\\n  (\\\\bibinfo {year} \
+{1976})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Das}\\\\ \
+\\\\emph {et~al.}(2014)\\\\citenamefont {Das},\\n  \\\\citenamefont {Zhang}, \
+\\\\citenamefont {Demarteau}, \\\\citenamefont {Hoffmann},\\n  \
+\\\\citenamefont {Dubey},\\\\ and\\\\ \\\\citenamefont \
+{Roelofs}}]{Das2014NL}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} \
+{\\\\bibinfo {author} {\\\\bibfnamefont {S.}~\\\\bibnamefont\\n  {Das}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont {W.}~\\\\bibnamefont {Zhang}}, \
+\\\\bibinfo\\n  {author} {\\\\bibfnamefont {M.}~\\\\bibnamefont {Demarteau}}, \
+\\\\bibinfo {author}\\n  {\\\\bibfnamefont {A.}~\\\\bibnamefont {Hoffmann}}, \
+\\\\bibinfo {author}\\n  {\\\\bibfnamefont {M.}~\\\\bibnamefont {Dubey}}, \
+\\\\ and\\\\ \\\\bibinfo {author}\\n  {\\\\bibfnamefont {A.}~\\\\bibnamefont \
+{Roelofs}},\\\\ }\\\\href@noop {} {\\\\bibfield\\n  {journal} {\\\\bibinfo  \
+{journal} {Nano Lett.}\\\\ }\\\\textbf {\\\\bibinfo {volume}\\n  {14}},\\\\ \
+\\\\bibinfo {pages} {5733} (\\\\bibinfo {year} {2014})}\\\\BibitemShut\\n  \
+{NoStop}%\\n\\\\bibitem [{\\\\citenamefont {Son}\\\\ \\\\emph \
+{et~al.}(2005)\\\\citenamefont {Son},\\n  \\\\citenamefont {Ihm}, \
+\\\\citenamefont {Cohen}, \\\\citenamefont {Louie},\\\\ and\\\\\\n  \
+\\\\citenamefont {Choi}}]{Son2005PRL}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  \
+{author} {\\\\bibinfo {author} {\\\\bibfnamefont {Y.-W.}\\\\ \
+\\\\bibnamefont\\n  {Son}}, \\\\bibinfo {author} {\\\\bibfnamefont \
+{J.}~\\\\bibnamefont {Ihm}}, \\\\bibinfo\\n  {author} {\\\\bibfnamefont \
+{M.~L.}\\\\ \\\\bibnamefont {Cohen}}, \\\\bibinfo {author}\\n  \
+{\\\\bibfnamefont {S.~G.}\\\\ \\\\bibnamefont {Louie}}, \\\\ and\\\\ \
+\\\\bibinfo {author}\\n  {\\\\bibfnamefont {H.~J.}\\\\ \\\\bibnamefont \
+{Choi}},\\\\ }\\\\href {\\\\doibase\\n  10.1103/PhysRevLett.95.216602} \
+{\\\\bibfield  {journal} {\\\\bibinfo  {journal}\\n  {Phys. Rev. Lett.}\\\\ }\
+\\\\textbf {\\\\bibinfo {volume} {95}},\\\\ \\\\bibinfo {pages}\\n  {216602} \
+(\\\\bibinfo {year} {2005})}\\\\BibitemShut {NoStop}%\\n\\\\bibitem \
+[{\\\\citenamefont {Zhu}\\\\ \\\\emph {et~al.}(2014)\\\\citenamefont \
+{Zhu},\\n  \\\\citenamefont {Li}, \\\\citenamefont {Yu}, \\\\citenamefont \
+{Chang}, \\\\citenamefont\\n  {Sun},\\\\ and\\\\ \\\\citenamefont \
+{Jia}}]{Zhu2014APL}%\\n  \\\\BibitemOpen\\n  \\\\bibfield  {author} \
+{\\\\bibinfo {author} {\\\\bibfnamefont {Z.}~\\\\bibnamefont\\n  {Zhu}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont {C.}~\\\\bibnamefont {Li}}, \
+\\\\bibinfo\\n  {author} {\\\\bibfnamefont {W.}~\\\\bibnamefont {Yu}}, \
+\\\\bibinfo {author}\\n  {\\\\bibfnamefont {D.}~\\\\bibnamefont {Chang}}, \
+\\\\bibinfo {author} {\\\\bibfnamefont\\n  {Q.}~\\\\bibnamefont {Sun}}, \\\\ \
+and\\\\ \\\\bibinfo {author} {\\\\bibfnamefont\\n  {Y.}~\\\\bibnamefont \
+{Jia}},\\\\ }\\\\href@noop {} {\\\\bibfield  {journal} {\\\\bibinfo\\n  \
+{journal} {Appl. Phys. Lett.}\\\\ }\\\\textbf {\\\\bibinfo {volume} {105}},\\\
+\\ \\\\bibinfo\\n  {pages} {113105} (\\\\bibinfo {year} \
+{2014})}\\\\BibitemShut \
+{NoStop}%\\n\\\\end{thebibliography}%\\n\\n\\n\\\\end{document}\"\>"], \
+"Output",
+ CellChangeTimes->{3.931149251987013*^9},
+ CellLabel->"Out[10]=",
+ CellID->2072005837,ExpressionUUID->"27d55c8e-71c1-4c7b-a951-5df60863bab3"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "More Examples",
+ Cell[BoxData[
+  TemplateBox[{"MoreExamples", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Extended examples in standardized sections.", "MoreInfoText"], 
+       BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "8db77920-7f1d-4e25-ac90-4ad2f1ed8a06"]
+}], "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->490458470,ExpressionUUID->"181e8776-3602-41b8-a8f6-6001f30c4bef"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Scope", "ExampleSection",ExpressionUUID->
+   "6d779d1a-e3d8-42ab-8cae-ab7d3ca29187"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1093268104,ExpressionUUID->"3b48ed99-fbdc-4d69-80d5-2d0bd297429d"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Generalizations & Extensions", "ExampleSection",ExpressionUUID->
+   "d959786a-775e-41c5-80b8-ed1d1d64233a"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->686940196,ExpressionUUID->"40b3e78d-271d-4c5e-b22c-43feaa81c803"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Options", "ExampleSection",ExpressionUUID->
+   "62d78bd1-e31c-4834-987c-badb7686e88d"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->531787900,ExpressionUUID->"2bb9a0b2-6600-4d8b-a37d-ac244f147716"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "XXXX", "ExampleSubsection",ExpressionUUID->
+   "48f055bf-06a4-4d8d-bebd-3b7c65b3ed91"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->2079780133,ExpressionUUID->"c6111cf1-ede5-48cb-99c2-2fba6362c688"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "XXXX", "ExampleSubsection",ExpressionUUID->
+   "ac745d0a-7e83-41a4-8479-d7a8abd3728e"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->273373112,ExpressionUUID->"163f4f6e-e561-40b9-95a4-8f093a7e494d"]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Applications", "ExampleSection",ExpressionUUID->
+   "351ffbee-86eb-4273-9096-70a70aaab871"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1114372451,ExpressionUUID->"0954139c-bc2f-48c4-b586-c9ba4d099da0"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Properties & Relations", "ExampleSection",ExpressionUUID->
+   "1d9bbda4-8082-4c96-8ca4-134adf18d6ba"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1052898470,ExpressionUUID->"0c52bcfd-f696-40b6-8398-9944a91582ae"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Possible Issues", "ExampleSection",ExpressionUUID->
+   "dfd5c687-c34b-4c13-b81f-731bd409b580"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->799334010,ExpressionUUID->"49411df7-1aec-455d-99c1-d37c5396902f"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Interactive Examples", "ExampleSection",ExpressionUUID->
+   "bd5811b7-e7bb-4c50-84e6-0f4869d844f3"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1896494085,ExpressionUUID->"a365dba4-dcb5-4493-a436-de7d4ff41200"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Neat Examples", "ExampleSection",ExpressionUUID->
+   "7b97efb9-9606-46f3-ab26-a9a738989a7c"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1423797821,ExpressionUUID->"248ef229-d4db-458e-8b49-f7aee58cf1d2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Metadata", "MetadataSection",
+ CellID->359699026,ExpressionUUID->"b502fd74-b5fc-463c-9021-5e907c703a32"],
+
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New",ExpressionUUID->"ff89b352-7e84-4df1-8a8f-aa00f3c63307"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified",ExpressionUUID->"c4a91666-1299-4a84-88c4-ef8bddddce96"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete",ExpressionUUID->
+  "59b0a73b-c8f6-4368-be79-0b637f860e77"]
+}], "History",
+ CellID->295063677,ExpressionUUID->"865286aa-e3cc-49fb-9da7-1ba12c448f14"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Categorization",
+ Cell[BoxData[
+  TemplateBox[{"Metadata", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Metadata such as page URI, context, and type of documentation page.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "124b05c1-d5c3-4a54-8d47-4d949421f0d8"]
+}], "CategorizationSection",
+ CellID->595478416,ExpressionUUID->"9a03233c-986f-4284-ad30-a82fed385bf4"],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->931942692,ExpressionUUID->"885da850-bb95-489d-b796-0c03a1deafca"],
+
+Cell["DanieleGregori/ArXivExplore", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->1038291654,ExpressionUUID->"7bd1d511-6d50-439d-8615-0162fde54310"],
+
+Cell["DanieleGregori`ArXivExplore`", "Categorization",
+ CellLabel->"Context",
+ CellID->115713256,ExpressionUUID->"6b6851aa-631a-47ba-ae56-c7437b3c51e6"],
+
+Cell["DanieleGregori/ArXivExplore/ref/ArXivTeXDocument", "Categorization",
+ CellLabel->"URI",
+ CellID->1319993057,ExpressionUUID->"7528be90-2bed-4ae1-959f-cb1e4e5f83a6"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->1354835550,ExpressionUUID->"786a2db5-1c9a-42c9-a33b-1b93c0eaf7d4"],
+
+Cell["XXXX", "Keywords",
+ CellID->951979709,ExpressionUUID->"a96e4fb4-f196-4059-9f8a-7012709b1e53"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1169799013,ExpressionUUID->"e4b8fe01-867b-4f64-b2be-ce04b6837371"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->599223206,ExpressionUUID->"473c44eb-0f2f-45b9-87b2-9b099407f0f5"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->1593602459,ExpressionUUID->"d357b9ee-79f0-49bc-8bb2-de8b03d27491"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->260483029,ExpressionUUID->"904478e8-59d9-4624-8928-83ed6ba0cd3c"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->1366595817,ExpressionUUID->"ebc74330-6fc2-4e8f-aa18-efc394e03280"]
+}, Closed]]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{5, Automatic}, {Automatic, 0}},
+TaggingRules-><|"Paclet" -> "DanieleGregori/ArXivExplore"|>,
+CellContext->"Global`",
+FrontEndVersion->"14.0 for Mac OS X x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"c9679f04-008c-4c90-989b-6c931c4cb75a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ExtendedExamples"->{
+  Cell[89227, 1356, 487, 13, 58, "ExtendedExamplesSection",ExpressionUUID->"181e8776-3602-41b8-a8f6-6001f30c4bef",
+   CellTags->"ExtendedExamples",
+   CellID->490458470]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ExtendedExamples", 95567, 1544}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 113, 1, 74, "ObjectName",ExpressionUUID->"1c4ea8fd-190b-435c-862e-7ac56071ef90",
+ CellID->603580745],
+Cell[696, 25, 863, 23, 80, "Usage",ExpressionUUID->"0c347e96-29f4-4638-99f8-e5b421dd00e7",
+ CellID->1816316434],
+Cell[1562, 50, 221, 5, 27, "Notes",ExpressionUUID->"5d740cc4-838a-40aa-8527-6c4e04917436",
+ CellID->350264133]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1820, 60, 458, 13, 40, "SeeAlsoSection",ExpressionUUID->"5f78f20d-893a-4acb-9c5a-1cabfe619c8a",
+ CellID->636606904],
+Cell[2281, 75, 1653, 42, 26, "SeeAlso",ExpressionUUID->"fb1c9a53-5865-4829-ac3a-536a07400f91",
+ CellID->688706174]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3971, 122, 435, 12, 41, "TechNotesSection",ExpressionUUID->"e8d440a8-e059-4e05-92d5-82fe43fe49db",
+ CellID->147809088],
+Cell[4409, 136, 101, 1, 19, "Tutorials",ExpressionUUID->"47789f7a-c02d-4092-b1d5-8666035c415f",
+ CellID->1736246084]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4547, 142, 118, 1, 40, "MoreAboutSection",ExpressionUUID->"da940f84-30d0-4bfe-ad8c-3e7fdc8becaa",
+ CellID->1080138352],
+Cell[4668, 145, 101, 1, 19, "MoreAbout",ExpressionUUID->"19ea8758-734c-4990-af16-e1b468475a3d",
+ CellID->1206013973]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4806, 151, 473, 13, 40, "RelatedLinksSection",ExpressionUUID->"1fa08678-2b61-4304-8685-7cd9912c5a1d",
+ CellID->1526183825],
+Cell[5282, 166, 104, 1, 19, "RelatedLinks",ExpressionUUID->"ffdd0325-061e-48f4-8e6d-6e4cbd0a450a",
+ CellID->1026867007]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5423, 172, 531, 14, 70, "ExamplesInitializationSection",ExpressionUUID->"8079415c-ccf4-45fc-be13-e26dccb2a9f2",
+ CellID->1375199357],
+Cell[5957, 188, 188, 3, 47, "ExampleInitialization",ExpressionUUID->"9aa4ca66-802a-4b36-be2c-9c72da5b4366",
+ CellID->1756584085]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6182, 196, 443, 12, 73, "PrimaryExamplesSection",ExpressionUUID->"492f981a-97cf-4477-85e1-4d50bd5e70e0",
+ CellID->1451021286],
+Cell[CellGroupData[{
+Cell[6650, 212, 339, 7, 27, "Input",ExpressionUUID->"2c5441c0-b8ac-4e04-94a8-e9d244775467",
+ CellID->1703586990],
+Cell[6992, 221, 162, 2, 22, "Echo",ExpressionUUID->"949bade0-3139-4c60-a97a-19a81495855d",
+ CellID->1933075779],
+Cell[7157, 225, 82021, 1125, 29515, "Output",ExpressionUUID->"27d55c8e-71c1-4c7b-a951-5df60863bab3",
+ CellID->2072005837]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[89227, 1356, 487, 13, 58, "ExtendedExamplesSection",ExpressionUUID->"181e8776-3602-41b8-a8f6-6001f30c4bef",
+ CellTags->"ExtendedExamples",
+ CellID->490458470],
+Cell[89717, 1371, 242, 5, 35, "ExampleSection",ExpressionUUID->"3b48ed99-fbdc-4d69-80d5-2d0bd297429d",
+ CellID->1093268104],
+Cell[89962, 1378, 264, 5, 23, "ExampleSection",ExpressionUUID->"40b3e78d-271d-4c5e-b22c-43feaa81c803",
+ CellID->686940196],
+Cell[CellGroupData[{
+Cell[90251, 1387, 243, 5, 23, "ExampleSection",ExpressionUUID->"2bb9a0b2-6600-4d8b-a37d-ac244f147716",
+ CellID->531787900],
+Cell[90497, 1394, 247, 5, 26, "ExampleSubsection",ExpressionUUID->"c6111cf1-ede5-48cb-99c2-2fba6362c688",
+ CellID->2079780133],
+Cell[90747, 1401, 246, 5, 22, "ExampleSubsection",ExpressionUUID->"163f4f6e-e561-40b9-95a4-8f093a7e494d",
+ CellID->273373112]
+}, Open  ]],
+Cell[91008, 1409, 249, 5, 35, "ExampleSection",ExpressionUUID->"0954139c-bc2f-48c4-b586-c9ba4d099da0",
+ CellID->1114372451],
+Cell[91260, 1416, 259, 5, 23, "ExampleSection",ExpressionUUID->"0c52bcfd-f696-40b6-8398-9944a91582ae",
+ CellID->1052898470],
+Cell[91522, 1423, 251, 5, 23, "ExampleSection",ExpressionUUID->"49411df7-1aec-455d-99c1-d37c5396902f",
+ CellID->799334010],
+Cell[91776, 1430, 257, 5, 23, "ExampleSection",ExpressionUUID->"a365dba4-dcb5-4493-a436-de7d4ff41200",
+ CellID->1896494085],
+Cell[92036, 1437, 250, 5, 23, "ExampleSection",ExpressionUUID->"248ef229-d4db-458e-8b49-f7aee58cf1d2",
+ CellID->1423797821]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[92323, 1447, 110, 1, 72, "MetadataSection",ExpressionUUID->"b502fd74-b5fc-463c-9021-5e907c703a32",
+ CellID->359699026],
+Cell[92436, 1450, 476, 12, 26, "History",ExpressionUUID->"865286aa-e3cc-49fb-9da7-1ba12c448f14",
+ CellID->295063677],
+Cell[CellGroupData[{
+Cell[92937, 1466, 484, 13, 21, "CategorizationSection",ExpressionUUID->"9a03233c-986f-4284-ad30-a82fed385bf4",
+ CellID->595478416],
+Cell[93424, 1481, 134, 2, 35, "Categorization",ExpressionUUID->"885da850-bb95-489d-b796-0c03a1deafca",
+ CellID->931942692],
+Cell[93561, 1485, 156, 2, 35, "Categorization",ExpressionUUID->"7bd1d511-6d50-439d-8615-0162fde54310",
+ CellID->1038291654],
+Cell[93720, 1489, 152, 2, 35, "Categorization",ExpressionUUID->"6b6851aa-631a-47ba-ae56-c7437b3c51e6",
+ CellID->115713256],
+Cell[93875, 1493, 169, 2, 35, "Categorization",ExpressionUUID->"7528be90-2bed-4ae1-959f-cb1e4e5f83a6",
+ CellID->1319993057]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[94081, 1500, 111, 1, 21, "KeywordsSection",ExpressionUUID->"786a2db5-1c9a-42c9-a33b-1b93c0eaf7d4",
+ CellID->1354835550],
+Cell[94195, 1503, 99, 1, 70, "Keywords",ExpressionUUID->"a96e4fb4-f196-4059-9f8a-7012709b1e53",
+ CellID->951979709]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[94331, 1509, 120, 1, 21, "TemplatesSection",ExpressionUUID->"e4b8fe01-867b-4f64-b2be-ce04b6837371",
+ CellID->1169799013],
+Cell[94454, 1512, 148, 2, 70, "Template",ExpressionUUID->"473c44eb-0f2f-45b9-87b2-9b099407f0f5",
+ CellID->599223206],
+Cell[94605, 1516, 138, 2, 70, "Template",ExpressionUUID->"d357b9ee-79f0-49bc-8bb2-de8b03d27491",
+ CellID->1593602459],
+Cell[94746, 1520, 135, 2, 70, "Template",ExpressionUUID->"904478e8-59d9-4624-8928-83ed6ba0cd3c",
+ CellID->260483029],
+Cell[94884, 1524, 138, 2, 70, "Template",ExpressionUUID->"ebc74330-6fc2-4e8f-aa18-efc394e03280",
+ CellID->1366595817]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+

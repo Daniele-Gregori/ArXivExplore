@@ -1,0 +1,1265 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     51948,       1257]
+NotebookOptionsPosition[     44629,       1095]
+NotebookOutlinePosition[     45417,       1121]
+CellTagsIndexPosition[     45337,       1116]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["ArXivLogosTitles", "ObjectName",
+ CellID->1036797838,ExpressionUUID->"4302c58b-a345-4f93-9eae-861191b57cf1"],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo",ExpressionUUID->"f686d67b-72b9-4ad5-8519-e165e533b8df"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["ArXivLogosTitles",
+    BaseStyle->"Link",
+    ButtonData->"paclet:DanieleGregoriArXivExplore/ref/ArXivLogosTitles"], 
+   "[", 
+   RowBox[{
+    StyleBox["word_String", "TI"], ",", 
+    StyleBox["cat", "TI"]}], "]"}]], "InlineFormula",ExpressionUUID->
+  "c0898d74-020d-452e-aecf-b251a52339d6"],
+ "\[LineSeparator]returns all titles in category 'cat' containing the word \
+'word',associated with their article id or date; \n",
+ Cell["   ", "ModInfo",ExpressionUUID->"cc688685-7c32-4fe5-ad81-9aa9e9b40dc4"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["ArXivLogosTitles",
+    BaseStyle->"Link",
+    ButtonData->"paclet:DanieleGregoriArXivExplore/ref/ArXivLogosTitles"], 
+   "[", 
+   RowBox[{
+    StyleBox["wordAnd_And", "TI"], ",", 
+    StyleBox["cat", "TI"]}], "]"}]], "InlineFormula",ExpressionUUID->
+  "ce4fbf7b-c99d-40b9-8753-551deb1fd73e"],
+ "\[LineSeparator]returns all titles in category 'cat' containing the word \
+conjuction (And) 'wordAnd', associated with their article id or date; \n",
+ Cell["   ", "ModInfo",ExpressionUUID->"ded92fc5-9212-4efe-b5d6-735080237a42"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["ArXivLogosTitles",
+    BaseStyle->"Link",
+    ButtonData->"paclet:DanieleGregoriArXivExplore/ref/ArXivLogosTitles"], 
+   "[", 
+   RowBox[{
+    StyleBox["wordOr_Or", "TI"], ",", 
+    StyleBox["cat", "TI"]}], "]"}]], "InlineFormula",ExpressionUUID->
+  "b276ac48-ac46-4558-85a3-ab03266403fa"],
+ "\[LineSeparator]returns all titles in category 'cat' containing the word \
+inclusive disjunction (Or) 'wordOr',associated with their article id or date; \
+\n",
+ Cell["   ", "ModInfo",ExpressionUUID->"1c66c89d-d38f-4c89-a562-31104331597b"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["ArXivLogosTitles",
+    BaseStyle->"Link",
+    ButtonData->"paclet:DanieleGregoriArXivExplore/ref/ArXivLogosTitles"], 
+   "[", 
+   RowBox[{
+    StyleBox["wordXor_Xor", "TI"], ",", 
+    StyleBox["cat", "TI"]}], "]"}]], "InlineFormula",ExpressionUUID->
+  "8d2274c4-2778-44f2-8d89-563a64b20041"],
+ "\[LineSeparator]returns all titles in category 'cat' containing the word \
+exclusive disjunction (Xor) 'wordXor', associated with their article id or \
+date; \n",
+ Cell["   ", "ModInfo",ExpressionUUID->"0852f200-ef5d-4c61-adc6-269637072291"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["ArXivLogosTitles",
+    BaseStyle->"Link",
+    ButtonData->"paclet:DanieleGregoriArXivExplore/ref/ArXivLogosTitles"], 
+   "[", 
+   RowBox[{
+    StyleBox["wordAndOr", "TI"], ",", 
+    StyleBox["cat", "TI"]}], "]"}]], "InlineFormula",ExpressionUUID->
+  "69b49b4e-0e0b-49a5-ba7b-8a2c752e2dbe"],
+ "\[LineSeparator]returns all titles in category 'cat' containing the \
+conjuction (And) of word inclusive disjunctions (Or) 'wordAndOr', associated \
+with their article id or date."
+}], "Usage",
+ CellChangeTimes->{{3.937627189036604*^9, 3.9376271892231894`*^9}},
+ CellID->778951508,ExpressionUUID->"149abe82-5d05-4cd4-8475-4bbab480225e"],
+
+Cell["The following options can be given: ", "Notes",
+ CellID->777682844,ExpressionUUID->"39dda720-577b-4ee5-b926-a753c20a2f55"],
+
+Cell[BoxData[GridBox[{
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "e12dd7c7-03ae-4d4e-813c-3b76c02662ce"], "\"\<Dated\>\"", 
+    ButtonBox["False",
+     BaseStyle->"Link"], Cell[
+    "XXXX", "TableText",ExpressionUUID->
+     "8d882b9e-8b0f-45ec-8ff5-cb328a82af84"]}
+  }]], "3ColumnTableMod",
+ CellID->930083466,ExpressionUUID->"d26353a7-51b6-45c6-b3e9-9404a63dd45f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "See Also",
+ Cell[BoxData[
+  TemplateBox[{"SeeAlso", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related reference (function) pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "53710ad2-6238-4cae-9ebc-8790c79cad2a"]
+}], "SeeAlsoSection",
+ CellID->379346549,ExpressionUUID->"b2d01234-41fe-49ed-a7c2-db291adf5b1c"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TagBox[
+   FrameBox["\<\"XXXX\"\>"],
+   "FunctionPlaceholder"]], "InlineSeeAlsoFunction",
+  TaggingRules->{"PageType" -> "Function"},ExpressionUUID->
+  "2040662c-7a86-4588-8b06-e8e830cbb7a6"],
+ Cell[BoxData[
+  RowBox[{
+  Cell[TextData[StyleBox[
+   " \[FilledVerySmallSquare] ", "InlineSeparator"]],ExpressionUUID->
+    "074cd631-ce84-44de-b07d-43cead2205cc"], 
+   DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
+    "56ad75d4-1feb-4003-9ca4-70f7acde7c28", 
+     "7d5c54a0-1c46-40bd-adde-ba42b511c5a5"], $CellContext`cellobj$$ = 
+    CellObject[
+    "0a52b631-d61d-402e-bbf6-5f37a05aac18", 
+     "1764e3f7-0ade-4398-bb1b-1608ad80a36e"]}, 
+    TemplateBox[{
+      GraphicsBox[{{
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         CircleBox[{0, 0}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{0, 0.62}, {0, -0.62}}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{-0.62, 0}, {0.62, 0}}]}}, 
+       ImagePadding -> {{1., 1.}, {2.4, 1.}}, ImageSize -> 16, 
+       PlotRange -> {{-1.06, 1.06}, {-1.06, 1.06}}, 
+       BaselinePosition -> (Center -> 
+        Center)], $CellContext`nbobj$$, $CellContext`cellobj$$},
+     "InlineListingAddButton"],
+    Initialization:>($CellContext`nbobj$$ = 
+      EvaluationNotebook[]; $CellContext`cellobj$$ = EvaluationCell[])]}]], 
+  "InlineListingAddButton",ExpressionUUID->
+  "0a52b631-d61d-402e-bbf6-5f37a05aac18"]
+}], "SeeAlso",
+ CellID->1945984747,ExpressionUUID->"517fbcbf-d7e6-491f-ab1d-c14c8011095d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Tech Notes",
+ Cell[BoxData[
+  TemplateBox[{"TechNotes", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Insert links to related tech notes.", "MoreInfoText"], BaseStyle -> 
+       "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "af37559a-f474-485a-bb31-f1e7e6554d6d"]
+}], "TechNotesSection",
+ CellID->2137182666,ExpressionUUID->"4b260337-c02f-4474-b197-1b8e3cf02817"],
+
+Cell["XXXX", "Tutorials",
+ CellID->817587740,ExpressionUUID->"39676e97-2c2d-41e8-b87c-c6d6b70654b4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "MoreAboutSection",
+ CellID->1596772674,ExpressionUUID->"ef256e3b-a5be-4cf0-a8c1-0df86dd12584"],
+
+Cell["XXXX", "MoreAbout",
+ CellID->2002679006,ExpressionUUID->"1e5f98fe-ef8e-4190-8a79-8b95bbba8186"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Related Links",
+ Cell[BoxData[
+  TemplateBox[{"RelatedLinks", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related page, including web pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "88b35e1a-2c4f-4c0c-bb75-0aa29168ea80"]
+}], "RelatedLinksSection",
+ CellID->1514854411,ExpressionUUID->"48d3765b-2545-48b9-aa3f-a7cf2f84f242"],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1739450492,ExpressionUUID->"1928f9c2-5044-476b-aa21-d9834444ac5b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Examples Initialization",
+ Cell[BoxData[
+  TemplateBox[{"ExamplesInitialization", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Input that is to be evaluated before any examples are run, e.g. \
+Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]], 
+     "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "4adf46ae-267c-4819-afee-97228776d7a7"]
+}], "ExamplesInitializationSection",
+ CellID->1249532433,ExpressionUUID->"c55b6637-6c8f-4934-aa35-fb9d2563c4c3"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<DanieleGregori`ArXivExplore`\>\"", 
+  "]"}]], "ExampleInitialization",
+ CellID->649017418,ExpressionUUID->"dcf131ad-28ff-4ff5-868e-0701a8cc29b0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox[
+      RowBox[{"Basic", " ", "Examples"}], "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->966301213,ExpressionUUID->"a216e6ce-a04a-4b23-aa77-6b08735c4750"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ArXivLogosTitles", "[", 
+   RowBox[{"\"\<black\>\"", ",", "\"\<hep-th\>\""}], "]"}], "//", 
+  RowBox[{
+   RowBox[{"Short", "[", 
+    RowBox[{"#", ",", "10"}], "]"}], "&"}]}]], "Input",
+ CellChangeTimes->{{3.935308760320508*^9, 3.935308770935341*^9}, {
+  3.9353089554210043`*^9, 3.935308966719468*^9}},
+ CellLabel->"In[1498]:=",
+ CellID->1206540137,ExpressionUUID->"bfdd8cff-c4a2-4125-967d-c65d444dd8b7"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"\[LeftAssociation]", 
+   RowBox[{
+    RowBox[{"\<\"hep-th/9108001\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\<\"exact\"\>", ",", "\<\"black\"\>", ",", "\<\"string\"\>", 
+       ",", "\<\"solutions\"\>", ",", "\<\"dimensions\"\>"}], "}"}]}], ",", 
+    RowBox[{"\<\"hep-th/9108010\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\<\"string\"\>", ",", "\<\"winding\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"hole\"\>", ",", "\<\"geometry\"\>"}], "}"}]}], ",", 
+    RowBox[{"\<\"hep-th/9108011\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\<\"twisted\"\>", ",", "\<\"black\"\>", ",", "\<\"p-brane\"\>",
+        ",", "\<\"solutions\"\>", ",", "\<\"string\"\>", 
+       ",", "\<\"theory\"\>"}], "}"}]}], ",", 
+    RowBox[{"\[LeftSkeleton]", "6892", "\[RightSkeleton]"}], ",", 
+    RowBox[{"\<\"2409.11666\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\<\"thermodynamic\"\>", ",", "\<\"topological\"\>", 
+       ",", "\<\"classes\"\>", ",", "\<\"rotating\"\>", 
+       ",", "\<\"accelerating\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"holes\"\>"}], "}"}]}], ",", 
+    RowBox[{"\<\"2409.12219\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\<\"microscopic\"\>", ",", "\<\"origin\"\>", 
+       ",", "\<\"entropy\"\>", ",", "\<\"single-sided\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"holes\"\>"}], "}"}]}], ",", 
+    RowBox[{"\<\"2409.12747\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\<\"universal\"\>", ",", "\<\"thermodynamic\"\>", 
+       ",", "\<\"topological\"\>", ",", "\<\"classes\"\>", 
+       ",", "\<\"rotating\"\>", ",", "\<\"black\"\>", ",", "\<\"holes\"\>"}], 
+      "}"}]}]}], "\[RightAssociation]"}],
+  Short[#, 10]& ]], "Output",
+ CellChangeTimes->{3.9376284257818336`*^9},
+ CellLabel->"Out[1498]//Short=",
+ CellID->216514502,ExpressionUUID->"5b58b519-188b-4ea8-a0f1-284e6bf3091e"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "More Examples",
+ Cell[BoxData[
+  TemplateBox[{"MoreExamples", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Extended examples in standardized sections.", "MoreInfoText"], 
+       BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "97f23b6d-25a4-47d6-adee-eb5f2ca4c7fb"]
+}], "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1353148277,ExpressionUUID->"7d4c7a07-3cec-4b5c-8039-38f350b39dd6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Scope", "ExampleSection",ExpressionUUID->
+   "2393b1a2-fd10-4f55-9c94-d2bfacb0314c"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->511269809,ExpressionUUID->"647fad7e-6ed7-4f48-96cd-e0aed262e2a1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ArXivLogosTitles", "[", 
+   RowBox[{"\"\<black hole\>\"", ",", "\"\<hep-th\>\""}], "]"}], "//", 
+  RowBox[{
+   RowBox[{"Short", "[", 
+    RowBox[{"#", ",", "10"}], "]"}], "&"}]}]], "Input",
+ CellChangeTimes->{{3.935308760320508*^9, 3.935308770935341*^9}, {
+  3.935308822160263*^9, 3.935308824858842*^9}, {3.935308952269607*^9, 
+  3.9353089691982603`*^9}},
+ CellLabel->"In[1500]:=",
+ CellID->203704289,ExpressionUUID->"2d91a0af-22f6-4894-9497-b17066d2c34f"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"\[LeftAssociation]", 
+   RowBox[{
+    RowBox[{"\<\"hep-th/9108010\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\<\"string winding\"\>", ",", "\<\"winding black\"\>", 
+       ",", "\<\"black hole\"\>", ",", "\<\"hole geometry\"\>"}], "}"}]}], 
+    ",", 
+    RowBox[{"\<\"hep-th/9108026\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\<\"superstring dimensional\"\>", 
+       ",", "\<\"dimensional black\"\>", ",", "\<\"black hole\"\>"}], "}"}]}],
+     ",", 
+    RowBox[{"\[LeftSkeleton]", "2565", "\[RightSkeleton]"}], ",", 
+    RowBox[{"\<\"2409.06454\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\<\"kerr black\"\>", ",", "\<\"black hole\"\>", 
+       ",", "\<\"hole mimickers\"\>", ",", "\<\"mimickers sourced\"\>", 
+       ",", "\<\"sourced string\"\>", ",", "\<\"string fluid\"\>"}], "}"}]}], 
+    ",", 
+    RowBox[{"\<\"2409.06681\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\<\"black hole\"\>", ",", "\<\"hole scattering\"\>", 
+       ",", "\<\"scattering amplitudes\"\>", ",", "\<\"amplitudes via\"\>", 
+       ",", "\<\"via analytic\"\>", ",", "\<\"analytic small-frequency\"\>", 
+       ",", "\<\"small-frequency expansion\"\>", 
+       ",", "\<\"expansion monodromy\"\>"}], "}"}]}]}], 
+   "\[RightAssociation]"}],
+  Short[#, 10]& ]], "Output",
+ CellChangeTimes->{3.9376284532555428`*^9},
+ CellLabel->"Out[1500]//Short=",
+ CellID->399757711,ExpressionUUID->"65320e7c-a834-4c70-9124-ebddb9fa69a3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ArXivLogosTitles", "[", 
+   RowBox[{
+    RowBox[{"And", "[", 
+     RowBox[{"\"\<black\>\"", ",", "\"\<string\>\""}], "]"}], ",", 
+    "\"\<hep-th\>\""}], "]"}], "//", 
+  RowBox[{
+   RowBox[{"Short", "[", 
+    RowBox[{"#", ",", "10"}], "]"}], "&"}]}]], "Input",
+ CellChangeTimes->{{3.935308760320508*^9, 3.935308770935341*^9}, {
+  3.935308822160263*^9, 3.9353088397029343`*^9}, {3.935308879805908*^9, 
+  3.935308887390862*^9}, {3.935308938852502*^9, 3.9353089736506233`*^9}},
+ CellLabel->"In[1499]:=",
+ CellID->1024021604,ExpressionUUID->"43c91d78-41e0-43ea-bf23-53e1294315ae"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"\[LeftAssociation]", 
+   RowBox[{
+    RowBox[{"\<\"hep-th/9108001\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\<\"exact\"\>", ",", "\<\"black\"\>", ",", "\<\"string\"\>", 
+       ",", "\<\"solutions\"\>", ",", "\<\"dimensions\"\>"}], "}"}]}], ",", 
+    RowBox[{"\<\"hep-th/9108010\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\<\"string\"\>", ",", "\<\"winding\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"hole\"\>", ",", "\<\"geometry\"\>"}], "}"}]}], ",", 
+    RowBox[{"\<\"hep-th/9108011\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\<\"twisted\"\>", ",", "\<\"black\"\>", ",", "\<\"p-brane\"\>",
+        ",", "\<\"solutions\"\>", ",", "\<\"string\"\>", 
+       ",", "\<\"theory\"\>"}], "}"}]}], ",", 
+    RowBox[{"\[LeftSkeleton]", "392", "\[RightSkeleton]"}], ",", 
+    RowBox[{"\<\"2406.07836\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\<\"quantum\"\>", ",", "\<\"fluctuation\"\>", 
+       ",", "\<\"worldsheet\"\>", ",", "\<\"probe\"\>", ",", "\<\"string\"\>",
+        ",", "\<\"btz\"\>", ",", "\<\"black\"\>", ",", "\<\"hole\"\>"}], 
+      "}"}]}], ",", 
+    RowBox[{"\<\"2407.08768\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\<\"holographic\"\>", ",", "\<\"thermodynamics\"\>", 
+       ",", "\<\"enhanced\"\>", ",", "\<\"charged\"\>", ",", "\<\"ads\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"hole\"\>", ",", "\<\"string\"\>", 
+       ",", "\<\"theory's\"\>", ",", "\<\"playground\"\>"}], "}"}]}], ",", 
+    RowBox[{"\<\"2409.06454\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\<\"kerr\"\>", ",", "\<\"black\"\>", ",", "\<\"hole\"\>", 
+       ",", "\<\"mimickers\"\>", ",", "\<\"sourced\"\>", 
+       ",", "\<\"string\"\>", ",", "\<\"fluid\"\>"}], "}"}]}]}], 
+   "\[RightAssociation]"}],
+  Short[#, 10]& ]], "Output",
+ CellChangeTimes->{3.9376284373838997`*^9},
+ CellLabel->"Out[1499]//Short=",
+ CellID->93645676,ExpressionUUID->"b39d543e-1aae-4b89-a2c8-0bea7ccdde00"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ArXivLogosTitles", "[", 
+  RowBox[{
+   RowBox[{"And", "[", 
+    RowBox[{"\"\<black\>\"", ",", 
+     RowBox[{"Or", "[", 
+      RowBox[{"\"\<ads\>\"", ",", "\"\<holographic\>\""}], "]"}], ",", 
+     RowBox[{"Or", "[", 
+      RowBox[{"\"\<scattering\>\"", ",", "\"\<amplitude\>\""}], "]"}]}], 
+    "]"}], ",", "\"\<hep-th\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.937627933335623*^9, 3.937627948156901*^9}},
+ CellLabel->"In[1495]:=",
+ CellID->1440027470,ExpressionUUID->"9f55afac-79a0-41b8-9d66-a2fdc6dd9af4"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"0709.3503\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"black\"\>", ",", "\<\"hole\"\>", ",", "\<\"production\"\>", 
+      ",", "\<\"high\"\>", ",", "\<\"energy\"\>", ",", "\<\"scattering\"\>", 
+      ",", "\<\"ads\"\>", ",", "\<\"cft\"\>"}], "}"}]}], ",", 
+   RowBox[{"\<\"1905.07864\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"deep\"\>", ",", "\<\"inelastic\"\>", 
+      ",", "\<\"scattering\"\>", ",", "\<\"extremal\"\>", 
+      ",", "\<\"rn-ads\"\>", ",", "\<\"black\"\>", ",", "\<\"hole\"\>", 
+      ",", "\<\"ii\"\>", ",", "\<\"holographic\"\>", ",", "\<\"fermi\"\>", 
+      ",", "\<\"surface\"\>"}], "}"}]}]}], "\[RightAssociation]"}]], "Output",\
+
+ CellChangeTimes->{{3.9376279372655888`*^9, 3.93762795137316*^9}},
+ CellLabel->"Out[1495]=",
+ CellID->1169969487,ExpressionUUID->"7b4553e8-5fe4-4385-88d3-cc659eb079c0"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Generalizations & Extensions", "ExampleSection",ExpressionUUID->
+   "4b0eb206-c105-459f-b30a-c4a45ef04017"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->829608216,ExpressionUUID->"c28a0c30-571c-402a-83a6-5263f7d85eb4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Options", "ExampleSection",ExpressionUUID->
+   "2b168971-b8b9-45a1-88d4-6b744e24ef5c"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2031784077,ExpressionUUID->"caced05b-5037-42cd-894c-379612af4e89"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "\"Dated\"", "ExampleSubsection",ExpressionUUID->
+   "057ac758-82e5-4aee-9e29-96e5bad1e753"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1057511192,ExpressionUUID->"a01b15a1-f937-473f-afd9-6708886e1c63"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"ArXivLogosTitles", "[", 
+    RowBox[{"\"\<black\>\"", ",", "\"\<hep-th\>\"", ",", 
+     RowBox[{"\"\<Dated\>\"", "->", "True"}]}], "]"}], "//", 
+   RowBox[{
+    RowBox[{"Take", "[", 
+     RowBox[{
+      RowBox[{"Map", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Short", "[", 
+          RowBox[{"#", ",", "10"}], "]"}], "&"}], ",", "#"}], "]"}], ",", 
+      RowBox[{"-", "12"}]}], "]"}], "&"}]}], "//", "TabView"}]], "Input",
+ CellChangeTimes->{{3.935308760320508*^9, 3.935308770935341*^9}, {
+  3.9353089554210043`*^9, 3.935308966719468*^9}, {3.935310413406892*^9, 
+  3.935310461522088*^9}, {3.937628476618051*^9, 3.9376284976569977`*^9}},
+ CellLabel->"In[1503]:=",
+ CellID->1917345745,ExpressionUUID->"5c74f311-30aa-4cf8-bfbb-4934c7872c53"],
+
+Cell[BoxData[
+ TabViewBox[{{1,
+  RowBox[{"{", 
+   RowBox[{"2023", ",", "10"}], "}"}]->
+  TagBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"black\"\>", ",", "\<\"hole\"\>", ",", "\<\"graviton\"\>", 
+       ",", "\<\"quantum\"\>", ",", "\<\"gravity\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"relativistic\"\>", ",", "\<\"dynamics\"\>", 
+       ",", "\<\"moving\"\>", ",", "\<\"mirrors\"\>", ",", "\<\"cft$\"\>", 
+       ",", "\<\"2\"\>", ",", "\<\"quantum\"\>", ",", "\<\"backreaction\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"holes\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"gravitational\"\>", ",", "\<\"radiations\"\>", 
+       ",", "\<\"kerr\"\>", ",", "\<\"black\"\>", ",", "\<\"hole\"\>", 
+       ",", "\<\"warped\"\>", ",", "\<\"symmetries\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"emergence\"\>", ",", "\<\"species\"\>", 
+       ",", "\<\"scale\"\>", ",", "\<\"black\"\>", ",", "\<\"hole\"\>", 
+       ",", "\<\"horizons\"\>"}], "}"}], ",", 
+     RowBox[{"\[LeftSkeleton]", "18", "\[RightSkeleton]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"conservative\"\>", ",", "\<\"scattering\"\>", 
+       ",", "\<\"reissner-nordstr\"\>", ",", "\<\"om\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"holes\"\>", ",", "\<\"third\"\>", 
+       ",", "\<\"post-minkowskian\"\>", ",", "\<\"order\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"unit\"\>", ",", "\<\"information\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"hole\"\>", 
+       ",", "\<\"evaporation\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"frac18\"\>", ",", "\<\"bps\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"holes\"\>", ",", "\<\"chiral\"\>", ",", "\<\"algebra\"\>", 
+       ",", "\<\"mathcal\"\>", ",", "\<\"n\"\>", ",", "\<\"4\"\>", 
+       ",", "\<\"sym\"\>"}], "}"}]}], "}"}],
+   Short[#, 10]& ]}, {2,
+  RowBox[{"{", 
+   RowBox[{"2023", ",", "11"}], "}"}]->
+  TagBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"black\"\>", ",", "\<\"hole\"\>", ",", "\<\"discrete\"\>", 
+       ",", "\<\"gravity\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"binary\"\>", ",", "\<\"black\"\>", ",", "\<\"holes\"\>", 
+       ",", "\<\"quantum\"\>", ",", "\<\"off-shell\"\>", 
+       ",", "\<\"recursion\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"revisiting\"\>", ",", "\<\"alpha\"\>", 
+       ",", "\<\"corrections\"\>", ",", "\<\"heterotic\"\>", 
+       ",", "\<\"two-charge\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"holes\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"refined\"\>", ",", "\<\"symmetry-resolved\"\>", 
+       ",", "\<\"page\"\>", ",", "\<\"curve\"\>", ",", "\<\"charged\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"holes\"\>"}], "}"}], ",", 
+     RowBox[{"\[LeftSkeleton]", "15", "\[RightSkeleton]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"extremal\"\>", ",", "\<\"black\"\>", ",", "\<\"hole\"\>", 
+       ",", "\<\"decay\"\>", ",", "\<\"de\"\>", ",", "\<\"sitter\"\>", 
+       ",", "\<\"space\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"non-linear\"\>", ",", "\<\"instability\"\>", 
+       ",", "\<\"slowly\"\>", ",", "\<\"rotating\"\>", 
+       ",", "\<\"kerr-ads\"\>", ",", "\<\"black\"\>", ",", "\<\"holes\"\>"}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"black\"\>", ",", "\<\"holes\"\>", ",", "\<\"cavities\"\>", 
+       ",", "\<\"blinking\"\>", ",", "\<\"islands\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"reflected\"\>", ",", "\<\"entropy\"\>", 
+       ",", "\<\"bcfts\"\>", ",", "\<\"black\"\>", ",", "\<\"hole\"\>", 
+       ",", "\<\"background\"\>"}], "}"}]}], "}"}],
+   Short[#, 10]& ]}, {3,
+  RowBox[{"{", 
+   RowBox[{"2023", ",", "12"}], "}"}]->
+  TagBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"primordial\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"holes\"\>", ",", "\<\"higgs\"\>", ",", "\<\"vacuum\"\>", 
+       ",", "\<\"decay\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"kleinian\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"holes\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"black\"\>", ",", "\<\"hole\"\>", ",", "\<\"wormhole\"\>", 
+       ",", "\<\"transitions\"\>", ",", "\<\"dimensional\"\>", 
+       ",", "\<\"string\"\>", ",", "\<\"theory\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"multiply\"\>", ",", "\<\"charged\"\>", 
+       ",", "\<\"magnetic\"\>", ",", "\<\"black\"\>", ",", "\<\"branes\"\>"}],
+       "}"}], ",", 
+     RowBox[{"\[LeftSkeleton]", "28", "\[RightSkeleton]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"finite\"\>", ",", "\<\"n$\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"hole\"\>", ",", "\<\"cohomologies\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"noncommutative\"\>", ",", "\<\"information\"\>", 
+       ",", "\<\"revealed\"\>", ",", "\<\"static\"\>", 
+       ",", "\<\"detector\"\>", ",", "\<\"outside\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"hole\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"binary\"\>", ",", "\<\"ads\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"holes\"\>", ",", "\<\"coupled\"\>", ",", "\<\"bath\"\>", 
+       ",", "\<\"type\"\>", ",", "\<\"iib\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"analytical\"\>", ",", "\<\"critical\"\>", 
+       ",", "\<\"phenomena\"\>", ",", "\<\"rotating\"\>", 
+       ",", "\<\"regular\"\>", ",", "\<\"ads\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"holes\"\>", ",", "\<\"dark\"\>", ",", "\<\"energy\"\>"}], 
+      "}"}]}], "}"}],
+   Short[#, 10]& ]}, {4,
+  RowBox[{"{", 
+   RowBox[{"2024", ",", "1"}], "}"}]->
+  TagBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"entanglement\"\>", ",", "\<\"holography\"\>", 
+       ",", "\<\"five-dimensional\"\>", ",", "\<\"charged\"\>", 
+       ",", "\<\"schr\"\>", ",", "\<\"o\"\>", ",", "\<\"dinger\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"hole\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"time-reparametrization\"\>", ",", "\<\"invariance\"\>", 
+       ",", "\<\"glasses\"\>", ",", "\<\"toy\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"holes\"\>"}], "}"}], ",", 
+     RowBox[{"\[LeftSkeleton]", "15", "\[RightSkeleton]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"new\"\>", ",", "\<\"rotating\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"hole\"\>", ",", "\<\"solutions\"\>", 
+       ",", "\<\"imperfect\"\>", ",", "\<\"fluid\"\>", 
+       ",", "\<\"energy-momentum\"\>", ",", "\<\"tensor\"\>", 
+       ",", "\<\"f\"\>", ",", "\<\"r\"\>", ",", "\<\"gravity\"\>"}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"topological\"\>", ",", "\<\"classes\"\>", 
+       ",", "\<\"thermodynamics\"\>", ",", "\<\"static\"\>", 
+       ",", "\<\"multi-charge\"\>", ",", "\<\"ads\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"holes\"\>", ",", "\<\"gauged\"\>", 
+       ",", "\<\"supergravities\"\>", ",", "\<\"novel\"\>", 
+       ",", "\<\"temperature-dependent\"\>", ",", "\<\"thermodynamic\"\>", 
+       ",", "\<\"topological\"\>", ",", "\<\"phase\"\>", 
+       ",", "\<\"transition\"\>"}], "}"}]}], "}"}],
+   Short[#, 10]& ]}, {5,
+  RowBox[{"{", 
+   RowBox[{"2024", ",", "2"}], "}"}]->
+  TagBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"entropy\"\>", ",", "\<\"dynamical\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"holes\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"near-horizon\"\>", ",", "\<\"geometries\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"hole\"\>", 
+       ",", "\<\"thermodynamics\"\>", ",", "\<\"higher-derivative\"\>", 
+       ",", "\<\"ads\"\>", ",", "\<\"5\"\>", ",", "\<\"supergravity\"\>"}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"rotating\"\>", ",", "\<\"black\"\>", ",", "\<\"holes\"\>", 
+       ",", "\<\"viable\"\>", ",", "\<\"lorentz-violating\"\>", 
+       ",", "\<\"gravity\"\>", ",", "\<\"finding\"\>", ",", "\<\"exact\"\>", 
+       ",", "\<\"solutions\"\>", ",", "\<\"tears\"\>"}], "}"}], ",", 
+     RowBox[{"\[LeftSkeleton]", "15", "\[RightSkeleton]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"gravito-magnetic\"\>", ",", "\<\"polarization\"\>", 
+       ",", "\<\"schwarzschild\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"hole\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"duality\"\>", ",", "\<\"seiberg-witten\"\>", 
+       ",", "\<\"theory\"\>", ",", "\<\"black\"\>", ",", "\<\"hole\"\>", 
+       ",", "\<\"superradiance\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"sudden\"\>", ",", "\<\"breakdown\"\>", 
+       ",", "\<\"effective\"\>", ",", "\<\"field\"\>", ",", "\<\"theory\"\>", 
+       ",", "\<\"near\"\>", ",", "\<\"cool\"\>", ",", "\<\"kerr-newman\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"holes\"\>"}], "}"}]}], "}"}],
+   Short[#, 10]& ]}, {6,
+  RowBox[{"{", 
+   RowBox[{"2024", ",", "3"}], "}"}]->
+  TagBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"new\"\>", ",", "\<\"supersymmetric\"\>", 
+       ",", "\<\"ads_6\"\>", ",", "\<\"black\"\>", ",", "\<\"holes\"\>", 
+       ",", "\<\"matter-coupled\"\>", ",", "\<\"f\"\>", ",", "\<\"4\"\>", 
+       ",", "\<\"gauged\"\>", ",", "\<\"supergravity\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"higher-derivative\"\>", ",", "\<\"corrections\"\>", 
+       ",", "\<\"flavoured\"\>", ",", "\<\"bps\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"hole\"\>", ",", "\<\"thermodynamics\"\>", 
+       ",", "\<\"holography\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"recent\"\>", ",", "\<\"developments\"\>", 
+       ",", "\<\"holographic\"\>", ",", "\<\"black\"\>", ",", "\<\"hole\"\>", 
+       ",", "\<\"chemistry\"\>"}], "}"}], ",", 
+     RowBox[{"\[LeftSkeleton]", "22", "\[RightSkeleton]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"quantum\"\>", ",", "\<\"focusing\"\>", 
+       ",", "\<\"conjecture\"\>", ",", "\<\"two-dimensional\"\>", 
+       ",", "\<\"evaporating\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"holes\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"exploring\"\>", ",", "\<\"critical\"\>", 
+       ",", "\<\"behavior\"\>", ",", "\<\"thermodynamic\"\>", 
+       ",", "\<\"variables\"\>", ",", "\<\"kerr-newman-ads\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"hole\"\>", ",", "\<\"restricted\"\>", 
+       ",", "\<\"phase\"\>", ",", "\<\"space\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"black\"\>", ",", "\<\"holes\"\>", 
+       ",", "\<\"perceiving\"\>", ",", "\<\"dark\"\>", 
+       ",", "\<\"dimension\"\>"}], "}"}]}], "}"}],
+   Short[#, 10]& ]}, {7,
+  RowBox[{"{", 
+   RowBox[{"2024", ",", "4"}], "}"}]->
+  TagBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"black\"\>", ",", "\<\"hole\"\>", ",", "\<\"entropy\"\>", 
+       ",", "\<\"m-theory\"\>", ",", "\<\"quintic\"\>", 
+       ",", "\<\"threefold\"\>", ",", "\<\"via\"\>", 
+       ",", "\<\"f-theoretic\"\>", ",", "\<\"strings\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"interplay\"\>", ",", "\<\"lyapunov\"\>", 
+       ",", "\<\"exponents\"\>", ",", "\<\"phase\"\>", 
+       ",", "\<\"transitions\"\>", ",", "\<\"charged\"\>", ",", "\<\"ads\"\>",
+        ",", "\<\"black\"\>", ",", "\<\"holes\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"ads_2\"\>", ",", "\<\"cft_1\"\>", ",", "\<\"finite\"\>", 
+       ",", "\<\"density\"\>", ",", "\<\"holographic\"\>", 
+       ",", "\<\"aspects\"\>", ",", "\<\"2d\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"holes\"\>"}], "}"}], ",", 
+     RowBox[{"\[LeftSkeleton]", "28", "\[RightSkeleton]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"holographic\"\>", ",", "\<\"thermodynamics\"\>", 
+       ",", "\<\"charged\"\>", ",", "\<\"ads\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"holes\"\>", ",", "\<\"global\"\>", ",", "\<\"monopole\"\>"}],
+       "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"density\"\>", ",", "\<\"states\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"holes\"\>", ",", "\<\"emergent\"\>", ",", "\<\"string\"\>", 
+       ",", "\<\"conjecture\"\>"}], "}"}]}], "}"}],
+   Short[#, 10]& ]}, {8,
+  RowBox[{"{", 
+   RowBox[{"2024", ",", "5"}], "}"}]->
+  TagBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"effective\"\>", ",", "\<\"lifshitz\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"holes\"\>", 
+       ",", "\<\"hydrodynamics\"\>", ",", "\<\"transport\"\>", 
+       ",", "\<\"coefficients\"\>", ",", "\<\"fluid\"\>", 
+       ",", "\<\"gravity\"\>", ",", "\<\"correspondence\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"lyapunov\"\>", ",", "\<\"exponents\"\>", 
+       ",", "\<\"geodesic\"\>", ",", "\<\"stability\"\>", 
+       ",", "\<\"schwarzschild\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"hole\"\>", ",", "\<\"non-commutative\"\>", 
+       ",", "\<\"gauge\"\>", ",", "\<\"theory\"\>", ",", "\<\"gravity\"\>"}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"comparing\"\>", ",", "\<\"decoherence\"\>", 
+       ",", "\<\"effects\"\>", ",", "\<\"due\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"holes\"\>", ",", "\<\"versus\"\>", ",", "\<\"ordinary\"\>", 
+       ",", "\<\"matter\"\>"}], "}"}], ",", 
+     RowBox[{"\[LeftSkeleton]", "22", "\[RightSkeleton]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"thermodynamic\"\>", ",", "\<\"topology\"\>", 
+       ",", "\<\"topological\"\>", ",", "\<\"black\"\>", ",", "\<\"hole\"\>", 
+       ",", "\<\"f\"\>", ",", "\<\"r\"\>", ",", "\<\"modmax\"\>", 
+       ",", "\<\"gravity's\"\>", ",", "\<\"rainbow\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"conic\"\>", ",", "\<\"section\"\>", ",", "\<\"sky\"\>", 
+       ",", "\<\"shadows\"\>", ",", "\<\"linearly\"\>", 
+       ",", "\<\"superrotated\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"holes\"\>"}], "}"}]}], "}"}],
+   Short[#, 10]& ]}, {9,
+  RowBox[{"{", 
+   RowBox[{"2024", ",", "6"}], "}"}]->
+  TagBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"black\"\>", ",", "\<\"flowers\"\>", ",", "\<\"real\"\>", 
+       ",", "\<\"forms\"\>", ",", "\<\"higher\"\>", ",", "\<\"spin\"\>", 
+       ",", "\<\"symmetries\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"matrix\"\>", ",", "\<\"model\"\>", ",", "\<\"proposal\"\>",
+        ",", "\<\"quantum\"\>", ",", "\<\"gravity\"\>", 
+       ",", "\<\"quantum\"\>", ",", "\<\"mechanics\"\>", ",", "\<\"black\"\>",
+        ",", "\<\"holes\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"amplitudes\"\>", ",", "\<\"supersymmetric\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"hole\"\>", ",", "\<\"scattering\"\>", 
+       ",", "\<\"mathcal\"\>", ",", "\<\"o\"\>", ",", "\<\"g\"\>", 
+       ",", "\<\"5\"\>", ",", "\<\"loop\"\>", ",", "\<\"integration\"\>"}], 
+      "}"}], ",", 
+     RowBox[{"\[LeftSkeleton]", "24", "\[RightSkeleton]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"quantum\"\>", ",", "\<\"inequalities\"\>", 
+       ",", "\<\"quantum\"\>", ",", "\<\"black\"\>", ",", "\<\"holes\"\>"}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"short\"\>", ",", "\<\"note\"\>", ",", "\<\"love\"\>", 
+       ",", "\<\"number\"\>", ",", "\<\"extremal\"\>", 
+       ",", "\<\"reissner-nordstrom\"\>", ",", "\<\"kerr-newman\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"holes\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"charged\"\>", ",", "\<\"static\"\>", ",", "\<\"ads\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"hole\"\>", ",", "\<\"binaries\"\>"}], 
+      "}"}]}], "}"}],
+   Short[#, 10]& ]}, {10,
+  RowBox[{"{", 
+   RowBox[{"2024", ",", "7"}], "}"}]->
+  TagBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"tensor\"\>", ",", "\<\"networks\"\>", ",", "\<\"black\"\>",
+        ",", "\<\"hole\"\>", ",", "\<\"interiors\"\>", 
+       ",", "\<\"non-isometries\"\>", ",", "\<\"quantum\"\>", 
+       ",", "\<\"extremal\"\>", ",", "\<\"surfaces\"\>", 
+       ",", "\<\"wormholes\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"r\"\>", ",", "\<\"enyi\"\>", ",", "\<\"second\"\>", 
+       ",", "\<\"laws\"\>", ",", "\<\"black\"\>", ",", "\<\"holes\"\>"}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"local\"\>", ",", "\<\"description\"\>", 
+       ",", "\<\"decoherence\"\>", ",", "\<\"quantum\"\>", 
+       ",", "\<\"superpositions\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"holes\"\>", ",", "\<\"bodies\"\>"}], "}"}], ",", 
+     RowBox[{"\[LeftSkeleton]", "29", "\[RightSkeleton]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"universal\"\>", ",", "\<\"structure\"\>", 
+       ",", "\<\"islands\"\>", ",", "\<\"evaporating\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"holes\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"hairy\"\>", ",", "\<\"dyonic\"\>", 
+       ",", "\<\"reissner-nordstr\"\>", ",", "\<\"om\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"holes\"\>", 
+       ",", "\<\"einstein-maxwell-friedberg-lee-sirlin\"\>", 
+       ",", "\<\"type\"\>", ",", "\<\"model\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"operator\"\>", ",", "\<\"algebraic\"\>", 
+       ",", "\<\"approach\"\>", ",", "\<\"black\"\>", ",", "\<\"hole\"\>", 
+       ",", "\<\"information\"\>"}], "}"}]}], "}"}],
+   Short[#, 10]& ]}, {11,
+  RowBox[{"{", 
+   RowBox[{"2024", ",", "8"}], "}"}]->
+  TagBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"holographic\"\>", ",", "\<\"thermodynamics\"\>", 
+       ",", "\<\"five-dimensional\"\>", ",", "\<\"neutral\"\>", 
+       ",", "\<\"gauss-bonnet\"\>", ",", "\<\"ads\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"hole\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"charged\"\>", ",", "\<\"rotating\"\>", ",", "\<\"btz\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"hole\"\>", 
+       ",", "\<\"non-extensive\"\>", ",", "\<\"generalizations\"\>", 
+       ",", "\<\"gibbs\"\>", ",", "\<\"entropy\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"deformations\"\>", ",", "\<\"extremal\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"holes\"\>", ",", "\<\"uv\"\>"}], "}"}],
+      ",", 
+     RowBox[{"\[LeftSkeleton]", "12", "\[RightSkeleton]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"black\"\>", ",", "\<\"hole-de\"\>", ",", "\<\"sitter\"\>", 
+       ",", "\<\"model\"\>", ",", "\<\"proposal\"\>", ",", "\<\"de\"\>", 
+       ",", "\<\"sitter\"\>", ",", "\<\"phases\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"spectrum\"\>", ",", "\<\"quantum\"\>", 
+       ",", "\<\"lifshitz\"\>", ",", "\<\"black\"\>", ",", "\<\"hole\"\>", 
+       ",", "\<\"dimensions\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"extremal\"\>", ",", "\<\"rotating\"\>", ",", "\<\"btz\"\>",
+        ",", "\<\"black\"\>", ",", "\<\"holes\"\>", ",", "\<\"dressed\"\>", 
+       ",", "\<\"anti-\"\>", ",", "\<\"self-dual\"\>", ",", "\<\"maxwell\"\>",
+        ",", "\<\"field\"\>"}], "}"}]}], "}"}],
+   Short[#, 10]& ]}, {12,
+  RowBox[{"{", 
+   RowBox[{"2024", ",", "9"}], "}"}]->
+  TagBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"kasner\"\>", ",", "\<\"eons\"\>", ",", "\<\"lovelock\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"holes\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"localization\"\>", ",", "\<\"5d\"\>", 
+       ",", "\<\"supergravity\"\>", ",", "\<\"action\"\>", 
+       ",", "\<\"euclidean\"\>", ",", "\<\"saddles\"\>", ",", "\<\"black\"\>",
+        ",", "\<\"hole\"\>", ",", "\<\"index\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"finite\"\>", ",", "\<\"entangling\"\>", 
+       ",", "\<\"regions\"\>", ",", "\<\"information\"\>", 
+       ",", "\<\"paradox\"\>", ",", "\<\"charged\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"holes\"\>"}], "}"}], ",", 
+     RowBox[{"\[LeftSkeleton]", "13", "\[RightSkeleton]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"thermodynamic\"\>", ",", "\<\"topological\"\>", 
+       ",", "\<\"classes\"\>", ",", "\<\"rotating\"\>", 
+       ",", "\<\"accelerating\"\>", ",", "\<\"black\"\>", 
+       ",", "\<\"holes\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"microscopic\"\>", ",", "\<\"origin\"\>", 
+       ",", "\<\"entropy\"\>", ",", "\<\"single-sided\"\>", 
+       ",", "\<\"black\"\>", ",", "\<\"holes\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"universal\"\>", ",", "\<\"thermodynamic\"\>", 
+       ",", "\<\"topological\"\>", ",", "\<\"classes\"\>", 
+       ",", "\<\"rotating\"\>", ",", "\<\"black\"\>", ",", "\<\"holes\"\>"}], 
+      "}"}]}], "}"}],
+   Short[#, 10]& ]}}, 1]], "Output",
+ CellChangeTimes->{{3.937628462871661*^9, 3.937628498008308*^9}},
+ CellLabel->"Out[1503]=",
+ CellID->2130918303,ExpressionUUID->"64df6063-b512-4b79-9014-05a589b5e1a0"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Applications", "ExampleSection",ExpressionUUID->
+   "4ebd15af-6dc2-43ea-aa7c-38c114970d4c"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1531536829,ExpressionUUID->"d31983b3-2a0c-406a-90f5-8dfc192d5613"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Properties & Relations", "ExampleSection",ExpressionUUID->
+   "60921727-6357-47d3-988a-a7b2e7a67d94"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->800492061,ExpressionUUID->"22260ec6-7301-4962-a20d-6eda58fd10b6"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Possible Issues", "ExampleSection",ExpressionUUID->
+   "4488d28e-9726-4f98-91eb-151892797281"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2032504419,ExpressionUUID->"c5bbafad-e491-4074-b558-ea54ce70a448"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Interactive Examples", "ExampleSection",ExpressionUUID->
+   "2ea18205-9620-41a0-bd6f-60d26972a8cc"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->279397304,ExpressionUUID->"37f7df9e-03fa-4f0a-a5c1-aff5998f6db1"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Neat Examples", "ExampleSection",ExpressionUUID->
+   "6e106d0f-cd8c-4b95-b7ed-2f2031b18946"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1431235986,ExpressionUUID->"03ad90ac-ff4f-4445-bcef-400bc4e05e92"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Metadata", "MetadataSection",
+ CellID->818886655,ExpressionUUID->"6e94734a-beda-42eb-b8d5-9c435dc9ae47"],
+
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New",ExpressionUUID->"8b35502c-e6a1-4340-ae95-73df957323a1"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified",ExpressionUUID->"4a6f9f15-6748-4170-9f11-cda58434dd27"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete",ExpressionUUID->
+  "2f5f4044-11d7-475d-9932-9c00214045f9"]
+}], "History",
+ CellID->1952800609,ExpressionUUID->"599c2fcb-8bc4-4498-85ba-577b94157153"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Categorization",
+ Cell[BoxData[
+  TemplateBox[{"Metadata", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Metadata such as page URI, context, and type of documentation page.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "34adf183-57c1-4d62-8a15-adcfef03cdfa"]
+}], "CategorizationSection",
+ CellID->727258362,ExpressionUUID->"662b33e2-c906-4605-8631-80ca61a1c330"],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->1701855057,ExpressionUUID->"c119bb7c-46c2-4a0e-b84d-014311a7bb68"],
+
+Cell["DanieleGregori/ArXivExplore", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->1015941372,ExpressionUUID->"fc21fd86-c90a-43dc-bc42-f8cc70cb29a2"],
+
+Cell["DanieleGregori`ArXivExplore`", "Categorization",
+ CellLabel->"Context",
+ CellID->284161907,ExpressionUUID->"22c220d8-594d-4b04-ad64-cb7c8558ee11"],
+
+Cell["DanieleGregori/ArXivExplore/ref/ArXivLogosTitles", "Categorization",
+ CellLabel->"URI",
+ CellID->2053023668,ExpressionUUID->"570e8759-3323-46d5-9918-150e8122a82a"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->875398744,ExpressionUUID->"b5686f77-a4d7-4842-b1e9-7eccf1973c29"],
+
+Cell["XXXX", "Keywords",
+ CellID->416224811,ExpressionUUID->"59ea02bf-4c45-451e-ad6a-04a41b05116e"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1136160198,ExpressionUUID->"5f6a6d51-8943-491c-9902-57de4ab51e73"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->19858662,ExpressionUUID->"71eed7cc-e0fa-44ac-8f3f-02c4abb5cb8f"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->904566949,ExpressionUUID->"2622b089-32d7-49fb-a155-1a99be7e96a2"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1019974730,ExpressionUUID->"83795235-d948-4ad5-9f35-561c8cac00da"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->1500816756,ExpressionUUID->"e9b8e3ba-d2fd-4dd9-9d5d-6e8aa9e6de01"]
+}, Closed]]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{5, Automatic}, {Automatic, 0}},
+TaggingRules-><|"Paclet" -> "DanieleGregori/ArXivExplore"|>,
+CellContext->"Global`",
+FrontEndVersion->"14.1 for Mac OS X x86 (64-bit) (July 16, 2024)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"56ad75d4-1feb-4003-9ca4-70f7acde7c28"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ExtendedExamples"->{
+  Cell[11451, 322, 488, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"7d4c7a07-3cec-4b5c-8039-38f350b39dd6",
+   CellTags->"ExtendedExamples",
+   CellID->1353148277]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ExtendedExamples", 45142, 1109}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 114, 1, 72, "ObjectName",ExpressionUUID->"4302c58b-a345-4f93-9eae-861191b57cf1",
+ CellID->1036797838],
+Cell[693, 25, 3025, 71, 311, "Usage",ExpressionUUID->"149abe82-5d05-4cd4-8475-4bbab480225e",
+ CellID->778951508],
+Cell[3721, 98, 128, 1, 26, "Notes",ExpressionUUID->"39dda720-577b-4ee5-b926-a753c20a2f55",
+ CellID->777682844],
+Cell[3852, 101, 371, 8, 22, "3ColumnTableMod",ExpressionUUID->"d26353a7-51b6-45c6-b3e9-9404a63dd45f",
+ CellID->930083466]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4260, 114, 458, 13, 38, "SeeAlsoSection",ExpressionUUID->"b2d01234-41fe-49ed-a7c2-db291adf5b1c",
+ CellID->379346549],
+Cell[4721, 129, 1654, 42, 21, "SeeAlso",ExpressionUUID->"517fbcbf-d7e6-491f-ab1d-c14c8011095d",
+ CellID->1945984747]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6412, 176, 436, 12, 39, "TechNotesSection",ExpressionUUID->"4b260337-c02f-4474-b197-1b8e3cf02817",
+ CellID->2137182666],
+Cell[6851, 190, 100, 1, 17, "Tutorials",ExpressionUUID->"39676e97-2c2d-41e8-b87c-c6d6b70654b4",
+ CellID->817587740]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6988, 196, 118, 1, 37, "MoreAboutSection",ExpressionUUID->"ef256e3b-a5be-4cf0-a8c1-0df86dd12584",
+ CellID->1596772674],
+Cell[7109, 199, 101, 1, 17, "MoreAbout",ExpressionUUID->"1e5f98fe-ef8e-4190-8a79-8b95bbba8186",
+ CellID->2002679006]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7247, 205, 473, 13, 38, "RelatedLinksSection",ExpressionUUID->"48d3765b-2545-48b9-aa3f-a7cf2f84f242",
+ CellID->1514854411],
+Cell[7723, 220, 104, 1, 17, "RelatedLinks",ExpressionUUID->"1928f9c2-5044-476b-aa21-d9834444ac5b",
+ CellID->1739450492]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7864, 226, 531, 14, 68, "ExamplesInitializationSection",ExpressionUUID->"c55b6637-6c8f-4934-aa35-fb9d2563c4c3",
+ CellID->1249532433],
+Cell[8398, 242, 187, 3, 46, "ExampleInitialization",ExpressionUUID->"dcf131ad-28ff-4ff5-868e-0701a8cc29b0",
+ CellID->649017418]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8622, 250, 442, 12, 70, "PrimaryExamplesSection",ExpressionUUID->"a216e6ce-a04a-4b23-aa77-6b08735c4750",
+ CellID->966301213],
+Cell[CellGroupData[{
+Cell[9089, 266, 438, 10, 26, "Input",ExpressionUUID->"bfdd8cff-c4a2-4125-967d-c65d444dd8b7",
+ CellID->1206540137],
+Cell[9530, 278, 1872, 38, 157, "Output",ExpressionUUID->"5b58b519-188b-4ea8-a0f1-284e6bf3091e",
+ CellID->216514502]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11451, 322, 488, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"7d4c7a07-3cec-4b5c-8039-38f350b39dd6",
+ CellTags->"ExtendedExamples",
+ CellID->1353148277],
+Cell[CellGroupData[{
+Cell[11964, 339, 241, 5, 32, "ExampleSection",ExpressionUUID->"647fad7e-6ed7-4f48-96cd-e0aed262e2a1",
+ CellID->511269809],
+Cell[CellGroupData[{
+Cell[12230, 348, 491, 11, 26, "Input",ExpressionUUID->"2d91a0af-22f6-4894-9497-b17066d2c34f",
+ CellID->203704289],
+Cell[12724, 361, 1466, 32, 157, "Output",ExpressionUUID->"65320e7c-a834-4c70-9124-ebddb9fa69a3",
+ CellID->399757711]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14227, 398, 611, 14, 26, "Input",ExpressionUUID->"43c91d78-41e0-43ea-bf23-53e1294315ae",
+ CellID->1024021604],
+Cell[14841, 414, 1961, 39, 157, "Output",ExpressionUUID->"b39d543e-1aae-4b89-a2c8-0bea7ccdde00",
+ CellID->93645676]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16839, 458, 535, 12, 44, "Input",ExpressionUUID->"9f55afac-79a0-41b8-9d66-a2fdc6dd9af4",
+ CellID->1440027470],
+Cell[17377, 472, 915, 18, 62, "Output",ExpressionUUID->"7b4553e8-5fe4-4385-88d3-cc659eb079c0",
+ CellID->1169969487]
+}, Open  ]]
+}, Open  ]],
+Cell[18319, 494, 264, 5, 32, "ExampleSection",ExpressionUUID->"c28a0c30-571c-402a-83a6-5263f7d85eb4",
+ CellID->829608216],
+Cell[CellGroupData[{
+Cell[18608, 503, 244, 5, 20, "ExampleSection",ExpressionUUID->"caced05b-5037-42cd-894c-379612af4e89",
+ CellID->2031784077],
+Cell[CellGroupData[{
+Cell[18877, 512, 252, 5, 23, "ExampleSubsection",ExpressionUUID->"a01b15a1-f937-473f-afd9-6708886e1c63",
+ CellID->1057511192],
+Cell[CellGroupData[{
+Cell[19154, 521, 800, 19, 44, "Input",ExpressionUUID->"5c74f311-30aa-4cf8-bfbb-4934c7872c53",
+ CellID->1917345745],
+Cell[19957, 542, 20592, 427, 217, "Output",ExpressionUUID->"64df6063-b512-4b79-9014-05a589b5e1a0",
+ CellID->2130918303]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[40588, 974, 249, 5, 32, "ExampleSection",ExpressionUUID->"d31983b3-2a0c-406a-90f5-8dfc192d5613",
+ CellID->1531536829],
+Cell[40840, 981, 258, 5, 20, "ExampleSection",ExpressionUUID->"22260ec6-7301-4962-a20d-6eda58fd10b6",
+ CellID->800492061],
+Cell[41101, 988, 252, 5, 20, "ExampleSection",ExpressionUUID->"c5bbafad-e491-4074-b558-ea54ce70a448",
+ CellID->2032504419],
+Cell[41356, 995, 256, 5, 20, "ExampleSection",ExpressionUUID->"37f7df9e-03fa-4f0a-a5c1-aff5998f6db1",
+ CellID->279397304],
+Cell[41615, 1002, 250, 5, 20, "ExampleSection",ExpressionUUID->"03ad90ac-ff4f-4445-bcef-400bc4e05e92",
+ CellID->1431235986]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[41902, 1012, 110, 1, 71, "MetadataSection",ExpressionUUID->"6e94734a-beda-42eb-b8d5-9c435dc9ae47",
+ CellID->818886655],
+Cell[42015, 1015, 477, 12, 25, "History",ExpressionUUID->"599c2fcb-8bc4-4498-85ba-577b94157153",
+ CellID->1952800609],
+Cell[CellGroupData[{
+Cell[42517, 1031, 484, 13, 20, "CategorizationSection",ExpressionUUID->"662b33e2-c906-4605-8631-80ca61a1c330",
+ CellID->727258362],
+Cell[43004, 1046, 135, 2, 34, "Categorization",ExpressionUUID->"c119bb7c-46c2-4a0e-b84d-014311a7bb68",
+ CellID->1701855057],
+Cell[43142, 1050, 156, 2, 34, "Categorization",ExpressionUUID->"fc21fd86-c90a-43dc-bc42-f8cc70cb29a2",
+ CellID->1015941372],
+Cell[43301, 1054, 152, 2, 34, "Categorization",ExpressionUUID->"22c220d8-594d-4b04-ad64-cb7c8558ee11",
+ CellID->284161907],
+Cell[43456, 1058, 169, 2, 34, "Categorization",ExpressionUUID->"570e8759-3323-46d5-9918-150e8122a82a",
+ CellID->2053023668]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[43662, 1065, 110, 1, 20, "KeywordsSection",ExpressionUUID->"b5686f77-a4d7-4842-b1e9-7eccf1973c29",
+ CellID->875398744],
+Cell[43775, 1068, 99, 1, 70, "Keywords",ExpressionUUID->"59ea02bf-4c45-451e-ad6a-04a41b05116e",
+ CellID->416224811]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[43911, 1074, 120, 1, 20, "TemplatesSection",ExpressionUUID->"5f6a6d51-8943-491c-9902-57de4ab51e73",
+ CellID->1136160198],
+Cell[44034, 1077, 147, 2, 70, "Template",ExpressionUUID->"71eed7cc-e0fa-44ac-8f3f-02c4abb5cb8f",
+ CellID->19858662],
+Cell[44184, 1081, 137, 2, 70, "Template",ExpressionUUID->"2622b089-32d7-49fb-a155-1a99be7e96a2",
+ CellID->904566949],
+Cell[44324, 1085, 136, 2, 70, "Template",ExpressionUUID->"83795235-d948-4ad5-9f35-561c8cac00da",
+ CellID->1019974730],
+Cell[44463, 1089, 138, 2, 70, "Template",ExpressionUUID->"e9b8e3ba-d2fd-4dd9-9d5d-6e8aa9e6de01",
+ CellID->1500816756]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+

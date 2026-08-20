@@ -1,0 +1,1887 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     83694,       1879]
+NotebookOptionsPosition[     77089,       1735]
+NotebookOutlinePosition[     77878,       1761]
+CellTagsIndexPosition[     77798,       1756]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["ArXivArticles", "ObjectName",
+ CellID->992751169,ExpressionUUID->"cb90d5f3-bce7-442f-9ba5-ae5399baf139"],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo",ExpressionUUID->"84db7b94-d145-407d-9b63-c0f3bdecc154"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["ArXivArticles",
+    BaseStyle->"Link",
+    ButtonData->"paclet:DanieleGregoriArXivExplore/ref/ArXivArticles"], "[", 
+   StyleBox["id", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+  "00242cba-0bac-44d4-9a01-cc8ad6a7ba0e"],
+ "\[LineSeparator]returns all article dataset items of a given article id or \
+list of ids."
+}], "Usage",
+ CellChangeTimes->{3.931063703359021*^9},
+ CellID->1368443840,ExpressionUUID->"39eb44af-951f-4848-b35f-0fafc0196696"],
+
+Cell["XXXX", "Notes",
+ CellID->2033243157,ExpressionUUID->"f368d9da-32b6-471e-89bf-3e2aa1e2e290"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "See Also",
+ Cell[BoxData[
+  TemplateBox[{"SeeAlso", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related reference (function) pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "1393024e-7355-4b37-a848-f4cd916071f0"]
+}], "SeeAlsoSection",
+ CellID->1957948635,ExpressionUUID->"46807fd5-506b-4e50-b18b-cadfc67baa94"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TagBox[
+   FrameBox["\<\"XXXX\"\>"],
+   "FunctionPlaceholder"]], "InlineSeeAlsoFunction",
+  TaggingRules->{"PageType" -> "Function"},ExpressionUUID->
+  "11ca0533-05c3-43b3-8a55-47a0b5d0bdd3"],
+ Cell[BoxData[
+  RowBox[{
+  Cell[TextData[StyleBox[
+   " \[FilledVerySmallSquare] ", "InlineSeparator"]],ExpressionUUID->
+    "d04f092a-7ce2-4902-bdbe-fec7e299177c"], 
+   DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
+    "86ea2e7f-cb5f-4b91-ba6b-bfc50c159655", 
+     "28c9e51b-8008-4878-a176-8c158724decc"], $CellContext`cellobj$$ = 
+    CellObject[
+    "6d8723bf-0d7c-4b38-a311-8040350f2b44", 
+     "e29dc75a-d3e3-4c90-8c86-79795d25360e"]}, 
+    TemplateBox[{
+      GraphicsBox[{{
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         CircleBox[{0, 0}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{0, 0.62}, {0, -0.62}}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{-0.62, 0}, {0.62, 0}}]}}, 
+       ImagePadding -> {{1., 1.}, {2.4, 1.}}, ImageSize -> 16, 
+       PlotRange -> {{-1.06, 1.06}, {-1.06, 1.06}}, 
+       BaselinePosition -> (Center -> 
+        Center)], $CellContext`nbobj$$, $CellContext`cellobj$$},
+     "InlineListingAddButton"],
+    Initialization:>($CellContext`nbobj$$ = 
+      EvaluationNotebook[]; $CellContext`cellobj$$ = EvaluationCell[])]}]], 
+  "InlineListingAddButton",ExpressionUUID->
+  "6d8723bf-0d7c-4b38-a311-8040350f2b44"]
+}], "SeeAlso",
+ CellID->1350785464,ExpressionUUID->"abc5319b-342d-49c5-ba94-8a81b3b675b4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Tech Notes",
+ Cell[BoxData[
+  TemplateBox[{"TechNotes", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Insert links to related tech notes.", "MoreInfoText"], BaseStyle -> 
+       "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "c85d08d1-b07d-47f1-9c3e-ecb513a6497c"]
+}], "TechNotesSection",
+ CellID->1601661011,ExpressionUUID->"ebc68df2-1b60-4f66-8af6-b85d88b4a561"],
+
+Cell["XXXX", "Tutorials",
+ CellID->409096732,ExpressionUUID->"dd170225-1479-48d0-bdc5-bd3429027edf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "MoreAboutSection",
+ CellID->1593620677,ExpressionUUID->"b7f7d4e1-dd3b-4ae9-a411-d6714a26374a"],
+
+Cell["XXXX", "MoreAbout",
+ CellID->566672955,ExpressionUUID->"aab89f61-4b93-4fa1-8257-8000e83f6261"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Related Links",
+ Cell[BoxData[
+  TemplateBox[{"RelatedLinks", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related page, including web pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "339ee1ca-9d87-45cc-9f3c-686e107d8536"]
+}], "RelatedLinksSection",
+ CellID->2129863887,ExpressionUUID->"8a7739ec-131f-4850-a530-cb6436640dd9"],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->217436966,ExpressionUUID->"da566d45-19e5-4e0d-8737-73884ee8d614"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Examples Initialization",
+ Cell[BoxData[
+  TemplateBox[{"ExamplesInitialization", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Input that is to be evaluated before any examples are run, e.g. \
+Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]], 
+     "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "6853c992-43b2-4e7c-bbc3-39ddb638de49"]
+}], "ExamplesInitializationSection",
+ CellID->1593404015,ExpressionUUID->"39c98090-e3c8-4852-b825-e55a605aeae4"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<DanieleGregori`ArXivExplore`\>\"", 
+  "]"}]], "ExampleInitialization",
+ CellID->1220202015,ExpressionUUID->"db3c09c1-0909-461b-814b-ca8337839c6d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox[
+      RowBox[{"Basic", " ", "Examples"}], "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->1613920902,ExpressionUUID->"fdc4d2f1-4e1a-44c1-9e74-a0d265d504c9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ArXivArticles", "[", "\"\<1908.08030\>\"", "]"}], "//", 
+  "TableForm"}]], "Input",
+ CellChangeTimes->{{3.931063713090446*^9, 3.93106372414596*^9}},
+ CellLabel->"In[103]:=",
+ CellID->573545140,ExpressionUUID->"470a66b5-b6b8-425a-8fbc-d45bb0026436"],
+
+Cell[BoxData[
+ TagBox[
+  TagBox[GridBox[{
+     {
+      RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"1908.08030\"\>"}]},
+     {
+      RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Davide Fioravanti\"\>"}]},
+     {
+      RowBox[{"\<\"authors\"\>", 
+       "\[Rule]", "\<\"Davide Fioravanti, Daniele Gregori\"\>"}]},
+     {
+      RowBox[{"\<\"title\"\>", 
+       "\[Rule]", "\<\"Integrability and cycles of deformed ${\\\\cal N}=2$ \
+gauge theory\"\>"}]},
+     {
+      RowBox[{"\<\"comments\"\>", "\[Rule]", "\<\"15 pages, Latex\"\>"}]},
+     {
+      RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}]},
+     {
+      RowBox[{"\<\"doi\"\>", 
+       "\[Rule]", "\<\"10.1016/j.physletb.2020.135376\"\>"}]},
+     {
+      RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}]},
+     {
+      RowBox[{"\<\"categories\"\>", 
+       "\[Rule]", "\<\"hep-th math-ph math.MP nlin.SI\"\>"}]},
+     {
+      RowBox[{"\<\"license\"\>", 
+       "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}]},
+     {
+      RowBox[{"\<\"abstract\"\>", 
+       "\[Rule]", "\<\"  To analyse pure ${\\\\cal N}=2$ $SU(2)$ gauge theory \
+in the Nekrasov-Shatashvili\\n(NS) limit (or deformed Seiberg-Witten (SW)), \
+we use the Ordinary Differential\\nEquation/Integrable Model (ODE/IM) \
+correspondence, and in particular its\\n(broken) discrete symmetry in its \
+extended version with {\\\\it two} singular\\nirregular points. Actually, \
+this symmetry appears to be 'manifestation' of the\\nspontaneously broken $\\\
+\\mathbb{Z}_2$ R-symmetry of the original gauge problem\\nand the two \
+deformed SW cycles are simply connected to the Baxter's $T$ and \
+$Q$\\nfunctions, respectively, of the Liouville conformal field theory at the\
+\\nself-dual point. The liaison is realised via a second order \
+differential\\noperator which is essentially the 'quantum' version of the \
+square of the SW\\ndifferential. Moreover, the constraints imposed by the \
+broken $\\\\mathbb{Z}_2$\\nR-symmetry acting on the moduli space \
+(Bilal-Ferrari equations) seem to have\\ntheir quantum counterpart in the \
+$TQ$ and the $T$ periodicity relations, and\\nintegrability yields also a \
+useful Thermodynamic Bethe Ansatz (TBA) for the\\ncycles ($Y(\\\\theta,\\\\pm \
+u)$ or their square roots, $Q(\\\\theta,\\\\pm u)$). A latere,\\ntwo \
+efficient asymptotic expansion techniques are presented. Clearly, the \
+whole\\nconstruction is extendable to gauge theories with matter and/or \
+higher rank\\ngroups.\\n\"\>"}]},
+     {
+      RowBox[{"\<\"versions\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Wed, 21 Aug 2019 17:52:33 GMT\"\>"}]}], "}"}], 
+        "}"}]}]},
+     {
+      RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2020-03-25\"\>"}]},
+     {
+      RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          
+          RowBox[{"\<\"Fioravanti\"\>", ",", "\<\"Davide\"\>", 
+           ",", "\<\"\"\>"}], "}"}], ",", 
+         RowBox[{"{", 
+          
+          RowBox[{"\<\"Gregori\"\>", ",", "\<\"Daniele\"\>", 
+           ",", "\<\"\"\>"}], "}"}]}], "}"}]}]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.5599999999999999]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}],
+   Column],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{{3.931063719945014*^9, 3.931063724383764*^9}, 
+   3.9313300683559647`*^9, 3.9319281070514717`*^9},
+ CellLabel->"Out[103]//TableForm=",
+ CellID->146643841,ExpressionUUID->"14123e63-3e30-4049-9ed5-a4266984639d"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "More Examples",
+ Cell[BoxData[
+  TemplateBox[{"MoreExamples", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Extended examples in standardized sections.", "MoreInfoText"], 
+       BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "f8910fcc-19e5-4398-906f-75457b5b8895"]
+}], "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->302654657,ExpressionUUID->"544a8a7d-355d-4d10-958b-a053c870f2e7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Scope", "ExampleSection",ExpressionUUID->
+   "019425b2-d185-43b0-a234-50c42dbe93f1"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1475544103,ExpressionUUID->"97f87d7e-e0ed-4777-bd14-108858f480a7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Map", "[", 
+    RowBox[{"ArXivArticles", ",", 
+     RowBox[{
+      RowBox[{"ArXivArticlesAuthor", "[", 
+       RowBox[{"{", 
+        RowBox[{"\"\<Edoardo Vescovi\>\"", ",", "\"\<E. Vescovi\>\""}], "}"}],
+        "]"}], "//", 
+      RowBox[{"EchoFunction", "[", 
+       RowBox[{"Map", "[", "Length", "]"}], "]"}]}]}], "]"}], "//", 
+   RowBox[{"Map", "[", "TabView", "]"}]}], "//", "TabView"}]], "Input",
+ CellChangeTimes->{{3.930361190098735*^9, 3.930361191733988*^9}, {
+  3.930361929902765*^9, 3.9303619706402483`*^9}, {3.930362002081492*^9, 
+  3.930362067166964*^9}, {3.931063964856679*^9, 3.931063965042913*^9}, {
+  3.9310639984339533`*^9, 3.931064035811605*^9}},
+ CellLabel->"In[110]:=",
+ CellID->1077201361,ExpressionUUID->"9b34ae81-a289-4909-9617-661438d2e75f"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"Edoardo Vescovi\"\>", "\[Rule]", "14"}], ",", 
+   RowBox[{"\<\"E. Vescovi\"\>", "\[Rule]", "3"}]}], 
+  "\[RightAssociation]"}]], "Echo",
+ CellChangeTimes->{3.9310640364013166`*^9},
+ CellID->1858609331,ExpressionUUID->"788536ed-0811-4ca2-931a-4526bc165e79"],
+
+Cell[BoxData[
+ TabViewBox[{{1,"\<\"Edoardo Vescovi\"\>"->
+  TabViewBox[{{1,"1"->
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"1407.4788\"\>"}], ",", 
+     RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Edoardo Vescovi\"\>"}], ",", 
+     RowBox[{"\<\"authors\"\>", 
+      "\[Rule]", "\<\"Lorenzo Bianchi, Marco S. Bianchi, Alexis Bres, \
+Valentina Forini and\\n  Edoardo Vescovi\"\>"}], ",", 
+     RowBox[{"\<\"title\"\>", 
+      "\[Rule]", "\<\"Two-loop cusp anomaly in ABJM at strong coupling\"\>"}],
+      ",", 
+     RowBox[{"\<\"comments\"\>", 
+      "\[Rule]", "\<\"26 pages, few typos corrected, one footnote added, one \
+reference\\n  added\"\>"}], ",", 
+     RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+     RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP10(2014)013\"\>"}], 
+     ",", 
+     RowBox[{"\<\"report-no\"\>", "\[Rule]", "\<\"HU-EP-14/30\"\>"}], ",", 
+     RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th\"\>"}], ",", 
+     RowBox[{"\<\"license\"\>", 
+      "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+     RowBox[{"\<\"abstract\"\>", 
+      "\[Rule]", "\<\"  We compute the null cusp anomalous dimension of ABJM \
+theory at strong\\ncoupling up to two-loop order. This is done by evaluating \
+corrections to the\\ncorresponding superstring partition function, weighted \
+by the $AdS_4\\\\times\\n\\\\mathbb{CP}^3$ action in AdS light-cone gauge. We \
+compare our result, where we\\nuse an anomalous shift in the $AdS_4$ radius, \
+with the cusp anomaly of\\n$\\\\mathcal{N}=4$ SYM, and extract the two-loop \
+contribution to the non-trivial\\nintegrable coupling $h(\\\\lambda)$ of ABJM \
+theory. It coincides with the strong\\ncoupling expansion of the exact \
+expression for $ h(\\\\lambda)$ recently\\nconjectured by Gromov and Sizov. \
+Our work provides thus a non-trivial\\nperturbative check for the latter, as \
+well as evidence for two-loop\\nUV-finiteness and quantum integrability of \
+the Type IIA $AdS_4\\\\times\\n\\\\mathbb{CP}^3$ superstring in this \
+gauge.\\n\"\>"}], ",", 
+     RowBox[{"\<\"versions\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Thu, 17 Jul 2014 19:35:55 GMT\"\>"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Wed, 1 Oct 2014 16:12:58 GMT\"\>"}]}], "}"}]}], 
+       "}"}]}], ",", 
+     RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2015-06-22\"\>"}], ",", 
+     RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\<\"Bianchi\"\>", ",", "\<\"Lorenzo\"\>", ",", "\<\"\"\>"}],
+          "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Bianchi\"\>", ",", "\<\"Marco S.\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Bres\"\>", ",", "\<\"Alexis\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Forini\"\>", ",", "\<\"Valentina\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Vescovi\"\>", ",", "\<\"Edoardo\"\>", ",", "\<\"\"\>"}],
+          "}"}]}], "}"}]}]}], "}"}]}, {2,"2"->
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"1601.04670\"\>"}], ",", 
+     RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Valentina Forini\"\>"}], 
+     ",", 
+     RowBox[{"\<\"authors\"\>", 
+      "\[Rule]", "\<\"Valentina Forini, Lorenzo Bianchi, Marco S. Bianchi, Bj\
+\\\\\\\"orn Leder,\\n  Edoardo Vescovi\"\>"}], ",", 
+     RowBox[{"\<\"title\"\>", 
+      "\[Rule]", "\<\"Lattice and string worldsheet in AdS/CFT: a numerical \
+study\"\>"}], ",", 
+     RowBox[{"\<\"comments\"\>", 
+      "\[Rule]", "\<\"Contribution to the proceedings of Lattice 2015, July \
+14--18, Kobe,\\n  Japan\"\>"}], ",", 
+     RowBox[{"\<\"journal-ref\"\>", 
+      "\[Rule]", "\<\"PoS(LATTICE 2015)244\"\>"}], ",", 
+     RowBox[{"\<\"doi\"\>", "\[Rule]", "Null"}], ",", 
+     RowBox[{"\<\"report-no\"\>", 
+      "\[Rule]", "\<\"HU-EP-16/04, QMUL-PH-16-01\"\>"}], ",", 
+     RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-lat hep-th\"\>"}], ",", 
+     RowBox[{"\<\"license\"\>", 
+      "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+     RowBox[{"\<\"abstract\"\>", 
+      "\[Rule]", "\<\"  We consider a possible discretization for the \
+gauge-fixed Green-Schwarz\\n(two-dimensional) sigma-model action for the Type \
+IIB superstring and use it\\nfor measuring the cusp anomalous dimension of \
+planar $\\\\mathcal{N}=4$ SYM as\\nderived from string theory. We perform \
+lattice simulations employing a Rational\\nHybrid Monte Carlo (RHMC) \
+algorithm and a Wilson-like fermion discretization.\\nIn this preliminary \
+study, we compare our results with the expected behavior\\nfor very large \
+values of $g=\\\\frac{\\\\sqrt{\\\\lambda}}{4\\\\pi}$, which is \
+the\\nperturbative regime of the sigma-model, and find a qualitative \
+agreement at\\nfinite lattice spacing. For smaller $g$ the continuum limit is \
+obstructed by a\\ndivergence. We also detect a phase in the fermion \
+determinant, whose origin we\\nexplain, which for small $g$ leads to a sign \
+problem not treatable via standard\\nreweigthing. Results presented here are \
+discussed thoroughly\\nin~\\\\cite{toappear}.\\n\"\>"}], ",", 
+     RowBox[{"\<\"versions\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Mon, 18 Jan 2016 19:45:30 GMT\"\>"}]}], "}"}], 
+       "}"}]}], ",", 
+     RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2016-01-19\"\>"}], ",", 
+     RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\<\"Forini\"\>", ",", "\<\"Valentina\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Bianchi\"\>", ",", "\<\"Lorenzo\"\>", ",", "\<\"\"\>"}],
+          "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Bianchi\"\>", ",", "\<\"Marco S.\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Leder\"\>", ",", "\<\"Bj\[ODoubleDot]rn\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Vescovi\"\>", ",", "\<\"Edoardo\"\>", ",", "\<\"\"\>"}],
+          "}"}]}], "}"}]}]}], "}"}]}, {3,"3"->
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"1605.01726\"\>"}], ",", 
+     RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Valentina Forini\"\>"}], 
+     ",", 
+     RowBox[{"\<\"authors\"\>", 
+      "\[Rule]", "\<\"Lorenzo Bianchi, Marco S. Bianchi, Valentina Forini, Bj\
+\\\\\\\"orn Leder,\\n  Edoardo Vescovi\"\>"}], ",", 
+     RowBox[{"\<\"title\"\>", 
+      "\[Rule]", "\<\"Green-Schwarz superstring on the lattice\"\>"}], ",", 
+     RowBox[{"\<\"comments\"\>", 
+      "\[Rule]", "\<\"33 pages, 14 figures, 2 Tables. Text overlap with the \
+Conference\\n  Proceedings where some preliminary results were presented, \
+arXiv:1601.04670v1\"\>"}], ",", 
+     RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+     RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP07(2016)014\"\>"}], 
+     ",", 
+     RowBox[{"\<\"report-no\"\>", 
+      "\[Rule]", "\<\"HU-EP-16/11, QMUL-PH-16-09\"\>"}], ",", 
+     RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th hep-lat\"\>"}], ",", 
+     RowBox[{"\<\"license\"\>", 
+      "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+     RowBox[{"\<\"abstract\"\>", 
+      "\[Rule]", "\<\"  We consider possible discretizations for a \
+gauge-fixed Green-Schwarz action\\nof Type IIB superstring. We use them for \
+measuring the action, from which we\\nextract the cusp anomalous dimension of \
+planar $\\\\mathcal{N}=4$ SYM as derived\\nfrom AdS/CFT, as well as the mass \
+of the two $AdS$ excitations transverse to\\nthe relevant null cusp classical \
+string solution. We perform lattice\\nsimulations employing a Rational Hybrid \
+Monte Carlo (RHMC) algorithm and two\\nWilson-like fermion discretizations, \
+one of which preserves the global $SO(6)$\\nsymmetry of the model. We compare \
+our results with the expected behavior at\\nvarious values of \
+$g=\\\\frac{\\\\sqrt{\\\\lambda}}{4\\\\pi}$. For both the observables, \
+we\\nfind a good agreement for large $g$, which is the perturbative regime of \
+the\\nsigma-model. For smaller values of $g$, the expectation value of the \
+action\\nexhibits a deviation compatible with the presence of quadratic \
+divergences.\\nAfter their non-perturbative subtraction the continuum limit \
+can be taken, and\\nsuggests a qualitative agreement with the \
+non-perturbative expectation from\\nAdS/CFT. Furthermore, we detect a phase \
+in the fermion determinant, whose\\norigin we explain, that for very small \
+$g$ leads to a sign problem not\\ntreatable via standard reweigthing. The \
+continuum extrapolations of the\\nobservables in the two different \
+discretizations agree within errors, which is\\nstrongly suggesting that they \
+lead to the same continuum limit. Part of the\\nresults discussed here were \
+presented earlier in arXiv:1601.04670.\\n\"\>"}], ",", 
+     RowBox[{"\<\"versions\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Thu, 5 May 2016 20:00:01 GMT\"\>"}]}], "}"}], 
+       "}"}]}], ",", 
+     RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2016-07-20\"\>"}], ",", 
+     RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\<\"Bianchi\"\>", ",", "\<\"Lorenzo\"\>", ",", "\<\"\"\>"}],
+          "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Bianchi\"\>", ",", "\<\"Marco S.\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Forini\"\>", ",", "\<\"Valentina\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Leder\"\>", ",", "\<\"Bj\[ODoubleDot]rn\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Vescovi\"\>", ",", "\<\"Edoardo\"\>", ",", "\<\"\"\>"}],
+          "}"}]}], "}"}]}]}], "}"}]}, {4,"4"->
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"1702.02005\"\>"}], ",", 
+     RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Valentina Forini\"\>"}], 
+     ",", 
+     RowBox[{"\<\"authors\"\>", 
+      "\[Rule]", "\<\"Valentina Forini, Lorenzo Bianchi, Bjoern Leder, \
+Philipp Toepfer,\\n  Edoardo Vescovi\"\>"}], ",", 
+     RowBox[{"\<\"title\"\>", 
+      "\[Rule]", "\<\"Strings on the lattice and AdS/CFT\"\>"}], ",", 
+     RowBox[{"\<\"comments\"\>", 
+      "\[Rule]", "\<\"Contribution to the proceedings of Lattice 2016, July \
+24--30,\\n  Southampton, United Kingdom\"\>"}], ",", 
+     RowBox[{"\<\"journal-ref\"\>", 
+      "\[Rule]", "\<\"PoS (LATTICE 2016) 206\"\>"}], ",", 
+     RowBox[{"\<\"doi\"\>", "\[Rule]", "Null"}], ",", 
+     RowBox[{"\<\"report-no\"\>", "\[Rule]", "\<\"HU-EP/17-06\"\>"}], ",", 
+     RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-lat hep-th\"\>"}], ",", 
+     RowBox[{"\<\"license\"\>", 
+      "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+     RowBox[{"\<\"abstract\"\>", 
+      "\[Rule]", "\<\"  We present a new auxiliary field representation for \
+the four-fermi term of\\nthe gauge-fixed Green-Schwarz superstring action \
+which describes fluctuations\\naround the null-cusp background in \
+$AdS_5\\\\times S^5$. We sketch the main\\nfeatures of the fermionic operator \
+spectrum, identifying the region of\\nparameter space where the sign \
+ambiguity is absent. Measurements for the\\nobservables in the setup here \
+described are presented and discussed in a\\nforthcoming \
+publication.\\n\"\>"}], ",", 
+     RowBox[{"\<\"versions\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+         RowBox[{"\<\"created\"\>", 
+          "\[Rule]", "\<\"Tue, 7 Feb 2017 13:28:57 GMT\"\>"}]}], "}"}], 
+       "}"}]}], ",", 
+     RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2017-02-08\"\>"}], ",", 
+     RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\<\"Forini\"\>", ",", "\<\"Valentina\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Bianchi\"\>", ",", "\<\"Lorenzo\"\>", ",", "\<\"\"\>"}],
+          "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Leder\"\>", ",", "\<\"Bjoern\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Toepfer\"\>", ",", "\<\"Philipp\"\>", ",", "\<\"\"\>"}],
+          "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Vescovi\"\>", ",", "\<\"Edoardo\"\>", ",", "\<\"\"\>"}],
+          "}"}]}], "}"}]}]}], "}"}]}, {5,"5"->
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"1708.04884\"\>"}], ",", 
+     RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Diego Trancanelli\"\>"}], 
+     ",", 
+     RowBox[{"\<\"authors\"\>", 
+      "\[Rule]", "\<\"Michelangelo Preti, Diego Trancanelli, Edoardo \
+Vescovi\"\>"}], ",", 
+     RowBox[{"\<\"title\"\>", 
+      "\[Rule]", "\<\"Quark-antiquark potential in defect conformal field \
+theory\"\>"}], ",", 
+     RowBox[{"\<\"comments\"\>", 
+      "\[Rule]", "\<\"25 pages, 5 figures; v2: minor changes, references \
+added, published\\n  version; v3: clarifications in Sec. 4\"\>"}], ",", 
+     RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "\<\"JHEP 10 (2017) 079\"\>"}],
+      ",", 
+     RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP10(2017)079\"\>"}], 
+     ",", 
+     RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+     RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th\"\>"}], ",", 
+     RowBox[{"\<\"license\"\>", 
+      "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+     RowBox[{"\<\"abstract\"\>", 
+      "\[Rule]", "\<\"  We consider antiparallel Wilson lines in N=4 super \
+Yang-Mills in the presence\\nof a codimension-1 defect. We compute the Wilson \
+lines' expectation value both\\nat weak coupling, in the gauge theory, and at \
+strong coupling, by finding the\\nstring configurations which are dual to \
+this operator. These configurations\\ndisplay a Gross-Ooguri transition \
+between a connected, U-shaped string phase\\nand a phase in which the string \
+breaks into two disconnected surfaces. We\\nanalyze in detail the critical \
+configurations separating the two phases and\\ncompare the string result with \
+the gauge theory one in a certain double scaling\\nlimit.\\n\"\>"}], ",", 
+     RowBox[{"\<\"versions\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Wed, 16 Aug 2017 13:24:23 GMT\"\>"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Sun, 8 Oct 2017 16:23:15 GMT\"\>"}]}], "}"}], ",", 
+        
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v3\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Thu, 19 Oct 2017 16:30:31 GMT\"\>"}]}], "}"}]}], 
+       "}"}]}], ",", 
+     RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2017-10-20\"\>"}], ",", 
+     RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\<\"Preti\"\>", ",", "\<\"Michelangelo\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Trancanelli\"\>", ",", "\<\"Diego\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Vescovi\"\>", ",", "\<\"Edoardo\"\>", ",", "\<\"\"\>"}],
+          "}"}]}], "}"}]}]}], "}"}]}, {6,"6"->
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"1802.07726\"\>"}], ",", 
+     RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Michelangelo Preti\"\>"}], 
+     ",", 
+     RowBox[{"\<\"authors\"\>", 
+      "\[Rule]", "\<\"Lorenzo Bianchi, Michelangelo Preti and Edoardo Vescovi\
+\"\>"}], ",", 
+     RowBox[{"\<\"title\"\>", 
+      "\[Rule]", "\<\"Exact Bremsstrahlung functions in ABJM theory\"\>"}], 
+     ",", 
+     RowBox[{"\<\"comments\"\>", 
+      "\[Rule]", "\<\"43 pages, 3 figures. Minor changes. Published version\"\
+\>"}], ",", 
+     RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+     RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP07(2018)060\"\>"}], 
+     ",", 
+     RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+     RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th\"\>"}], ",", 
+     RowBox[{"\<\"license\"\>", 
+      "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+     RowBox[{"\<\"abstract\"\>", 
+      "\[Rule]", "\<\"  In this paper we study the Bremsstrahlung functions \
+for the 1/6 BPS and the\\n1/2 BPS Wilson lines in ABJM theory. First we use a \
+superconformal defect\\napproach to prove a conjectured relation between the \
+Bremsstrahlung functions\\nassociated to the geometric \
+($B^{\\\\varphi}_{1/6}$) and R-symmetry\\n($B^{\\\\theta}_{1/6}$) \
+deformations of the 1/6 BPS Wilson line. This result,\\nnon-trivially \
+following from a defect supersymmetric Ward identity, provides an\\nexact \
+expression for $B^{\\\\theta}_{1/6}$ based on a known result \
+for\\n$B^{\\\\varphi}_{1/6}$. Subsequently, we explore the consequences of \
+this relation\\nfor the 1/2 BPS Wilson line and, using the localization \
+result for the multiply\\nwound Wilson loop, we provide an exact closed form \
+for the corresponding\\nBremsstrahlung function. Interestingly, for the \
+comparison with integrability,\\nthis expression appears particularly natural \
+in terms of the conjectured\\ninterpolating function $h(\\\\lambda)$. During \
+the derivation of these results we\\nanalyze the protected defect \
+supermultiplets associated to the broken\\nsymmetries, including their two- \
+and three-point correlators.\\n\"\>"}], ",", 
+     RowBox[{"\<\"versions\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Wed, 21 Feb 2018 19:00:01 GMT\"\>"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Sun, 19 Aug 2018 21:47:44 GMT\"\>"}]}], "}"}]}], 
+       "}"}]}], ",", 
+     RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2018-08-21\"\>"}], ",", 
+     RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\<\"Bianchi\"\>", ",", "\<\"Lorenzo\"\>", ",", "\<\"\"\>"}],
+          "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Preti\"\>", ",", "\<\"Michelangelo\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Vescovi\"\>", ",", "\<\"Edoardo\"\>", ",", "\<\"\"\>"}],
+          "}"}]}], "}"}]}]}], "}"}]}, {7,"7"->
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"1811.09638\"\>"}], ",", 
+     RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Nadav Drukker\"\>"}], ",", 
+     RowBox[{"\<\"authors\"\>", 
+      "\[Rule]", "\<\"Michael Cooke, Amit Dekel, Nadav Drukker, Diego \
+Trancanelli and\\n  Edoardo Vescovi\"\>"}], ",", 
+     RowBox[{"\<\"title\"\>", 
+      "\[Rule]", "\<\"Deformations of the circular Wilson loop and spectral \
+(in)dependence\"\>"}], ",", 
+     RowBox[{"\<\"comments\"\>", 
+      "\[Rule]", "\<\"25 pages. v2: minor correction and added (with sincere \
+appologies)\\n  missing acknowlegments\"\>"}], ",", 
+     RowBox[{"\<\"journal-ref\"\>", 
+      "\[Rule]", "\<\"JHEP 1901 (2019) 076\"\>"}], ",", 
+     RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP01(2019)076\"\>"}], 
+     ",", 
+     RowBox[{"\<\"report-no\"\>", 
+      "\[Rule]", "\<\"Imperial-TP-EV-2018-01, NORDITA 2018-120\"\>"}], ",", 
+     RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th\"\>"}], ",", 
+     RowBox[{"\<\"license\"\>", 
+      "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+     RowBox[{"\<\"abstract\"\>", 
+      "\[Rule]", "\<\"  In this paper we study the expectation value of \
+deformations of the circular\\nWilson loop in ${\\\\cal N}=4$ super \
+Yang-Mills theory. The leading order\\ndeformation, known as the \
+Bremsstrahlung function, can be obtained exactly from\\nsupersymmetric \
+localization, so our focus is on deformations at higher orders.\\nWe find \
+simple expressions for the expectation values for generic deformations\\nat \
+the quartic order at one-loop at weak coupling and at leading order \
+at\\nstrong coupling. We also present a very simple algorithm (not \
+requiring\\nintegration) to evaluate the two-loop result. We find that an \
+exact symmetry of\\nthe strong coupling sigma-model, known as the \
+spectral-parameter independence,\\nis an approximate symmetry at weak \
+coupling, modifying the expectation value\\nstarting only at the sextic order \
+in the deformation. Furthermore, we find very\\nsimple patterns for how the \
+spectral parameter can appear in the weak coupling\\ncalculation, suggesting \
+all-order structures.\\n\"\>"}], ",", 
+     RowBox[{"\<\"versions\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Fri, 23 Nov 2018 19:00:06 GMT\"\>"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Sat, 12 Jan 2019 09:31:27 GMT\"\>"}]}], "}"}]}], 
+       "}"}]}], ",", 
+     RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2019-01-15\"\>"}], ",", 
+     RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\<\"Cooke\"\>", ",", "\<\"Michael\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Dekel\"\>", ",", "\<\"Amit\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Drukker\"\>", ",", "\<\"Nadav\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Trancanelli\"\>", ",", "\<\"Diego\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Vescovi\"\>", ",", "\<\"Edoardo\"\>", ",", "\<\"\"\>"}],
+          "}"}]}], "}"}]}]}], "}"}]}, {8,"8"->
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"1906.07733\"\>"}], ",", 
+     RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Shota Komatsu\"\>"}], ",", 
+     RowBox[{"\<\"authors\"\>", 
+      "\[Rule]", "\<\"Yunfeng Jiang, Shota Komatsu, Edoardo Vescovi\"\>"}], 
+     ",", 
+     RowBox[{"\<\"title\"\>", 
+      "\[Rule]", "\<\"Structure Constants in $\\\\mathcal{N}=4$ SYM at Finite \
+Coupling as\\n  Worldsheet $g$-Function\"\>"}], ",", 
+     RowBox[{"\<\"comments\"\>", 
+      "\[Rule]", "\<\"224 pages; v3 new results, appendices, and references \
+added\"\>"}], ",", 
+     RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+     RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP07(2020)037\"\>"}], 
+     ",", 
+     RowBox[{"\<\"report-no\"\>", 
+      "\[Rule]", "\<\"CERN-TH-2019-093, Imperial-TP-EV-2019-01\"\>"}], ",", 
+     RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th\"\>"}], ",", 
+     RowBox[{"\<\"license\"\>", 
+      "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+     RowBox[{"\<\"abstract\"\>", 
+      "\[Rule]", "\<\"  We develop a novel nonperturbative approach to a \
+class of three-point\\nfunctions in planar $\\\\mathcal{N}=4$ SYM based on \
+Thermodynamic Bethe Ansatz\\n(TBA). More specifically, we study three-point \
+functions of a non-BPS\\nsingle-trace operator and two determinant operators \
+dual to maximal Giant\\nGraviton D-branes in AdS$_5\\\\times$S$^{5}$. They \
+correspond to disk one-point\\nfunctions on the worldsheet and admit a \
+simpler and more powerful integrability\\ndescription than the standard \
+single-trace three-point functions. We first\\nintroduce two new methods to \
+efficiently compute such correlators at weak\\ncoupling; one based on large \
+$N$ collective fields, which provides an example\\nof open-closed-open \
+duality discussed by Gopakumar, and the other based on\\ncombinatorics. The \
+results so obtained exhibit a simple determinant structure\\nand indicate \
+that the correlator can be interpreted as a generalization of\\n$g$-functions \
+in 2d QFT; an overlap between an integrable boundary state and a\\nstate \
+corresponding to the single-trace operator. We then determine the\\nboundary \
+state at finite coupling using the symmetry, the crossing equation and\\nthe \
+boundary Yang-Baxter equation. With the resulting boundary state, we \
+derive\\nthe ground-state $g$-function based on TBA and conjecture its \
+generalization to\\nother states. This is the first fully nonperturbative \
+proposal for the\\nstructure constants of operators of finite length. The \
+results are tested\\nextensively at weak and strong couplings. Finally, we \
+point out that\\ndeterminant operators can provide better probes of sub-AdS \
+locality than\\nsingle-trace operators and discuss possible \
+applications.\\n\"\>"}], ",", 
+     RowBox[{"\<\"versions\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Tue, 18 Jun 2019 18:00:02 GMT\"\>"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Fri, 28 Jun 2019 19:28:17 GMT\"\>"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v3\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Sun, 22 Mar 2020 22:07:08 GMT\"\>"}]}], "}"}]}], 
+       "}"}]}], ",", 
+     RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2020-08-26\"\>"}], ",", 
+     RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\<\"Jiang\"\>", ",", "\<\"Yunfeng\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Komatsu\"\>", ",", "\<\"Shota\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Vescovi\"\>", ",", "\<\"Edoardo\"\>", ",", "\<\"\"\>"}],
+          "}"}]}], "}"}]}]}], "}"}]}, {9,"9"->
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"1907.11242\"\>"}], ",", 
+     RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Shota Komatsu\"\>"}], ",", 
+     RowBox[{"\<\"authors\"\>", 
+      "\[Rule]", "\<\"Yunfeng Jiang, Shota Komatsu, Edoardo Vescovi\"\>"}], 
+     ",", 
+     RowBox[{"\<\"title\"\>", 
+      "\[Rule]", "\<\"Exact Three-Point Functions of Determinant Operators in \
+Planar N=4\\n  Supersymmetric Yang-Mills Theory\"\>"}], ",", 
+     RowBox[{"\<\"comments\"\>", 
+      "\[Rule]", "\<\"6 pages. A letter version of arXiv:1906.07733 with new \
+results; v2\\n  typos corrected, references added\"\>"}], ",", 
+     RowBox[{"\<\"journal-ref\"\>", 
+      "\[Rule]", "\<\"Phys. Rev. Lett. 123, 191601 (2019)\"\>"}], ",", 
+     RowBox[{"\<\"doi\"\>", 
+      "\[Rule]", "\<\"10.1103/PhysRevLett.123.191601\"\>"}], ",", 
+     RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+     RowBox[{"\<\"categories\"\>", 
+      "\[Rule]", "\<\"hep-th math-ph math.MP nlin.SI\"\>"}], ",", 
+     RowBox[{"\<\"license\"\>", 
+      "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+     RowBox[{"\<\"abstract\"\>", 
+      "\[Rule]", "\<\"  We introduce a nonperturbative approach to \
+correlation functions of two\\ndeterminant operators and one non-protected \
+single-trace operator in planar N=4\\nsupersymmetric Yang-Mills theory. Based \
+on the gauge/string duality, we propose\\nthat they correspond to overlaps on \
+the string worldsheet between an integrable\\nboundary state and a state dual \
+to the single-trace operator. We determine the\\nboundary state using \
+symmetry and integrability of the dual superstring sigma\\nmodel, and write \
+down expressions for the correlators at finite coupling, which\\nwe \
+conjecture to be valid for operators of arbitrary size. The proposal is \
+put\\nto test at weak coupling.\\n\"\>"}], ",", 
+     RowBox[{"\<\"versions\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Thu, 25 Jul 2019 18:00:00 GMT\"\>"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Fri, 2 Aug 2019 13:58:55 GMT\"\>"}]}], "}"}]}], 
+       "}"}]}], ",", 
+     RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2019-11-13\"\>"}], ",", 
+     RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\<\"Jiang\"\>", ",", "\<\"Yunfeng\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Komatsu\"\>", ",", "\<\"Shota\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Vescovi\"\>", ",", "\<\"Edoardo\"\>", ",", "\<\"\"\>"}],
+          "}"}]}], "}"}]}]}], "}"}]}, {10,"10"->
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"1910.00588\"\>"}], ",", 
+     RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Diego Trancanelli\"\>"}], 
+     ",", 
+     RowBox[{"\<\"authors\"\>", 
+      "\[Rule]", "\<\"Nadav Drukker, Diego Trancanelli, Lorenzo Bianchi, \
+Marco S. Bianchi,\\n  Diego H. Correa, Valentina Forini, Luca Griguolo, \
+Matias Leoni, Fedor\\n  Levkovich-Maslyuk, Gabriel Nagaoka, Silvia Penati, \
+Michelangelo Preti, Malte\\n  Probst, Pavel Putrov, Domenico Seminara, \
+Guillermo A. Silva, Marcia Tenser,\\n  Maxime Trepanier, Edoardo Vescovi, \
+Itamar Yaakov, Jiaju Zhang\"\>"}], ",", 
+     RowBox[{"\<\"title\"\>", 
+      "\[Rule]", "\<\"Roadmap on Wilson loops in 3d Chern-Simons-matter \
+theories\"\>"}], ",", 
+     RowBox[{"\<\"comments\"\>", 
+      "\[Rule]", "\<\"41 pages, 4 figures, prepared for submission to J. \
+Phys. A; v2: minor\\n  changes, published version\"\>"}], ",", 
+     RowBox[{"\<\"journal-ref\"\>", 
+      "\[Rule]", "\<\"J. Phys. A: Math. and Theor., Vol. 53, Number 17 (2020)\
+\"\>"}], ",", 
+     RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1088/1751-8121/ab5d50\"\>"}], 
+     ",", 
+     RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+     RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th\"\>"}], ",", 
+     RowBox[{"\<\"license\"\>", 
+      "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+     RowBox[{"\<\"abstract\"\>", 
+      "\[Rule]", "\<\"  This is a compact review of recent results on \
+supersymmetric Wilson loops in\\nABJ(M) and related theories. It aims to be a \
+quick introduction to the state of\\nthe art in the field and a discussion of \
+open problems. It is divided into\\nshort chapters devoted to different \
+questions and techniques. Some new results,\\nperspectives and speculations \
+are also presented. We hope this might serve as a\\nbaseline for further \
+studies of this topic.\\n\"\>"}], ",", 
+     RowBox[{"\<\"versions\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Tue, 1 Oct 2019 18:00:02 GMT\"\>"}]}], "}"}], ",", 
+        
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Fri, 29 Nov 2019 12:23:41 GMT\"\>"}]}], "}"}]}], 
+       "}"}]}], ",", 
+     RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2020-04-10\"\>"}], ",", 
+     RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\<\"Drukker\"\>", ",", "\<\"Nadav\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Trancanelli\"\>", ",", "\<\"Diego\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Bianchi\"\>", ",", "\<\"Lorenzo\"\>", ",", "\<\"\"\>"}],
+          "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Bianchi\"\>", ",", "\<\"Marco S.\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Correa\"\>", ",", "\<\"Diego H.\"\>", ",", "\<\"\"\>"}],
+          "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Forini\"\>", ",", "\<\"Valentina\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Griguolo\"\>", ",", "\<\"Luca\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Leoni\"\>", ",", "\<\"Matias\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Levkovich-Maslyuk\"\>", ",", "\<\"Fedor\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Nagaoka\"\>", ",", "\<\"Gabriel\"\>", ",", "\<\"\"\>"}],
+          "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Penati\"\>", ",", "\<\"Silvia\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Preti\"\>", ",", "\<\"Michelangelo\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Probst\"\>", ",", "\<\"Malte\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Putrov\"\>", ",", "\<\"Pavel\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Seminara\"\>", ",", "\<\"Domenico\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Silva\"\>", ",", "\<\"Guillermo A.\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Tenser\"\>", ",", "\<\"Marcia\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Trepanier\"\>", ",", "\<\"Maxime\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Vescovi\"\>", ",", "\<\"Edoardo\"\>", ",", "\<\"\"\>"}],
+          "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Yaakov\"\>", ",", "\<\"Itamar\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Zhang\"\>", ",", "\<\"Jiaju\"\>", ",", "\<\"\"\>"}], 
+         "}"}]}], "}"}]}]}], "}"}]}, {11,"11"->
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"1910.06912\"\>"}], ",", 
+     RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Valentina Forini\"\>"}], 
+     ",", 
+     RowBox[{"\<\"authors\"\>", 
+      "\[Rule]", "\<\"Lorenzo Bianchi, Valentina Forini, Bj\\\\\\\"orn Leder, \
+Philipp T\\\\\\\"opfer,\\n  Edoardo Vescovi\"\>"}], ",", 
+     RowBox[{"\<\"title\"\>", 
+      "\[Rule]", "\<\"New linearization and reweighting for simulations of \
+string sigma-model\\n  on the lattice\"\>"}], ",", 
+     RowBox[{"\<\"comments\"\>", 
+      "\[Rule]", "\<\"v1: 9 figures, 27 pages of which the first 9 overlap \
+with Proceedings\\n  in arxiv:1702.02005; v2: cosmetic modification of one \
+plot; v3: it matches\\n  the version published in JHEP (modified introduction \
+and abstract)\"\>"}], ",", 
+     RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+     RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP01(2020)174\"\>"}], 
+     ",", 
+     RowBox[{"\<\"report-no\"\>", 
+      "\[Rule]", "\<\"HU-EP-19/29, Imperial-TP-EV-2019-04\"\>"}], ",", 
+     RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th hep-lat\"\>"}], ",", 
+     RowBox[{"\<\"license\"\>", 
+      "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+     RowBox[{"\<\"abstract\"\>", 
+      "\[Rule]", "\<\"  We study the discretized worldsheet of Type IIB \
+strings in the\\nGubser-Klebanov-Polyakov background in a new setup, which \
+eliminates a complex\\nphase previously detected in the fermionic \
+determinant. A sign ambiguity\\nremains, which a study of the fermionic \
+spectrum shows to be related to\\nYukawa-like terms, including those present \
+in the original Lagrangian before\\nthe linearization standard in a lattice \
+QFT approach. Monte Carlo simulations\\nare performed in a large region of \
+the parameter space, where the sign problem\\nstarts becoming severe and \
+instabilities appear due to the zero eigenvalues of\\nthe fermionic operator. \
+To face these problems, simulations are conducted using\\nthe absolute value \
+of a fermionic Pfaffian obtained introducing a small\\ntwisted-mass term, \
+acting as an infrared regulator, into the action. The sign\\nof the Pfaffian \
+and the low modes of the quadratic fermionic operator are then\\ntaken into \
+account by a reweighting procedure of which we discuss the impact on\\nthe \
+measurement of the observables. In this setup we study bosonic \
+and\\nfermionic correlators and observe a divergence in the latter, which we \
+argue -\\nalso via a one-loop analysis in lattice perturbation theory - to \
+originate from\\nthe U(1)-breaking of our Wilson-like discretization for the \
+fermionic sector.\\n\"\>"}], ",", 
+     RowBox[{"\<\"versions\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Tue, 15 Oct 2019 16:33:22 GMT\"\>"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Wed, 23 Oct 2019 08:29:16 GMT\"\>"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v3\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Fri, 17 Jan 2020 16:48:23 GMT\"\>"}]}], "}"}]}], 
+       "}"}]}], ",", 
+     RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2020-02-19\"\>"}], ",", 
+     RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\<\"Bianchi\"\>", ",", "\<\"Lorenzo\"\>", ",", "\<\"\"\>"}],
+          "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Forini\"\>", ",", "\<\"Valentina\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Leder\"\>", ",", "\<\"Bj\[ODoubleDot]rn\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"T\[ODoubleDot]pfer\"\>", ",", "\<\"Philipp\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Vescovi\"\>", ",", "\<\"Edoardo\"\>", ",", "\<\"\"\>"}],
+          "}"}]}], "}"}]}]}], "}"}]}, {12,"12"->
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2101.05117\"\>"}], ",", 
+     RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Edoardo Vescovi\"\>"}], ",", 
+     RowBox[{"\<\"authors\"\>", "\[Rule]", "\<\"Edoardo Vescovi\"\>"}], ",", 
+     RowBox[{"\<\"title\"\>", 
+      "\[Rule]", "\<\"The four-point function of determinant operators in $\\\
+\\mathcal{N}=4$ SYM\"\>"}], ",", 
+     RowBox[{"\<\"comments\"\>", 
+      "\[Rule]", "\<\"9 pages, 1 figure, matching published version\"\>"}], 
+     ",", 
+     RowBox[{"\<\"journal-ref\"\>", 
+      "\[Rule]", "\<\"Phys. Rev. D 103, 106001 (2021)\"\>"}], ",", 
+     RowBox[{"\<\"doi\"\>", 
+      "\[Rule]", "\<\"10.1103/PhysRevD.103.106001\"\>"}], ",", 
+     RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+     RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th\"\>"}], ",", 
+     RowBox[{"\<\"license\"\>", 
+      "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+     RowBox[{"\<\"abstract\"\>", 
+      "\[Rule]", "\<\"  We calculate the four-point function of $1/2$-BPS \
+determinant operators in\\n$\\\\mathcal{N}=4$ SYM at next-to-leading order at \
+weak coupling. We use two\\ncomplementary methods recently developed for a \
+class of determinant three-point\\nfunctions: one is based on Feynman \
+diagrams and it extracts perturbative data\\nat finite $N$, while the other \
+one expresses a generic correlator of\\ndeterminants as the zero-dimensional \
+integral over an auxiliary matrix field.\\nWe generalise the latter approach \
+to calculate one-loop corrections and we\\nsolve the four-point function in a \
+semi-classical approach at large $N$. The\\nresults allow to comment on the \
+order of the phase transition that the\\nfour-point function is expected to \
+exhibit in an exact integrability-based\\ndescription.\\n\"\>"}], ",", 
+     RowBox[{"\<\"versions\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Wed, 13 Jan 2021 15:12:59 GMT\"\>"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Tue, 4 May 2021 23:10:18 GMT\"\>"}]}], "}"}]}], 
+       "}"}]}], ",", 
+     RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2021-05-12\"\>"}], ",", 
+     RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"{", 
+        RowBox[{"\<\"Vescovi\"\>", ",", "\<\"Edoardo\"\>", ",", "\<\"\"\>"}], 
+        "}"}], "}"}]}]}], "}"}]}, {13,"13"->
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2110.09458\"\>"}], ",", 
+     RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Edoardo Vescovi\"\>"}], ",", 
+     RowBox[{"\<\"authors\"\>", 
+      "\[Rule]", "\<\"Omar Shahpo, Edoardo Vescovi\"\>"}], ",", 
+     RowBox[{"\<\"title\"\>", 
+      "\[Rule]", "\<\"Correlation functions of determinant operators in \
+conformal fishnet\\n  theory\"\>"}], ",", 
+     RowBox[{"\<\"comments\"\>", 
+      "\[Rule]", "\<\"40 pages, 6 figures; added footnotes 2, 4, 11 and 16, \
+expanded on\\n  calculations in Section 3 and holography in Conclusion, minor \
+comments; it\\n  matches published version\"\>"}], ",", 
+     RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "\<\"JHEP 06 (2022) 070\"\>"}],
+      ",", 
+     RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP06(2022)070\"\>"}], 
+     ",", 
+     RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+     RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th\"\>"}], ",", 
+     RowBox[{"\<\"license\"\>", 
+      "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+     RowBox[{"\<\"abstract\"\>", 
+      "\[Rule]", "\<\"  We consider scalar local operators of the determinant \
+type in the conformal\\n``fishnet'' theory that arises as a limit of \
+gamma-deformed $\\\\mathcal{N}=4$\\nsuper Yang-Mills theory. We generalise a \
+field-theory approach to expand their\\ncorrelation functions to arbitrary \
+order in the small coupling constants and\\napply it to the bi-scalar \
+reduction of the model. We explicitly analyse the\\ntwo-point functions of \
+determinants, as well as of certain deformations with\\nthe insertion of \
+scalar fields, and describe the Feynman-graph structure of\\nthree- and \
+four-point correlators with single-trace operators. These display\\nthe \
+topology of globe and spiral graphs, which are known to \
+renormalise\\nsingle-trace operators, but with ``alternating'' boundary \
+conditions. In the\\nappendix material we further investigate a four-point \
+function of two\\ndeterminants and the shortest bi-local single trace. We \
+resum the diagrams by\\nthe Bethe-Salpeter method and comment on the \
+exchanged OPE states.\\n\"\>"}], ",", 
+     RowBox[{"\<\"versions\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Mon, 18 Oct 2021 16:51:10 GMT\"\>"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Wed, 15 Jun 2022 19:43:34 GMT\"\>"}]}], "}"}]}], 
+       "}"}]}], ",", 
+     RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2022-06-17\"\>"}], ",", 
+     RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\<\"Shahpo\"\>", ",", "\<\"Omar\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Vescovi\"\>", ",", "\<\"Edoardo\"\>", ",", "\<\"\"\>"}],
+          "}"}]}], "}"}]}]}], "}"}]}, {14,"14"->
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"2402.13835\"\>"}], ",", 
+     RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Konstantin Zarembo\"\>"}], 
+     ",", 
+     RowBox[{"\<\"authors\"\>", 
+      "\[Rule]", "\<\"Edoardo Vescovi and Konstantin Zarembo\"\>"}], ",", 
+     RowBox[{"\<\"title\"\>", 
+      "\[Rule]", "\<\"Loop equations for generalised eigenvalue models\"\>"}],
+      ",", 
+     RowBox[{"\<\"comments\"\>", 
+      "\[Rule]", "\<\"61 pages, 6 figures, Mathematica notebooks with \
+perturbative solution\\n  of loop equations are included as ancillary files; \
+v2: refs added; v3: more\\n  refs added\"\>"}], ",", 
+     RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+     RowBox[{"\<\"doi\"\>", "\[Rule]", "Null"}], ",", 
+     RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+     RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th\"\>"}], ",", 
+     RowBox[{"\<\"license\"\>", 
+      "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+     RowBox[{"\<\"abstract\"\>", 
+      "\[Rule]", "\<\"  We derive the loop equation for the 1-matrix model \
+with generic\\ndifference-type measure for eigenvalues and develop a \
+recursive algebraic\\nframework for solving it to an arbitrary order in the \
+coupling constant in and\\nbeyond the planar approximation. The planar limit \
+is solved exactly for a\\none-parametric family of models and in the general \
+case at strong coupling. The\\nWilson loop in the N=2* super-Yang-Mills \
+theory and the Hoppe model are used to\\nillustrate our methods.\\n\"\>"}], 
+     ",", 
+     RowBox[{"\<\"versions\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Wed, 21 Feb 2024 14:25:30 GMT\"\>"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Tue, 27 Feb 2024 14:07:04 GMT\"\>"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v3\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Tue, 11 Jun 2024 21:46:18 GMT\"\>"}]}], "}"}]}], 
+       "}"}]}], ",", 
+     RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2024-06-13\"\>"}], ",", 
+     RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\<\"Vescovi\"\>", ",", "\<\"Edoardo\"\>", ",", "\<\"\"\>"}],
+          "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Zarembo\"\>", ",", "\<\"Konstantin\"\>", 
+          ",", "\<\"\"\>"}], "}"}]}], "}"}]}]}], "}"}]}}, 1]}, {
+  2,"\<\"E. Vescovi\"\>"->
+  TabViewBox[{{1,"1"->
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"1112.3816\"\>"}], ",", 
+     RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Alessandro Vezzani\"\>"}], 
+     ",", 
+     RowBox[{"\<\"authors\"\>", 
+      "\[Rule]", "\<\"P. Buonsante, R. Burioni, E. Vescovi, and A. \
+Vezzani\"\>"}], ",", 
+     RowBox[{"\<\"title\"\>", 
+      "\[Rule]", "\<\"Quantum Criticality in a Bosonic Josephson \
+Junction\"\>"}], ",", 
+     RowBox[{"\<\"comments\"\>", "\[Rule]", "\<\"13 pages, 10 figures\"\>"}], 
+     ",", 
+     RowBox[{"\<\"journal-ref\"\>", 
+      "\[Rule]", "\<\"Physical Review A 85, 043625 (2012)\"\>"}], ",", 
+     RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1103/PhysRevA.85.043625\"\>"}],
+      ",", 
+     RowBox[{"\<\"report-no\"\>", "\[Rule]", "Null"}], ",", 
+     RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"cond-mat.stat-mech\"\>"}], 
+     ",", 
+     RowBox[{"\<\"license\"\>", 
+      "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+     RowBox[{"\<\"abstract\"\>", 
+      "\[Rule]", "\<\"  In this paper we consider a bosonic Josephson \
+junction described by a\\ntwo-mode Bose-Hubbard model, and we thoroughly \
+analyze a quantum phase\\ntransition occurring in the system in the limit of \
+infinite bosonic population.\\nWe discuss the relation between this quantum \
+phase transition and the dynamical\\nbifurcation occurring in the spectrum of \
+the Discrete Self Trapping equations\\ndescribing the system at the \
+semiclassical level. In particular, we identify\\nfive regimes depending on \
+the strength of the effective interaction among\\nbosons, and study the \
+finite-size effects arising from the finiteness of the\\nbosonic population. \
+We devote a special attention to the critical regime which\\nreduces to the \
+dynamical bifurcation point in the thermodynamic limit of\\ninfinite bosonic \
+population. Specifically, we highlight an anomalous scaling in\\nthe \
+population imbalance between the two wells of the trapping potential, \
+as\\nwell as in two quantities borrowed from Quantum Information Theory, i.e. \
+the\\nentropy of entanglement and the ground-state fidelity. Our analysis is \
+not\\nlimited to the zero temperature case, but considers thermal effects as \
+well.\\n\"\>"}], ",", 
+     RowBox[{"\<\"versions\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Fri, 16 Dec 2011 14:07:56 GMT\"\>"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Tue, 17 Jan 2012 08:43:59 GMT\"\>"}]}], "}"}]}], 
+       "}"}]}], ",", 
+     RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2012-05-22\"\>"}], ",", 
+     RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\<\"Buonsante\"\>", ",", "\<\"P.\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Burioni\"\>", ",", "\<\"R.\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Vescovi\"\>", ",", "\<\"E.\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Vezzani\"\>", ",", "\<\"A.\"\>", ",", "\<\"\"\>"}], 
+         "}"}]}], "}"}]}]}], "}"}]}, {2,"2"->
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"1409.8674\"\>"}], ",", 
+     RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Valentina Forini\"\>"}], 
+     ",", 
+     RowBox[{"\<\"authors\"\>", 
+      "\[Rule]", "\<\"V. Forini, V. Giangreco M. Puletti, M. Pawellek, E. \
+Vescovi\"\>"}], ",", 
+     RowBox[{"\<\"title\"\>", 
+      "\[Rule]", "\<\"One-loop spectroscopy of semiclassically quantized \
+strings: bosonic\\n  sector\"\>"}], ",", 
+     RowBox[{"\<\"comments\"\>", 
+      "\[Rule]", "\<\"v2, references and two footnotes added\"\>"}], ",", 
+     RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+     RowBox[{"\<\"doi\"\>", 
+      "\[Rule]", "\<\"10.1088/1751-8113/48/8/085401\"\>"}], ",", 
+     RowBox[{"\<\"report-no\"\>", "\[Rule]", "\<\"HU-EP-14/29\"\>"}], ",", 
+     RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th\"\>"}], ",", 
+     RowBox[{"\<\"license\"\>", 
+      "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+     RowBox[{"\<\"abstract\"\>", 
+      "\[Rule]", "\<\"  We make a further step in the analytically exact \
+quantization of spinning\\nstring states in semiclassical approximation, by \
+evaluating the exact one-loop\\npartition function for a class of two-spin \
+string solutions for which quadratic\\nfluctuations form a non-trivial system \
+of coupled modes. This is the case of a\\nfolded string in the $SU(2)$ \
+sector, in the limit described by a quantum\\nLandau-Lifshitz model. The same \
+applies to the full bosonic sector of\\nfluctuations over the folded spinning \
+string in $AdS_5$ with an angular\\nmomentum $J$ in $S^5$. Fluctuations are \
+governed by a special class of\\nfourth-order differential operators, with \
+coefficients being meromorphic\\nfunctions on the torus, which we are able to \
+solve exactly.\\n\"\>"}], ",", 
+     RowBox[{"\<\"versions\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Tue, 30 Sep 2014 19:58:43 GMT\"\>"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Mon, 22 Dec 2014 17:02:02 GMT\"\>"}]}], "}"}]}], 
+       "}"}]}], ",", 
+     RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2015-06-23\"\>"}], ",", 
+     RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\<\"Forini\"\>", ",", "\<\"V.\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Puletti\"\>", ",", "\<\"V. Giangreco M.\"\>", 
+          ",", "\<\"\"\>"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Pawellek\"\>", ",", "\<\"M.\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Vescovi\"\>", ",", "\<\"E.\"\>", ",", "\<\"\"\>"}], 
+         "}"}]}], "}"}]}]}], "}"}]}, {3,"3"->
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"id\"\>", "\[Rule]", "\<\"1702.02164\"\>"}], ",", 
+     RowBox[{"\<\"submitter\"\>", "\[Rule]", "\<\"Edoardo Vescovi\"\>"}], ",", 
+     RowBox[{"\<\"authors\"\>", 
+      "\[Rule]", "\<\"V. Forini, A.A. Tseytlin, E. Vescovi\"\>"}], ",", 
+     RowBox[{"\<\"title\"\>", 
+      "\[Rule]", "\<\"Perturbative computation of string one-loop corrections \
+to Wilson loop\\n  minimal surfaces in $AdS_5 \\\\times S^5$\"\>"}], ",", 
+     RowBox[{"\<\"comments\"\>", 
+      "\[Rule]", "\<\"32 pages, one reference added, typos corrected\"\>"}], 
+     ",", 
+     RowBox[{"\<\"journal-ref\"\>", "\[Rule]", "Null"}], ",", 
+     RowBox[{"\<\"doi\"\>", "\[Rule]", "\<\"10.1007/JHEP03(2017)003\"\>"}], 
+     ",", 
+     RowBox[{"\<\"report-no\"\>", 
+      "\[Rule]", "\<\"HU-EP-17/02, Imperial-TP-AAT-2017-03\"\>"}], ",", 
+     RowBox[{"\<\"categories\"\>", "\[Rule]", "\<\"hep-th\"\>"}], ",", 
+     RowBox[{"\<\"license\"\>", 
+      "\[Rule]", \
+"\<\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"\>"}], ",", 
+     RowBox[{"\<\"abstract\"\>", 
+      "\[Rule]", "\<\"  We revisit the computation of the 1-loop string \
+correction to the \\\"latitude\\\"\\nminimal surface in $AdS_5 \\\\times S^5$ \
+representing 1/4 BPS Wilson loop in\\nplanar $\\\\cal N$=4 SYM theory \
+previously addressed in arXiv:1512.00841 and\\narXiv:1601.04708. We resolve \
+the problem of matching with the subleading term\\nin the strong coupling \
+expansion of the exact gauge theory result (derived\\npreviously from \
+localization) using a different method to compute determinants\\nof 2d string \
+fluctuation operators. We apply perturbation theory in a small\\nparameter \
+(angle of the latitude) corresponding to an expansion near the\\n$AdS_2$ \
+minimal surface representing 1/2 BPS circular Wilson loop. This allows\\nus \
+to compute the corrections to the heat kernels and zeta-functions of \
+the\\noperators in terms of the known heat kernels on $AdS_2$. We apply the \
+same\\nmethod also to two other examples of Wilson loop surfaces: generalized \
+cusp and\\n$k$-wound circle.\\n\"\>"}], ",", 
+     RowBox[{"\<\"versions\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v1\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Tue, 7 Feb 2017 19:08:09 GMT\"\>"}]}], "}"}], ",", 
+        
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\<\"version\"\>", "\[Rule]", "\<\"v2\"\>"}], ",", 
+          
+          RowBox[{"\<\"created\"\>", 
+           "\[Rule]", "\<\"Fri, 24 Feb 2017 19:36:31 GMT\"\>"}]}], "}"}]}], 
+       "}"}]}], ",", 
+     RowBox[{"\<\"update_date\"\>", "\[Rule]", "\<\"2017-04-05\"\>"}], ",", 
+     RowBox[{"\<\"authors_parsed\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\<\"Forini\"\>", ",", "\<\"V.\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Tseytlin\"\>", ",", "\<\"A. A.\"\>", ",", "\<\"\"\>"}], 
+         "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\<\"Vescovi\"\>", ",", "\<\"E.\"\>", ",", "\<\"\"\>"}], 
+         "}"}]}], "}"}]}]}], "}"}]}}, 1]}}, 1]], "Output",
+ CellChangeTimes->{{3.930361953282613*^9, 3.930361971010919*^9}, 
+   3.930362015063806*^9, {3.930362058822386*^9, 3.930362067549367*^9}, {
+   3.931063963179861*^9, 3.9310640364234447`*^9}},
+ CellLabel->"Out[110]=",
+ CellID->349896855,ExpressionUUID->"e20fc1fb-51eb-489b-927f-4cf09d1e816f"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Generalizations & Extensions", "ExampleSection",ExpressionUUID->
+   "9bb6e7b5-fa1e-4439-956f-0f6d0327e187"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->328583565,ExpressionUUID->"3945653e-d136-479b-a02b-97d5465820fc"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Options", "ExampleSection",ExpressionUUID->
+   "44578162-9fcc-41c9-b283-bd7bbd054eaf"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1323520518,ExpressionUUID->"14164d51-abd7-44ac-8e74-dad90bf5e38c"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "XXXX", "ExampleSubsection",ExpressionUUID->
+   "4110d850-0a98-48d2-bd60-c9939157e8b8"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->773730400,ExpressionUUID->"a61c3ac4-cdd6-48df-af8c-544a3e051ae4"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "XXXX", "ExampleSubsection",ExpressionUUID->
+   "53831852-5fd9-4431-9b41-e06f4c4268f7"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1073350215,ExpressionUUID->"6dce8e1e-2698-4493-8a99-707347c7b2dc"]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Applications", "ExampleSection",ExpressionUUID->
+   "3a1f9648-760c-483c-9f8a-6f63734bddc8"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->934428705,ExpressionUUID->"06213042-72fa-4bcd-82b3-0211d2af8d36"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Properties & Relations", "ExampleSection",ExpressionUUID->
+   "2ecff182-80a6-4d48-9436-df179e792fec"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->395334424,ExpressionUUID->"37df9370-9f14-48ca-857f-68df18a1ebad"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Possible Issues", "ExampleSection",ExpressionUUID->
+   "39f7060b-a3e8-4a72-a47c-7a8e760f6fc8"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->71260350,ExpressionUUID->"db62543a-b31e-4b74-86a0-62e6023b90ab"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Interactive Examples", "ExampleSection",ExpressionUUID->
+   "64657386-7983-45d8-9e11-6c159100f724"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1524311071,ExpressionUUID->"7411992f-d12d-47fd-9bd2-0280e401cdde"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Neat Examples", "ExampleSection",ExpressionUUID->
+   "6a8ffe02-ff5a-4e29-81f8-9e33f7a7cd74"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1763745234,ExpressionUUID->"a20bc258-5946-41bc-9061-d32139a1cbb8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Metadata", "MetadataSection",
+ CellID->1549368297,ExpressionUUID->"27f397ae-5be5-4767-8f61-bdb2cad457b2"],
+
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New",ExpressionUUID->"4d8b7631-ba98-4063-ac05-103a358eec2e"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified",ExpressionUUID->"6521ce89-795a-4d16-b306-c6f640e27a7c"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete",ExpressionUUID->
+  "0610b7be-65fc-4df9-b2d8-d267c7307471"]
+}], "History",
+ CellID->1993747804,ExpressionUUID->"1f418945-b0f0-4d79-9345-3a44fcaeb92e"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Categorization",
+ Cell[BoxData[
+  TemplateBox[{"Metadata", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Metadata such as page URI, context, and type of documentation page.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "7aacfd2a-1804-41d2-84ac-e1f23033c6b0"]
+}], "CategorizationSection",
+ CellID->1731997687,ExpressionUUID->"0149d0d2-4ba9-4b60-ac60-2dfb1d30a289"],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->544290324,ExpressionUUID->"72747a90-edd3-4ac7-808f-7b237e6e1845"],
+
+Cell["DanieleGregori/ArXivExplore", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->24972470,ExpressionUUID->"bdeddefd-2c6e-4c13-9eca-94f7db6e8537"],
+
+Cell["DanieleGregori`ArXivExplore`", "Categorization",
+ CellLabel->"Context",
+ CellID->952992125,ExpressionUUID->"e3acd96a-abfe-4565-864c-61ae354cd01b"],
+
+Cell["DanieleGregori/ArXivExplore/ref/ArXivArticles", "Categorization",
+ CellLabel->"URI",
+ CellID->1005605549,ExpressionUUID->"f224f972-93da-47d5-8dd7-37deb77c8bcf"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->1948319476,ExpressionUUID->"ef765bdb-6f02-4ad5-9273-e14e95cb0ef3"],
+
+Cell["XXXX", "Keywords",
+ CellID->574783676,ExpressionUUID->"0e10ed7f-a9e0-4663-b981-015da712f028"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1007798326,ExpressionUUID->"db3ae0b9-5ddb-4177-af45-9e2ffa1cf370"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->862941193,ExpressionUUID->"fb667f34-dfc2-499b-8436-571972126565"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->1495562560,ExpressionUUID->"d2d272bc-e095-4cb2-bffb-e709ea1ee7f0"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1771341432,ExpressionUUID->"3017bb14-1e44-42d6-92f0-d21744ab89d3"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->369649263,ExpressionUUID->"aed7fff2-7865-431e-8dd9-2f203f2fd270"]
+}, Closed]]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{288, Automatic}, {Automatic, 0}},
+TaggingRules-><|"Paclet" -> "DanieleGregori/ArXivExplore"|>,
+CellContext->"Global`",
+FrontEndVersion->"14.1 for Mac OS X x86 (64-bit) (July 16, 2024)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"86ea2e7f-cb5f-4b91-ba6b-bfc50c159655"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ExtendedExamples"->{
+  Cell[10465, 303, 487, 13, 58, "ExtendedExamplesSection",ExpressionUUID->"544a8a7d-355d-4d10-958b-a053c870f2e7",
+   CellTags->"ExtendedExamples",
+   CellID->302654657]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ExtendedExamples", 77604, 1749}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 110, 1, 72, "ObjectName",ExpressionUUID->"cb90d5f3-bce7-442f-9ba5-ae5399baf139",
+ CellID->992751169],
+Cell[693, 25, 585, 13, 75, "Usage",ExpressionUUID->"39eb44af-951f-4848-b35f-0fafc0196696",
+ CellID->1368443840],
+Cell[1281, 40, 97, 1, 26, "Notes",ExpressionUUID->"f368d9da-32b6-471e-89bf-3e2aa1e2e290",
+ CellID->2033243157]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1415, 46, 459, 13, 38, "SeeAlsoSection",ExpressionUUID->"46807fd5-506b-4e50-b18b-cadfc67baa94",
+ CellID->1957948635],
+Cell[1877, 61, 1654, 42, 21, "SeeAlso",ExpressionUUID->"abc5319b-342d-49c5-ba94-8a81b3b675b4",
+ CellID->1350785464]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3568, 108, 436, 12, 39, "TechNotesSection",ExpressionUUID->"ebc68df2-1b60-4f66-8af6-b85d88b4a561",
+ CellID->1601661011],
+Cell[4007, 122, 100, 1, 17, "Tutorials",ExpressionUUID->"dd170225-1479-48d0-bdc5-bd3429027edf",
+ CellID->409096732]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4144, 128, 118, 1, 37, "MoreAboutSection",ExpressionUUID->"b7f7d4e1-dd3b-4ae9-a411-d6714a26374a",
+ CellID->1593620677],
+Cell[4265, 131, 100, 1, 17, "MoreAbout",ExpressionUUID->"aab89f61-4b93-4fa1-8257-8000e83f6261",
+ CellID->566672955]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4402, 137, 473, 13, 38, "RelatedLinksSection",ExpressionUUID->"8a7739ec-131f-4850-a530-cb6436640dd9",
+ CellID->2129863887],
+Cell[4878, 152, 103, 1, 17, "RelatedLinks",ExpressionUUID->"da566d45-19e5-4e0d-8737-73884ee8d614",
+ CellID->217436966]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5018, 158, 531, 14, 68, "ExamplesInitializationSection",ExpressionUUID->"39c98090-e3c8-4852-b825-e55a605aeae4",
+ CellID->1593404015],
+Cell[5552, 174, 188, 3, 46, "ExampleInitialization",ExpressionUUID->"db3c09c1-0909-461b-814b-ca8337839c6d",
+ CellID->1220202015]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5777, 182, 443, 12, 70, "PrimaryExamplesSection",ExpressionUUID->"fdc4d2f1-4e1a-44c1-9e74-a0d265d504c9",
+ CellID->1613920902],
+Cell[CellGroupData[{
+Cell[6245, 198, 283, 6, 26, "Input",ExpressionUUID->"470a66b5-b6b8-425a-8fbc-d45bb0026436",
+ CellID->573545140],
+Cell[6531, 206, 3885, 91, 572, "Output",ExpressionUUID->"14123e63-3e30-4049-9ed5-a4266984639d",
+ CellID->146643841]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10465, 303, 487, 13, 58, "ExtendedExamplesSection",ExpressionUUID->"544a8a7d-355d-4d10-958b-a053c870f2e7",
+ CellTags->"ExtendedExamples",
+ CellID->302654657],
+Cell[CellGroupData[{
+Cell[10977, 320, 242, 5, 35, "ExampleSection",ExpressionUUID->"97f87d7e-e0ed-4777-bd14-108858f480a7",
+ CellID->1475544103],
+Cell[CellGroupData[{
+Cell[11244, 329, 813, 18, 66, "Input",ExpressionUUID->"9b34ae81-a289-4909-9617-661438d2e75f",
+ CellID->1077201361],
+Cell[12060, 349, 329, 7, 22, "Echo",ExpressionUUID->"788536ed-0811-4ca2-931a-4526bc165e79",
+ CellID->1858609331],
+Cell[12392, 358, 59586, 1221, 1157, "Output",ExpressionUUID->"e20fc1fb-51eb-489b-927f-4cf09d1e816f",
+ CellID->349896855]
+}, Open  ]]
+}, Open  ]],
+Cell[72005, 1583, 264, 5, 35, "ExampleSection",ExpressionUUID->"3945653e-d136-479b-a02b-97d5465820fc",
+ CellID->328583565],
+Cell[CellGroupData[{
+Cell[72294, 1592, 244, 5, 23, "ExampleSection",ExpressionUUID->"14164d51-abd7-44ac-8e74-dad90bf5e38c",
+ CellID->1323520518],
+Cell[72541, 1599, 246, 5, 26, "ExampleSubsection",ExpressionUUID->"a61c3ac4-cdd6-48df-af8c-544a3e051ae4",
+ CellID->773730400],
+Cell[72790, 1606, 247, 5, 22, "ExampleSubsection",ExpressionUUID->"6dce8e1e-2698-4493-8a99-707347c7b2dc",
+ CellID->1073350215]
+}, Open  ]],
+Cell[73052, 1614, 248, 5, 35, "ExampleSection",ExpressionUUID->"06213042-72fa-4bcd-82b3-0211d2af8d36",
+ CellID->934428705],
+Cell[73303, 1621, 258, 5, 23, "ExampleSection",ExpressionUUID->"37df9370-9f14-48ca-857f-68df18a1ebad",
+ CellID->395334424],
+Cell[73564, 1628, 250, 5, 23, "ExampleSection",ExpressionUUID->"db62543a-b31e-4b74-86a0-62e6023b90ab",
+ CellID->71260350],
+Cell[73817, 1635, 257, 5, 23, "ExampleSection",ExpressionUUID->"7411992f-d12d-47fd-9bd2-0280e401cdde",
+ CellID->1524311071],
+Cell[74077, 1642, 250, 5, 23, "ExampleSection",ExpressionUUID->"a20bc258-5946-41bc-9061-d32139a1cbb8",
+ CellID->1763745234]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[74364, 1652, 111, 1, 72, "MetadataSection",ExpressionUUID->"27f397ae-5be5-4767-8f61-bdb2cad457b2",
+ CellID->1549368297],
+Cell[74478, 1655, 477, 12, 26, "History",ExpressionUUID->"1f418945-b0f0-4d79-9345-3a44fcaeb92e",
+ CellID->1993747804],
+Cell[CellGroupData[{
+Cell[74980, 1671, 485, 13, 21, "CategorizationSection",ExpressionUUID->"0149d0d2-4ba9-4b60-ac60-2dfb1d30a289",
+ CellID->1731997687],
+Cell[75468, 1686, 134, 2, 35, "Categorization",ExpressionUUID->"72747a90-edd3-4ac7-808f-7b237e6e1845",
+ CellID->544290324],
+Cell[75605, 1690, 154, 2, 35, "Categorization",ExpressionUUID->"bdeddefd-2c6e-4c13-9eca-94f7db6e8537",
+ CellID->24972470],
+Cell[75762, 1694, 152, 2, 35, "Categorization",ExpressionUUID->"e3acd96a-abfe-4565-864c-61ae354cd01b",
+ CellID->952992125],
+Cell[75917, 1698, 166, 2, 35, "Categorization",ExpressionUUID->"f224f972-93da-47d5-8dd7-37deb77c8bcf",
+ CellID->1005605549]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[76120, 1705, 111, 1, 21, "KeywordsSection",ExpressionUUID->"ef765bdb-6f02-4ad5-9273-e14e95cb0ef3",
+ CellID->1948319476],
+Cell[76234, 1708, 99, 1, 70, "Keywords",ExpressionUUID->"0e10ed7f-a9e0-4663-b981-015da712f028",
+ CellID->574783676]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[76370, 1714, 120, 1, 21, "TemplatesSection",ExpressionUUID->"db3ae0b9-5ddb-4177-af45-9e2ffa1cf370",
+ CellID->1007798326],
+Cell[76493, 1717, 148, 2, 70, "Template",ExpressionUUID->"fb667f34-dfc2-499b-8436-571972126565",
+ CellID->862941193],
+Cell[76644, 1721, 138, 2, 70, "Template",ExpressionUUID->"d2d272bc-e095-4cb2-bffb-e709ea1ee7f0",
+ CellID->1495562560],
+Cell[76785, 1725, 136, 2, 70, "Template",ExpressionUUID->"3017bb14-1e44-42d6-92f0-d21744ab89d3",
+ CellID->1771341432],
+Cell[76924, 1729, 137, 2, 70, "Template",ExpressionUUID->"aed7fff2-7865-431e-8dd9-2f203f2fd270",
+ CellID->369649263]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+
