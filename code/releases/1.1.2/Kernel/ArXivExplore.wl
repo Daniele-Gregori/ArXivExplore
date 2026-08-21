@@ -15,7 +15,7 @@ BeginPackage["DanieleGregori`ArXivExplore`"];
 (*Version*)
 
 
-versionPaclet="1.1.2";
+versionPaclet="1.1.2.1";
 
 
 dateDataset="2026-06";
@@ -717,7 +717,7 @@ Begin["DanieleGregori`Private`"];
 (*Dataset cleaned import*)
 
 
-(* ::Subsubsection::Closed:: *)
+(* ::Subsubsection:: *)
 (*Dataset local import*)
 
 
@@ -730,7 +730,7 @@ dirDatabase=Which[
 				FileNameJoin[{$UserBasePacletsDirectory,"Repository","DanieleGregori__ArXivExplore-"<>versionPaclet,"Assets"}],
 				
 				$Notebooks&&$MachineName=!="MacBook-Pro-2019ii-of-Daniele-G",
-				FileNameJoin[{ParentDirectory@NotebookDirectory[],"Assets"}],
+				FileNameJoin[{$UserBasePacletsDirectory,"Repository","DanieleGregori__ArXivExplore-"<>versionPaclet,"Assets"}](*FileNameJoin[{ParentDirectory@NotebookDirectory[],"Assets"}]*),
 				
 				$MachineName==="MacBook-Pro-2019ii-of-Daniele-G",
 				FileNameJoin[{$HomeDirectory,"Documents","GitHub","ArXivExplore","code","releases",versionPaclet,"Assets"}]];
