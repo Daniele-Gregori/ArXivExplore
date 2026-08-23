@@ -7,7 +7,7 @@
 
 ### Basic Description<!--<<img width="8" height="17" alt="0h48vuc1v6z1z" src="https://github.com/user-attachments/assets/2e27ce24-9fed-4424-a8d2-07498dc2b2e6" />-->
 
-ArXivExplore helps the deep data analysis of all 2.6 million physics, math, cs, etc. articles on ArXiv, providing functionality for e.g. title/abstract word statistics; TeX source/formulae and citations dissection; neural networks for classification, clustering or recommendation; LLM automated concept definitions and author reports. 
+ArXivExplore helps the deep data analysis of all 3.1 million physics, math, cs, etc. articles on ArXiv, providing functionality for e.g. title/abstract word statistics; TeX source/formulae and citations dissection; neural networks for classification, clustering or recommendation; LLM automated concept definitions and author reports. 
 
 ### WTC Presentation
 
@@ -104,14 +104,14 @@ In[]:= ArXivAuthorGraph[Entity["ArXivAuthor", "Vescovi"], VertexLabels -> Placed
 
 #### Scope
 
-The dimensions of the whole ArXiv main dataset (at the end of June 2025):
+The dimensions of the whole ArXiv main dataset (at the end of June 2026):
 
 ```wl
 In[]:= ArXivDataset[All] // Dimensions
 ```
 
 ```wl
-Out[]= {2775152, 14}
+Out[]= {3092222, 14}
 ```
 
 Let us create a super-database with all computer science "cs" type (primary or cross-list) categories:
@@ -256,4 +256,4 @@ In[]:= ArXivExplainAuthor["Kevin Carlberg", "cs.NA", LLMEvaluator -> <|"Prompts"
 
 ### Full Documentation
 
-See the full documentation of all ArXivExplore paclet functions, see the Guides and Symbols webpages on the [Wolfram Paclet Repository](https://resources.wolframcloud.com/PacletRepository/resources/DanieleGregori/ArXivExplore/).
+See the full documentation of all ArXivExplore paclet functions, with all Guides and Symbols webpages, at the site of the [Wolfram Paclet Repository](https://resources.wolframcloud.com/PacletRepository/resources/DanieleGregori/ArXivExplore/).

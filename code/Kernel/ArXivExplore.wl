@@ -730,7 +730,7 @@ dirDatabase=Which[
 				FileNameJoin[{$UserBasePacletsDirectory,"Repository","DanieleGregori__ArXivExplore-"<>versionPaclet,"Assets"}],
 				
 				$Notebooks&&$MachineName=!="MacBook-Pro-2019ii-of-Daniele-G",
-				FileNameJoin[{ParentDirectory@NotebookDirectory[],"Assets"}],
+				FileNameJoin[{$UserBasePacletsDirectory,"Repository","DanieleGregori__ArXivExplore-"<>versionPaclet,"Assets"}](*FileNameJoin[{ParentDirectory@NotebookDirectory[],"Assets"}]*),
 				
 				$MachineName==="MacBook-Pro-2019ii-of-Daniele-G",
 				FileNameJoin[{$HomeDirectory,"Documents","GitHub","ArXivExplore","code","releases",versionPaclet,"Assets"}]];

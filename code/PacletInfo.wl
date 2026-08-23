@@ -7,7 +7,7 @@ PacletObject[
     "Creator" -> "Daniele Gregori",
     "License" -> "MIT",
     "PublisherID" -> "DanieleGregori",
-    "Version" -> "1.1.2",
+    "Version" -> "1.1.2.1",
     "WolframVersion" -> "14+",
     "PrimaryContext" -> "DanieleGregori`ArXivExplore`",
     "DocumentationURL" -> "https://resources.wolframcloud.com/PacletRepository/resources",
