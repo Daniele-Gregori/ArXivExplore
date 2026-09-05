@@ -3,3 +3,7 @@ arxiv-database*.json
 *.paclet
 
 build/
+
+drafts/
+
+.DS_Store
