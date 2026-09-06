@@ -1703,7 +1703,7 @@ ArXivTrendArticles[cat_,int_:"Month"]:=
 (*Cleaning words new*)
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Cleaned - ID*)
 
 
@@ -1771,7 +1771,7 @@ arXivAbstractsCleanID[arg_,options:OptionsPattern[arXivAbstractsCleanID]]:=
 			ParallelMap[DeleteCases[DeleteStopwords@#,"$"]&,arXivAbstractsTextWordsID[arg]]]
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Cleaned - dated*)
 
 
@@ -1809,7 +1809,7 @@ arXivAbstractsCleanDated[cat_,int___:"Month",OptionsPattern[arXivAbstractsCleanD
 (*to compare with arXivTitlesCleanDated*)
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*As option*)
 
 
@@ -2504,7 +2504,7 @@ ArXivVocabularyIntroductions[id_String,OptionsPattern[ArXivVocabularyIntroductio
 
 (*since 1.2.0 further dimension for SequenceIndicesLayer is given as option*)
 Options[embeddingVoc]={"SequenceIndicesLayerArgument"->50};
-embeddingVoc[depth_, vocabulary_,opts:OptionsPattern[embeddingVoc]] :=
+embeddingVoc[depth_, enc_NetEncoder,opts:OptionsPattern[embeddingVoc]] :=
 	 NetGraph @
 		FunctionLayer[
 			Module[{emb1, emb2, posembed},
@@ -2514,15 +2514,17 @@ embeddingVoc[depth_, vocabulary_,opts:OptionsPattern[embeddingVoc]] :=
 				emb1 + emb2
 			]&
 			,
-			"Input" -> {"Varying", NetEncoder[{"Class", vocabulary}]}
+			"Input" -> {"Varying", enc}
 		]
+embeddingVoc[depth_, vocabulary_List,opts:OptionsPattern[embeddingVoc]] :=
+	embeddingVoc[depth,NetEncoder[{"Class", vocabulary}]]
 
 
 (* ::Subsection:: *)
 (*NNs*)
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Recurrent Layers*)
 
 
@@ -2537,7 +2539,7 @@ netRecurrentElem[dim_Integer,drop_]:=NetGraph[
 												]
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Transformer Layers*)
 
 
@@ -2580,9 +2582,11 @@ feedForwardBlock[depth_,heads_] := NetInitialize[
 
 
 Options[decoderNet]={"SequenceIndicesLayerArgument"->50,"DropoutLevel"->0.5};
-decoderNet[depth_, heads_, blocks_, vocabulary_,opts:OptionsPattern[decoderNet]] := Module[
+decoderNet[depth_, heads_, blocks_, vocabulary_List,opts:OptionsPattern[decoderNet]] :=
+	decoderNet[depth,heads,blocks,NetEncoder[{"Class", vocabulary}],opts]
+decoderNet[depth_, heads_, blocks_, enc_NetEncoder,opts:OptionsPattern[decoderNet]] := Module[
 	{embeddingblock, decoderblock},
-	embeddingblock = embeddingVoc[depth, vocabulary,"SequenceIndicesLayerArgument"->OptionValue["SequenceIndicesLayerArgument"]];
+	embeddingblock = embeddingVoc[depth, enc,"SequenceIndicesLayerArgument"->OptionValue["SequenceIndicesLayerArgument"]];
 	decoderblock = NetFlatten@NetChain[{selfAttentionBlock[depth, heads,OptionValue["DropoutLevel"]], feedForwardBlock[depth,heads]}];
 	NetGraph@FunctionLayer[
 		Module[
@@ -2592,29 +2596,38 @@ decoderNet[depth_, heads_, blocks_, vocabulary_,opts:OptionsPattern[decoderNet]]
 			Table[block=decoderblock[block], blocks-1];
 			SequenceLastLayer[]@block
 		]&,
-		"Input" -> {"Varying", NetEncoder[{"Class", vocabulary}]},
+		"Input" -> {"Varying", enc},
 		"Output"-> Automatic
 	]
-]	
+]		
 
 
-netTransformerElem[dim_Integer,drop_,voc_,sila_]:=NetGraph[
+(*netTransformerElem[dim_Integer,drop_,voc_List,sila_]:=NetGraph[
 												{"Decoder"->decoderNet[dim,1,1,voc,"DropoutLevel"->drop,"SequenceIndicesLayerArgument"->sila]},
 
 												{NetPort["In1"]->"Decoder","Decoder"->NetPort["Out"]},
 
 												"In1"->{"Varying",NetEncoder[{"Class", voc}]},"Out"->Automatic
 												]
+netTransformerElem[dim_Integer,drop_,enc_NetEncoder,sila_]:=NetGraph[
+												{"Decoder"->decoderNet[dim,1,1,enc,"DropoutLevel"->drop,"SequenceIndicesLayerArgument"->sila]},
+
+												{NetPort["In1"]->"Decoder","Decoder"->NetPort["Out"]},
+
+												"In1"->{"Varying",enc},"Out"->Automatic
+												]*)
+netTransformerElem[dim_Integer,drop_,enc_NetEncoder,sila_]:=decoderNet[dim,1,1,enc,"DropoutLevel"->drop,"SequenceIndicesLayerArgument"->sila]
+netTransformerElem[dim_Integer,drop_,voc_List,sila_]:=decoderNet[dim,1,1,NetEncoder[{"Class", voc}],"DropoutLevel"->drop,"SequenceIndicesLayerArgument"->sila]
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Classifier net*)
 
 
 ClearAll[arXivClassifyNet,ArXivClassifyCategoriesNet]
 
 
-Options[arXivClassifyNet]={"Introductions"->False,"Architecture"->"Recurrent","Stopwords"->False,"Dollar"->True,"SequenceIndicesLayerArgument"->50};
+Options[arXivClassifyNet]={"Introductions"->False,"Architecture"->"Recurrent","Stopwords"->False,"Dollar"->True,"SequenceIndicesLayerArgument"->50,"Nonlinearities"->Ramp};
 
 
 arXivClassifyNet[classes_List,catL_List,dim_List,drop_Real,idL___List,options:OptionsPattern[arXivClassifyNet]]:=
@@ -2622,96 +2635,93 @@ arXivClassifyNet[classes_List,catL_List,dim_List,drop_Real,idL___List,options:Op
 			Block[{ 
 					vocT=ArXivVocabularyTitles[Union@catL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]],
 					vocA=ArXivVocabularyAbstracts[Union@catL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]],
-					vocI,
-					sila=OptionValue["SequenceIndicesLayerArgument"]},
+					vocI,encT,encA,encI,
+					nlin=OptionValue["Nonlinearities"],
+					sila=OptionValue["SequenceIndicesLayerArgument"],
+					graphTA,graphTAI},
+					
+					encT=NetEncoder[{"Class", vocT}];
+					encA=NetEncoder[{"Class", vocA}];
+					graphTA={NetPort["InTitles"]->"preTitles",NetPort["InAbstracts"]->"preAbstracts",
+							"preTitles"->"Cat","preAbstracts"->"Cat",
+							"Cat"->"Nlin1","Nlin1"->"Lin1",
+							"Lin1"->"Nlin2","Nlin2"->"Lin2",
+							"Lin2"->"Soft","Soft"->NetPort["Out"]};
+					
 					If[!OptionValue["Introductions"],
 						Which[
 						OptionValue["Architecture"]=="Recurrent",
 						NetGraph[
-							{"preTitles"->NetPrepend[netRecurrentElem[dim[[1]],drop],embeddingVoc[dim[[1]],vocT,"SequenceIndicesLayerArgument"->sila]],
-							"preAbstracts"->NetPrepend[netRecurrentElem[dim[[2]],drop],embeddingVoc[dim[[2]],vocA,"SequenceIndicesLayerArgument"->sila]],
+							{"preTitles"->NetPrepend[netRecurrentElem[dim[[1]],drop],embeddingVoc[dim[[1]],encT,"SequenceIndicesLayerArgument"->sila]],
+							"preAbstracts"->NetPrepend[netRecurrentElem[dim[[2]],drop],embeddingVoc[dim[[2]],encA,"SequenceIndicesLayerArgument"->sila]],
 							"Cat"->CatenateLayer[],
-							"Ramp1"->Ramp,"Lin1"->LinearLayer[dim[[3]]],
-							"Ramp2"->Ramp,"Lin2"->LinearLayer[Length[classes]],
+							"Nlin1"->nlin,"Lin1"->LinearLayer[dim[[3]]],
+							"Nlin2"->nlin,"Lin2"->LinearLayer[Length[classes]],
 							"Soft"->SoftmaxLayer[]},
 							
-							{NetPort["InTitles"]->"preTitles",NetPort["InAbstracts"]->"preAbstracts",
-							"preTitles"->"Cat","preAbstracts"->"Cat",
-							"Cat"->"Ramp1","Ramp1"->"Lin1",
-							"Lin1"->"Ramp2","Ramp2"->"Lin2",
-							"Lin2"->"Soft","Soft"->NetPort["Out"]},
+							graphTA,
 							
-							"InTitles"->NetEncoder[{"Class",vocT}],"InAbstracts"->NetEncoder[{"Class",vocA}],
+							"InTitles"->encT,"InAbstracts"->encA,
 							"Out"->NetDecoder[{"Class",classes}]
 							],
 						OptionValue["Architecture"]=="Transformer",
 						NetGraph[
-							{"preTitles"->netTransformerElem[dim[[1]],drop,vocT,sila],
-							"preAbstracts"->netTransformerElem[dim[[2]],drop,vocA,sila],
+							{"preTitles"->netTransformerElem[dim[[1]],drop,encT,sila],
+							"preAbstracts"->netTransformerElem[dim[[2]],drop,encA,sila],
 							"Cat"->CatenateLayer[],
-							"Ramp1"->Ramp,"Lin1"->LinearLayer[dim[[3]]],
-							"Ramp2"->Ramp,"Lin2"->LinearLayer[Length[classes]],
+							"Nlin1"->nlin,"Lin1"->LinearLayer[dim[[3]]],
+							"Nlin2"->nlin,"Lin2"->LinearLayer[Length[classes]],
 							"Soft"->SoftmaxLayer[]},
 							
-							{NetPort["InTitles"]->"preTitles",NetPort["InAbstracts"]->"preAbstracts",
-							"preTitles"->"Cat","preAbstracts"->"Cat",
-							"Cat"->"Ramp1","Ramp1"->"Lin1",
-							"Lin1"->"Ramp2","Ramp2"->"Lin2",
-							"Lin2"->"Soft","Soft"->NetPort["Out"]},
+							graphTA,
 							
-							"InTitles"->NetEncoder[{"Class",vocT}],"InAbstracts"->NetEncoder[{"Class",vocA}],
+							"InTitles"->encT,"InAbstracts"->encA,
 							"Out"->NetDecoder[{"Class",classes}]
 							]],
+							
 						vocI=ArXivVocabularyIntroductions[idL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]];
+						encI=NetEncoder[{"Class", vocI}];
+						graphTAI={NetPort["InTitles"]->"preTitles",NetPort["InAbstracts"]->"preAbstracts",
+									NetPort["InIntroductions"]->"preIntroductions",
+									"preTitles"->"Cat1","preAbstracts"->"Cat1",
+									"preIntroductions"->"Cat2",
+									"Cat1"->"Nlin1","Nlin1"->"Cat2",
+									"Cat2"->"Nlin2","Nlin2"->"Lin1",
+									"Lin1"->"Nlin3","Nlin3"->"Lin2",
+									"Lin2"->"Soft","Soft"->NetPort["Out"]};
 						Which[
 						OptionValue["Architecture"]=="Recurrent",
 						NetGraph[
-							{"preTitles"->NetPrepend[netRecurrentElem[dim[[1]],drop],embeddingVoc[dim[[1]],vocT,"SequenceIndicesLayerArgument"->sila]],
-							"preAbstracts"->NetPrepend[netRecurrentElem[dim[[2]],drop],embeddingVoc[dim[[2]],vocA,"SequenceIndicesLayerArgument"->sila]],
-							"preIntroductions"->NetPrepend[netRecurrentElem[dim[[4]],drop],embeddingVoc[dim[[4]],vocI,"SequenceIndicesLayerArgument"->sila]],
+							{"preTitles"->NetPrepend[netRecurrentElem[dim[[1]],drop],embeddingVoc[dim[[1]],encT,"SequenceIndicesLayerArgument"->sila]],
+							"preAbstracts"->NetPrepend[netRecurrentElem[dim[[2]],drop],embeddingVoc[dim[[2]],encA,"SequenceIndicesLayerArgument"->sila]],
+							"preIntroductions"->NetPrepend[netRecurrentElem[dim[[3]],drop],embeddingVoc[dim[[3]],encI,"SequenceIndicesLayerArgument"->sila]],
 							"Cat1"->CatenateLayer[],
 							"Cat2"->CatenateLayer[],
-							"Ramp0"->Ramp,
-							"Ramp1"->Ramp,"Lin1"->LinearLayer[dim[[3]]],
-							"Ramp2"->Ramp,"Lin2"->LinearLayer[Length[classes]],
+							"Nlin1"->nlin,
+							"Nlin2"->nlin,"Lin1"->LinearLayer[dim[[4]]],
+							"Nlin3"->nlin,"Lin2"->LinearLayer[Length[classes]],
 							"Soft"->SoftmaxLayer[]},
 							
-							{NetPort["InTitles"]->"preTitles",NetPort["InAbstracts"]->"preAbstracts",
-							NetPort["InIntroductions"]->"preIntroductions",
-							"preTitles"->"Cat1","preAbstracts"->"Cat1",
-							"preIntroductions"->"Cat2",
-							"Cat1"->"Ramp0","Ramp0"->"Cat2",
-							"Cat2"->"Ramp1","Ramp1"->"Lin1",
-							"Lin1"->"Ramp2","Ramp2"->"Lin2",
-							"Lin2"->"Soft","Soft"->NetPort["Out"]},
+							graphTAI,
 					
-							"InTitles"->NetEncoder[{"Class",vocT}],"InAbstracts"->NetEncoder[{"Class",vocA}],
-							"InIntroductions"->NetEncoder[{"Class",vocI}],
+							"InTitles"->encT,"InAbstracts"->encA,"InIntroductions"->encI,
 							"Out"->NetDecoder[{"Class",classes}]
 							],
 						OptionValue["Architecture"]=="Transformer",
 						NetGraph[
-							{"preTitles"->netTransformerElem[dim[[1]],drop,vocT,sila],
-							"preAbstracts"->netTransformerElem[dim[[2]],drop,vocA,sila],
-							"preIntroductions"->netTransformerElem[dim[[4]],drop,vocI,sila],
+							{"preTitles"->netTransformerElem[dim[[1]],drop,encT,sila],
+							"preAbstracts"->netTransformerElem[dim[[2]],drop,encA,sila],
+							"preIntroductions"->netTransformerElem[dim[[3]],drop,encI,sila],
 							"Cat1"->CatenateLayer[],
 							"Cat2"->CatenateLayer[],
-							"Ramp0"->Ramp,
-							"Ramp1"->Ramp,"Lin1"->LinearLayer[dim[[3]]],
-							"Ramp2"->Ramp,"Lin2"->LinearLayer[Length[classes]],
+							"Nlin1"->nlin,
+							"Nlin2"->nlin,"Lin1"->LinearLayer[dim[[4]]],
+							"Nlin3"->nlin,"Lin2"->LinearLayer[Length[classes]],
 							"Soft"->SoftmaxLayer[]},
 							
-							{NetPort["InTitles"]->"preTitles",NetPort["InAbstracts"]->"preAbstracts",
-							NetPort["InIntroductions"]->"preIntroductions",
-							"preTitles"->"Cat1","preAbstracts"->"Cat1",
-							"preIntroductions"->"Cat2",
-							"Cat1"->"Ramp0","Ramp0"->"Cat2",
-							"Cat2"->"Ramp1","Ramp1"->"Lin1",
-							"Lin1"->"Ramp2","Ramp2"->"Lin2",
-							"Lin2"->"Soft","Soft"->NetPort["Out"]},
+							graphTAI,
 							
-							"InTitles"->NetEncoder[{"Class",vocT}],"InAbstracts"->NetEncoder[{"Class",vocA}],
-							"InIntroductions"->NetEncoder[{"Class",vocI}],
+							"InTitles"->encT,"InAbstracts"->encA,"InIntroductions"->encI,
 							"Out"->NetDecoder[{"Class",classes}]
 							]]]
 					]
