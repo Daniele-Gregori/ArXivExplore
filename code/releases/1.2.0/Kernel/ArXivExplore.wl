@@ -18,7 +18,7 @@ BeginPackage["DanieleGregori`ArXivExplore`"];
 versionPaclet="1.2.0";
 
 
-dateDataset="2026-06";
+dateDataset="2026-08";
 
 
 developmentVersionQ=True;
@@ -2620,35 +2620,134 @@ netTransformerElem[dim_Integer,drop_,enc_NetEncoder,sila_]:=decoderNet[dim,1,1,e
 netTransformerElem[dim_Integer,drop_,voc_List,sila_]:=decoderNet[dim,1,1,NetEncoder[{"Class", voc}],"DropoutLevel"->drop,"SequenceIndicesLayerArgument"->sila]
 
 
-(* ::Subsubsection::Closed:: *)
+(* ::Subsubsection:: *)
 (*Classifier net*)
 
 
 ClearAll[arXivClassifyNet,ArXivClassifyCategoriesNet]
 
 
-Options[arXivClassifyNet]={"Introductions"->False,"Architecture"->"Recurrent","Stopwords"->False,"Dollar"->True,"SequenceIndicesLayerArgument"->50,"Nonlinearities"->Ramp};
+Options[arXivClassifyNet]={"Titles"->False,"Abstracts"->True,"Introductions"->False,"Architecture"->"Recurrent","Stopwords"->False,"Dollar"->True,"SequenceIndicesLayerArgument"->50,"Nonlinearities"->Ramp};
 
 
 arXivClassifyNet[classes_List,catL_List,dim_List,drop_Real,idL___List,options:OptionsPattern[arXivClassifyNet]]:=
 	arXivClassifyNet[classes,catL,dim,drop,idL,options]=
 			Block[{ 
-					vocT=ArXivVocabularyTitles[Union@catL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]],
-					vocA=ArXivVocabularyAbstracts[Union@catL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]],
-					vocI,encT,encA,encI,
+					vocT,vocA,vocI,encT,encA,encI,
 					nlin=OptionValue["Nonlinearities"],
 					sila=OptionValue["SequenceIndicesLayerArgument"],
-					graphTA,graphTAI},
+					chainT,chainA,chainI,graphTA,graphTI,graphAI,graphTAI},
 					
-					encT=NetEncoder[{"Class", vocT}];
-					encA=NetEncoder[{"Class", vocA}];
-					graphTA={NetPort["InTitles"]->"preTitles",NetPort["InAbstracts"]->"preAbstracts",
+					
+					Which[
+					
+						(*only titles*)
+						OptionValue["Titles"]&&!OptionValue["Abstracts"]&&!OptionValue["Introductions"],
+						vocT=ArXivVocabularyTitles[Union@catL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]];
+						encT=NetEncoder[{"Class", vocT}];
+						chainT={NetPort["InTitles"]->"preTitles","preTitles"->"Nlin1","Nlin1"->"Lin1","Lin1"->"Nlin2","Nlin2"->"Lin2",
+							"Lin2"->"Soft","Soft"->NetPort["Out"]};
+						Which[
+						OptionValue["Architecture"]=="Recurrent",
+						NetGraph[
+							{"preTitles"->NetPrepend[netRecurrentElem[dim[[1]],drop],embeddingVoc[dim[[1]],encT,"SequenceIndicesLayerArgument"->sila]],
+							"Nlin1"->nlin,"Lin1"->LinearLayer[dim[[2]]],
+							"Nlin2"->nlin,"Lin2"->LinearLayer[Length[classes]],
+							"Soft"->SoftmaxLayer[]},
+							
+							chainT,
+							
+							"InTitles"->encT,
+							"Out"->NetDecoder[{"Class",classes}]
+							],
+						OptionValue["Architecture"]=="Transformer",
+						NetGraph[
+							{"preTitles"->netTransformerElem[dim[[1]],drop,encT,sila],
+							"Nlin1"->nlin,"Lin1"->LinearLayer[dim[[2]]],
+							"Nlin2"->nlin,"Lin2"->LinearLayer[Length[classes]],
+							"Soft"->SoftmaxLayer[]},
+							
+							chainT,
+							
+							"InTitles"->encT,
+							"Out"->NetDecoder[{"Class",classes}]
+							]],
+						
+						(*only abstracts*)	
+						!OptionValue["Titles"]&&OptionValue["Abstracts"]&&!OptionValue["Introductions"],
+						vocA=ArXivVocabularyAbstracts[Union@catL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]];
+						encA=NetEncoder[{"Class", vocA}];
+						chainA={NetPort["InAbstracts"]->"preAbstracts","preAbstracts"->"Nlin1","Nlin1"->"Lin1","Lin1"->"Nlin2","Nlin2"->"Lin2",
+							"Lin2"->"Soft","Soft"->NetPort["Out"]};
+						Which[
+						OptionValue["Architecture"]=="Recurrent",
+						NetGraph[
+							{"preAbstracts"->NetPrepend[netRecurrentElem[dim[[1]],drop],embeddingVoc[dim[[1]],encA,"SequenceIndicesLayerArgument"->sila]],
+							"Nlin1"->nlin,"Lin1"->LinearLayer[dim[[2]]],
+							"Nlin2"->nlin,"Lin2"->LinearLayer[Length[classes]],
+							"Soft"->SoftmaxLayer[]},
+							
+							chainA,
+							
+							"InAbstracts"->encA,
+							"Out"->NetDecoder[{"Class",classes}]
+							],
+						OptionValue["Architecture"]=="Transformer",
+						NetGraph[
+							{"preAbstracts"->netTransformerElem[dim[[1]],drop,encA,sila],
+							"Nlin1"->nlin,"Lin1"->LinearLayer[dim[[2]]],
+							"Nlin2"->nlin,"Lin2"->LinearLayer[Length[classes]],
+							"Soft"->SoftmaxLayer[]},
+							
+							chainA,
+							
+							"InAbstracts"->encA,
+							"Out"->NetDecoder[{"Class",classes}]
+							]],
+							
+						(*only introductions*)	
+						!OptionValue["Titles"]&&!OptionValue["Abstracts"]&&OptionValue["Introductions"],
+						vocI=ArXivVocabularyIntroductions[idL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]];
+						encI=NetEncoder[{"Class", vocI}];
+						chainI={NetPort["InIntroductions"]->"preIntroductions","preIntroductions"->"Nlin1","Nlin1"->"Lin1","Lin1"->"Nlin2","Nlin2"->"Lin2",
+							"Lin2"->"Soft","Soft"->NetPort["Out"]};
+						Which[
+						OptionValue["Architecture"]=="Recurrent",
+						NetGraph[
+							{"preIntroductions"->NetPrepend[netRecurrentElem[dim[[1]],drop],embeddingVoc[dim[[1]],encI,"SequenceIndicesLayerArgument"->sila]],
+							"Nlin1"->nlin,"Lin1"->LinearLayer[dim[[2]]],
+							"Nlin2"->nlin,"Lin2"->LinearLayer[Length[classes]],
+							"Soft"->SoftmaxLayer[]},
+							
+							chainI,
+							
+							"InIntroductions"->encI,
+							"Out"->NetDecoder[{"Class",classes}]
+							],
+						OptionValue["Architecture"]=="Transformer",
+						NetGraph[
+							{"preIntroductions"->netTransformerElem[dim[[1]],drop,encI,sila],
+							"Nlin1"->nlin,"Lin1"->LinearLayer[dim[[2]]],
+							"Nlin2"->nlin,"Lin2"->LinearLayer[Length[classes]],
+							"Soft"->SoftmaxLayer[]},
+							
+							chainI,
+							
+							"InIntroductions"->encI,
+							"Out"->NetDecoder[{"Class",classes}]
+							]],
+						
+						(*titles and abstracts*)
+						OptionValue["Titles"]&&OptionValue["Abstracts"]&&!OptionValue["Introductions"],
+						vocT=ArXivVocabularyTitles[Union@catL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]];
+						encT=NetEncoder[{"Class", vocT}];
+						vocA=ArXivVocabularyAbstracts[Union@catL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]];
+						encA=NetEncoder[{"Class", vocA}];
+						graphTA={NetPort["InTitles"]->"preTitles",NetPort["InAbstracts"]->"preAbstracts",
 							"preTitles"->"Cat","preAbstracts"->"Cat",
 							"Cat"->"Nlin1","Nlin1"->"Lin1",
 							"Lin1"->"Nlin2","Nlin2"->"Lin2",
 							"Lin2"->"Soft","Soft"->NetPort["Out"]};
-					
-					If[!OptionValue["Introductions"],
 						Which[
 						OptionValue["Architecture"]=="Recurrent",
 						NetGraph[
@@ -2679,6 +2778,95 @@ arXivClassifyNet[classes_List,catL_List,dim_List,drop_Real,idL___List,options:Op
 							"Out"->NetDecoder[{"Class",classes}]
 							]],
 							
+						(*titles and introductions*)
+						OptionValue["Titles"]&&!OptionValue["Abstracts"]&&OptionValue["Introductions"],
+						vocT=ArXivVocabularyTitles[Union@catL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]];
+						encT=NetEncoder[{"Class", vocT}];
+						vocI=ArXivVocabularyIntroductions[idL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]];
+						encI=NetEncoder[{"Class", vocI}];
+						graphTI={NetPort["InTitles"]->"preTitles",NetPort["InIntroductions"]->"preIntroductions",
+							"preTitles"->"Cat","preIntroductions"->"Cat",
+							"Cat"->"Nlin1","Nlin1"->"Lin1",
+							"Lin1"->"Nlin2","Nlin2"->"Lin2",
+							"Lin2"->"Soft","Soft"->NetPort["Out"]};
+						Which[
+						OptionValue["Architecture"]=="Recurrent",
+						NetGraph[
+							{"preTitles"->NetPrepend[netRecurrentElem[dim[[1]],drop],embeddingVoc[dim[[1]],encT,"SequenceIndicesLayerArgument"->sila]],
+							"preIntroductions"->NetPrepend[netRecurrentElem[dim[[2]],drop],embeddingVoc[dim[[2]],encI,"SequenceIndicesLayerArgument"->sila]],
+							"Cat"->CatenateLayer[],
+							"Nlin1"->nlin,"Lin1"->LinearLayer[dim[[3]]],
+							"Nlin2"->nlin,"Lin2"->LinearLayer[Length[classes]],
+							"Soft"->SoftmaxLayer[]},
+							
+							graphTI,
+							
+							"InTitles"->encT,"InIntroductions"->encI,
+							"Out"->NetDecoder[{"Class",classes}]
+							],
+						OptionValue["Architecture"]=="Transformer",
+						NetGraph[
+							{"preTitles"->netTransformerElem[dim[[1]],drop,encT,sila],
+							"preIntroductions"->netTransformerElem[dim[[2]],drop,encI,sila],
+							"Cat"->CatenateLayer[],
+							"Nlin1"->nlin,"Lin1"->LinearLayer[dim[[3]]],
+							"Nlin2"->nlin,"Lin2"->LinearLayer[Length[classes]],
+							"Soft"->SoftmaxLayer[]},
+							
+							graphTI,
+							
+							"InTitles"->encT,"InIntroductions"->encI,
+							"Out"->NetDecoder[{"Class",classes}]
+							]],
+							
+						(*abstracts and introductions*)
+						!OptionValue["Titles"]&&OptionValue["Abstracts"]&&OptionValue["Introductions"],
+						vocA=ArXivVocabularyAbstracts[Union@catL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]];
+						encA=NetEncoder[{"Class", vocA}];
+						vocI=ArXivVocabularyIntroductions[idL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]];
+						encI=NetEncoder[{"Class", vocI}];
+						graphAI={NetPort["InAbstracts"]->"preAbstracts",NetPort["InIntroductions"]->"preIntroductions",
+							"preAbstracts"->"Cat","preIntroductions"->"Cat",
+							"Cat"->"Nlin1","Nlin1"->"Lin1",
+							"Lin1"->"Nlin2","Nlin2"->"Lin2",
+							"Lin2"->"Soft","Soft"->NetPort["Out"]};
+						Which[
+						OptionValue["Architecture"]=="Recurrent",
+						NetGraph[
+							{"preAbstracts"->NetPrepend[netRecurrentElem[dim[[1]],drop],embeddingVoc[dim[[1]],encA,"SequenceIndicesLayerArgument"->sila]],
+							"preIntroductions"->NetPrepend[netRecurrentElem[dim[[2]],drop],embeddingVoc[dim[[2]],encI,"SequenceIndicesLayerArgument"->sila]],
+							"Cat"->CatenateLayer[],
+							"Nlin1"->nlin,"Lin1"->LinearLayer[dim[[3]]],
+							"Nlin2"->nlin,"Lin2"->LinearLayer[Length[classes]],
+							"Soft"->SoftmaxLayer[]},
+							
+							graphAI,
+							
+							"InAbstracts"->encA,"InIntroductions"->encI,
+							"Out"->NetDecoder[{"Class",classes}]
+							],
+						OptionValue["Architecture"]=="Transformer",
+						NetGraph[
+							{"preAbstracts"->netTransformerElem[dim[[1]],drop,encA,sila],
+							"preIntroductions"->netTransformerElem[dim[[2]],drop,encI,sila],
+							"Cat"->CatenateLayer[],
+							"Nlin1"->nlin,"Lin1"->LinearLayer[dim[[3]]],
+							"Nlin2"->nlin,"Lin2"->LinearLayer[Length[classes]],
+							"Soft"->SoftmaxLayer[]},
+							
+							graphAI,
+							
+							"InAbstracts"->encA,"InIntroductions"->encI,
+							"Out"->NetDecoder[{"Class",classes}]
+							]],
+							
+						
+						(*titles, abstracts and introductions*)
+						OptionValue["Titles"]&&OptionValue["Abstracts"]&&OptionValue["Introductions"],	
+						vocT=ArXivVocabularyTitles[Union@catL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]];
+						encT=NetEncoder[{"Class", vocT}];
+						vocA=ArXivVocabularyAbstracts[Union@catL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]];
+						encA=NetEncoder[{"Class", vocA}];
 						vocI=ArXivVocabularyIntroductions[idL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]];
 						encI=NetEncoder[{"Class", vocI}];
 						graphTAI={NetPort["InTitles"]->"preTitles",NetPort["InAbstracts"]->"preAbstracts",
@@ -2793,29 +2981,66 @@ ArXivClassifyAuthorsNet[authorL:{_String..},cat_,dim_Integer,drop_Real,idL___Lis
 (*Training and testing sets (to refactor)*)
 
 
-(* ::Subsubsection::Closed:: *)
+(* ::Subsubsection:: *)
 (*Train & test category*)
 
 
-Options[ArXivClassifyCategoriesTrainTest]={"Introductions"->False,"Stopwords"->False,"Dollar"->True};
+Options[ArXivClassifyCategoriesTrainTest]={"Titles"->False,"Abstracts"->True,"Introductions"->False,"Stopwords"->False,"Dollar"->True};
 
 
 arXivClassifyCategoriesTrainTestBlock[idL_,options:OptionsPattern[ArXivClassifyCategoriesTrainTest]]:=
 					Block[{listFull,catFullL,td},
 							catFullL=Map[ArXivCategoriesPrimary,idL];
 							
-							listFull=If[!OptionValue["Introductions"],
-									MapThread[
+							listFull=Which[
+										
+										OptionValue["Titles"]&&!OptionValue["Abstracts"]&&!OptionValue["Introductions"],
+										MapThread[
+										Association["InTitles"->#1,"Out"->#2]&,
+												{arXivTitlesCleanID[idL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]],
+												catFullL}],
+												
+										!OptionValue["Titles"]&&OptionValue["Abstracts"]&&!OptionValue["Introductions"],
+										MapThread[
+										Association["InAbstracts"->#1,"Out"->#2]&,
+												{arXivAbstractsCleanID[idL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]],
+												catFullL}],
+												
+										!OptionValue["Titles"]&&!OptionValue["Abstracts"]&&!OptionValue["Introductions"],
+										MapThread[
+										Association["InIntroductions"->#1,"Out"->#2]&,
+												{Values@arXivTeXIntroductionListClean[idL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]],
+												catFullL}],
+										
+										OptionValue["Titles"]&&OptionValue["Abstracts"]&&!OptionValue["Introductions"],
+										MapThread[
 										Association["InTitles"->#1,"InAbstracts"->#2,"Out"->#3]&,
 												{arXivTitlesCleanID[idL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]],
 												arXivAbstractsCleanID[idL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]],
 												catFullL}],
-									MapThread[
+										
+										OptionValue["Titles"]&&!OptionValue["Abstracts"]&&OptionValue["Introductions"],
+										MapThread[
+										Association["InTitles"->#1,"InIntroductions"->#2,"Out"->#3]&,
+												{arXivTitlesCleanID[idL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]],
+												Values@arXivTeXIntroductionListClean[idL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]],
+												catFullL}],
+												
+										!OptionValue["Titles"]&&OptionValue["Abstracts"]&&OptionValue["Introductions"],
+										MapThread[
+										Association["InAbstracts"->#1,"InIntroductions"->#2,"Out"->#3]&,
+												{arXivAbstractsCleanID[idL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]],
+												Values@arXivTeXIntroductionListClean[idL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]],
+												catFullL}],
+												
+										OptionValue["Titles"]&&OptionValue["Abstracts"]&&OptionValue["Introductions"],
+										MapThread[
 										Association["InTitles"->#1,"InAbstracts"->#2,"InIntroductions"->#3,"Out"->#4]&,
 												{arXivTitlesCleanID[idL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]],
 												arXivAbstractsCleanID[idL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]],
 												Values@arXivTeXIntroductionListClean[idL,"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]],
 												catFullL}]];
+												
 							td=TakeDrop[RandomSample@listFull,
 							Floor[9/10 Length[listFull]]];
 							Map[Merge[#,Identity]&,td]]
@@ -2833,11 +3058,11 @@ ArXivClassifyCategoriesTrainTest[cut_Integer,nids_Integer,options:OptionsPattern
 			ArXivClassifyCategoriesTrainTest[Keys@ArXivTopCategories[cut],nids,options]							
 
 
-(* ::Subsubsection::Closed:: *)
+(* ::Subsubsection:: *)
 (*Train & test authors*)
 
 
-Options[ArXivClassifyAuthorsTrainTest]={"Introductions"->False,"Stopwords"->False,"Dollar"->True};
+Options[ArXivClassifyAuthorsTrainTest]={"Titles"->False,"Abstracts"->True,"Introductions"->False,"Stopwords"->False,"Dollar"->True};
 
 
 ArXivClassifyAuthorsTrainTest[authorL:{_Entity..},idL_List,options:OptionsPattern[ArXivClassifyAuthorsTrainTest]]:=
@@ -2845,7 +3070,84 @@ ArXivClassifyAuthorsTrainTest[authorL:{_Entity..},idL_List,options:OptionsPatter
 								classes=Map[EntityValue[#,"Label"]&,authorL];
 								listIDs[argaut_]:=Cases[idL,Alternatives@@ArXivAuthorArticles[argaut]];
 								categories=Union@Flatten@Map[EntityValue[#,"Categories"]&,authorL];
-								listFull=If[OptionValue["Introductions"],
+								listFull=Which[
+											
+											OptionValue["Titles"]&&!OptionValue["Abstracts"]&&!OptionValue["Introductions"],
+											MapThread[
+													Association["InTitles"->#1,"Out"->#2]&,
+															{Flatten[Map[
+															arXivTitlesCleanID[listIDs[#],"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]]&,
+																	authorL],1],
+															Flatten[Map[
+															Table[EntityValue[#,"Label"],Length[listIDs[#]]]&,
+																	authorL],1]}
+													],
+											
+											!OptionValue["Titles"]&&OptionValue["Abstracts"]&&!OptionValue["Introductions"],
+											MapThread[
+													Association["InAbstracts"->#1,"Out"->#2]&,
+															{Flatten[Map[
+															arXivAbstractsCleanID[listIDs[#],"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]]&,
+																	authorL],1],
+															Flatten[Map[
+															Table[EntityValue[#,"Label"],Length[listIDs[#]]]&,
+																	authorL],1]}
+													],
+													
+											!OptionValue["Titles"]&&!OptionValue["Abstracts"]&&OptionValue["Introductions"],
+											MapThread[
+													Association["InIntroductions"->#1,"Out"->#2]&,
+															{Flatten[Map[
+															Values@arXivTeXIntroductionListClean[listIDs[#],"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]]&,
+																	authorL],1],
+															Flatten[Map[
+															Table[EntityValue[#,"Label"],Length[listIDs[#]]]&,
+																	authorL],1]}
+													],
+													
+											OptionValue["Titles"]&&OptionValue["Abstracts"]&&!OptionValue["Introductions"],
+											MapThread[
+													Association["InTitles"->#1,"InAbstracts"->#2,"Out"->#3]&,
+															{Flatten[Map[
+															arXivTitlesCleanID[listIDs[#],"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]]&,
+																	authorL],1],
+															Flatten[Map[
+															arXivAbstractsCleanID[listIDs[#],"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]]&,
+																	authorL],1],
+															Flatten[Map[
+															Table[EntityValue[#,"Label"],Length[listIDs[#]]]&,
+																	authorL],1]}
+													],
+											
+											OptionValue["Titles"]&&!OptionValue["Abstracts"]&&OptionValue["Introductions"],
+											MapThread[
+													Association["InTitles"->#1,"InIntroductions"->#2,"Out"->#3]&,
+															{Flatten[Map[
+															arXivTitlesCleanID[listIDs[#],"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]]&,
+																	authorL],1],
+															Flatten[Map[
+															Values@arXivTeXIntroductionListClean[listIDs[#],"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]]&,
+																	authorL],1],
+															Flatten[Map[
+															Table[EntityValue[#,"Label"],Length[listIDs[#]]]&,
+																	authorL],1]}
+													],
+													
+											!OptionValue["Titles"]&&OptionValue["Abstracts"]&&OptionValue["Introductions"],
+											MapThread[
+													Association["InAbstracts"->#1,"InIntroductions"->#2,"Out"->#3]&,
+															{Flatten[Map[
+															arXivAbstractsCleanID[listIDs[#],"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]]&,
+																	authorL],1],
+															Flatten[Map[
+															Values@arXivTeXIntroductionListClean[listIDs[#],"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]]&,
+																	authorL],1],
+															Flatten[Map[
+															Table[EntityValue[#,"Label"],Length[listIDs[#]]]&,
+																	authorL],1]}
+													],
+											
+											OptionValue["Titles"]&&OptionValue["Abstracts"]&&OptionValue["Introductions"],
 											MapThread[
 													Association["InTitles"->#1,"InAbstracts"->#2,"InIntroductions"->#3,"Out"->#4]&,
 															{Flatten[Map[
@@ -2856,18 +3158,6 @@ ArXivClassifyAuthorsTrainTest[authorL:{_Entity..},idL_List,options:OptionsPatter
 																	authorL],1],
 															Flatten[Map[
 															Values@arXivTeXIntroductionListClean[listIDs[#],"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]]&,
-																	authorL],1],
-															Flatten[Map[
-															Table[EntityValue[#,"Label"],Length[listIDs[#]]]&,
-																	authorL],1]}
-													],
-											MapThread[
-													Association["InTitles"->#1,"InAbstracts"->#2,"Out"->#3]&,
-															{Flatten[Map[
-															arXivTitlesCleanID[listIDs[#],"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]]&,
-																	authorL],1],
-															Flatten[Map[
-															arXivAbstractsCleanID[listIDs[#],"Stopwords"->OptionValue["Stopwords"],"Dollar"->OptionValue["Dollar"]]&,
 																	authorL],1],
 															Flatten[Map[
 															Table[EntityValue[#,"Label"],Length[listIDs[#]]]&,
